@@ -15,8 +15,8 @@ body {
 	min-height: 100%;
 	line-height: normal;
 	margin-right: 0 !important;
-	color: $text;
-	background: #e6e4dc;
+	color: #fff;
+	background: #252f28;
 	&.open-mobile-menu {
 		@media (max-width: $md3) {
 			overflow: hidden;
@@ -39,6 +39,9 @@ body {
 .page {
 	flex: 1 1 auto;
 	overflow-x: clip;
+	display: flex;
+	flex-direction: column;
+	gap: rem(120);
 }
 
 // ================== ОБОЛОЧКА ===============================
@@ -72,3 +75,25 @@ body {
 // =============== MODULES ====================
 @import "./modules/popup";
 // =============== MODULES ====================
+
+.section-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	// .section-header__title
+	&__title {
+	}
+	// .section-header__hint
+	&__hint {
+		color: #dbdbdb;
+		font-size: 1rem;
+		&::before {
+			content: "/";
+			margin-right: 0.25rem;
+		}
+		&::after {
+			content: "/";
+			margin-left: 0.25rem;
+		}
+	}
+}

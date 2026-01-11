@@ -71,7 +71,7 @@
 		&:checked {
 			& ~ .form__checkbox-field {
 				&::before {
-					@extend %ic, .icon-check;
+					// @extend %ic, .icon-check;
 				}
 			}
 		}
@@ -202,9 +202,9 @@
 	text-align: center;
 	user-select: none;
 	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-	border-radius: 0.5rem;
-	padding: 0.75rem 2rem;
-	font-size: 1rem;
+	font-size: 0.875rem;
+	padding: 0.5rem 2rem;
+	border-radius: 0.75rem;
 	font-weight: 600;
 
 	&:focus-visible {
@@ -212,25 +212,27 @@
 	}
 
 	&.btn-primary {
-		border-color: #eb5b38;
-		background: #eb5b38;
-		color: #f8f8f8;
+		border-color: #ceb388;
+		background: #ceb388;
+		color: #3f3f3f;
 
 		&:hover {
-			background: #f63a19;
-			border-color: #f63a19;
+			background: #425045;
+			border-color: #425045;
+			color: #fff;
 		}
 
 		&:active {
-			background: #f63a19;
-			border-color: #f63a19;
+			background: darken($color: #425045, $amount: 10);
+			border-color: darken($color: #425045, $amount: 10);
+			color: #fff;
 		}
 	}
 
 	&.btn-lg {
 		@media (min-width: $md3) {
 			line-height: 1.5;
-			padding: 0.9375rem 1.5rem;
+			padding: 0.875rem 1.5rem;
 			font-size: 1.25rem;
 		}
 	}
@@ -238,7 +240,8 @@
 	&:disabled,
 	&[aria-disabled="true"] {
 		cursor: default;
-		opacity: 0.3;
+		background: #919191;
+		color: #fff;
 		pointer-events: none;
 	}
 }

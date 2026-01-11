@@ -11,30 +11,27 @@
 // ======================================ШРИФТЫ===============================================
 
 // Шрифт по умолчанию
-$fontfamily: "OpenSans";
-$font-oswald: "Oswald";
+$fontfamily: "Montserrat";
+$font-inter: "Inter";
 // Шрифт по умолчанию
 
-$md1: 1303.98px;
+$md1: 1399.98px;
 $md2: 1199.98px;
 $md3: 991.98px;
 $md4: 743.98px;
 $md5: 575.98px;
-$md6: 389.98px;
 
 // ПЕРЕМЕННЫЕ
 
 $minWidth: 360; // Минимальная ширина страницы
 $maxWidth: 1920; // Ширина макета
-$maxWidthContainer: rem(1272); // Максимальная ширина ограничивающего контейнера
+$maxWidthContainer: rem(1326); // Максимальная ширина ограничивающего контейнера
 $containerPadding: 30;
 
 // ЦВЕТА
 
-$accent: #eb5b38;
-$text: #272a2d;
-
-$header: var(--header-height, 11.375rem);
+$accent: #ceb388;
+$text: #fff;
 
 // Z-Index
 
@@ -48,9 +45,115 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 // ОБЩИЕ ПАРАМЕТРЫ
 
 @import "ui";
+@import "modules/grid";
 @import "forms";
 @import "common";
 @import "header";
 @import "footer";
 
 //=======================================
+
+@import "pages/home";
+
+.hero {
+	padding: 1rem 0;
+	// .hero__header
+	&__header {
+		display: flex;
+		align-items: flex-start;
+		background: url("@img/decor/hero-decor.svg") right center / contain no-repeat;
+	}
+	// .hero__offer
+	&__offer {
+		padding-top: 5rem;
+		flex: 1 1 auto;
+		padding-left: 3.5rem;
+	}
+	// .hero__title
+	&__title {
+		font-size: 3.75rem;
+		font-weight: 600;
+		letter-spacing: -0.1125rem;
+		text-transform: uppercase;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1rem;
+		& small {
+			font-size: 1.5rem;
+			font-weight: 500;
+			letter-spacing: -0.03rem;
+			text-transform: none;
+			max-width: 25rem;
+		}
+	}
+	// .hero__subtitle
+	&__subtitle {
+		margin-top: 2.5rem;
+		font-size: 1.25rem;
+		font-weight: 500;
+		max-width: 34.75rem;
+	}
+	// .hero__btn
+	&__btn {
+		margin-top: 3rem;
+		max-width: 19.9375rem;
+		width: 100%;
+	}
+	// .hero__image
+	&__image {
+		margin-top: -1.5rem;
+
+		max-width: 52%;
+	}
+	// .hero__benefits
+	&__benefits {
+		margin-top: -9rem;
+	}
+	// .hero__benefit
+	&__benefit {
+		height: 100%;
+		background: #6b806f;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 1.75rem 1.75rem 3rem 1.75rem;
+		border-radius: 1rem;
+	}
+	// .hero__benefit-num
+	&__benefit-num {
+		font-size: 4rem;
+		font-weight: 600;
+	}
+	// .hero__benefit-desc
+	&__benefit-desc {
+		margin-top: 0.25rem;
+		font-size: 1rem;
+		font-weight: 500;
+		line-height: 130%;
+		max-width: 16rem;
+	}
+}
+
+.about {
+	// .about__body
+	&__body {
+		margin-top: 2rem;
+	} // .about__desc
+	&__desc {
+	}
+	// .about__btn
+	&__btn {
+	}
+	// .about__image
+	&__image {
+	}
+	// .about__image
+	&__image {
+		& img {
+			border-radius: rem(16);
+		}
+	}
+}
