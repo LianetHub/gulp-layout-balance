@@ -12,73 +12,21 @@ if (typeof Fancybox !== "undefined" && Fancybox !== null) {
 
 document.addEventListener("DOMContentLoaded", function () {
 
+    if (document.querySelector('.clients__slider')) {
+        new Swiper('.clients__slider', {
+            slidesPerView: "auto",
+            watchOverflow: true,
+            spaceBetween: 16,
+            navigation: {
+                nextEl: '.clients__next',
+                prevEl: '.clients__prev',
+            }
+        })
+    }
 
     initPhoneMask();
 
 
-    // cookies
-
-    window.onload = function () {
-        function getCookie(name) {
-            var matches = document.cookie.match(new RegExp(
-                "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-            ));
-            return matches ? decodeURIComponent(matches[1]) : undefined;
-        }
-
-        function setCookie(name, value, options) {
-            options = options || {};
-            var expires = options.expires;
-
-            if (typeof expires == "number" && expires) {
-                var d = new Date();
-                d.setTime(d.getTime() + expires * 1000);
-                expires = options.expires = d;
-            }
-            if (expires && expires.toUTCString) {
-                options.expires = expires.toUTCString();
-            }
-            value = encodeURIComponent(value);
-            var updatedCookie = name + "=" + value;
-
-            for (var propName in options) {
-                updatedCookie += "; " + propName;
-                var propValue = options[propName];
-                if (propValue !== true) {
-                    updatedCookie += "=" + propValue;
-                }
-            }
-
-            document.cookie = updatedCookie;
-        }
-
-        var cookieBlock = document.querySelector('.cookie');
-        var noticed = getCookie('cookie_notice');
-
-        if (cookieBlock) {
-            if (typeof noticed !== 'undefined' && noticed == 1) {
-                cookieBlock.style.display = 'none';
-            } else {
-                cookieBlock.style.display = 'block';
-
-                setTimeout(function () {
-                    cookieBlock.classList.add('cookie--visible');
-                }, 1000);
-
-                var closeBtn = cookieBlock.querySelector('.cookie__close');
-                if (closeBtn) {
-                    closeBtn.addEventListener('click', function () {
-                        setCookie('cookie_notice', 1, { expires: 180 * 24 * 60 * 60, path: '/' });
-                        cookieBlock.classList.remove('cookie--visible');
-
-                        setTimeout(function () {
-                            cookieBlock.style.display = 'none';
-                        }, 500);
-                    });
-                }
-            }
-        }
-    }
 });
 
 

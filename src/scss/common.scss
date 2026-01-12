@@ -79,7 +79,8 @@ body {
 .section-header {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
+	padding-left: 3.5rem;
 	// .section-header__title
 	&__title {
 	}
@@ -95,5 +96,10 @@ body {
 			content: "/";
 			margin-left: 0.25rem;
 		}
+	}
+	&__controls {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
 	}
 }

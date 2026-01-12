@@ -201,6 +201,7 @@
 	align-items: center;
 	text-align: center;
 	user-select: none;
+	border: rem(1) solid;
 	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 	font-size: 0.875rem;
 	padding: 0.5rem 2rem;
@@ -229,12 +230,34 @@
 		}
 	}
 
+	&.btn-secondary {
+		border-color: #fff;
+		color: #fff;
+
+		&:hover {
+			background: #425045;
+			border-color: #425045;
+			color: #fff;
+		}
+
+		&:active {
+			background: darken($color: #425045, $amount: 10);
+			border-color: darken($color: #425045, $amount: 10);
+			color: #fff;
+		}
+	}
+
 	&.btn-lg {
 		@media (min-width: $md3) {
 			line-height: 1.5;
 			padding: 0.875rem 1.5rem;
 			font-size: 1.25rem;
 		}
+	}
+
+	&.btn-sm {
+		padding: 0.625rem 1.25rem;
+		border-radius: 0.5rem;
 	}
 
 	&:disabled,
