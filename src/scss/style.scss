@@ -67,7 +67,9 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 	&__offer {
 		padding-top: 5rem;
 		flex: 1 1 auto;
-		padding-left: 3.5rem;
+		@media (min-width: $md1) {
+			padding-left: 3.5rem;
+		}
 	}
 	// .hero__title
 	&__title {
@@ -108,7 +110,9 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 	}
 	// .hero__benefits
 	&__benefits {
-		margin-top: -9rem;
+		@media (min-width: $md1) {
+			margin-top: -9rem;
+		}
 	}
 	// .hero__benefit
 	&__benefit {
@@ -144,9 +148,11 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 	}
 	// .about__info
 	&__info {
-		padding-left: 3.5rem;
 		padding-top: rem(48);
 		max-width: 35.5rem;
+		@media (min-width: $md1) {
+			padding-left: 3.5rem;
+		}
 	}
 	// .about__desc
 	&__desc {
@@ -255,11 +261,12 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 	// .clients__info
 	&__info {
 		padding-top: rem(102);
-		padding-left: 3.5rem;
 		flex: 0 0 rem(452);
 		padding-right: rem(52);
 		position: relative;
-
+		@media (min-width: $md1) {
+			padding-left: 3.5rem;
+		}
 		&::before {
 			content: "";
 			position: absolute;

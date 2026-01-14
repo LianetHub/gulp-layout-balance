@@ -116,7 +116,6 @@
 		margin-bottom: auto;
 		@media (min-width: $md3) {
 			margin-bottom: 0;
-			padding-left: 3.75rem;
 			gap: 2rem;
 			flex: 1 1 auto;
 			align-items: center;
@@ -124,6 +123,9 @@
 			flex-direction: row;
 			font-weight: 500;
 			font-size: 0.875rem;
+		}
+		@media (min-width: $md1) {
+			padding-left: 3.75rem;
 		}
 	}
 	// .menu__item
