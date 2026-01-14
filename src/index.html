@@ -17,7 +17,7 @@
                                 <p class="hero__subtitle">
                                     Попробуйте наши витаминные капельницы — получите здоровье, молодость и красоту с доказанным 100% результатом
                                 </p>
-                                <a href="" class="hero__btn btn btn-primary btn-lg">Записаться на приём</a>
+                                <a href="#appointment" data-fancybox class="hero__btn btn btn-primary btn-lg">Записаться на приём</a>
                             </div>
                             <div class="hero__image">
                                 <img src="@img/hero-woman.png" alt="Женщина">
@@ -339,30 +339,8 @@
                         </div>
                     </div>
                 </section>
-                <section class="consult">
-                    <div class="container">
-                        <div class="consult__body">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="consult__main">
-                                        <h3 class="consult__title">не откладывайте лечение, запишитесь на консультацию</h3>
-                                        <p class="consult__subtitle">Оставьте свой номер телефона, мы перезвоним, ответим на все вопросы и подберем подходящее обследование.</p>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <form action="#" class="consult__form form">
-                                        <input type="text" name="username" class="form__control" placeholder="Ваше имя">
-                                        <input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
-                                        <button type="submit" class="form__submit btn btn-primary btn-lg">Записаться на консультацию</button>
-                                        <div class="form__policy">
-                                            Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+
+                @@include('./html/_consult.html')
                 @@include('./html/_contacts.html')
             </main>
             @@include('html/_footer.html', {})

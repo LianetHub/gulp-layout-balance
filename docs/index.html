@@ -83,7 +83,7 @@
                             <address class="menu__address">г. Казань, ул. Курашова, д.20</address>
                         </div>
                     </nav>
-                    <a href="#callback" data-fancybox class="header__callback btn btn-primary">Записаться</a>
+                    <a href="#appointment" data-fancybox class="header__callback btn btn-primary">Записаться</a>
                     <button type="button" aria-label="Открыть мобильное меню" class="header__toggler icon-menu">
                         <span></span>
                         <span></span>
@@ -102,7 +102,7 @@
                                 <p class="hero__subtitle">
                                     Попробуйте наши витаминные капельницы — получите здоровье, молодость и красоту с доказанным 100% результатом
                                 </p>
-                                <a href="" class="hero__btn btn btn-primary btn-lg">Записаться на приём</a>
+                                <a href="#appointment" data-fancybox class="hero__btn btn btn-primary btn-lg">Записаться на приём</a>
                             </div>
                             <div class="hero__image">
                                 <img src="img/hero-woman.png" alt="Женщина">
@@ -424,6 +424,7 @@
                         </div>
                     </div>
                 </section>
+
                 <section class="consult">
                     <div class="container">
                         <div class="consult__body">
@@ -538,7 +539,7 @@
                             </div>
                             <div class="col-4">
                                 <div class="footer__actions">
-                                    <a href="" class="footer__btn btn btn-primary btn-lg">Записаться на приём</a>
+                                    <a href="#appointment" data-fancybox class="footer__btn btn btn-primary btn-lg">Записаться на приём</a>
                                     <div class="footer__socials">
                                         <a href="" class="footer__social icon-whatsapp"></a>
                                         <a href="" class="footer__social icon-telegram"></a>
@@ -556,36 +557,17 @@
                 </div>
             </footer>
 
-            <div id="callback" class="popup" role="dialog" aria-modal="true" hidden>
-                <h2 class="popup__title title">Связаться со мной</h2>
-                <p class="popup__subtitle">Связаться со мной можно по рабочим дням с 09:00 до 19:00 по телефону или в мессенджере</p>
-                <div class="popup__contacts">
-                    <a href="tel:+70000000000" class="popup__phone h2">+7 (000) 000-00-00</a>
-                    <div class="popup__socials socials">
-                        <a href="" aria-label="Написать в Telegram" class="socials__btn icon-telegram"></a>
-                        <a href="" aria-label="Написать в Whatsapp" class="socials__btn icon-whatsapp"></a>
-                    </div>
-                </div>
-                <a href="#consult" data-fancybox class="popup__btn btn btn-primary btn-lg">Заказать консультацию</a>
-            </div>
-            <div id="consult" class="popup" role="dialog" aria-modal="true" hidden>
-                <h2 class="popup__title title">Заказ консультации</h2>
-                <p class="popup__subtitle">Оставьте заявку или напишите в мессенджер — проведу аудит и предложу конкретные шаги по увеличению клиентов.</p>
-                <form action="#" class="feedback__form form">
-                    <input type="text" name="name" class="form__control" placeholder="Ваше имя">
-                    <input type="tel" name="phone" class="form__control" placeholder="+7 (000) 000-00-00">
-                    <label class="form__checkbox">
-                        <input type="checkbox" name="confirm_policies" class="form__checkbox-input hidden" hidden>
-                        <span class="form__checkbox-field">
-                            Я согласен (-на) на <a href="">обработку персональных данных</a>
-                        </span>
-                    </label>
+            <div id="appointment" class="popup" role="dialog" aria-modal="true" hidden>
+                <h2 class="popup__title title">Онлайн-запись в&nbsp;Balance Med</h2>
+                <p class="popup__subtitle">Наш администратор свяжется с Вами в течение 15 минут.</p>
+                <form action="#" class="popup__form form">
+                    <input type="text" name="username" class="form__control" placeholder="Ваше имя">
+                    <input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
                     <div class="form__bottom">
                         <button type="submit" class="form__submit btn btn-primary btn-lg">Оставить заявку</button>
-                        <div class="form__socials socials">
-                            <a href="" aria-label="Написать в Telegram" class="socials__btn icon-telegram"></a>
-                            <a href="" aria-label="Написать в Whatsapp" class="socials__btn icon-whatsapp"></a>
-                        </div>
+                    </div>
+                    <div class="form__policy">
+                        Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
                     </div>
                 </form>
             </div>
