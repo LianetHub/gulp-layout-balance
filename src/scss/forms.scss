@@ -4,38 +4,18 @@
 		text-overflow: ellipsis;
 		transition: border-color 0.3s ease, color 0.3s ease;
 		width: 100%;
-		border-radius: 0;
+		border-radius: 1rem;
 		background: #fff;
-		color: #334b59;
-
+		border: 1px solid #fff;
+		color: #3f3f3f;
 		font-size: 1rem;
-		line-height: 160%;
-		border-radius: 0.375rem;
-		border: 1px solid #666f79;
-		background: #fff;
-		padding: 0.65rem 1rem;
-		@media (min-width: $md5) {
-			padding: 0.65rem 1.5rem;
-		}
-		@media (min-width: $md3) {
-			padding: 1rem;
-		}
-		&.form__control--grey {
-			color: #fff;
-			background: #3a3d3f;
-			border-color: #3a3d3f;
-			&:hover {
-				border-color: #666f79;
-			}
-			&:focus {
-				border-color: #e6e4dc;
-			}
-			&::placeholder {
-				color: #8f9192;
-			}
-		}
+		font-weight: 500;
+		padding: 1.15rem 2.5rem;
+		min-height: rem(60);
+
 		&::placeholder {
 			opacity: 1;
+			color: #919191;
 		}
 		&:hover,
 		&:focus {
@@ -141,16 +121,22 @@
 	}
 	// .form__submit
 	&__submit {
-		@media (min-width: $md5) {
-			flex: 0 1 rem(300);
-		}
-		@media (min-width: $md3) {
-			flex: 1 1 auto;
-		}
+		width: 100%;
 	}
-	// .form__socials
-	&__socials {
-		align-self: center;
+	// .form__policy
+	&__policy {
+		text-align: center;
+		color: #dbdbdb;
+		font-size: 0.875rem;
+		font-weight: 500;
+		& a {
+			text-decoration: underline;
+			@media (any-hover: hover) {
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
 	}
 }
 

@@ -38,8 +38,10 @@
 		align-items: center;
 		gap: 0.5rem;
 	}
+	// .header__logo-icon
 	&__logo-icon {
 	}
+	// .header__logo-text
 	&__logo-text {
 		font-size: 0.875rem;
 		font-weight: 500;
@@ -98,6 +100,7 @@
 		@media (min-width: $md5) {
 		}
 	}
+	// .menu__logo
 	&__logo {
 		@media (min-width: $md3) {
 			display: none;
@@ -123,7 +126,6 @@
 			font-size: 0.875rem;
 		}
 	}
-
 	// .menu__item
 	&__item {
 		display: flex;
@@ -162,7 +164,6 @@
 		flex-shrink: 0;
 		transition: transform 0.3s ease, color 0.3s ease;
 	}
-
 	// .menu__contacts
 	&__contacts {
 		display: flex;
@@ -178,6 +179,12 @@
 	&__contacts-phone {
 		font-size: 1rem;
 		font-weight: 600;
+		transition: color 0.3s ease;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #ceb388;
+			}
+		}
 	}
 	// .menu__address
 	&__address {

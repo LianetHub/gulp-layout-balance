@@ -12,6 +12,16 @@ if (typeof Fancybox !== "undefined" && Fancybox !== null) {
 
 document.addEventListener("DOMContentLoaded", function () {
 
+    document.addEventListener("click", function (e) {
+        const target = e.target;
+
+        if (target.matches('.accordion-list__item-caption')) {
+            target.classList.toggle('active');
+            target.nextElementSibling.slideToggle();
+
+        }
+    })
+
     if (document.querySelector('.clients__slider')) {
         new Swiper('.clients__slider', {
             slidesPerView: "auto",
