@@ -132,6 +132,7 @@
 		align-items: center;
 		gap: 0.25rem;
 		&.menu__item--parent {
+			position: relative;
 			@media (any-hover: hover) {
 				&:hover {
 					.menu__link {
@@ -141,6 +142,11 @@
 					.menu__arrow {
 						transform: rotate(180deg);
 						color: $accent;
+					}
+					.submenu {
+						opacity: 1;
+						visibility: visible;
+						transform: none;
 					}
 				}
 			}
@@ -190,6 +196,74 @@
 	&__address {
 		margin-top: 0.25rem;
 		font-size: 0.75rem;
+	}
+}
+
+.submenu {
+	position: absolute;
+	left: rem(-40);
+	top: 100%;
+
+	color: #fff;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3.88rem;
+	padding: rem(40);
+	width: fit-content;
+	&::before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: calc(100% - rem(20));
+		background: #6b806f;
+		border-radius: 0 0 1rem 1rem;
+		z-index: -1;
+	}
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.2s ease-in;
+	// .submenu__column
+	&__column {
+		width: 10rem;
+	}
+	// .submenu__caption
+	&__caption {
+		color: #ceb388;
+		font-size: 1rem;
+		font-weight: 500;
+		letter-spacing: -0.02rem;
+		padding-bottom: 0.19rem;
+		border-bottom: rem(1) solid;
+		transition: color 0.3s ease;
+		@media (any-hover: hover) {
+			&:hover {
+				color: darken($color: #ceb388, $amount: 10);
+			}
+		}
+	}
+	// .submenu__list
+	&__list {
+		margin-top: 1.25rem;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.5rem;
+		font-size: 0.875rem;
+		letter-spacing: -0.0175rem;
+	}
+	// .submenu__item
+	&__item {
+	}
+	// .submenu__link
+	&__link {
+		transition: color 0.3s ease;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #ceb388;
+			}
+		}
 	}
 }
 
