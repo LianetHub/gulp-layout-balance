@@ -1,8 +1,13 @@
 .footer {
-	margin-top: 2.5rem;
+	@media (min-width: $md4) {
+		margin-top: 2.5rem;
+	}
 	// .footer__body
 	&__body {
-		padding: 5rem 0 3.75rem;
+		padding: 2.5rem 0 3.75rem;
+		@media (min-width: $md4) {
+			padding: 5rem 0 3.75rem;
+		}
 		.row {
 			--gutter-y: 2rem;
 		}
@@ -167,9 +172,9 @@
 	&__bottom-container {
 		display: flex;
 		flex-direction: column-reverse;
+		align-items: center;
 		gap: 1rem;
 		@media (min-width: $md4) {
-			align-items: center;
 			justify-content: space-between;
 			flex-direction: row;
 		}

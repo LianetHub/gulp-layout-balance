@@ -36,7 +36,7 @@
 	--f-close-button-svg-height: #{rem(24)};
 	top: rem(4);
 	right: rem(4);
-	@media (min-width: $md5) {
+	@media (min-width: $md4) {
 		top: rem(18);
 		right: rem(26);
 		--f-close-button-width: #{rem(52)};

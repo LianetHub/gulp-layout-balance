@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (target.closest('.icon-menu')) {
             document.querySelector('.header').classList.toggle('open-menu');
+            document.body.classList.toggle('open-mobile-menu');
         }
 
         if (target.matches('.menu__arrow')) {
