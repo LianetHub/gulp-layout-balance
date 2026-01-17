@@ -1,0 +1,60 @@
+.breadcrumbs {
+	position: relative;
+	z-index: 3;
+	padding: rem(16) 0 0;
+	@media (min-width: $md4) {
+		padding: rem(24) 0;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: nowrap;
+		overflow: hidden;
+		white-space: nowrap;
+		gap: 0.5rem;
+	}
+
+	&__item {
+		display: inline-flex;
+		align-items: center;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		min-width: 0;
+		line-height: 120%;
+		color: #919191;
+		font-size: 0.875rem;
+		font-weight: 500;
+
+		&:not(:last-child) {
+			flex-shrink: 1;
+			&::before {
+				margin-left: 0.5rem;
+				font-size: 1rem;
+				order: 1;
+				@extend %ic, .icon-arrow;
+			}
+		}
+
+		&:not(:last-child) {
+			flex-shrink: 0;
+			overflow: visible;
+			text-overflow: clip;
+		}
+	}
+
+	&__link {
+		word-break: break-all;
+		overflow: hidden;
+		text-overflow: ellipsis;
+
+		&:is(a) {
+			transition: color 0.3s ease;
+			@media (any-hover: hover) {
+				&:hover {
+					color: $accent;
+				}
+			}
+		}
+	}
+}

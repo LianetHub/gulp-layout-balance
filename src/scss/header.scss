@@ -198,6 +198,9 @@
 	// .menu__link
 	&__link {
 		transition: color 0.3s ease;
+		&.active {
+			color: $accent;
+		}
 		@media (any-hover: hover) {
 			&:hover {
 				text-decoration: underline;
@@ -353,6 +356,9 @@
 	// .submenu__link
 	&__link {
 		transition: color 0.3s ease;
+		&.active {
+			color: $accent;
+		}
 		@media (any-hover: hover) {
 			&:hover {
 				color: #ceb388;

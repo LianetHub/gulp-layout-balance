@@ -6,14 +6,6 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Inter-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Inter-VariableFont_wght.woff") format("woff");
-  font-weight: 100 900;
-  font-stretch: 75% 125%;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Montserrat-VariableFont_wght.woff") format("woff");
   font-weight: 100 900;
@@ -21,7 +13,15 @@
   font-style: normal;
   font-display: swap;
 }
-.accordion-list__item-caption::after, [class^=icon-]:before,
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Inter-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Inter-VariableFont_wght.woff") format("woff");
+  font-weight: 100 900;
+  font-stretch: 75% 125%;
+  font-style: normal;
+  font-display: swap;
+}
+.accordion-list__item-caption::after, .breadcrumbs__item:not(:last-child)::before, [class^=icon-]:before,
 [class*=" icon-"]:before {
   font-family: "icons";
   font-style: normal;
@@ -43,7 +43,7 @@
   content: "\e90b";
 }
 
-.icon-arrow:before {
+.icon-arrow:before, .breadcrumbs__item:not(:last-child):before {
   content: "\e900";
 }
 
@@ -1553,6 +1553,62 @@
     --gutter-y: 3rem;
   }
 }
+.breadcrumbs {
+  position: relative;
+  z-index: 3;
+  padding: 1rem 0 0;
+}
+@media (min-width: 743.98px) {
+  .breadcrumbs {
+    padding: 1.5rem 0;
+  }
+}
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
+  gap: 0.5rem;
+}
+.breadcrumbs__item {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  line-height: 120%;
+  color: #919191;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.breadcrumbs__item:not(:last-child) {
+  flex-shrink: 1;
+}
+.breadcrumbs__item:not(:last-child)::before {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  order: 1;
+}
+.breadcrumbs__item:not(:last-child) {
+  flex-shrink: 0;
+  overflow: visible;
+  text-overflow: clip;
+}
+.breadcrumbs__link {
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.breadcrumbs__link:is(a) {
+  transition: color 0.3s ease;
+}
+@media (any-hover: hover) {
+  .breadcrumbs__link:is(a):hover {
+    color: #ceb388;
+  }
+}
+
 .form__control {
   text-overflow: ellipsis;
   transition: border-color 0.3s ease, color 0.3s ease;
@@ -2479,6 +2535,9 @@ body {
 .menu__link {
   transition: color 0.3s ease;
 }
+.menu__link.active {
+  color: #ceb388;
+}
 @media (any-hover: hover) {
   .menu__link:hover {
     text-decoration: underline;
@@ -2627,6 +2686,9 @@ body {
 }
 .submenu__link {
   transition: color 0.3s ease;
+}
+.submenu__link.active {
+  color: #ceb388;
 }
 @media (any-hover: hover) {
   .submenu__link:hover {
