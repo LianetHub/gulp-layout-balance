@@ -8,19 +8,81 @@
             @@include('html/_header.html', {
             "active": 4
             })
+            <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">Специалисты</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <main class="page">
-                <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                <section class="specialists">
                     <div class="container">
-                        <ul class="breadcrumbs__list">
-                            <li class="breadcrumbs__item">
-                                <a href="index.html" class="breadcrumbs__link">Главная</a>
-                            </li>
-                            <li class="breadcrumbs__item">
-                                <span class="breadcrumbs__link">Специалисты</span>
-                            </li>
-                        </ul>
+                        <h1 class="specialists__title title">Специалисты</h1>
+                        <div class="specialists__content">
+                            <div class="specialists__block">
+                                <div class="row">
+                                    <div class="col-xl-4 col-md-6">
+                                        @@loop('./html/templates/_specialist.html', './html/json/specialists/gafiatullina-albina-takhirovna.json')
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        @@loop('./html/templates/_specialist.html', './html/json/specialists/gar-viktoriya-vladimirovna.json')
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        @@loop('./html/templates/_specialist.html', './html/json/specialists/salekhova-leysan-talgatovna.json')
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        @@loop('./html/templates/_specialist.html', './html/json/specialists/farkhutdinova-aygul-nurkhatovna.json')
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        @@loop('./html/templates/_specialist.html', './html/json/specialists/idrisova-ilseyar-rishatovna.json')
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="specialists__block">
+                                <div class="row">
+                                    <div class="col-xl-4 col-md-6">
+                                        @@loop('./html/templates/_specialist.html', './html/json/specialists/levai-anna-borisovna.json')
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        @@loop('./html/templates/_specialist.html', './html/json/specialists/sungatullina-venera-faridovna.json')
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="specialists__block">
+                                <div class="row">
+                                    <div class="col-xl-4 col-md-6">
+                                        @@loop('./html/templates/_specialist.html', './html/json/specialists/ilina-tatyana-alekseevna.json')
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        @@loop('./html/templates/_specialist.html', './html/json/specialists/karyagina-darya-mikhaylovna.json')
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        @@loop('./html/templates/_specialist.html', './html/json/specialists/gaynanova-dilbar-savdakhanovna.json')
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="specialists__block">
+                                <div class="row">
+                                    <div class="col-xl-4 col-md-6">
+                                        @@loop('./html/templates/_specialist.html', './html/json/specialists/galina-yuliya-dimovna.json')
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        @@loop('./html/templates/_specialist.html', './html/json/specialists/garaeva-dilyara-ilkhamovna.json')
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        @@loop('./html/templates/_specialist.html', './html/json/specialists/gataulina-dilyara-maratovna.json')
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </nav>
+                </section>
                 @@include('./html/_consult.html')
                 @@include('./html/_contacts.html')
             </main>

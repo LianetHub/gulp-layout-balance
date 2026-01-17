@@ -6,16 +6,16 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Montserrat-VariableFont_wght.woff") format("woff");
+  font-family: "Inter";
+  src: url("../fonts/Inter-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Inter-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Inter-VariableFont_wght.woff") format("woff");
   font-weight: 100 900;
   font-stretch: 75% 125%;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Inter-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Inter-VariableFont_wght.woff") format("woff");
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Montserrat-VariableFont_wght.woff") format("woff");
   font-weight: 100 900;
   font-stretch: 75% 125%;
   font-style: normal;
@@ -3012,7 +3012,7 @@ body {
 }
 @media (min-width: 991.98px) {
   .hero__title small {
-    max-width: 6.6666666667em;
+    max-width: 16.6666666667em;
   }
 }
 .hero__subtitle {
@@ -3051,7 +3051,7 @@ body {
     align-self: flex-end;
   }
 }
-@media (min-width: 1399.98px) {
+@media (min-width: 1199.98px) {
   .hero__benefits {
     margin-top: -9rem;
   }
@@ -3332,4 +3332,126 @@ body {
 }
 .faq__image img {
   border-radius: 0.75rem;
+}
+.specialists {
+  padding: 1.5rem 0 0;
+}
+@media (min-width: 1199.98px) {
+  .specialists {
+    padding: 3.5rem 0 0;
+  }
+}
+.specialists__content {
+  position: relative;
+  margin-top: 2.5rem;
+}
+.specialists__content::before {
+  content: "";
+  position: absolute;
+  top: 39.5%;
+  transform: translateY(-50%);
+  right: -26.625rem;
+  width: 53.25rem;
+  height: 53.25rem;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.1;
+  background: #86e298;
+  filter: blur(100px);
+}
+.specialists__content::after {
+  content: "";
+  position: absolute;
+  top: 39.5%;
+  transform: translateY(-50%);
+  right: -7rem;
+  width: 23.875rem;
+  height: 24.1875rem;
+  background: url("../img/decor/hero-decor.svg") right center/contain no-repeat;
+  z-index: -1;
+}
+@media (min-width: 1199.98px) {
+  .specialists__content {
+    margin-top: 5rem;
+  }
+}
+.specialists__block:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.specialists__block .row {
+  --gutter-y: 2rem;
+}
+
+.specialist-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 100%;
+}
+.specialist-card__image {
+  aspect-ratio: 0.8588469185;
+  background: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
+  border: 0.0625rem solid #fff;
+  border-bottom: 0;
+}
+.specialist-card__image img {
+  border-radius: 1rem 1rem 0 0;
+}
+.specialist-card__image img.stub-image {
+  border-radius: 0;
+  max-width: 33.33%;
+}
+.specialist-card__image:is(a) img {
+  transition: transform 0.3s ease;
+}
+@media (any-hover: hover) {
+  .specialist-card__image:is(a):hover img.cover-image {
+    transform: scale(1.05);
+  }
+}
+.specialist-card__body {
+  flex: 1 1 auto;
+  border-radius: 0 0 1rem 1rem;
+  border: 0.0625rem solid #fff;
+  border-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem 1.5rem 2rem;
+}
+@media (min-width: 1199.98px) {
+  .specialist-card__body {
+    min-height: 13.88rem;
+    padding: 2rem 2.5rem;
+  }
+}
+.specialist-card__name {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+.specialist-card__name:is(a) {
+  transition: color 0.3s ease;
+}
+@media (any-hover: hover) {
+  .specialist-card__name:is(a):hover {
+    color: #6b806f;
+  }
+}
+.specialist-card__position {
+  margin-top: 0.5rem;
+  color: #dbdbdb;
+  font-size: 1rem;
+  line-height: 140%;
+  margin-bottom: auto;
+}
+.specialist-card__more {
+  margin-top: 2rem;
 }

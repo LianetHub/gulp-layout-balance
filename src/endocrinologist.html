@@ -8,19 +8,19 @@
             @@include('html/_header.html', {
             "active": 8
             })
+            <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">Нутрициолог</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <main class="page">
-                <nav aria-label="Хлебные крошки" class="breadcrumbs">
-                    <div class="container">
-                        <ul class="breadcrumbs__list">
-                            <li class="breadcrumbs__item">
-                                <a href="index.html" class="breadcrumbs__link">Главная</a>
-                            </li>
-                            <li class="breadcrumbs__item">
-                                <span class="breadcrumbs__link">Нутрициолог</span>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
                 @@include('./html/_consult.html')
                 @@include('./html/_contacts.html')
             </main>
