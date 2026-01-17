@@ -90,6 +90,8 @@ body {
 	&__hint {
 		color: #dbdbdb;
 		font-size: 1rem;
+		flex-shrink: 0;
+		max-width: 35%;
 		&::before {
 			content: "/";
 			margin-right: 0.25rem;

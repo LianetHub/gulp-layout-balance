@@ -18,7 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
         if (target.matches('.accordion-list__item-caption')) {
             target.classList.toggle('active');
             target.nextElementSibling.slideToggle();
+        }
 
+        if (target.closest('.icon-menu')) {
+            document.querySelector('.header').classList.toggle('open-menu');
+        }
+
+        if (target.matches('.menu__arrow')) {
+            target.parentNode.classList.toggle('active');
         }
     })
 

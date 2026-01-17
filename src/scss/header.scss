@@ -10,20 +10,23 @@
 		padding: 1.5rem 0;
 	}
 	@media (min-width: $md3) {
+		padding: 0.5rem 0;
+	}
+	@media (min-width: $md2) {
 		padding: 1.3rem 0;
 	}
 	&.open-menu {
 		&::before {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100svh;
-			background: rgba($color: #272a2d, $alpha: 0.8);
-			backdrop-filter: blur(5px);
-			-webkit-backdrop-filter: blur(5px);
-			z-index: 7;
+			@media (max-width: $md3) {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: #6b806f;
+				z-index: 11;
+			}
 		}
 	}
 	// .header__container
@@ -31,9 +34,14 @@
 		display: flex;
 		align-items: center;
 		gap: 1.5rem;
+		@media (max-width: $md3) {
+			max-width: 100%;
+		}
 	}
 	// .header__logo
 	&__logo {
+		position: relative;
+		z-index: 11;
 		display: flex;
 		align-items: center;
 		gap: 0.5rem;
@@ -52,23 +60,19 @@
 	// .header__toggler
 	&__toggler {
 	}
-	// .header__callback
-	&__callback {
-		@media (max-width: $md3) {
-			display: none;
-		}
-	}
 }
 
 .menu {
+	justify-content: space-between;
+	display: flex;
+
 	@media (min-width: $md3) {
 		position: relative;
 		z-index: 2;
 		flex: 1 1 auto;
+		align-items: center;
+		gap: 1.5rem;
 	}
-	justify-content: space-between;
-	display: flex;
-
 	@media (max-width: $md3) {
 		position: absolute;
 		top: 0;
@@ -80,17 +84,18 @@
 
 		overflow-y: auto;
 		overflow-x: hidden;
-		background: #fff;
-		background: #f8f8f8;
+		background: #6b806f;
 		z-index: 1;
-		align-items: flex-start;
 		flex-direction: column;
-		transition: transform 0.3s ease, visibility 0.1s ease, opacity 0.1s ease;
+		transition:
+			transform 0.3s ease,
+			visibility 0.1s ease,
+			opacity 0.1s ease;
 		transform: translateX(100%);
 		opacity: 0;
 		visibility: hidden;
 		z-index: 7;
-		padding: 1.25rem 1.5rem rem(40);
+		padding: 6rem 1.5rem rem(40);
 		gap: 1.5rem;
 		.header.open-menu & {
 			transform: none;
@@ -111,18 +116,21 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-		align-items: flex-start;
 		gap: 0.56rem;
 		margin-bottom: auto;
 		@media (min-width: $md3) {
 			margin-bottom: 0;
-			gap: 2rem;
+			row-gap: 0.75rem;
 			flex: 1 1 auto;
 			align-items: center;
 			justify-content: center;
 			flex-direction: row;
+			gap: 1.5rem;
 			font-weight: 500;
 			font-size: 0.875rem;
+		}
+		@media (min-width: $md2) {
+			gap: 2rem;
 		}
 		@media (min-width: $md1) {
 			padding-left: 3.75rem;
@@ -131,25 +139,58 @@
 	// .menu__item
 	&__item {
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
+		flex-wrap: wrap;
 		gap: 0.25rem;
+		@media (min-width: $md3) {
+			flex-wrap: nowrap;
+		}
 		&.menu__item--parent {
-			position: relative;
-			@media (any-hover: hover) {
-				&:hover {
-					.menu__link {
-						text-decoration: underline;
-						color: $accent;
+			@media (min-width: $md3) {
+				position: relative;
+				@media (any-hover: hover) {
+					&:hover {
+						.menu__link {
+							text-decoration: underline;
+							color: $accent;
+						}
+						.menu__arrow {
+							transform: rotate(180deg);
+							color: $accent;
+						}
+						.submenu {
+							opacity: 1;
+							visibility: visible;
+							transform: none;
+						}
 					}
-					.menu__arrow {
-						transform: rotate(180deg);
-						color: $accent;
-					}
-					.submenu {
-						opacity: 1;
-						visibility: visible;
-						transform: none;
-					}
+				}
+			}
+		}
+		&.active {
+			@media (max-width: $md3) {
+				.menu__arrow {
+					transform: rotate(180deg);
+					color: $accent;
+				}
+				.submenu {
+					display: block;
+				}
+			}
+			@media (min-width: $md3) {
+				.menu__link {
+					text-decoration: underline;
+					color: $accent;
+				}
+				.menu__arrow {
+					transform: rotate(180deg);
+					color: $accent;
+				}
+				.submenu {
+					opacity: 1;
+					visibility: visible;
+					transform: none;
 				}
 			}
 		}
@@ -170,21 +211,51 @@
 		width: 0.44044rem;
 		height: 0.3125rem;
 		flex-shrink: 0;
-		transition: transform 0.3s ease, color 0.3s ease;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+		transition:
+			transform 0.3s ease,
+			color 0.3s ease;
+	}
+	// .menu__actions
+	&__actions {
+		display: flex;
+		gap: 1.5rem;
+		flex-direction: column;
+		align-items: flex-start;
+		row-gap: 0.75rem;
+		@media (min-width: $md3) {
+			row-gap: 0.25rem;
+			align-items: flex-end;
+		}
+		@media (min-width: $md2) {
+			align-items: center;
+			flex-direction: row;
+		}
 	}
 	// .menu__contacts
 	&__contacts {
 		display: flex;
 		flex-direction: column;
-		align-items: flex-end;
 		width: 100%;
+		align-items: flex-start;
 		@media (min-width: $md3) {
+			align-items: flex-end;
 			width: auto;
 			flex: 0 1 auto;
 		}
 	}
 	// .menu__contacts-phone
 	&__contacts-phone {
+		white-space: nowrap;
 		font-size: 1rem;
 		font-weight: 600;
 		transition: color 0.3s ease;
@@ -199,19 +270,33 @@
 		margin-top: 0.25rem;
 		font-size: 0.75rem;
 	}
+	// .menu__callback
+	&__callback {
+	}
 }
 
 .submenu {
-	position: absolute;
-	left: rem(-40);
-	top: 100%;
-
-	color: #fff;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 3.88rem;
-	padding: rem(40);
-	width: fit-content;
+	display: none;
+	flex: 0 0 100%;
+	padding: rem(20) rem(0) rem(20) rem(12);
+	@media (min-width: $md3) {
+		margin-top: 0;
+		position: absolute;
+		left: rem(-40);
+		top: 100%;
+		color: #fff;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		padding: rem(40);
+		gap: 1.5rem;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.2s ease-in;
+		width: fit-content;
+	}
+	@media (min-width: $md2) {
+		gap: 3.88rem;
+	}
 	&::before {
 		content: "";
 		position: absolute;
@@ -223,12 +308,16 @@
 		border-radius: 0 0 1rem 1rem;
 		z-index: -1;
 	}
-	opacity: 0;
-	visibility: hidden;
-	transition: all 0.2s ease-in;
 	// .submenu__column
 	&__column {
-		width: 10rem;
+		@media (max-width: $md3) {
+			&:not(:last-child) {
+				margin-bottom: 1rem;
+			}
+		}
+		@media (min-width: $md3) {
+			width: 10rem;
+		}
 	}
 	// .submenu__caption
 	&__caption {
@@ -279,7 +368,7 @@
 	width: 2rem;
 	height: 1rem;
 	margin-left: auto;
-	color: #272a2d;
+	color: #fff;
 	z-index: 11;
 	transition: all 0.3s ease;
 	@media (min-width: $md5) {
@@ -292,7 +381,9 @@
 	& span {
 		display: block;
 		align-self: stretch;
-		transition: transform 0.4s ease 0.4s, opacity 0.4s ease 0.4s;
+		transition:
+			transform 0.4s ease 0.4s,
+			opacity 0.4s ease 0.4s;
 		will-change: transform;
 		padding: rem(3) rem(0);
 		@media (min-width: $md5) {
@@ -308,13 +399,17 @@
 			margin: auto;
 		}
 	}
-	&.active {
+	.header.open-menu & {
 		background: transparent;
 
 		& span {
-			transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
+			transition:
+				transform 0.3s ease 0s,
+				opacity 0.3s ease 0s;
 			&::before {
-				transition: transform 0.45s ease 0.35s, width 0.3s ease 0s;
+				transition:
+					transform 0.45s ease 0.35s,
+					width 0.3s ease 0s;
 				width: 75%;
 				@media (min-width: $md5) {
 					width: 50%;
