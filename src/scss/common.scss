@@ -82,7 +82,12 @@ body {
 .section-header {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
+	flex-direction: column;
+	gap: 0.25rem;
+	@media (min-width: $md5) {
+		align-items: flex-end;
+		flex-direction: row;
+	}
 	@media (min-width: $md1) {
 		padding-left: 3.5rem;
 	}
@@ -94,7 +99,9 @@ body {
 		color: #dbdbdb;
 		font-size: 1rem;
 		flex-shrink: 0;
-		max-width: 35%;
+		@media (min-width: $md5) {
+			max-width: 35%;
+		}
 		&::before {
 			content: "/";
 			margin-right: 0.25rem;
@@ -104,6 +111,7 @@ body {
 			margin-left: 0.25rem;
 		}
 	}
+	// .section-header__controls
 	&__controls {
 		display: flex;
 		align-items: center;
@@ -172,18 +180,18 @@ body {
 	}
 	// .accordion-list__item-caption
 	&__item-caption {
-		font-size: 1.25rem;
+		font-size: 1rem;
 		font-weight: 500;
-		padding: 0.9rem 1.5rem 0.9rem 0;
+		padding: em(0.9, 1.25) em(1.5, 1.25) em(0.9, 1.25) 0;
 		display: flex;
 		align-items: center;
-		gap: rem(30);
+		gap: em(2, 1.25);
 		transition: opacity 0.3s ease;
 		cursor: pointer;
 
 		&::before {
 			color: #dbdbdb;
-			font-size: 1rem;
+			font-size: 1em;
 		}
 		&::after {
 			content: "\e907";
@@ -204,7 +212,9 @@ body {
 				transform: rotate(360deg);
 			}
 		}
-
+		@media (min-width: $md5) {
+			font-size: 1.25rem;
+		}
 		@media (any-hover: hover) {
 			&:hover {
 				opacity: 0.75;
@@ -215,6 +225,10 @@ body {
 	&__item-body {
 		padding-bottom: 0.9rem;
 		display: none;
+		font-size: 0.875rem;
+		@media (min-width: $md5) {
+			font-size: 1rem;
+		}
 	}
 }
 

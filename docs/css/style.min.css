@@ -1972,7 +1972,14 @@ body {
 .section-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+@media (min-width: 575.98px) {
+  .section-header {
+    align-items: flex-end;
+    flex-direction: row;
+  }
 }
 @media (min-width: 1399.98px) {
   .section-header {
@@ -1983,7 +1990,11 @@ body {
   color: #dbdbdb;
   font-size: 1rem;
   flex-shrink: 0;
-  max-width: 35%;
+}
+@media (min-width: 575.98px) {
+  .section-header__hint {
+    max-width: 35%;
+  }
 }
 .section-header__hint::before {
   content: "/";
@@ -2073,18 +2084,18 @@ body {
   text-transform: uppercase;
 }
 .accordion-list__item-caption {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
-  padding: 0.9rem 1.5rem 0.9rem 0;
+  padding: 0.72em 1.2em 0.72em 0;
   display: flex;
   align-items: center;
-  gap: 1.875rem;
+  gap: 1.6em;
   transition: opacity 0.3s ease;
   cursor: pointer;
 }
 .accordion-list__item-caption::before {
   color: #dbdbdb;
-  font-size: 1rem;
+  font-size: 1em;
 }
 .accordion-list__item-caption::after {
   content: "\e907";
@@ -2102,6 +2113,11 @@ body {
   content: "\e904";
   transform: rotate(360deg);
 }
+@media (min-width: 575.98px) {
+  .accordion-list__item-caption {
+    font-size: 1.25rem;
+  }
+}
 @media (any-hover: hover) {
   .accordion-list__item-caption:hover {
     opacity: 0.75;
@@ -2110,6 +2126,12 @@ body {
 .accordion-list__item-body {
   padding-bottom: 0.9rem;
   display: none;
+  font-size: 0.875rem;
+}
+@media (min-width: 575.98px) {
+  .accordion-list__item-body {
+    font-size: 1rem;
+  }
 }
 
 .contacts .section-header {
@@ -2817,6 +2839,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 @media (min-width: 1199.98px) {
@@ -3089,6 +3112,16 @@ body {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 575.98px) {
+  .clients__prev {
+    display: none;
+  }
+}
+@media (max-width: 575.98px) {
+  .clients__next {
+    display: none;
+  }
+}
 .clients__body {
   margin-top: 2.5rem;
   display: flex;
@@ -3216,13 +3249,14 @@ body {
   margin-top: 2rem;
   border-radius: 1rem;
   background: #6b806f;
-  padding: 2.5rem 2rem 2.5rem 2.5rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  padding: 2.5rem 1.75rem;
 }
 @media (min-width: 991.98px) {
   .faq__body {
+    padding: 2.5rem 2rem 2.5rem 2.5rem;
     gap: 2.94rem;
     align-items: flex-start;
     flex-direction: row;

@@ -289,9 +289,15 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 .clients {
 	// .clients__prev
 	&__prev {
+		@media (max-width: $md5) {
+			display: none;
+		}
 	}
 	// .clients__next
 	&__next {
+		@media (max-width: $md5) {
+			display: none;
+		}
 	}
 	// .clients__body
 	&__body {
@@ -433,11 +439,13 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 		margin-top: 2rem;
 		border-radius: 1rem;
 		background: #6b806f;
-		padding: 2.5rem 2rem 2.5rem 2.5rem;
 		display: flex;
 		flex-direction: column;
 		gap: 1.5rem;
+
+		padding: 2.5rem 1.75rem;
 		@media (min-width: $md3) {
+			padding: 2.5rem 2rem 2.5rem 2.5rem;
 			gap: 2.94rem;
 			align-items: flex-start;
 			flex-direction: row;
