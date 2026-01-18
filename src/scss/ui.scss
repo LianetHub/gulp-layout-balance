@@ -24,6 +24,10 @@
 	}
 }
 
+.color-accent {
+	color: #ceb388;
+}
+
 .text-uppercase {
 	text-transform: uppercase;
 }
@@ -63,6 +67,7 @@
 		display: none !important;
 	}
 	&.swiper-pagination-bullets {
+		margin-top: 1rem;
 		position: static;
 		bottom: auto;
 		left: auto;
