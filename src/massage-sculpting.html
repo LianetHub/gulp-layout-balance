@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Скульптурирующий массаж'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": 11
+            })
+            <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="massage.html" class="breadcrumbs__link">Массаж</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">Скульптурирующий массаж</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="page">
+                <section class="service">
+                    <div class="container">
+                        <div class="service__header">
+                            <h1 class="service__title title">СКУЛЬПТУРИРУЮЩИЙ МАССАЖ</h1>
+                            <p class="service__subtitle">Интенсивная техника коррекции фигуры, направленная на улучшение контуров тела, уменьшение объёмов, борьбу с целлюлитом и повышение тонуса кожи. Он сочетает глубокую проработку тканей с лимфодренажным и антицеллюлитным воздействием.</p>
+                        </div>
+                        <div class="service__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="service__caption">ПОКАЗАНИЯ К ПРОВЕДЕНИЮ</div>
+                                    <ul class="service__list">
+                                        <li>Целлюлит (I–IV стадии)</li>
+                                        <li>Дряблость кожи, потеря тонуса</li>
+                                        <li>Локальные жировые отложения</li>
+                                        <li>Отёчность, застой лимфы</li>
+                                        <li>Подготовка к мероприятиям (быстрая коррекция фигуры)</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="service__info">
+                                        <div class="service__price">
+                                            <div class="service__price-title">Стоимость услуги</div>
+                                            <div class="service__price-value">3 700 ₽</div>
+                                        </div>
+                                        <a href="#appointment" data-fancybox class="service__btn btn btn-primary btn-lg">Записаться</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @@include('./html/_consult.html')
+                @@include('./html/_contacts.html')
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

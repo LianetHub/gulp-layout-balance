@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Бандажное обёртывание V-Shock'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": 11
+            })
+            <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="massage.html" class="breadcrumbs__link">Массаж</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">Бандажное обёртывание V-Shock</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="page">
+                <section class="service">
+                    <div class="container">
+                        <div class="service__header">
+                            <h1 class="service__title title">БАНДАЖНОЕ ОБЁРТЫВАНИЕ V-SHOCK</h1>
+                            <p class="service__subtitle">Салонная процедура по уходу за телом с использованием гелей с&nbsp;экстрактами лекарственных растений. <br> После нанесения косметики делается бандажирование всего тела бинтами, вымоченными в солевом растворе.</p>
+                        </div>
+                        <div class="service__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="service__caption">ПОКАЗАНИЯ К ПРОВЕДЕНИЮ</div>
+                                    <ul class="service__list">
+                                        <li>Жировые отложения в проблемных зонах</li>
+                                        <li>Целлюлит</li>
+                                        <li>Отечность</li>
+                                        <li>Вялая и дряблая кожа</li>
+                                        <li>Усталость в ногах</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="service__info">
+                                        <div class="service__price">
+                                            <div class="service__price-title">Стоимость услуги</div>
+                                            <div class="service__price-value">4 000 ₽</div>
+                                        </div>
+                                        <a href="#appointment" data-fancybox class="service__btn btn btn-primary btn-lg">Записаться</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @@include('./html/_consult.html')
+                @@include('./html/_contacts.html')
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

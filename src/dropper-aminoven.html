@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Капельница Аминовен (белок)'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": 10
+            })
+            <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="droppers.html" class="breadcrumbs__link">Капельницы</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">Аминовен</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="page">
+                <section class="service">
+                    <div class="container">
+                        <div class="service__header">
+                            <h1 class="service__title title">Капельница Здоровая печень</h1>
+                        </div>
+                        <div class="service__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="service__subtitle">Капельница АМИНОВЕН направлена на увеличения белка в организме человека. Специальный комплекс аминокислот поможет организму справиться с состоянием дефицита белка в организме.</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="service__info">
+                                        <div class="service__price">
+                                            <div class="service__price-title">Стоимость услуги</div>
+                                            <div class="service__price-value">4 800 ₽</div>
+                                        </div>
+                                        <a href="#appointment" data-fancybox class="service__btn btn btn-primary btn-lg">Записаться</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @@include('./html/_consult.html')
+                @@include('./html/_contacts.html')
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

@@ -1,0 +1,166 @@
+.service {
+	padding: rem(60) 0;
+	.container {
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 45%;
+			transform: translateY(-50%);
+			right: 1rem;
+			width: 18.5625rem;
+			height: 18.8125rem;
+			z-index: -1;
+			pointer-events: none;
+			background: url("@img/decor/hero-decor.svg") center / contain no-repeat;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			top: 15%;
+			transform: translateY(-50%);
+			right: -12rem;
+			width: 32.8125rem;
+			height: 32.8125rem;
+			border-radius: 32.8125rem;
+			opacity: 0.1;
+			background: #86e298;
+			z-index: -1;
+			pointer-events: none;
+			filter: blur(rem(100));
+		}
+	}
+	// .service__header
+	&__header {
+	}
+	// .service__title
+	&__title {
+	}
+	// .service__subtitle
+	&__subtitle {
+		font-weight: 500;
+		max-width: 50.375rem;
+		&:not(:first-child) {
+			margin-top: 1rem;
+		}
+		@media (min-width: $md4) {
+			font-size: 1.25rem;
+		}
+	}
+	// .service__body
+	&__body {
+		&:not(:first-child) {
+			margin-top: 1.5rem;
+			@media (min-width: $md4) {
+				margin-top: 3.75rem;
+			}
+		}
+		.row {
+			align-items: flex-end;
+		}
+		.service__subtitle {
+			max-width: rem(580);
+			line-height: 140%;
+		}
+	}
+	// .service__caption
+	&__caption {
+		color: #ceb388;
+		font-size: 1.25rem;
+		font-weight: 600;
+		line-height: 140%;
+		text-transform: uppercase;
+		&--small {
+			font-size: 1.125rem;
+		}
+	}
+	// .service__list
+	&__list {
+		margin-top: 1.25rem;
+		max-width: rem(560);
+		&.service__list--large {
+			max-width: 100%;
+			& li {
+				@media (min-width: $md4) {
+					font-size: rem(20);
+				}
+			}
+		}
+		& li {
+			font-weight: 500;
+			line-height: 140%;
+			position: relative;
+			padding-left: em(2.6, 1.125);
+			@media (min-width: $md4) {
+				font-size: 1.125rem;
+			}
+			&:not(:last-child) {
+				margin-bottom: 0.65rem;
+			}
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				color: #6b806f;
+				width: 1.375rem;
+				height: 1.375rem;
+				font-size: 1.375rem;
+				@media (min-width: $md4) {
+					width: 1.5rem;
+					font-size: 1.5rem;
+					height: 1.5rem;
+				}
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				@extend %ic, .icon-flower;
+			}
+		}
+	}
+	// .service__info
+	&__info {
+		height: 100%;
+		display: grid;
+		gap: 1rem;
+		@media (min-width: $md2) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	// .service__price
+	&__price {
+		text-align: center;
+		border: rem(1) solid #ceb388;
+		border-radius: 1rem;
+		padding: 1.06rem 1rem 1.5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		gap: 0.5rem;
+	}
+	// .service__price-title
+	&__price-title {
+		font-size: 1.25rem;
+		font-weight: 500;
+	}
+	// .service__price-value
+	&__price-value {
+		font-size: 2rem;
+		font-weight: 600;
+		& small {
+			font-size: em(1.25, 2);
+			font-weight: 500;
+			color: #dbdbdb;
+		}
+	}
+	// .service__price-hint
+	&__price-hint {
+		color: #ceb388;
+		font-size: 1.125rem;
+		font-weight: 500;
+	}
+
+	// .service__btn
+	&__btn {
+		min-height: 7rem;
+	}
+}

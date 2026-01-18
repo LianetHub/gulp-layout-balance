@@ -21,7 +21,7 @@
   font-style: normal;
   font-display: swap;
 }
-.accordion-list__item-caption::after, .breadcrumbs__item:not(:last-child)::before, [class^=icon-]:before,
+.service__list li::before, .accordion-list__item-caption::after, .breadcrumbs__item:not(:last-child)::before, [class^=icon-]:before,
 [class*=" icon-"]:before {
   font-family: "icons";
   font-style: normal;
@@ -51,7 +51,7 @@
   content: "\e901";
 }
 
-.icon-flower:before {
+.icon-flower:before, .service__list li:before {
   content: "\e902";
 }
 
@@ -3370,6 +3370,163 @@ body {
   .faq__main {
     padding-left: 1.5em;
   }
+}
+
+.service {
+  padding: 3.75rem 0;
+}
+.service .container {
+  position: relative;
+}
+.service .container::before {
+  content: "";
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  right: 1rem;
+  width: 18.5625rem;
+  height: 18.8125rem;
+  z-index: -1;
+  pointer-events: none;
+  background: url("../img/decor/hero-decor.svg") center/contain no-repeat;
+}
+.service .container::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  transform: translateY(-50%);
+  right: -12rem;
+  width: 32.8125rem;
+  height: 32.8125rem;
+  border-radius: 32.8125rem;
+  opacity: 0.1;
+  background: #86e298;
+  z-index: -1;
+  pointer-events: none;
+  filter: blur(6.25rem);
+}
+.service__subtitle {
+  font-weight: 500;
+  max-width: 50.375rem;
+}
+.service__subtitle:not(:first-child) {
+  margin-top: 1rem;
+}
+@media (min-width: 743.98px) {
+  .service__subtitle {
+    font-size: 1.25rem;
+  }
+}
+.service__body:not(:first-child) {
+  margin-top: 1.5rem;
+}
+@media (min-width: 743.98px) {
+  .service__body:not(:first-child) {
+    margin-top: 3.75rem;
+  }
+}
+.service__body .row {
+  align-items: flex-end;
+}
+.service__body .service__subtitle {
+  max-width: 36.25rem;
+  line-height: 140%;
+}
+.service__caption {
+  color: #ceb388;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+.service__caption--small {
+  font-size: 1.125rem;
+}
+.service__list {
+  margin-top: 1.25rem;
+  max-width: 35rem;
+}
+.service__list.service__list--large {
+  max-width: 100%;
+}
+@media (min-width: 743.98px) {
+  .service__list.service__list--large li {
+    font-size: 1.25rem;
+  }
+}
+.service__list li {
+  font-weight: 500;
+  line-height: 140%;
+  position: relative;
+  padding-left: 2.3111111111em;
+}
+@media (min-width: 743.98px) {
+  .service__list li {
+    font-size: 1.125rem;
+  }
+}
+.service__list li:not(:last-child) {
+  margin-bottom: 0.65rem;
+}
+.service__list li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #6b806f;
+  width: 1.375rem;
+  height: 1.375rem;
+  font-size: 1.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 743.98px) {
+  .service__list li::before {
+    width: 1.5rem;
+    font-size: 1.5rem;
+    height: 1.5rem;
+  }
+}
+.service__info {
+  height: 100%;
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 1199.98px) {
+  .service__info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.service__price {
+  text-align: center;
+  border: 0.0625rem solid #ceb388;
+  border-radius: 1rem;
+  padding: 1.06rem 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+.service__price-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.service__price-value {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.service__price-value small {
+  font-size: 0.625em;
+  font-weight: 500;
+  color: #dbdbdb;
+}
+.service__price-hint {
+  color: #ceb388;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.service__btn {
+  min-height: 7rem;
 }
 
 .specialists:first-child {

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'УЗИ почек'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": 14
+            })
+            <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="uzi.html" class="breadcrumbs__link">УЗИ</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">УЗИ почек</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="page">
+                <section class="service">
+                    <div class="container">
+                        <div class="service__header">
+                            <h1 class="service__title title">УЗИ ПОЧЕК</h1>
+                            <p class="service__subtitle">Безопасный, неинвазивный и высокоинформативный метод диагностики, позволяющий оценить анатомию, размеры, структуру и возможные патологические изменения почек и мочевыделительной системы</p>
+                        </div>
+                        <div class="service__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="service__caption">ПОКАЗАНИЯ К ПРОВЕДЕНИЮ</div>
+                                    <ul class="service__list">
+                                        <li>Боли в поясничной области</li>
+                                        <li>Нарушения мочеиспускания (частое, болезненное, задержка мочи)</li>
+                                        <li>Изменения в анализах мочи (белок, кровь, лейкоциты)</li>
+                                        <li>Подозрение на мочекаменную болезнь</li>
+                                        <li>Артериальная гипертензия (для исключения ренальных причин)</li>
+                                        <li>Контроль при хронических заболеваниях (пиелонефрит, гломерулонефрит)</li>
+                                        <li>Травмы области почек</li>
+                                        <li>Подозрение на кисты, опухоли или аномалии развития</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="service__info">
+                                        <div class="service__price">
+                                            <div class="service__price-title">Стоимость услуги</div>
+                                            <div class="service__price-value">1 050 ₽</div>
+                                        </div>
+                                        <a href="#appointment" data-fancybox class="service__btn btn btn-primary btn-lg">Записаться</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @@include('./html/_consult.html')
+                @@include('./html/_contacts.html')
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>
