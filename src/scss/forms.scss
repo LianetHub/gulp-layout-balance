@@ -14,7 +14,12 @@
 		font-weight: 500;
 		padding: 1.15rem 2.5rem;
 		min-height: rem(60);
-
+		&--lg {
+			@media (min-width: $md4) {
+				padding: rem(28) rem(20);
+				min-height: rem(80);
+			}
+		}
 		&::placeholder {
 			opacity: 1;
 			color: #919191;

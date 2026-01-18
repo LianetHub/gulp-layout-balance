@@ -1,0 +1,155 @@
+<nav aria-label="Хлебные крошки" class="breadcrumbs">
+    <div class="container">
+        <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+                <a href="index.html" class="breadcrumbs__link">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href="specialists.html" class="breadcrumbs__link">Специалисты</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <span class="breadcrumbs__link">@@breadcrumbText</span>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main class="page">
+    <section class="specialist">
+        <div class="container">
+            @@if(typeof pageView == 'undefined') {
+            <div class="specialist__header">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="specialist__info">
+                            <h1 class="specialist__title title">@@name</h1>
+                            <div class="specialist__meta">
+                                <div class="specialist__position">@@position</div>
+                                <div class="specialist__expirience">
+                                    Стаж с @@expirience года
+                                </div>
+                            </div>
+                            <div class="specialist__education">
+                                <div class="specialist__education-caption">Образование</div>
+                                <ul class="specialist__education-list">
+                                    @@for (var i = 0; i < education.length; i++) { <li class="specialist__education-item">
+                                        <span class="specialist__education-year">
+                                            `+education[i].year+` г.
+                                        </span>
+                                        <span class="specialist__education-info">
+                                            — `+education[i].desc+`
+                                        </span>
+                                        </li>
+                                        }
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <a href="@@image" data-fancybox class="specialist__image">
+                            <img src="@@image" class="cover-image" alt="Фото специалиста">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            }
+            @@if(typeof pageView !== 'undefined') {
+            <div class="specialist__header">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="specialist__title title">@@name</h1>
+                        <div class="specialist__meta">
+                            <div class="specialist__position">@@position</div>
+                            <div class="specialist__expirience">
+                                Стаж с @@expirience года
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="specialist__info">
+                            <div class="specialist__education">
+                                <div class="specialist__education-caption">Образование</div>
+                                <ul class="specialist__education-list">
+                                    @@for (var i = 0; i < education.length; i++) { <li class="specialist__education-item">
+                                        <span class="specialist__education-year">
+                                            `+education[i].year+` г.
+                                        </span>
+                                        <span class="specialist__education-info">
+                                            — `+education[i].desc+`
+                                        </span>
+                                        </li>
+                                        }
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <a href="@@image" data-fancybox class="specialist__image">
+                            <img src="@@image" class="cover-image" alt="Фото специалиста">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            }
+            <div class="specialist__bottom">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h2 class="specialist__caption title">О специалисте</h2>
+                        <div class="specialist__desc">
+                            @@for (var i = 0; i < desc.length; i++) { `+(function(item){ if (typeof item==='string' ) { return '<p>' + item + '</p>' ; } else if (item.list) { var listHtml='<ul>' ; for (var j=0; j < item.list.length; j++) { listHtml +='<li>' + item.list[j] + '</li>' ; } listHtml +='</ul>' ; return listHtml; } })(desc[i])+` } </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="certs">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-header__title title">Сертификаты</h2>
+                <div class="section-header__controls">
+                    <button type="button" class="certs__prev swiper-button-prev"></button>
+                    <button type="button" class="certs__next swiper-button-next"></button>
+                </div>
+            </div>
+            <div class="certs__slider swiper">
+                <div class="swiper-wrapper">
+                    <a href="@img/cert.jpg" data-fancybox='certs' class="certs__slide swiper-slide">
+                        <img src="@img/cert.jpg" class="cover-image" alt="Сертификат">
+                    </a>
+                    <a href="@img/cert.jpg" data-fancybox='certs' class="certs__slide swiper-slide">
+                        <img src="@img/cert.jpg" class="cover-image" alt="Сертификат">
+                    </a>
+                    <a href="@img/cert.jpg" data-fancybox='certs' class="certs__slide swiper-slide">
+                        <img src="@img/cert.jpg" class="cover-image" alt="Сертификат">
+                    </a>
+                    <a href="@img/cert.jpg" data-fancybox='certs' class="certs__slide swiper-slide">
+                        <img src="@img/cert.jpg" class="cover-image" alt="Сертификат">
+                    </a>
+                    <a href="@img/cert.jpg" data-fancybox='certs' class="certs__slide swiper-slide">
+                        <img src="@img/cert.jpg" class="cover-image" alt="Сертификат">
+                    </a>
+                    <a href="@img/cert.jpg" data-fancybox='certs' class="certs__slide swiper-slide">
+                        <img src="@img/cert.jpg" class="cover-image" alt="Сертификат">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="appointment">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-7 col-xl-8 col-lg-9">
+                    <h2 class="appointment__title title">Записаться на приём</h2>
+                    <p class="appointment__subtitle">Оставьте свой номер телефона, мы перезвоним, ответим на все вопросы и подберём подходящее время приёма.</p>
+                    <form action="#" class="appointment__form form">
+                        <input type="text" name="username" class="form__control form__control--lg" placeholder="Ваше имя">
+                        <input type="tel" name="phone" class="form__control form__control--lg" placeholder="+7 (999) 999-99-99">
+                        <button type="submit" class="form__submit btn btn-primary btn-lg">Записаться на приём</button>
+                        <div class="form__policy">
+                            Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь с&nbsp;<a href="">Политикой конфиденциальности</a> </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    @@include('_contacts.html')
+</main>

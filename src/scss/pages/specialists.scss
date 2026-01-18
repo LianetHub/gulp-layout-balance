@@ -22,6 +22,7 @@
 			opacity: 0.1;
 			background: #86e298;
 			filter: blur(100px);
+			pointer-events: none;
 		}
 		&::after {
 			content: "";
@@ -33,6 +34,7 @@
 			height: 24.1875rem;
 			background: url("@img/decor/hero-decor.svg") right center / contain no-repeat;
 			z-index: -1;
+			pointer-events: none;
 		}
 		margin-top: 2.5rem;
 		@media (min-width: $md2) {
@@ -73,6 +75,7 @@
 				max-width: 33.33%;
 			}
 			border-radius: 1rem 1rem 0 0;
+			object-position: center top;
 		}
 		&:is(a) {
 			& img {
@@ -129,5 +132,223 @@
 	// .specialist-card__more
 	&__more {
 		margin-top: 2rem;
+	}
+}
+
+.specialist {
+	padding: rem(30) 0 0;
+	@media (min-width: $md4) {
+		padding: rem(60) 0 0;
+	}
+	// .specialist__header
+	&__header {
+		@media (max-width: $md3) {
+			display: flex;
+			flex-direction: column;
+
+			.row {
+				display: contents;
+				& > * {
+					display: contents;
+				}
+			}
+		}
+	}
+	// .specialist__info
+	&__info {
+		display: contents;
+		@media (min-width: $md3) {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
+	}
+	// .specialist__title
+	&__title {
+		order: -1;
+	}
+	// .specialist__meta
+	&__meta {
+		order: -1;
+		margin-top: 1.5rem;
+		font-size: 1.25rem;
+		font-weight: 500;
+		line-height: 140%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.375rem;
+	}
+	// .specialist__position
+	&__position {
+	}
+	// .specialist__expirience
+	&__expirience {
+	}
+	// .specialist__education
+	&__education {
+		border-radius: 1rem;
+		background: #6b806f;
+		padding: 2.75rem 1.75rem 2.25rem 2rem;
+		flex: 1 1 auto;
+		@media (max-width: $md3) {
+			margin-top: 2rem;
+		}
+		@media (min-width: $md3) {
+			&:not(:first-child) {
+				margin-top: 2rem;
+			}
+		}
+	}
+	// .specialist__education-caption
+	&__education-caption {
+		font-size: 1.5rem;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	// .specialist__education-list
+	&__education-list {
+		margin-top: 2rem;
+	}
+	// .specialist__education-item
+	&__education-item {
+		&:not(:last-child) {
+			margin-bottom: 1rem;
+		}
+	}
+	// .specialist__education-year
+	&__education-year {
+		font-size: 1.125rem;
+		font-weight: 500;
+		line-height: 140%;
+	}
+	// .specialist__education-info
+	&__education-info {
+		line-height: 140%;
+	}
+	// .specialist__image
+	&__image {
+		order: -1;
+		height: 100%;
+		margin-top: 2rem;
+		@media (min-width: $md3) {
+			margin-top: 0;
+		}
+		& img {
+			border-radius: 1rem;
+		}
+	}
+
+	// .specialist__bottom
+	&__bottom {
+		position: relative;
+		margin-top: rem(120);
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+
+			right: -26.625rem;
+			width: 53.25rem;
+			height: 53.25rem;
+			border-radius: 50%;
+			z-index: -1;
+			opacity: 0.1;
+			background: #86e298;
+			filter: blur(100px);
+			pointer-events: none;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			right: rem(-112);
+			width: 23.875rem;
+			height: 24.1875rem;
+			background: url("@img/decor/hero-decor.svg") right center / contain no-repeat;
+			z-index: -1;
+			pointer-events: none;
+		}
+	}
+	// .specialist__caption
+	&__caption {
+	}
+	// .specialist__desc
+	&__desc {
+		margin-top: rem(32);
+		font-size: 1rem;
+		line-height: 140%;
+		& p {
+			&:not(:last-child) {
+				margin-bottom: 0.875rem;
+			}
+		}
+		& ul {
+			list-style: disc;
+			padding-left: 1.25em;
+			& li {
+				&::marker {
+					font-size: 0.5em;
+				}
+			}
+			&:not(:last-child) {
+				margin-bottom: 0.875rem;
+			}
+		}
+	}
+}
+
+.certs {
+	.section-header {
+		padding-left: 0;
+	}
+	// .certs__prev
+	&__prev {
+	}
+	// .certs__next
+	&__next {
+	}
+	// .certs__slider
+	&__slider {
+		margin-top: 2rem;
+	}
+	// .certs__slide
+	&__slide {
+		height: auto;
+		& img {
+			border-radius: 1rem;
+		}
+	}
+}
+
+.appointment {
+	// .appointment__title
+	&__title {
+	}
+	// .appointment__subtitle
+	&__subtitle {
+		margin-top: 1rem;
+		font-size: 1rem;
+		line-height: 140%;
+		max-width: 43rem;
+	}
+	// .appointment__form
+	&__form {
+		margin-top: 2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		@media (min-width: $md4) {
+			gap: 2rem;
+		}
+		.form__policy {
+			text-align: left;
+			color: #919191;
+		}
+		.form__submit {
+			@media (min-width: $md4) {
+				min-height: rem(80);
+			}
+		}
 	}
 }

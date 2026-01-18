@@ -42,6 +42,26 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     }
 
+    if (document.querySelector('.certs__slider')) {
+        new Swiper('.certs__slider', {
+
+            watchOverflow: true,
+            spaceBetween: 16,
+            navigation: {
+                nextEl: '.certs__next',
+                prevEl: '.certs__prev',
+            },
+            breakpoints: {
+                575.98: {
+                    slidesPerView: 2,
+                },
+                991.98: {
+                    slidesPerView: 3,
+                }
+            }
+        })
+    }
+
     initPhoneMask();
 
 

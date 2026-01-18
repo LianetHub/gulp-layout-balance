@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Карягина Дарья Михайловна'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": 4
+            })
+            @@loop('./html/_tempate-specialist.html', './html/json/specialists/karyagina-darya-mikhaylovna.json')
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>
