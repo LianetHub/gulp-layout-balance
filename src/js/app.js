@@ -62,31 +62,38 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     }
 
-    if (document.querySelector('.carousel__slider')) {
-        const isLargeSlider = document.querySelector('.carousel__slider').classList.contains('carousel__slider--large');
+    if (document.querySelectorAll('.carousel').length > 0) {
+        document.querySelectorAll('.carousel')?.forEach(carouselBlock => {
 
-        new Swiper('.carousel__slider', {
-            watchOverflow: true,
-            spaceBetween: 16,
-            navigation: {
-                nextEl: '.carousel__next',
-                prevEl: '.carousel__prev',
-            },
-            pagination: {
-                el: '.carousel__pagination',
-                clickable: true
-            },
-            breakpoints: {
-                575.98: {
-                    slidesPerView: isLargeSlider ? 1.5 : 2,
+            const sliderBlock = carouselBlock.querySelector('.carousel__slider');
+            const nextBtn = carouselBlock.querySelector('.carousel__next');
+            const prevBtn = carouselBlock.querySelector('.carousel__prev');
+            const paginationBlock = carouselBlock.querySelector('.carousel__pagination');
+            const isLargeSlider = carouselBlock.querySelector('.carousel__slider').classList.contains('carousel__slider--large');
+
+            new Swiper(sliderBlock, {
+                watchOverflow: true,
+                spaceBetween: 16,
+                navigation: {
+                    nextEl: nextBtn,
+                    prevEl: prevBtn,
                 },
-                991.98: {
-                    slidesPerView: isLargeSlider ? 2 : 3,
+                pagination: {
+                    el: paginationBlock,
+                    clickable: true
                 },
-                1199.98: {
-                    slidesPerView: isLargeSlider ? 3 : 4,
+                breakpoints: {
+                    575.98: {
+                        slidesPerView: isLargeSlider ? 1.5 : 2,
+                    },
+                    991.98: {
+                        slidesPerView: isLargeSlider ? 2 : 3,
+                    },
+                    1199.98: {
+                        slidesPerView: isLargeSlider ? 3 : 4,
+                    }
                 }
-            }
+            })
         })
     }
 

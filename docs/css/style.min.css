@@ -1,17 +1,17 @@
 @font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Inter-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Inter-VariableFont_wght.woff") format("woff");
   font-weight: 100 900;
   font-stretch: 75% 125%;
   font-style: normal;
   font-display: swap;
-}
-@font-face {
-  font-family: "icons";
-  font-display: swap;
-  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
@@ -3822,6 +3822,23 @@ body {
 .carousel .section-header {
   padding-left: 0;
 }
+.carousel.carousel--decor {
+  position: relative;
+}
+.carousel.carousel--decor::before {
+  content: "";
+  position: absolute;
+  top: -10rem;
+  right: -10rem;
+  width: 30.625rem;
+  height: 30.625rem;
+  border-radius: 30.625rem;
+  opacity: 0.15;
+  background: #86e298;
+  filter: blur(6.25rem);
+  z-index: -1;
+  pointer-events: none;
+}
 @media (max-width: 575.98px) {
   .carousel__prev {
     display: none;
@@ -3854,9 +3871,25 @@ body {
   position: relative;
   min-height: 15.3125rem;
 }
+.carousel__slide.carousel__slide--small {
+  min-height: 10.4375rem;
+}
 .carousel__slide.carousel__slide--border {
   background: transparent;
   border: 0.0625rem solid #fff;
+}
+.carousel__slide.carousel__slide--decor {
+  position: relative;
+  overflow: hidden;
+}
+.carousel__slide.carousel__slide--decor::after {
+  content: "";
+  position: absolute;
+  bottom: -4.62rem;
+  right: -1.94rem;
+  width: 12.5625rem;
+  height: 12.6875rem;
+  background: url("../img/decor/dropper-decor.svg") center/contain no-repeat;
 }
 .carousel__slide.carousel__slide--large-number {
   padding-top: 2rem;

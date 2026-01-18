@@ -488,7 +488,23 @@
 	.section-header {
 		padding-left: 0;
 	}
-
+	&.carousel--decor {
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: -10rem;
+			right: -10rem;
+			width: 30.625rem;
+			height: 30.625rem;
+			border-radius: 30.625rem;
+			opacity: 0.15;
+			background: #86e298;
+			filter: blur(rem(100));
+			z-index: -1;
+			pointer-events: none;
+		}
+	}
 	// .carousel__prev
 	&__prev {
 		@media (max-width: $md5) {
@@ -530,9 +546,25 @@
 		position: relative;
 		min-height: rem(245);
 
+		&.carousel__slide--small {
+			min-height: 10.4375rem;
+		}
 		&.carousel__slide--border {
 			background: transparent;
 			border: rem(1) solid #fff;
+		}
+		&.carousel__slide--decor {
+			position: relative;
+			overflow: hidden;
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: -4.62rem;
+				right: -1.94rem;
+				width: 12.5625rem;
+				height: 12.6875rem;
+				background: url("@img/decor/dropper-decor.svg") center / contain no-repeat;
+			}
 		}
 		&.carousel__slide--large-number {
 			padding-top: 2rem;
