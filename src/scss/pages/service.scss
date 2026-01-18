@@ -359,6 +359,19 @@
 			text-transform: uppercase;
 		}
 	}
+	&__text {
+		& span {
+			font-size: 1.125rem;
+			font-weight: 500;
+			line-height: 140%;
+			text-transform: uppercase;
+		}
+		& p {
+			&:not(:last-child) {
+				margin-bottom: 1em;
+			}
+		}
+	}
 	// .description__dropper
 	&__dropper {
 		position: relative;
@@ -475,9 +488,7 @@
 	.section-header {
 		padding-left: 0;
 	}
-	.section-header__title {
-		max-width: rem(760);
-	}
+
 	// .carousel__prev
 	&__prev {
 		@media (max-width: $md5) {
@@ -561,6 +572,11 @@
 				}
 			}
 		}
+		& p {
+			&:not(:last-child) {
+				margin-bottom: 1em;
+			}
+		}
 	}
 	// .carousel__footer
 	&__footer {
@@ -583,6 +599,40 @@
 				&::marker {
 					font-size: 0.75em;
 				}
+			}
+		}
+	}
+}
+
+.contraindications {
+	// .contraindications__title
+	&__title {
+		hyphens: auto;
+	}
+	// .contraindications__list
+	&__list {
+		margin-top: 2rem;
+		display: grid;
+		gap: 0.38rem;
+		font-weight: 500;
+		line-height: 140%;
+		@media (min-width: $md4) {
+			font-size: 1.125rem;
+		}
+		@media (min-width: $md3) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		& li {
+			display: flex;
+			align-items: center;
+			gap: 0.625rem;
+			padding: rem(6) 0;
+			&::before {
+				font-size: 1.5rem;
+				width: 1.5rem;
+				height: 1.5rem;
+				color: #6b806f;
+				@extend %ic, .icon-cross;
 			}
 		}
 	}

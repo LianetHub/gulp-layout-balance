@@ -1,17 +1,17 @@
 @font-face {
-  font-family: "icons";
-  font-display: swap;
-  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Inter-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Inter-VariableFont_wght.woff") format("woff");
   font-weight: 100 900;
   font-stretch: 75% 125%;
   font-style: normal;
   font-display: swap;
+}
+@font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
@@ -21,7 +21,7 @@
   font-style: normal;
   font-display: swap;
 }
-.service__list li::before, .accordion-list__item-caption::after, .breadcrumbs__item:not(:last-child)::before, [class^=icon-]:before,
+.contraindications__list li::before, .service__list li::before, .accordion-list__item-caption::after, .breadcrumbs__item:not(:last-child)::before, [class^=icon-]:before,
 [class*=" icon-"]:before {
   font-family: "icons";
   font-style: normal;
@@ -37,6 +37,10 @@
 [class^=icon-]:before,
 [class*=" icon-"]:before {
   display: block;
+}
+
+.icon-cross:before, .contraindications__list li:before {
+  content: "\e90c";
 }
 
 .icon-location:before {
@@ -3714,6 +3718,15 @@ body {
   line-height: 140%;
   text-transform: uppercase;
 }
+.description__text span {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+.description__text p:not(:last-child) {
+  margin-bottom: 1em;
+}
 .description__dropper {
   position: relative;
   padding-top: 1.25rem;
@@ -3809,9 +3822,6 @@ body {
 .carousel .section-header {
   padding-left: 0;
 }
-.carousel .section-header__title {
-  max-width: 47.5rem;
-}
 @media (max-width: 575.98px) {
   .carousel__prev {
     display: none;
@@ -3882,6 +3892,9 @@ body {
 .carousel__slide-desc ul li::marker {
   font-size: 0.75em;
 }
+.carousel__slide-desc p:not(:last-child) {
+  margin-bottom: 1em;
+}
 .carousel__footer {
   margin-top: 2rem;
 }
@@ -3902,6 +3915,39 @@ body {
 }
 .carousel__footer ul li::marker {
   font-size: 0.75em;
+}
+
+.contraindications__title {
+  hyphens: auto;
+}
+.contraindications__list {
+  margin-top: 2rem;
+  display: grid;
+  gap: 0.38rem;
+  font-weight: 500;
+  line-height: 140%;
+}
+@media (min-width: 743.98px) {
+  .contraindications__list {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 991.98px) {
+  .contraindications__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.contraindications__list li {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.375rem 0;
+}
+.contraindications__list li::before {
+  font-size: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #6b806f;
 }
 
 .specialists:first-child {
