@@ -21,6 +21,83 @@
                 </div>
             </nav>
             <main class="page">
+                <section class="specialists">
+                    <div class="container">
+                        <h2 class="specialists__title title">приём ведут врачи-терапевты</h2>
+                        <div class="specialists__content">
+                            <div class="specialists__block">
+                                <div class="row">
+                                    <div class="col-xl-4 col-md-6">
+                                        @@loop('./html/templates/_specialist.html', './html/json/specialists/gafiatullina-albina-takhirovna.json')
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        @@loop('./html/templates/_specialist.html', './html/json/specialists/gar-viktoriya-vladimirovna.json')
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        @@loop('./html/templates/_specialist.html', './html/json/specialists/salekhova-leysan-talgatovna.json')
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="faq">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="faq__image">
+                                    <img src="@img/faq-2.jpg" class="cover-image" alt="Фото доктора">
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="faq__main">
+                                    <h2 class="faq__title title">ответы на частые вопросы</h2>
+                                    <ol class="faq__list accordion-list">
+                                        <li class="accordion-list__item">
+                                            <div class="accordion-list__item-caption">
+                                                Сколько длится приём у терапевта?
+                                            </div>
+                                            <div class="accordion-list__item-body">
+                                                <p>Первичный приём (если пациент новый) обычно занимает от 40 до 60 минут.</p>
+                                            </div>
+                                        </li>
+                                        <li class="accordion-list__item">
+                                            <div class="accordion-list__item-caption">
+                                                Что взять с собой на приём?
+                                            </div>
+                                            <div class="accordion-list__item-body">
+                                                <p>Пациенту мы обычно рекомендуем иметь при себе:</p>
+                                                <ul>
+                                                    <li>Паспорт, полис ОМС (в госклинике)</li>
+                                                    <li>Медицинскую карту (если есть).</li>
+                                                    <li>Результаты прошлых анализов, выписки.</li>
+                                                    <li>Список принимаемых лекарств.</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="accordion-list__item">
+                                            <div class="accordion-list__item-caption">
+                                                Что делать при простуде?
+                                            </div>
+                                            <div class="accordion-list__item-body">
+                                                <p>При простуде важно много пить, отдыхать и использовать жаропонижающие средства при необходимости. Если симптомы не проходят в течение нескольких дней или ухудшаются, следует обратиться к врачу</p>
+                                            </div>
+                                        </li>
+                                        <li class="accordion-list__item">
+                                            <div class="accordion-list__item-caption">
+                                                Как часто нужно проходить медицинский осмотр?
+                                            </div>
+                                            <div class="accordion-list__item-body">
+                                                <p>Рекомендуется проходить медицинский осмотр не реже одного раза в год, особенно после 40 лет. Это поможет выявить возможные заболевания на ранней стадии.</p>
+                                            </div>
+                                        </li>
+
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 @@include('./html/_consult.html')
                 @@include('./html/_contacts.html')
             </main>

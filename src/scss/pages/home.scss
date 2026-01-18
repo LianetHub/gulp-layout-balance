@@ -393,18 +393,35 @@
 			align-items: flex-start;
 			flex-direction: row;
 		}
+		.faq__image {
+			@media (min-width: $md3) {
+				width: 22.625rem;
+				flex-shrink: 0;
+			}
+		}
 	}
 	// .faq__image
 	&__image {
-		@media (min-width: $md3) {
-			width: 22.625rem;
-			flex-shrink: 0;
-		}
 		& img {
 			border-radius: rem(12);
 		}
 	}
 	// .faq__list
 	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex: 1 1 auto;
+		&:not(:first-child) {
+			margin-top: 2rem;
+		}
+	}
+	&__main {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		@media (min-width: $md2) {
+			padding-left: 1.5em;
+		}
 	}
 }

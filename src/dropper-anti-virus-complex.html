@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Капельница комплекс anti-virus'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": 10
+            })
+            <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="droppers.html" class="breadcrumbs__link">Капельницы</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">комплекс anti-virus</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="page">
+                @@include('./html/_consult.html')
+                @@include('./html/_contacts.html')
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>
