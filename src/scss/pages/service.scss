@@ -1,5 +1,8 @@
 .service {
-	padding: rem(60) 0;
+	padding: rem(30) 0 0;
+	@media (min-width: $md4) {
+		padding: rem(60) 0 0;
+	}
 	.container {
 		position: relative;
 		&::before {
@@ -284,5 +287,110 @@
 		margin-top: auto;
 		font-size: 1.25rem;
 		font-weight: 600;
+	}
+}
+
+.description {
+	// .description__image
+	&__image {
+		& img {
+			border-radius: 1rem;
+		}
+		@media (min-width: $md3) {
+			height: 100%;
+			position: relative;
+			& img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+			}
+		}
+	}
+	// .description__main
+	&__main {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	// .description__title
+	&__title {
+		&.title {
+			@media (min-width: $md4) {
+				font-size: 2rem;
+				line-height: 140%;
+			}
+		}
+	}
+	// .description__list
+	&__list {
+		flex: 1 1 auto;
+	}
+	// .description__item
+	&__item {
+		border-radius: 1rem;
+		background: #6b806f;
+		padding: 1.5rem rem(30);
+		&:not(:last-child) {
+			margin-bottom: 1rem;
+		}
+	}
+	// .description__item-caption
+	&__item-caption {
+		font-size: 1.125rem;
+		font-weight: 500;
+		line-height: 140%;
+		text-transform: uppercase;
+	}
+	// .description__item-body
+	&__item-body {
+		color: #dbdbdb;
+		font-size: 1rem;
+		line-height: 140%;
+	}
+	// .description__footer
+	&__footer {
+		color: #dbdbdb;
+		& span {
+			font-size: 1.125rem;
+			font-weight: 500;
+			line-height: 140%;
+			text-transform: uppercase;
+		}
+	}
+	// .description__dropper
+	&__dropper {
+		position: relative;
+		padding-top: 1.25rem;
+		padding-left: 1rem;
+		& img {
+			max-width: 93%;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 44.625rem;
+			height: 44.625rem;
+			border-radius: 50%;
+			opacity: 0.15;
+			filter: blur(rem(100));
+			background: #86e298;
+			z-index: -1;
+			pointer-events: none;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -2rem;
+			left: -6rem;
+			width: 21.875rem;
+			height: 22.125rem;
+			background: url("@img/decor/dropper-decor.svg") center / contain no-repeat;
+			z-index: -1;
+			pointer-events: none;
+		}
 	}
 }
