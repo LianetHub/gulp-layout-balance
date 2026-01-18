@@ -3882,6 +3882,27 @@ body {
 .carousel__slide-desc ul li::marker {
   font-size: 0.75em;
 }
+.carousel__footer {
+  margin-top: 2rem;
+}
+.carousel__footer p {
+  line-height: 140%;
+}
+.carousel__footer p:not(:first-child) {
+  margin-top: 1.25rem;
+}
+.carousel__footer ul {
+  margin-top: 1em;
+  line-height: 140%;
+  list-style: disc;
+  padding-left: 1.25em;
+}
+.carousel__footer ul li:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+.carousel__footer ul li::marker {
+  font-size: 0.75em;
+}
 
 .specialists:first-child {
   padding: 1.5rem 0 0;

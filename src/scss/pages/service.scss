@@ -562,4 +562,28 @@
 			}
 		}
 	}
+	// .carousel__footer
+	&__footer {
+		margin-top: 2rem;
+		& p {
+			line-height: 140%;
+			&:not(:first-child) {
+				margin-top: 1.25rem;
+			}
+		}
+		& ul {
+			margin-top: 1em;
+			line-height: 140%;
+			list-style: disc;
+			padding-left: 1.25em;
+			li {
+				&:not(:last-child) {
+					margin-bottom: 0.25rem;
+				}
+				&::marker {
+					font-size: 0.75em;
+				}
+			}
+		}
+	}
 }
