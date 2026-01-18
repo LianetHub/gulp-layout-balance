@@ -136,6 +136,10 @@
   text-transform: uppercase;
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   position: static;
@@ -3409,6 +3413,9 @@ body {
   font-weight: 500;
   max-width: 50.375rem;
 }
+.service__subtitle--large {
+  max-width: 61.9375rem;
+}
 .service__subtitle:not(:first-child) {
   margin-top: 1rem;
 }
@@ -3428,9 +3435,53 @@ body {
 .service__body .row {
   align-items: flex-end;
 }
+.service__body .row:has(.service__main) {
+  align-items: stretch;
+}
 .service__body .service__subtitle {
   max-width: 36.25rem;
   line-height: 140%;
+}
+.service__body--blured {
+  position: relative;
+}
+.service__body--blured::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.15;
+  background: #86e298;
+  filter: blur(100px);
+  width: 35.1875rem;
+  height: 35.1875rem;
+}
+.service__main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+@media (min-width: 743.98px) {
+  .service__main {
+    gap: 2.5rem;
+  }
+}
+.service__main .service__desc {
+  margin-bottom: auto;
+}
+.service__main .service__info {
+  width: 100%;
+}
+.service__main .service__list {
+  max-width: 100%;
+  margin-top: 0;
+  margin-bottom: auto;
 }
 .service__caption {
   color: #ceb388;
@@ -3492,6 +3543,31 @@ body {
   display: grid;
   gap: 1rem;
 }
+@media (min-width: 991.98px) {
+  .service__info.service__info--column {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+.service__info.service__info--alternate {
+  align-items: end;
+}
+.service__info.service__info--alternate .service__price {
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  text-align: left;
+  align-items: flex-start;
+}
+.service__info.service__info--alternate .service__btn {
+  min-height: 5.6875rem;
+}
+.service__info.service__info--alternate .service__price-title {
+  color: #ceb388;
+}
+.service__info .service__btn {
+  min-height: 7rem;
+}
 @media (min-width: 1199.98px) {
   .service__info {
     grid-template-columns: repeat(2, 1fr);
@@ -3504,12 +3580,22 @@ body {
   padding: 1.06rem 1rem 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   gap: 0.5rem;
 }
 .service__price-title {
   font-size: 1.25rem;
   font-weight: 500;
+}
+.service__price-steps {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.service__price-step strong {
+  font-size: 2rem;
+  font-weight: 600;
+  white-space: nowrap;
 }
 .service__price-value {
   font-size: 2rem;
@@ -3525,8 +3611,39 @@ body {
   font-size: 1.125rem;
   font-weight: 500;
 }
-.service__btn {
-  min-height: 7rem;
+.service__desc {
+  font-weight: 500;
+  line-height: 140%;
+}
+.service__desc p:not(:last-child) {
+  margin-bottom: 1em;
+}
+.service__desc.service__desc--small {
+  font-size: 1rem;
+  font-weight: 400;
+}
+@media (min-width: 743.98px) {
+  .service__desc {
+    font-size: 1.25rem;
+  }
+}
+.service__image {
+  height: 100%;
+}
+.service__image img {
+  border-radius: 1rem;
+}
+.service__def {
+  line-height: 140%;
+}
+.service__def strong {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.service__start-price {
+  margin-top: auto;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .specialists:first-child {
