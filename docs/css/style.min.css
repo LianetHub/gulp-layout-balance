@@ -102,6 +102,12 @@
   }
 }
 
+.title-sm {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
 .ordered-list > li {
   counter-increment: num;
 }
@@ -3909,6 +3915,24 @@ body {
   line-height: 140%;
   text-transform: uppercase;
 }
+.carousel__slide-title {
+  font-weight: 500;
+}
+@media (min-width: 743.98px) {
+  .carousel__slide-title {
+    min-height: 4.5rem;
+  }
+}
+.carousel__slide-price {
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+@media (min-width: 743.98px) {
+  .carousel__slide-price {
+    margin-bottom: 2.5rem;
+  }
+}
 .carousel__slide-desc {
   margin-top: 1rem;
   color: #dbdbdb;
@@ -3927,6 +3951,11 @@ body {
 }
 .carousel__slide-desc p:not(:last-child) {
   margin-bottom: 1em;
+}
+.carousel__slide-desc strong {
+  text-transform: uppercase;
+  font-size: 1.125em;
+  font-weight: 500;
 }
 .carousel__footer {
   margin-top: 2rem;
@@ -4102,10 +4131,53 @@ body {
   background: url("../img/decor/quotes.svg") center/contain no-repeat;
   pointer-events: none;
 }
-@media (min-width: 1199.98px) {
-  .doctor-promo__quote::before {
-    top: 35%;
+
+.video-block__title {
+  max-width: 68.75rem;
+}
+.video-block__content {
+  position: relative;
+  display: block;
+}
+.video-block__content:not(:first-child) {
+  margin-top: 2rem;
+}
+.video-block__content img {
+  border-radius: 1rem;
+}
+.video-block__content::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: color 0.3s ease;
+  color: rgba(107, 128, 111, 0.7);
+  font-size: 4rem;
+  background: #fff;
+  border-radius: 50%;
+}
+@media (min-width: 743.98px) {
+  .video-block__content::before {
+    font-size: 8rem;
   }
+}
+@media (any-hover: hover) {
+  .video-block__content:hover::before {
+    color: #6b806f;
+  }
+}
+.video-block__desc {
+  margin-top: 2rem;
+  font-size: 1rem;
+  line-height: 140%;
+}
+.video-block__desc strong {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.video-block__desc p:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .specialists:first-child {
