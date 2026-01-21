@@ -97,13 +97,14 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     }
 
-    if (document.querySelectorAll('.services__slider').length > 0) {
-        document.querySelectorAll('.services__slider')?.forEach(serviceSlider => {
+    if (document.querySelectorAll('.services__block').length > 0) {
+        document.querySelectorAll('.services__block')?.forEach(serviceBlock => {
 
-            const serviceWrapper = serviceSlider.closest('.services')
-            const nextBtn = serviceWrapper?.querySelector('.services__next');
-            const prevBtn = serviceWrapper?.querySelector('.services__prev');
-            const paginationBlock = serviceSlider.querySelector('.services__pagination');
+            const serviceSlider = serviceBlock.querySelector('.services__slider');
+
+            const nextBtn = serviceBlock?.querySelector('.services__next');
+            const prevBtn = serviceBlock?.querySelector('.services__prev');
+            const paginationBlock = serviceBlock?.querySelector('.services__pagination');
 
 
             new Swiper(serviceSlider, {

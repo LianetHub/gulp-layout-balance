@@ -1,6 +1,6 @@
 <a href="@@slug" class="service-card swiper-slide">
     <span class="service-card__header">
-        <img src="@@image" alt="Фото капельницы">
+        <img src="@@image" class="cover-image" alt="Фото капельницы">
         <span class="service-card__header-hover-text">Подробнее</span>
     </span>
     <span class="service-card__body">
@@ -16,6 +16,11 @@
         </span>
     </span>
     }
-    <span class="service-card__more btn btn-secondary">Подробнее</span>
+    @@if(typeof description !== 'undefined') {
+    <span class="service-card__description">
+        @@description
+    </span>
+    }
+    <span class="service-card__more btn btn-secondary">@@btnText</span>
     </span>
 </a>

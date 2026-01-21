@@ -1,0 +1,26 @@
+[
+    {
+        "image": "@img/massages/07.jpg",
+        "slug": "massage-v-shock-bandage-wrap.html",
+        "description": "Cалонная процедура по уходу за телом с использованием гелей с экстрактами лекарственных растений.",
+        "name": "Бандажное <br> обёртывание V-Shock",
+        "price": "4 000 ₽",
+        "btnText": "Записаться"
+    },
+    {
+        "image": "@img/massages/08.jpg",
+        "slug": "massage-arosha-wrap.html",
+        "description": "Бандажное обёртывание тела с помощью эластичных бинтов, пропитанных активными веществами.",
+        "name": "Обёртывание Arosha",
+        "price": "5 500 ₽",
+        "btnText": "Записаться"
+    },
+    {
+        "image": "@img/massages/09.jpg",
+        "slug": "massage-styx-wrap.html",
+        "description": "SPA-процедура, во время которой на тело наносят термоцеллюлярные гели из натуральных растительных экстрактов и эфирных масел альпийских трав.",
+        "name": "Обёртывание <br> styx",
+        "price": "5 200 ₽",
+        "btnText": "Записаться"
+    }
+]

@@ -458,3 +458,60 @@ body {
 		}
 	}
 }
+
+.subscribe {
+	.container {
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 45%;
+			transform: translateY(-50%);
+			right: 1rem;
+			width: 18.5625rem;
+			height: 18.8125rem;
+			z-index: -1;
+			pointer-events: none;
+			background: url("@img/decor/hero-decor.svg") center / contain no-repeat;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			top: 15%;
+			transform: translateY(-50%);
+			right: -12rem;
+			width: 32.8125rem;
+			height: 32.8125rem;
+			border-radius: 32.8125rem;
+			opacity: 0.1;
+			background: #86e298;
+			z-index: -1;
+			pointer-events: none;
+			filter: blur(rem(100));
+		}
+	}
+	// .subscribe__title
+	&__title {
+	}
+	// .subscribe__desc
+	&__desc {
+		margin-top: 2rem;
+		font-size: 1rem;
+		line-height: 140%;
+	}
+	// .subscribe__btn
+	&__btn {
+		margin-top: 2rem;
+		&.btn {
+			padding: 1rem 2rem;
+			font-size: 1.25rem;
+			font-weight: 600;
+			gap: 1rem;
+			max-width: 20rem;
+			width: 1000%;
+			&::before {
+				font-size: 2rem;
+			}
+		}
+	}
+}

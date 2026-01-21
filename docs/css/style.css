@@ -109,12 +109,9 @@
 }
 
 .title-xs {
-  color: #fff;
-  font-family: Montserrat;
   font-size: 1.25rem;
-  font-style: normal;
   font-weight: 500;
-  line-height: 140%; /* 1.75rem */
+  line-height: 140%;
   text-transform: uppercase;
 }
 
@@ -2455,6 +2452,56 @@ body {
   height: 100%;
 }
 
+.subscribe .container {
+  position: relative;
+}
+.subscribe .container::before {
+  content: "";
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  right: 1rem;
+  width: 18.5625rem;
+  height: 18.8125rem;
+  z-index: -1;
+  pointer-events: none;
+  background: url("../img/decor/hero-decor.svg") center/contain no-repeat;
+}
+.subscribe .container::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  transform: translateY(-50%);
+  right: -12rem;
+  width: 32.8125rem;
+  height: 32.8125rem;
+  border-radius: 32.8125rem;
+  opacity: 0.1;
+  background: #86e298;
+  z-index: -1;
+  pointer-events: none;
+  filter: blur(6.25rem);
+}
+.subscribe__desc {
+  margin-top: 2rem;
+  font-size: 1rem;
+  line-height: 140%;
+}
+.subscribe__btn {
+  margin-top: 2rem;
+}
+.subscribe__btn.btn {
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  gap: 1rem;
+  max-width: 20rem;
+  width: 1000%;
+}
+.subscribe__btn.btn::before {
+  font-size: 2rem;
+}
+
 .header {
   background: #6b806f;
   color: #fff;
@@ -4598,6 +4645,12 @@ body {
     display: none !important;
   }
 }
+.services__blocks:not(:first-child) {
+  margin-top: 5rem;
+}
+.services__block:not(:last-child) {
+  margin-bottom: 5rem;
+}
 
 .service-card {
   border-radius: 1rem;
@@ -4630,6 +4683,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 .service-card__header::before {
   content: "";
@@ -4645,6 +4699,7 @@ body {
 }
 .service-card__header img {
   max-height: 20rem;
+  width: auto;
 }
 .service-card__header-hover-text {
   position: absolute;
@@ -4670,6 +4725,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  gap: 1rem;
   min-height: 3.125rem;
 }
 .service-card__name {
@@ -4717,6 +4773,9 @@ body {
 }
 .service-card__list span:not(:last-child) {
   margin-bottom: 0.5rem;
+}
+.service-card__more {
+  margin-top: auto;
 }
 .service-card__more.btn {
   font-size: 1.125rem;

@@ -37,7 +37,7 @@
                                                 <div class="service__price-title">Стоимость услуги</div>
                                                 <div class="service__price-value">2 300 ₽</div>
                                             </div>
-                                            <a href="#" class="service__btn btn btn-primary btn-lg">Выбрать массаж</a>
+                                            <a href="#massages" class="service__btn btn btn-primary btn-lg">Выбрать массаж</a>
                                         </div>
                                     </div>
                                 </div>
@@ -58,6 +58,58 @@
                         <a href="https://vkvideo.ru/video_ext.php?oid=-73354773&id=456240544&hash=1c842bdb2fd8c544&hd=3" data-fancybox data-type="iframe" class="video-block__content icon-play">
                             <img src="@img/video.jpg" class="cover-image" alt="Постер">
                         </a>
+                    </div>
+                </section>
+                <section id="massages" class="services">
+                    <div class="container">
+                        <h2 class="services__title title">Виды массажа</h2>
+                        <div class="services__blocks">
+                            <div class="services__block">
+                                <div class="section-header">
+                                    <h2 class="section-header__title title-sm">Классические массажи</h2>
+                                    <div class="section-header__controls">
+                                        <button type="button" class="services__prev swiper-button-prev"></button>
+                                        <button type="button" class="services__next swiper-button-next"></button>
+                                    </div>
+                                </div>
+                                <div class="services__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        @@loop('./html/templates/_service-card.html', './html/json/classic-massages.json')
+                                    </div>
+                                    <div class="services__pagination swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <div class="services__block">
+                                <div class="section-header">
+                                    <h2 class="section-header__title title-sm">Специализированные массажи</h2>
+                                    <div class="section-header__controls">
+                                        <button type="button" class="services__prev swiper-button-prev"></button>
+                                        <button type="button" class="services__next swiper-button-next"></button>
+                                    </div>
+                                </div>
+                                <div class="services__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        @@loop('./html/templates/_service-card.html', './html/json/special-massages.json')
+                                    </div>
+                                    <div class="services__pagination swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <div class="services__block">
+                                <div class="section-header">
+                                    <h2 class="section-header__title title-sm">Обёртывания</h2>
+                                    <div class="section-header__controls">
+                                        <button type="button" class="services__prev swiper-button-prev"></button>
+                                        <button type="button" class="services__next swiper-button-next"></button>
+                                    </div>
+                                </div>
+                                <div class="services__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        @@loop('./html/templates/_service-card.html', './html/json/wrappers-massages.json')
+                                    </div>
+                                    <div class="services__pagination swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section class="doctor-promo">
@@ -157,6 +209,7 @@
                         </div>
                     </div>
                 </section>
+                @@include('./html/_subscribe.html')
                 @@include('./html/_consult.html')
                 @@include('./html/_contacts.html')
             </main>
