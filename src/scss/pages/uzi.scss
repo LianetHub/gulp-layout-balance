@@ -1,0 +1,88 @@
+.uzi-services {
+	// .uzi-services__title
+	&__title {
+	}
+	// .uzi-services__content
+	&__content {
+		margin-top: 2rem;
+	}
+	// .uzi-services__list
+	&__list {
+	}
+	// .uzi-services__item
+	&__item {
+		position: relative;
+		min-height: rem(360);
+		&::before {
+			position: absolute;
+			z-index: 2;
+			color: #dbdbdb;
+			top: 1.5rem;
+			right: 1.5rem;
+			@media (min-width: $md4) {
+				top: 2.5rem;
+				right: 3.5rem;
+			}
+		}
+	}
+	// .uzi-services__card
+	&__card {
+		border-radius: 1rem;
+		background: #6b806f;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		padding: 1.25rem 2.75rem 1.25rem 1.25rem;
+		@media (min-width: $md4) {
+			padding: 2.5rem 4.5rem 2.5rem 2.5rem;
+		}
+	}
+	// .uzi-services__name
+	&__name {
+		font-weight: 500;
+		line-height: 140%;
+		text-transform: uppercase;
+		font-size: 1.5rem;
+		@media (min-width: $md4) {
+			font-size: 1.75rem;
+		}
+	}
+	// .uzi-services__desc
+	&__desc {
+		margin-top: 0.5rem;
+		color: #dbdbdb;
+		font-size: 1rem;
+		line-height: 140%;
+	}
+	// .uzi-services__price
+	&__price {
+		margin-top: 1rem;
+		font-size: 1.25rem;
+		font-weight: 600;
+		margin-bottom: 2rem;
+	}
+	// .uzi-services__actions
+	&__actions {
+		margin-top: auto;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2rem;
+		row-gap: 0.5rem;
+	}
+	// .uzi-services__action
+	&__action {
+		@media (min-width: $md4) {
+			&.btn {
+				font-size: 1.25rem;
+				padding: 0.875rem 2.5rem;
+			}
+		}
+	}
+	// .uzi-services__image
+	&__image {
+		height: 100%;
+		& img {
+			border-radius: 1rem;
+		}
+	}
+}
