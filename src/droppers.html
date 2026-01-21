@@ -120,6 +120,28 @@
                         </div>
                     </div>
                 </div>
+                <section class="services">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2 class="section-header__title title">Виды капельниц</h2>
+                            <div class="section-header__controls">
+                                <button type="button" class="services__prev swiper-button-prev"></button>
+                                <button type="button" class="services__next swiper-button-next"></button>
+                            </div>
+                        </div>
+                        <div class="services__slider swiper">
+                            <div class="swiper-wrapper">
+                                @@loop('./html/templates/_service-card.html', './html/json/droppers.json')
+                            </div>
+                            <div class="services__pagination swiper-pagination"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="droppers-benefits">
+                    <div class="container">
+                        <h2 class="droppers-benefits__title title">преимущества капельниц</h2>
+                    </div>
+                </section>
                 <section class="faq">
                     <div class="container">
                         <div class="row">

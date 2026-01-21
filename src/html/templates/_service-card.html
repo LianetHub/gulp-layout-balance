@@ -1,0 +1,21 @@
+<a href="@@slug" class="service-card swiper-slide">
+    <span class="service-card__header">
+        <img src="@@image" alt="Фото капельницы">
+        <span class="service-card__header-hover-text">Подробнее</span>
+    </span>
+    <span class="service-card__body">
+        <span class="service-card__meta">
+            <span class="service-card__name">@@name</span>
+            <span class="service-card__price">@@price</span>
+        </span>
+        @@if(typeof indications !== 'undefined') {
+        <span class="service-card__indications">
+            <span class="service-card__indications-title">Показания:</span>
+            <span class="service-card__list">
+                @@for (var i = 0; i < indications.length; i++) { <span> `+indications[i]+`</span>}
+        </span>
+    </span>
+    }
+    <span class="service-card__more btn btn-secondary">Подробнее</span>
+    </span>
+</a>

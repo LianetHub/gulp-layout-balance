@@ -97,6 +97,43 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     }
 
+    if (document.querySelectorAll('.services__slider').length > 0) {
+        document.querySelectorAll('.services__slider')?.forEach(serviceSlider => {
+
+            const serviceWrapper = serviceSlider.closest('.services')
+            const nextBtn = serviceWrapper?.querySelector('.services__next');
+            const prevBtn = serviceWrapper?.querySelector('.services__prev');
+            const paginationBlock = serviceSlider.querySelector('.services__pagination');
+
+
+            new Swiper(serviceSlider, {
+
+                watchOverflow: true,
+                spaceBetween: 16,
+                navigation: {
+                    nextEl: nextBtn,
+                    prevEl: prevBtn,
+                },
+                pagination: {
+                    el: paginationBlock,
+                    dynamicBullets: true,
+                    clickable: true
+                },
+                breakpoints: {
+                    767.98: {
+                        slidesPerView: 1.5,
+                    },
+                    991.98: {
+                        slidesPerView: 2,
+                    },
+                    1199.98: {
+                        slidesPerView: 3,
+                    }
+                }
+            })
+        })
+    }
+
     initPhoneMask();
 
 
