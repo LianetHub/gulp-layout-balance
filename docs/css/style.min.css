@@ -108,6 +108,16 @@
   font-size: 2rem;
 }
 
+.title-xs {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 1.75rem */
+  text-transform: uppercase;
+}
+
 .ordered-list > li {
   counter-increment: num;
 }
@@ -2228,6 +2238,69 @@ body {
   font-size: 0.75rem;
 }
 
+.how-list {
+  flex: 1 1 auto;
+  border-top: 0.0625rem solid #fff;
+}
+.how-list__item {
+  border-bottom: 0.0625rem solid #fff;
+  counter-increment: num;
+  overflow: hidden;
+}
+.how-list__item:nth-child(1) .how-list__item-caption::before {
+  content: "0" counter(num) "/";
+}
+.how-list__item:nth-child(2) .how-list__item-caption::before {
+  content: "0" counter(num) "/";
+}
+.how-list__item:nth-child(3) .how-list__item-caption::before {
+  content: "0" counter(num) "/";
+}
+.how-list__item:nth-child(4) .how-list__item-caption::before {
+  content: "0" counter(num) "/";
+}
+.how-list__item:nth-child(5) .how-list__item-caption::before {
+  content: "0" counter(num) "/";
+}
+.how-list__item:nth-child(6) .how-list__item-caption::before {
+  content: "0" counter(num) "/";
+}
+.how-list__item:nth-child(7) .how-list__item-caption::before {
+  content: "0" counter(num) "/";
+}
+.how-list__item:nth-child(8) .how-list__item-caption::before {
+  content: "0" counter(num) "/";
+}
+.how-list__item:nth-child(9) .how-list__item-caption::before {
+  content: "0" counter(num) "/";
+}
+.how-list__item:nth-child(10) .how-list__item-caption::before {
+  content: "0" counter(num) "/";
+}
+.how-list__item::before .how-list__item-caption {
+  content: counter(num) "/";
+  text-transform: uppercase;
+}
+.how-list__item-caption {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.72em 1.2em 0.72em 0;
+  display: flex;
+  align-items: center;
+  gap: 1.6em;
+  transition: opacity 0.3s ease;
+}
+@media (min-width: 575.98px) {
+  .how-list__item-caption {
+    font-size: 1.25rem;
+  }
+}
+@media (any-hover: hover) {
+  .how-list__item-caption:hover {
+    opacity: 0.75;
+  }
+}
+
 .contacts .section-header {
   padding-left: 0;
 }
@@ -3666,6 +3739,10 @@ body {
   font-weight: 600;
 }
 
+.description .row .col-lg-6 {
+  display: flex;
+  flex-direction: column;
+}
 .description__image img {
   border-radius: 1rem;
 }
@@ -3685,7 +3762,10 @@ body {
 .description__main {
   display: flex;
   flex-direction: column;
+  align-self: center;
   gap: 2rem;
+  margin: auto;
+  width: 100%;
 }
 @media (min-width: 743.98px) {
   .description__title.title {
@@ -4178,6 +4258,13 @@ body {
 }
 .video-block__desc p:not(:last-child) {
   margin-bottom: 1rem;
+}
+.video-block__desc ul {
+  list-style: disc;
+  padding-left: 1.35em;
+}
+.video-block__desc ul li::marker {
+  font-size: 0.75em;
 }
 
 .specialists:first-child {

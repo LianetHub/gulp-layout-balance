@@ -13,6 +13,16 @@
 	font-size: 2rem;
 }
 
+.title-xs {
+	color: #fff;
+	font-family: Montserrat;
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 140%; /* 1.75rem */
+	text-transform: uppercase;
+}
+
 .ordered-list {
 	& > li {
 		counter-increment: num;

@@ -291,6 +291,10 @@
 }
 
 .description {
+	.row .col-lg-6 {
+		display: flex;
+		flex-direction: column;
+	}
 	// .description__image
 	&__image {
 		& img {
@@ -312,7 +316,10 @@
 	&__main {
 		display: flex;
 		flex-direction: column;
+		align-self: center;
 		gap: 2rem;
+		margin: auto;
+		width: 100%;
 	}
 	// .description__title
 	&__title {
@@ -880,6 +887,15 @@
 		& p {
 			&:not(:last-child) {
 				margin-bottom: 1rem;
+			}
+		}
+		& ul {
+			list-style: disc;
+			padding-left: 1.35em;
+			& li {
+				&::marker {
+					font-size: 0.75em;
+				}
 			}
 		}
 	}

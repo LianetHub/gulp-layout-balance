@@ -249,6 +249,51 @@ body {
 	}
 }
 
+.how-list {
+	flex: 1 1 auto;
+	border-top: rem(1) solid #fff;
+	// .how-list__item
+	&__item {
+		border-bottom: rem(1) solid #fff;
+		counter-increment: num;
+		overflow: hidden;
+		@for $i from 1 through 10 {
+			&:nth-child(#{$i}) {
+				.how-list__item-caption {
+					&::before {
+						content: "0" counter(num) "/";
+					}
+				}
+			}
+		}
+		&::before {
+			.how-list__item-caption {
+				content: counter(num) "/";
+				text-transform: uppercase;
+			}
+		}
+	}
+	// .how-list__item-caption
+	&__item-caption {
+		font-size: 1rem;
+		font-weight: 500;
+		padding: em(0.9, 1.25) em(1.5, 1.25) em(0.9, 1.25) 0;
+		display: flex;
+		align-items: center;
+		gap: em(2, 1.25);
+		transition: opacity 0.3s ease;
+
+		@media (min-width: $md5) {
+			font-size: 1.25rem;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				opacity: 0.75;
+			}
+		}
+	}
+}
+
 .contacts {
 	.section-header {
 		padding-left: 0;
