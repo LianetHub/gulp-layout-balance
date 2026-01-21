@@ -62,3 +62,46 @@
 		line-height: 140%;
 	}
 }
+
+.results {
+	.section-header {
+		padding-left: 0;
+		&__title {
+			hyphens: auto;
+			max-width: 100%;
+		}
+	}
+	// .results__prev
+	&__prev {
+	}
+	// .results__next
+	&__next {
+	}
+	// .results__slider
+	&__slider {
+		margin-top: rem(32);
+		overflow: visible;
+	}
+	// .results__slide
+	&__slide {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+	// .results__slide-footer
+	&__slide-footer {
+		color: #dbdbdb;
+	}
+	// .results__slide-name
+	&__slide-name {
+		font-size: 1rem;
+		line-height: 140%;
+		& strong {
+			text-transform: uppercase;
+			color: #fff;
+		}
+	}
+	// .results__slide-desc
+	&__slide-desc {
+	}
+}

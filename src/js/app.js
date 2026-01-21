@@ -61,6 +61,27 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         })
     }
+
+    if (document.querySelector('.results__slider')) {
+        new Swiper('.results__slider', {
+
+            watchOverflow: true,
+            spaceBetween: 16,
+            navigation: {
+                nextEl: '.results__next',
+                prevEl: '.results__prev',
+            },
+            breakpoints: {
+                575.98: {
+                    slidesPerView: 2,
+                },
+                991.98: {
+                    slidesPerView: 3,
+                }
+            }
+        })
+    }
+
     if (document.querySelector('.reviews__slider')) {
         new Swiper('.reviews__slider', {
 
@@ -161,6 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     initPhoneMask();
+    initBeforeSlider()
 
 
 });
@@ -237,6 +259,28 @@ function initPhoneMask() {
         phoneInput.addEventListener('input', onPhoneInput, false);
         phoneInput.addEventListener('paste', onPhonePaste, false);
     });
+}
+
+function initBeforeSlider() {
+
+    const sliders = document.querySelectorAll('.before-slider');
+    if (sliders.length === 0) return;
+
+    sliders.forEach(slider => {
+        const sliderInput = slider.querySelector('.before-slider__input');
+        const foreground = slider.querySelector('.before-slider__after');
+        const sliderBtn = slider.querySelector('.before-slider__button');
+
+        ["input", "change"].forEach((type) => {
+            sliderInput.addEventListener(type, (e) => {
+                const sliderPos = e.target.value;
+
+                foreground.style.setProperty('--value', `${sliderPos}%`);
+                sliderBtn.style.left = `calc(${sliderPos}% - ${sliderBtn.getBoundingClientRect().width / 2}px)`;
+            });
+        });
+    })
+
 }
 
 
