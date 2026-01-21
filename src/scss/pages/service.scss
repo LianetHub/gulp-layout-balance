@@ -165,6 +165,9 @@
 				@extend %ic, .icon-flower;
 			}
 		}
+		& + .service__desc {
+			margin-top: 2rem;
+		}
 	}
 	// .service__info
 	&__info {
@@ -302,6 +305,7 @@
 		}
 		@media (min-width: $md3) {
 			height: 100%;
+			min-height: rem(520);
 			position: relative;
 			& img {
 				position: absolute;

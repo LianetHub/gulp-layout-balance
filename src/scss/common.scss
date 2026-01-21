@@ -94,6 +94,13 @@ body {
 	// .section-header__title
 	&__title {
 	}
+	// .section-header__subtitle
+	&__subtitle {
+		margin-top: 2rem;
+		font-size: 1rem;
+		line-height: 140%;
+		max-width: 51.125rem;
+	}
 	// .section-header__hint
 	&__hint {
 		color: #dbdbdb;

@@ -61,6 +61,29 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         })
     }
+    if (document.querySelector('.reviews__slider')) {
+        new Swiper('.reviews__slider', {
+
+            watchOverflow: true,
+            spaceBetween: 16,
+            navigation: {
+                nextEl: '.reviews__next',
+                prevEl: '.reviews__prev',
+            },
+            pagination: {
+                el: ".reviews__pagination",
+                clickable: true
+            },
+            breakpoints: {
+                575.98: {
+                    slidesPerView: 1.5,
+                },
+                991.98: {
+                    slidesPerView: 2,
+                }
+            }
+        })
+    }
 
     if (document.querySelectorAll('.carousel').length > 0) {
         document.querySelectorAll('.carousel')?.forEach(carouselBlock => {
@@ -69,7 +92,9 @@ document.addEventListener("DOMContentLoaded", function () {
             const nextBtn = carouselBlock.querySelector('.carousel__next');
             const prevBtn = carouselBlock.querySelector('.carousel__prev');
             const paginationBlock = carouselBlock.querySelector('.carousel__pagination');
-            const isLargeSlider = carouselBlock.querySelector('.carousel__slider').classList.contains('carousel__slider--large');
+
+            const isLargeSlider = sliderBlock.classList.contains('carousel__slider--large');
+            const isExtraLargeSlider = sliderBlock.classList.contains('carousel__slider--extralarge');
 
             new Swiper(sliderBlock, {
                 watchOverflow: true,
@@ -84,13 +109,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 },
                 breakpoints: {
                     575.98: {
-                        slidesPerView: isLargeSlider ? 1.5 : 2,
+                        slidesPerView: isExtraLargeSlider ? 1 : (isLargeSlider ? 1.5 : 2),
                     },
                     991.98: {
-                        slidesPerView: isLargeSlider ? 2 : 3,
+                        slidesPerView: isExtraLargeSlider ? 1.5 : (isLargeSlider ? 2 : 3),
                     },
                     1199.98: {
-                        slidesPerView: isLargeSlider ? 3 : 4,
+                        slidesPerView: isExtraLargeSlider ? 2 : (isLargeSlider ? 3 : 4),
                     }
                 }
             })
