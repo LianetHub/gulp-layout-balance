@@ -4042,6 +4042,11 @@ body {
   line-height: 140%;
   text-transform: uppercase;
 }
+.carousel__slide-caption small {
+  text-transform: none;
+  font-weight: 400;
+  color: #dbdbdb;
+}
 .carousel__slide-title {
   font-weight: 500;
 }
@@ -4076,6 +4081,9 @@ body {
 .carousel__slide-desc ul li::marker {
   font-size: 0.75em;
 }
+.carousel__slide-desc ul:not(:last-child) {
+  margin-bottom: 1em;
+}
 .carousel__slide-desc p:not(:last-child) {
   margin-bottom: 1em;
 }
@@ -4083,6 +4091,11 @@ body {
   text-transform: uppercase;
   font-size: 1.125em;
   font-weight: 500;
+}
+.carousel__slide-heading {
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #fff;
 }
 .carousel__footer {
   margin-top: 2rem;

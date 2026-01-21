@@ -592,6 +592,11 @@
 		font-weight: 500;
 		line-height: 140%;
 		text-transform: uppercase;
+		& small {
+			text-transform: none;
+			font-weight: 400;
+			color: #dbdbdb;
+		}
 	}
 	// .carousel__slide-title
 	&__slide-title {
@@ -626,6 +631,9 @@
 					font-size: 0.75em;
 				}
 			}
+			&:not(:last-child) {
+				margin-bottom: 1em;
+			}
 		}
 		& p {
 			&:not(:last-child) {
@@ -637,6 +645,12 @@
 			font-size: 1.125em;
 			font-weight: 500;
 		}
+	}
+	// .carousel__slide-heading
+	&__slide-heading {
+		font-weight: 500;
+		font-size: 1.125rem;
+		color: #fff;
 	}
 	// .carousel__footer
 	&__footer {
