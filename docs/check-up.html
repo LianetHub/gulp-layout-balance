@@ -1,319 +1,514 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>БУДЬ В BALANCE | Чек-ап</title>
 
-        <meta charset="UTF-8">
-        <meta name="format-detection" content="telephone=no">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>БУДЬ В BALANCE | Чек-ап</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- plugins -->
+	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20260121205403">
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20260121205403">
+	<!-- plugins -->
+	<link rel="stylesheet" href="css/reset.min.css?_v=20260121205403">
+	<link rel="stylesheet" href="css/style.min.css?_v=20260121205403">
+</head>
 
-        <!-- plugins -->
-        <link rel="stylesheet" href="css/libs/fancybox.css">
-        <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
-        <!-- plugins -->
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container header__container">
+				<a href="index.html" class="header__logo">
+					<span class="header__logo-icon">
+						<img src="img/logo.svg" alt="Логотип">
+					</span>
+					<span class="header__logo-text"> БУДЬ В BALANCE </span>
+				</a>
+				<nav aria-label="Меню" class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="" class="menu__link">О клинике</a>
+						</li>
+						<li class="menu__item menu__item--parent">
+							<a href="" class="menu__link">Услуги</a>
+							<button type="button" aria-label="Открыть подменю" class="menu__arrow icon-down"></button>
+							<div class="submenu">
+								<div class="submenu__column">
+									<a href="specialists.html" class="submenu__caption">Специалисты</a>
+									<ul class="submenu__list">
+										<li class="submenu__item"><a href="therapist.html" class="submenu__link">Терапевт</a></li>
+										<li class="submenu__item"><a href="endocrinologist.html" class="submenu__link">Эндокринолог</a></li>
+										<li class="submenu__item"><a href="nutritionist.html" class="submenu__link">Нутрициолог</a></li>
+									</ul>
+								</div>
+								<div class="submenu__column">
+									<a href="" class="submenu__caption">Процедуры</a>
+									<ul class="submenu__list">
+										<li class="submenu__item"><a href="droppers.html" class="submenu__link">Капельницы</a></li>
+										<li class="submenu__item"><a href="massage.html" class="submenu__link">Массаж</a></li>
+									</ul>
+								</div>
+								<div class="submenu__column">
+									<a href="" class="submenu__caption">Обследования</a>
+									<ul class="submenu__list">
+										<li class="submenu__item"><a href="check-up.html" class="submenu__link active">Чек-ап</a></li>
+										<li class="submenu__item"><a href="" class="submenu__link">Анализы</a></li>
+										<li class="submenu__item"><a href="uzi.html" class="submenu__link">УЗИ</a></li>
+										<li class="submenu__item"><a href="ekg.html" class="submenu__link">ЭКГ</a></li>
+										<li class="submenu__item"><a href="bioimpedancemetry.html" class="submenu__link">Биоимпедансометрия</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">Цены</a>
+						</li>
+						<li class="menu__item">
+							<a href="specialists.html" class="menu__link">Специалисты</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">Отзывы</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">Контакты</a>
+						</li>
+					</ul>
+					<div class="menu__actions">
+						<div class="menu__contacts">
+							<a href="tel:+78435671208" class="menu__contacts-phone">+7 (843) 567-12-08</a>
+							<address class="menu__address">г. Казань, ул. Курашова, д.20</address>
+						</div>
+						<a href="#appointment" data-fancybox class="menu__callback btn btn-primary">Записаться</a>
+					</div>
+				</nav>
+				<button type="button" aria-label="Открыть мобильное меню" class="header__toggler icon-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</header>
+		<nav aria-label="Хлебные крошки" class="breadcrumbs">
+			<div class="container">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a href="index.html" class="breadcrumbs__link">Главная</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<span class="breadcrumbs__link">Чек-ап</span>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<main class="page">
+			<section class="service">
+				<div class="container">
+					<div class="service__body service__body--blured">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="service__main">
+									<h1 class="service__title title">Чек-ап — комплексное обследование организма с выгодой до 40% </h1>
+									<p class="service__subtitle">Современный формат диагностики, включающий лабораторные анализы и инструментальные исследования в одном пакете.</p>
+									<div class="service__caption">Преимущества регулярного прохождения Чек-апа</div>
+									<ul class="service__list">
+										<li>Возможность выявить скрытые проблемы до появления симптомов</li>
+										<li>Максимально подробная картина состояния организма</li>
+										<li>Основа для точной диагностики и назначения эффективного лечения</li>
+									</ul>
+									<a href="#appointment" data-fancybox class="service__btn btn btn-primary btn-lg">Записаться на приём</a>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="service__image">
+									<img src="img/check-up.jpg" class="cover-image" alt="Фото услуги">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="video-block">
+				<div class="container">
+					<h2 class="video-block__title title-sm"> Посмотрите короткое видео о том, как проходит процедура чек-ап в нашей клинике </h2>
+					<a href="https://vkvideo.ru/video_ext.php?oid=-73354773&id=456240544&hash=1c842bdb2fd8c544&hd=3" data-fancybox data-type="iframe" class="video-block__content icon-play">
+						<img src="img/video.jpg" class="cover-image" alt="Постер">
+					</a>
+					<div class="video-block__desc">
+						<div class="row">
+							<div class="col-lg-8">
+								<p>
+									<strong>Прохождение чек-апа</strong> — это профилактика, которая работает на упреждение. Ведь чем раньше выявлено нарушение, тем проще и быстрее его устранить.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="programms">
+				<div class="container">
+					<h2 class="programms__title title">Чек-ап программы</h2>
+					<div class="programms__tabs">
+						<button class="programms__tab active">Мужской чек-ап</button>
+						<button class="programms__tab">Женский чек-ап</button>
+						<button class="programms__tab">Общие программы</button>
+					</div>
+					<div class="programms__content">
+						<div class="programms__block active">
+							<div class="programms__desc">
+								<div class="row">
+									<div class="col-lg-6">
+										<p><strong>Контроль здоровья без лишних походов по врачам</strong></p>
+										<p>Мужской чек-ап — это комплексное обследование, направленное на&nbsp;выявление распространенных мужских проблем:</p>
+										<ul>
+											<li>уровень гормонов;</li>
+											<li>работа сердца и сосудов;</li>
+											<li>состояние печени и почек;</li>
+											<li>онкомаркеры;</li>
+											<li>ПСА (простатспецифический антиген).</li>
+										</ul>
+										<p>Подойдёт мужчинам старше 25 лет, особенно при регулярных стрессах, усталости, снижении либидо или подготовке к физическим нагрузкам.</p>
+									</div>
+								</div>
+							</div>
+							<div class="programms__cards">
+								<div class="programms__cards-block">
+									<div class="row">
+										<div class="col-xl-4 col-lg-6">
+											<div class="programms__card">
+												<div class="programms__card-title">БАЗОВЫЙ ЧЕК-АП</div>
+												<ul class="programms__card-subtitle">
+													<li>22 лабораторных анализа</li>
+												</ul>
+												<div class="programms__card-desc">Включает в себя общий анализ крови для оценки состояния организма, исследования функций печени и почек, анализ липидного профиля и уровня тестостерона, а также проверку витаминов, минералов и уровня глюкозы.</div>
+												<a href="" class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+												<div class="programms__card-price"> Стоимость <span class="color-accent">8 400 ₽</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-4 col-lg-6">
+											<div class="programms__card">
+												<div class="programms__card-title">РАСШИРЕННЫЙ ЧЕК-АП</div>
+												<ul class="programms__card-subtitle">
+													<li>25 лабораторных анализов</li>
+												</ul>
+												<div class="programms__card-desc">
+													<p> Включает в себя анализы крови для выявления воспалений, оценки функций печени и почек, а также липидный профиль для проверки уровня холестерина.</p>
+													<p>Дополнительно исследуются ПСА, гормоны (ТТГ, тестостерон), уровень витаминов и минералов, и показатели метаболизма.</p>
+												</div>
+												<a href="" class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+												<div class="programms__card-price"> Стоимость <span class="color-accent">10 200 ₽</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-4 col-lg-6">
+											<div class="programms__card">
+												<div class="programms__card-title">ПРЕМИУМ ЧЕК-АП</div>
+												<ul class="programms__card-subtitle">
+													<li>53 лабораторных анализа</li>
+													<li>4 диагностических обследования</li>
+													<li>3 консультации специалистов</li>
+												</ul>
+												<div class="programms__card-desc">
+													<p> Программа охватывает все аспекты здоровья, включая анализы на инфекции, функции органов, уровень витаминов и электролитов. Определяются показатели обмена железа, липидный профиль и состояние щитовидной железы. Исследования системы свёртывания и онкомаркеры помогают выявить патологии. </p>
+													<p> Ультразвуковые исследования и консультации специалистов завершают программу для улучшения здоровья. </p>
+												</div>
+												<a href="" class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+												<div class="programms__card-price"> Стоимость <span class="color-accent">38 000 ₽</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="programms__cards-block">
+									<h3 class="programms__cards-caption title-sm">СПЕЦИАЛИЗИРОВАННЫЕ ПРОГРАММЫ ДЛЯ МУЖЧИН</h3>
+									<div class="row">
+										<div class="col-xl-4 col-lg-6">
+											<div class="programms__card">
+												<div class="programms__card-title">БУДЬ В BALANCE МУЖСКОЙ</div>
+												<div class="programms__card-subtitle">34 лабораторных анализа</div>
+												<div class="programms__card-desc">Комплексный чек-ап включает анализы крови и мочи для оценки общего состояния здоровья. Основное внимание уделяется глюкозе, гликированному гемоглобину, ПСА, биохимическим показателям ферментов и микроэлементов. Также проверяется уровень витаминов и гормонов.</div>
+												<a href="" class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+												<div class="programms__card-price"> Стоимость <span class="color-accent">15 700 ₽</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-4 col-lg-6">
+											<div class="programms__card">
+												<div class="programms__card-title">СПОРТИВНЫЙ</div>
+												<div class="programms__card-subtitle">39 лабораторных анализов</div>
+												<div class="programms__card-desc"> Основные направления исследования: <ul>
+														<li>Оценка биомаркеров состояния мышц</li>
+														<li>Оценка белкового обмена</li>
+														<li>Оценка мужского гормонального статуса</li>
+														<li>Исключение скрытого железодефицита</li>
+													</ul>
+												</div>
+												<a href="" class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+												<div class="programms__card-price"> Стоимость <span class="color-accent">21 000 ₽</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="programms__block">
+							<div class="programms__desc">
+								<div class="row">
+									<div class="col-lg-6">
+										<p><strong>Забота о женском здоровье в любом возрасте</strong></p>
+										<p>Женский чек-ап позволяет вовремя заметить изменения в работе организма, контролировать гормональный баланс и предотвратить развитие серьезных заболеваний:</p>
+										<ul>
+											<li>здоровье репродуктивной системы;</li>
+											<li>баланс женских половых гормонов;</li>
+											<li>состояние щитовидной железы;</li>
+											<li>дефициты витаминов и минералов;</li>
+											<li>диагностика молочных желез.</li>
+										</ul>
+										<p>Рекомендуется проходить ежегодно каждой женщине для поддержания энергии, красоты и уверенности в своем будущем.</p>
+									</div>
+								</div>
+							</div>
+							<div class="programms__cards">
+								<div class="programms__cards-block">
+									<div class="row">
+										<div class="col-xl-4 col-lg-6">
+											<div class="programms__card">
+												<div class="programms__card-title">ЖЕНСКИЙ БАЗОВЫЙ</div>
+												<ul class="programms__card-subtitle">
+													<li>24 лабораторных анализа</li>
+												</ul>
+												<div class="programms__card-desc">Базовая проверка основных показателей крови, функций печени, почек и щитовидной железы. Включает диагностику наиболее важных женских гормонов и уровня ферритина.</div>
+												<a href="" class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+												<div class="programms__card-price"> Стоимость <span class="color-accent">9 200 ₽</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-4 col-lg-6">
+											<div class="programms__card">
+												<div class="programms__card-title">ЖЕНСКИЙ ПРЕМИУМ</div>
+												<ul class="programms__card-subtitle">
+													<li>58 лабораторных анализов</li>
+													<li>6 диагностических обследований</li>
+												</ul>
+												<div class="programms__card-desc">Максимально полный аудит здоровья. Включает расширенную панель гормонов, онкомаркеры, УЗИ экспертного класса и консультацию гинеколога по результатам обследования.</div>
+												<a href="" class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+												<div class="programms__card-price"> Стоимость <span class="color-accent">42 000 ₽</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="programms__block">
+							<div class="programms__desc">
+								<div class="row">
+									<div class="col-lg-6">
+										<p><strong>Энергия, молодость и высокая продуктивность</strong></p>
+										<p>Программы для тех, кто ведет активный образ жизни и хочет замедлить процессы старения на клеточном уровне:</p>
+										<ul>
+											<li>оценка биологического возраста;</li>
+											<li>выявление скрытого воспаления;</li>
+											<li>проверка метаболического здоровья;</li>
+											<li>анализ нутритивного статуса.</li>
+										</ul>
+										<p>Программы помогают адаптировать питание и нагрузки под особенности вашего организма для достижения максимальных результатов.</p>
+									</div>
+								</div>
+							</div>
+							<div class="programms__cards">
+								<div class="programms__cards-block">
+									<div class="row">
+										<div class="col-xl-4 col-lg-6">
+											<div class="programms__card">
+												<div class="programms__card-title">ANTI-AGE СТАРТ</div>
+												<ul class="programms__card-subtitle">
+													<li>32 лабораторных анализа</li>
+												</ul>
+												<div class="programms__card-desc">Исследование ключевых маркеров старения: гликированный гемоглобин, гомоцистеин, витаминный профиль и уровень оксидативного стресса в организме.</div>
+												<a href="" class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+												<div class="programms__card-price"> Стоимость <span class="color-accent">18 500 ₽</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-4 col-lg-6">
+											<div class="programms__card">
+												<div class="programms__card-title">СПОРТ-ИНТЕНСИВ</div>
+												<ul class="programms__card-subtitle">
+													<li>40 лабораторных анализов</li>
+												</ul>
+												<div class="programms__card-desc">Специализированный комплекс для профессионалов и любителей: оценка готовности сердца к нагрузкам, электролитный баланс и мониторинг восстановления мышц.</div>
+												<a href="" class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+												<div class="programms__card-price"> Стоимость <span class="color-accent">24 300 ₽</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="subscribe">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-6 col-lg-7">
+							<h2 class="subscribe__title title">Подписывайтесь на наш telegram-канал!</h2>
+							<p class="subscribe__desc">В нашем Telegram-канале вы найдёте полезные советы по восстановлению и оздоровлению, разборы техник массажа, рекомендации специалистов и актуальные акции. Подписывайтесь, чтобы быть в курсе всего важного и полезного для вашего здоровья!</p>
+							<a href="" class="subscribe__btn btn btn-primary icon-telegram">Подписаться</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="consult">
+				<div class="container">
+					<div class="consult__body">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="consult__main">
+									<h3 class="consult__title">не откладывайте лечение, запишитесь на консультацию</h3>
+									<p class="consult__subtitle">Оставьте свой номер телефона, мы перезвоним, ответим на все вопросы и подберем подходящее обследование.</p>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<form action="#" class="consult__form form">
+									<input type="text" name="username" class="form__control" placeholder="Ваше имя">
+									<input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
+									<button type="submit" class="form__submit btn btn-primary btn-lg">Записаться на консультацию</button>
+									<div class="form__policy"> Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contacts">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-header__title title">Мы находимся в&nbsp;центре города</h2>
+						<div class="section-header__hint">контакты</div>
+					</div>
+					<div class="contacts__body">
+						<div class="contacts__main">
+							<div class="contacts__caption">Контакты</div>
+							<ul class="contacts__list">
+								<li class="contacts__item">
+									<a href="tel:+78435671208" class="contacts__link icon-phone">+7 (843) 567-12-08</a>
+								</li>
+								<li class="contacts__item">
+									<a href="" class="contacts__link icon-telegram">Написать в Telegram</a>
+								</li>
+								<li class="contacts__item">
+									<a href="" class="contacts__link icon-whatsapp">Написать в WhatsApp</a>
+								</li>
+							</ul>
+							<div class="contacts__socials">
+								<div class="contacts__socials-caption">Мы в соц.сетях</div>
+								<div class="contacts__socials-items">
+									<a href="" aria-label="" class="contacts__socials-item icon-instagram"></a>
+									<a href="" aria-label="" class="contacts__socials-item icon-telegram"></a>
+									<a href="" aria-label="" class="contacts__socials-item icon-youtube"></a>
+								</div>
+							</div>
+						</div>
+						<div class="contacts__balloon">
+							<address class="contacts__address icon-location"> г. Казань, ул. Курашова, д.20 </address>
+							<a href="" class="contacts__btn btn btn-primary">Проложить маршрут</a>
+						</div>
+						<div class="contacts__map">
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7651dd8e0bfd0da7c0bce192c3069826e7dcfb2e9b5cec25a2c0891e9cd54fa0&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__body">
+					<div class="row">
+						<div class="col-xl-4 col-lg-6">
+							<div class="footer__main">
+								<a href="/" class="footer__logo">
+									<span class="footer__logo-icon">
+										<img src="img/logo-color.svg" alt="Логотип">
+									</span>
+									<span class="footer__logo-content">
+										<span class="footer__logo-name">БУДЬ В BALANCE</span>
+										<span class="footer__logo-deskriptor">Медицинская клиника <br> по профилактике заболеваний в Казани</span>
+									</span>
+								</a>
+								<div class="footer__meta">
+									<div class="footer__worktime">Пн-Вс: с 08:00 до 21:00</div>
+									<a href="tel:+78435671208" class="footer__phone">+7 (843) 567-12-08</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-3 col-md-6">
+							<nav aria-label="Меню услуг" class="footer__menu">
+								<div class="footer__menu-caption">Услуги</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Приём врачей</a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Нутрициолог</a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Массаж</a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Капельницы</a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Чек-ап</a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Анализы</a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Исследования</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-xl-2 col-lg-3 col-md-6">
+							<nav aria-label="Меню информации" class="footer__menu">
+								<div class="footer__menu-caption">О клинике</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">О клинике </a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Правовые документы </a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Вакансии </a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Франшиза </a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-xl-4 col-lg-6">
+							<div class="footer__actions">
+								<a href="#appointment" data-fancybox class="footer__btn btn btn-primary btn-lg">Записаться на приём</a>
+								<div class="footer__socials">
+									<a href="" class="footer__social icon-whatsapp"></a>
+									<a href="" class="footer__social icon-telegram"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__bottom-container container">
+					<div class="footer__copyright">2025, © «Будь в Балансе»</div>
+					<a href="" class="footer__policy">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</footer>
+		<div id="appointment" class="popup" role="dialog" aria-modal="true" hidden>
+			<h2 class="popup__title title">Онлайн-запись в&nbsp;Balance Med</h2>
+			<p class="popup__subtitle">Наш администратор свяжется с Вами в течение 15 минут.</p>
+			<form action="#" class="popup__form form">
+				<input type="text" name="username" class="form__control" placeholder="Ваше имя">
+				<input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
+				<div class="form__bottom">
+					<button type="submit" class="form__submit btn btn-primary btn-lg">Оставить заявку</button>
+				</div>
+				<div class="form__policy"> Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
+				</div>
+			</form>
+		</div> <!-- plugins -->
+		<script src="js/libs/fancybox.umd.js?_v=20260121205403"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20260121205403"></script>
+		<!-- plugins -->
+		<script src="js/app.min.js?_v=20260121205403"></script>
+	</div>
+</body>
 
-        <link rel="stylesheet" href="css/reset.min.css">
-        <link rel="stylesheet" href="css/style.min.css">
-
-    </head>
-    <body>
-        <div class="wrapper">
-            <header class="header">
-                <div class="container header__container">
-                    <a href="index.html" class="header__logo">
-                        <span class="header__logo-icon">
-                            <img src="img/logo.svg" alt="Логотип">
-                        </span>
-                        <span class="header__logo-text">
-                            БУДЬ В BALANCE
-                        </span>
-                    </a>
-                    <nav aria-label="Меню" class="header__menu menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="" class="menu__link">О клинике</a>
-                            </li>
-                            <li class="menu__item menu__item--parent">
-                                <a href="" class="menu__link">Услуги</a>
-                                <button type="button" aria-label="Открыть подменю" class="menu__arrow icon-down"></button>
-                                <div class="submenu">
-                                    <div class="submenu__column">
-                                        <a href="specialists.html" class="submenu__caption">Специалисты</a>
-                                        <ul class="submenu__list">
-                                            <li class="submenu__item"><a href="therapist.html" class="submenu__link">Терапевт</a></li>
-                                            <li class="submenu__item"><a href="endocrinologist.html" class="submenu__link">Эндокринолог</a></li>
-                                            <li class="submenu__item"><a href="nutritionist.html" class="submenu__link">Нутрициолог</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="submenu__column">
-                                        <a href="" class="submenu__caption">Процедуры</a>
-                                        <ul class="submenu__list">
-                                            <li class="submenu__item"><a href="droppers.html" class="submenu__link">Капельницы</a></li>
-                                            <li class="submenu__item"><a href="massage.html" class="submenu__link">Массаж</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="submenu__column">
-                                        <a href="" class="submenu__caption">Обследования</a>
-                                        <ul class="submenu__list">
-                                            <li class="submenu__item"><a href="check-up.html" class="submenu__link active">Чек-ап</a></li>
-                                            <li class="submenu__item"><a href="" class="submenu__link">Анализы</a></li>
-                                            <li class="submenu__item"><a href="uzi.html" class="submenu__link">УЗИ</a></li>
-                                            <li class="submenu__item"><a href="ekg.html" class="submenu__link">ЭКГ</a></li>
-                                            <li class="submenu__item"><a href="bioimpedancemetry.html" class="submenu__link">Биоимпедансометрия</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Цены</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="specialists.html" class="menu__link">Специалисты</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Отзывы</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Контакты</a>
-                            </li>
-                        </ul>
-                        <div class="menu__actions">
-                            <div class="menu__contacts">
-                                <a href="tel:+78435671208" class="menu__contacts-phone">+7 (843) 567-12-08</a>
-                                <address class="menu__address">г. Казань, ул. Курашова, д.20</address>
-                            </div>
-                            <a href="#appointment" data-fancybox class="menu__callback btn btn-primary">Записаться</a>
-                        </div>
-                    </nav>
-                    <button type="button" aria-label="Открыть мобильное меню" class="header__toggler icon-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </header>
-            <nav aria-label="Хлебные крошки" class="breadcrumbs">
-                <div class="container">
-                    <ul class="breadcrumbs__list">
-                        <li class="breadcrumbs__item">
-                            <a href="index.html" class="breadcrumbs__link">Главная</a>
-                        </li>
-                        <li class="breadcrumbs__item">
-                            <span class="breadcrumbs__link">Чек-ап</span>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <main class="page">
-                <section class="service">
-                    <div class="container">
-                        <div class="service__body service__body--blured">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="service__main">
-                                        <h1 class="service__title title">Чек-ап — комплексное обследование организма с выгодой до 40% </h1>
-                                        <p class="service__subtitle">Современный формат диагностики, включающий лабораторные анализы и инструментальные исследования в одном пакете.</p>
-                                        <div class="service__caption">Преимущества регулярного прохождения Чек-апа</div>
-                                        <ul class="service__list">
-                                            <li>Возможность выявить скрытые проблемы до появления симптомов</li>
-                                            <li>Максимально подробная картина состояния организма</li>
-                                            <li>Основа для точной диагностики и назначения эффективного лечения</li>
-                                        </ul>
-                                        <a href="#appointment" data-fancybox class="service__btn btn btn-primary btn-lg">Записаться на приём</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="service__image">
-                                        <img src="img/check-up.jpg" class="cover-image" alt="Фото услуги">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="video-block">
-                    <div class="container">
-                        <h2 class="video-block__title title-sm">
-                            Посмотрите короткое видео о том, как проходит процедура чек-ап в нашей клинике
-                        </h2>
-                        <a href="https://vkvideo.ru/video_ext.php?oid=-73354773&id=456240544&hash=1c842bdb2fd8c544&hd=3" data-fancybox data-type="iframe" class="video-block__content icon-play">
-                            <img src="img/video.jpg" class="cover-image" alt="Постер">
-                        </a>
-                        <div class="video-block__desc">
-                            <div class="row">
-                                <div class="col-lg-8">
-                                    <p>
-                                        <strong>Прохождение чек-апа</strong> — это профилактика, которая работает на упреждение. Ведь чем раньше выявлено нарушение, тем проще и быстрее его устранить.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="subscribe">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-7">
-                                <h2 class="subscribe__title title">Подписывайтесь на наш telegram-канал!</h2>
-                                <p class="subscribe__desc">В нашем Telegram-канале вы найдёте полезные советы по восстановлению и оздоровлению, разборы техник массажа, рекомендации специалистов и актуальные акции. Подписывайтесь, чтобы быть в курсе всего важного и полезного для вашего здоровья!</p>
-                                <a href="" class="subscribe__btn btn btn-primary icon-telegram">Подписаться</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="consult">
-                    <div class="container">
-                        <div class="consult__body">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="consult__main">
-                                        <h3 class="consult__title">не откладывайте лечение, запишитесь на консультацию</h3>
-                                        <p class="consult__subtitle">Оставьте свой номер телефона, мы перезвоним, ответим на все вопросы и подберем подходящее обследование.</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <form action="#" class="consult__form form">
-                                        <input type="text" name="username" class="form__control" placeholder="Ваше имя">
-                                        <input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
-                                        <button type="submit" class="form__submit btn btn-primary btn-lg">Записаться на консультацию</button>
-                                        <div class="form__policy">
-                                            Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="contacts">
-                    <div class="container">
-                        <div class="section-header">
-                            <h2 class="section-header__title title">Мы находимся в&nbsp;центре города</h2>
-                            <div class="section-header__hint">контакты</div>
-                        </div>
-                        <div class="contacts__body">
-                            <div class="contacts__main">
-                                <div class="contacts__caption">Контакты</div>
-                                <ul class="contacts__list">
-                                    <li class="contacts__item">
-                                        <a href="tel:+78435671208" class="contacts__link icon-phone">+7 (843) 567-12-08</a>
-                                    </li>
-                                    <li class="contacts__item">
-                                        <a href="" class="contacts__link icon-telegram">Написать в Telegram</a>
-                                    </li>
-                                    <li class="contacts__item">
-                                        <a href="" class="contacts__link icon-whatsapp">Написать в WhatsApp</a>
-                                    </li>
-                                </ul>
-                                <div class="contacts__socials">
-                                    <div class="contacts__socials-caption">Мы в соц.сетях</div>
-                                    <div class="contacts__socials-items">
-                                        <a href="" aria-label="" class="contacts__socials-item icon-instagram"></a>
-                                        <a href="" aria-label="" class="contacts__socials-item icon-telegram"></a>
-                                        <a href="" aria-label="" class="contacts__socials-item icon-youtube"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="contacts__balloon">
-                                <address class="contacts__address icon-location">
-                                    г. Казань, ул. Курашова, д.20
-                                </address>
-                                <a href="" class="contacts__btn btn btn-primary">Проложить маршрут</a>
-                            </div>
-                            <div class="contacts__map">
-                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7651dd8e0bfd0da7c0bce192c3069826e7dcfb2e9b5cec25a2c0891e9cd54fa0&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <footer class="footer">
-                <div class="container">
-                    <div class="footer__body">
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="footer__main">
-                                    <a href="/" class="footer__logo">
-                                        <span class="footer__logo-icon">
-                                            <img src="img/logo-color.svg" alt="Логотип">
-                                        </span>
-                                        <span class="footer__logo-content">
-                                            <span class="footer__logo-name">БУДЬ В BALANCE</span>
-                                            <span class="footer__logo-deskriptor">Медицинская клиника <br> по профилактике заболеваний в Казани</span>
-                                        </span>
-                                    </a>
-                                    <div class="footer__meta">
-                                        <div class="footer__worktime">Пн-Вс: с 08:00 до 21:00</div>
-                                        <a href="tel:+78435671208" class="footer__phone">+7 (843) 567-12-08</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-3 col-md-6">
-                                <nav aria-label="Меню услуг" class="footer__menu">
-                                    <div class="footer__menu-caption">Услуги</div>
-                                    <ul class="footer__menu-list">
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Приём врачей</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Нутрициолог</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Массаж</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Капельницы</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Чек-ап</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Анализы</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Исследования</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="col-xl-2 col-lg-3 col-md-6">
-                                <nav aria-label="Меню информации" class="footer__menu">
-                                    <div class="footer__menu-caption">О клинике</div>
-                                    <ul class="footer__menu-list">
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">О клинике </a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Правовые документы </a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Вакансии </a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Франшиза </a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="footer__actions">
-                                    <a href="#appointment" data-fancybox class="footer__btn btn btn-primary btn-lg">Записаться на приём</a>
-                                    <div class="footer__socials">
-                                        <a href="" class="footer__social icon-whatsapp"></a>
-                                        <a href="" class="footer__social icon-telegram"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__bottom">
-                    <div class="footer__bottom-container container">
-                        <div class="footer__copyright">2025, © «Будь в Балансе»</div>
-                        <a href="" class="footer__policy">Политика конфиденциальности</a>
-                    </div>
-                </div>
-            </footer>
-
-            <div id="appointment" class="popup" role="dialog" aria-modal="true" hidden>
-                <h2 class="popup__title title">Онлайн-запись в&nbsp;Balance Med</h2>
-                <p class="popup__subtitle">Наш администратор свяжется с Вами в течение 15 минут.</p>
-                <form action="#" class="popup__form form">
-                    <input type="text" name="username" class="form__control" placeholder="Ваше имя">
-                    <input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
-                    <div class="form__bottom">
-                        <button type="submit" class="form__submit btn btn-primary btn-lg">Оставить заявку</button>
-                    </div>
-                    <div class="form__policy">
-                        Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
-                    </div>
-                </form>
-            </div>
-            <!-- plugins -->
-            <script src="js/libs/fancybox.umd.js"></script>
-            <script src="js/libs/swiper-bundle.min.js"></script>
-            <!-- plugins -->
-
-            <script src="js/app.min.js"></script>
-        </div>
-    </body>
 </html>

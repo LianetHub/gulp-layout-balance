@@ -28,6 +28,20 @@ document.addEventListener("DOMContentLoaded", function () {
         if (target.matches('.menu__arrow')) {
             target.parentNode.classList.toggle('active');
         }
+
+        if (target.matches('.programms__tab')) {
+            const tabs = Array.from(document.querySelectorAll('.programms__tab'));
+            const blocks = Array.from(document.querySelectorAll('.programms__block'));
+            const index = tabs.indexOf(target);
+
+            tabs.forEach(tab => tab.classList.remove('active'));
+            blocks.forEach(block => block.classList.remove('active'));
+
+            target.classList.add('active');
+            if (blocks[index]) {
+                blocks[index].classList.add('active');
+            }
+        }
     })
 
     if (document.querySelector('.clients__slider')) {
