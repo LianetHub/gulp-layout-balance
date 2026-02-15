@@ -58,6 +58,21 @@
 	color: #fff;
 	padding: 2.5rem 1rem;
 	max-width: 100%;
+	&.popup--large {
+		max-width: rem(1328);
+		width: 100%;
+		border-radius: 1rem;
+		border: rem(1) solid #fff;
+		align-items: flex-start;
+		text-align: left;
+		z-index: 1;
+		background:
+			url("@img/programms-modal-decor.svg") 100% 0 / auto no-repeat,
+			#252f28;
+		.popup__title {
+			text-align: left;
+		}
+	}
 	@media (min-width: $md4) {
 		padding: 4rem;
 		max-width: rem(624);
@@ -68,6 +83,18 @@
 		margin-top: 1.5rem;
 		@media (min-width: $md5) {
 			margin-top: 2.62rem;
+		}
+		&[data-fancybox-close] {
+			align-self: center;
+		}
+	}
+	// .popup__order
+	&__order {
+		margin-top: 1.5rem;
+		max-width: rem(208);
+		width: 100%;
+		@media (min-width: $md5) {
+			margin-top: 2.5rem;
 		}
 		&[data-fancybox-close] {
 			align-self: center;
@@ -89,5 +116,67 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
+	}
+
+	// .popup__price
+	&__price {
+	}
+	// .popup__btn
+	&__btn {
+	}
+	// .popup__programms
+	&__programms {
+		margin-top: 3.75rem;
+	}
+	// .popup__programms-block
+	&__programms-block {
+		&:not(:last-child) {
+			margin-bottom: rem(50);
+		}
+	}
+	// .popup__programms-caption
+	&__programms-caption {
+		font-size: 1.125rem;
+		font-weight: 500;
+		line-height: 140%;
+		text-transform: uppercase;
+		max-width: 48.25rem;
+	}
+	// .popup__programms-items
+	&__programms-items {
+		margin-top: 2rem;
+		column-gap: 1.75rem;
+
+		@media (min-width: $md5) {
+			columns: 2;
+		}
+		@media (min-width: $md3) {
+			columns: 3;
+			&--small {
+				columns: 2;
+			}
+		}
+	}
+	// .popup__programms-item
+	&__programms-item {
+		margin-bottom: 2rem;
+		break-inside: avoid;
+	}
+	// .popup__programms-list
+	&__programms-list {
+		list-style: disc;
+		padding-left: 1.125em;
+		color: #dbdbdb;
+		&:not(:first-child) {
+			margin-top: 1rem;
+		}
+		& li {
+			&::marker {
+				font-size: 0.75em;
+			}
+		}
+		&:not(:last-child) {
+			margin-bottom: 1em;
+		}
 	}
 }
