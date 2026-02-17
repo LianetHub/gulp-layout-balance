@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Цены'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": 3
+            })
+            <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">Цены</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="page">
+                <section class="prices">
+                    <div class="container">
+                        <h1 class="prices__title title">Стоимость услуг</h1>
+                        <div class="prices__actions">
+                            <button type="button" class="prices__current icon-chevron-down">Все услуги</button>
+                            <div class="prices__tabs">
+                                <button class="prices__tab active">Все услуги</button>
+                                <button class="prices__tab">Консультации специалистов</button>
+                                <button class="prices__tab">Капельницы</button>
+                                <button class="prices__tab">Чек-ап и анализы</button>
+                                <button class="prices__tab">Массаж</button>
+                                <button class="prices__tab">Исследования</button>
+                            </div>
+                        </div>
+                        <div class="prices__content">
+                            <div class="prices__block active">
+                                <table class="prices__table">
+                                    <thead>
+                                        <tr>
+                                            <th>Наименование услуги</th>
+                                            <th>Стоимость</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr class="prices__group-header color-accent">
+                                            <td colspan="2">Консультации специалистов</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Консультация врача-терапевта</td>
+                                            <td>4 000 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Консультация врача-эндокринолога</td>
+                                            <td>5 000 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Консультация нутрициолога</td>
+                                            <td>5 000 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Сопровождение нутрициолога (1 месяц)</td>
+                                            <td>30 000 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Сопровождение нутрициолога (2 месяца)</td>
+                                            <td>55 000 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Сопровождение нутрициолога (3 месяца)</td>
+                                            <td>72 000 ₽</td>
+                                        </tr>
+                                        <tr class="gutter">
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+
+                                    <tbody>
+                                        <tr class="prices__group-header color-accent">
+                                            <td colspan="2">Капельницы</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Комплекс Детокс</td>
+                                            <td>5 350 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Комплекс Железодефицит</td>
+                                            <td>5 100 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Комплекс Anti-Virus 1-й день</td>
+                                            <td>5 200 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Комплекс Anti-Virus 2-й день</td>
+                                            <td>5 200 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Комплекс Anti-Virus 3-й день</td>
+                                            <td>5 200 ₽</td>
+                                        </tr>
+                                        <tr class="gutter">
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>After Party</td>
+                                            <td>7 500 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>After Party Plus</td>
+                                            <td>10 300 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Капельница Глутатион (0,6 г)</td>
+                                            <td>5 100 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Капельница Глутатион (1,2 г)</td>
+                                            <td>7 100 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Капельница Глутатион (1,8 г)</td>
+                                            <td>9 100 ₽</td>
+                                        </tr>
+                                        <tr class="gutter">
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Комплекс Лаеннек</td>
+                                            <td>4 200 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Коктейль Майера</td>
+                                            <td>4 800 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Комплекс Здоровая печень</td>
+                                            <td>7 200 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Капельница Аминовен (белок)</td>
+                                            <td>4 800 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Комплекс Anti-Аллергия</td>
+                                            <td>5 200 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Комплекс от вируса Герпеса</td>
+                                            <td>5 200 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Капельница Золушка (0,6 г)</td>
+                                            <td>7 100 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Капельница Золушка (1,2 г)</td>
+                                            <td>9 100 ₽</td>
+                                        </tr>
+                                        <tr class="gutter">
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Капельница Подагра</td>
+                                            <td>7 300 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Инъекция витамина D</td>
+                                            <td>2 000 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маска паровая для сна</td>
+                                            <td>200 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Внутримышечная инъекция</td>
+                                            <td>200 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Внутривенная инъекция</td>
+                                            <td>1 500 ₽</td>
+                                        </tr>
+                                    </tbody>
+
+                                    <tbody>
+                                        <tr class="prices__group-header color-accent">
+                                            <td colspan="2">Чек-ап программы</td>
+                                        </tr>
+                                        <tr class="prices__group-header">
+                                            <td colspan="2">Мужской чек-ап</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Базовый чек-ап (мужской)</td>
+                                            <td>8 400 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Расширенный чек-ап (мужской)</td>
+                                            <td>10 200 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Премиум чек-ап (мужской)</td>
+                                            <td>38 000 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>БУДЬ В БАЛАНСЕ (мужской)</td>
+                                            <td>15 700 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Спортивный</td>
+                                            <td>21 000 ₽</td>
+                                        </tr>
+                                        <tr class="gutter">
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="prices__group-header">
+                                            <td colspan="2">Женский чек-ап</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Базовый чек-ап (женский)</td>
+                                            <td>8 900 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Расширенный чек-ап (женский)</td>
+                                            <td>10 900 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Премиум чек-ап (женский)</td>
+                                            <td>38 000 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>БУДЬ В БАЛАНСЕ (женский)</td>
+                                            <td>15 700 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Планирование беременности</td>
+                                            <td>14 640 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>После родов</td>
+                                            <td>11 100 ₽</td>
+                                        </tr>
+                                        <tr class="gutter">
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="prices__group-header">
+                                            <td colspan="2">Общие программы</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Чек-ап «Детский»</td>
+                                            <td>10 500 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Чек-ап «Анемия»</td>
+                                            <td>8 500 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Чек-ап «Анти-Стресс»</td>
+                                            <td>13 600 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Чек-ап «Вес в балансе»</td>
+                                            <td>13 900 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Чек-ап «Печень в балансе»</td>
+                                            <td>5 700 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Чек-ап «Кожа, волосы, ногти»</td>
+                                            <td>8 100 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Чек-ап «Щитовидная железа в балансе»</td>
+                                            <td>6 500 ₽</td>
+                                        </tr>
+                                        <tr class="gutter">
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2" class="prices__group-header color-accent">Анализы</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Биохимический анализ крови</td>
+                                            <td>2 100 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ХГМС по Осипову</td>
+                                            <td>7 000 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Экспресс чек-ап</td>
+                                            <td>4 999 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>КардиоРиск</td>
+                                            <td>9 900 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Вызов на дом</td>
+                                            <td>1 500 ₽</td>
+                                        </tr>
+                                    </tbody>
+
+                                    <tbody>
+                                        <tr class="prices__group-header color-accent">
+                                            <td colspan="2">Массаж</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Общеукрепляющий массаж тела</td>
+                                            <td>3 500 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Массаж локальной зоны</td>
+                                            <td>2 300 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Массаж шейно-воротниковой зоны (ШВЗ)</td>
+                                            <td>2 300 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Скульптурирующий массаж</td>
+                                            <td>3 700 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Антицеллюлитный массаж</td>
+                                            <td>3 500 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Лимфодренажный массаж</td>
+                                            <td>3 500 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ручная мадеротерапия (стандарт)</td>
+                                            <td>4 000 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ручная мадеротерапия (на меду)</td>
+                                            <td>4 500 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Буккальный массаж лица</td>
+                                            <td>2 500 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Массаж для беременных</td>
+                                            <td>3 500 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Висцеральный массаж</td>
+                                            <td>2 300 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Бандажное обёртывание V-Shock</td>
+                                            <td>4 000 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Обёртывание Arosha</td>
+                                            <td>5 500 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Обёртывание STYX</td>
+                                            <td>5 200 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Прессотерапия</td>
+                                            <td>1 200 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Скраб пилинг тела</td>
+                                            <td>1 900 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>СПА головы и лица</td>
+                                            <td>4 900 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Уход для лица Антистресс</td>
+                                            <td>1 500 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Спа для ног</td>
+                                            <td>900 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Спа для рук</td>
+                                            <td>900 ₽</td>
+                                        </tr>
+                                    </tbody>
+
+                                    <tbody>
+                                        <tr class="prices__group-header color-accent">
+                                            <td colspan="2">УЗИ и ЭКГ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>УЗИ гепатобилиарной системы</td>
+                                            <td>1 300 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>УЗИ щитовидной железы</td>
+                                            <td>1 050 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>УЗИ почек</td>
+                                            <td>1 050 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>УЗИ молочных желез</td>
+                                            <td>1 700 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>УЗИ органов малого таза</td>
+                                            <td>1 900 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ЭКГ</td>
+                                            <td>1 000 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ЭКГ с расшифровкой</td>
+                                            <td>1 500 ₽</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="prices__block ">
+                                <table class="prices__table">
+                                    <thead>
+                                        <tr>
+                                            <th>Наименование услуги</th>
+                                            <th>Стоимость</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr class="prices__group-header color-accent">
+                                            <td colspan="2">КОНСУЛЬТАЦИИ СПЕЦИАЛИСТОВ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Консультация врача-терапевта</td>
+                                            <td>4 000 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Консультация врача-эндокринолога</td>
+                                            <td>5 000 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Консультация нутрициолога</td>
+                                            <td>5 000 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Сопровождение нутрициолога (1 месяц)</td>
+                                            <td>30 000 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Сопровождение нутрициолога (2 месяца)</td>
+                                            <td>55 000 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Сопровождение нутрициолога (3 месяца)</td>
+                                            <td>72 000 ₽</td>
+                                        </tr>
+                                        <tr class="gutter">
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="prices__block">
+                                <table class="prices__table">
+                                    <thead>
+                                        <tr>
+                                            <th>Наименование услуги</th>
+                                            <th>Стоимость</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="prices__group-header color-accent">
+                                            <td colspan="2">КАПЕЛЬНИЦЫ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Комплекс Детокс</td>
+                                            <td>5 350 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Комплекс Железодефицит</td>
+                                            <td>5 100 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Комплекс Anti-Virus 1-й день</td>
+                                            <td>5 200 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Комплекс Anti-Virus 2-й день</td>
+                                            <td>5 200 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Комплекс Anti-Virus 3-й день</td>
+                                            <td>5 200 ₽</td>
+                                        </tr>
+                                        <tr class="gutter">
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>After Party</td>
+                                            <td>7 500 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>After Party Plus</td>
+                                            <td>10 300 ₽</td>
+                                        </tr>
+                                        <tr class="gutter">
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Капельница Глутатион (0,6 г)</td>
+                                            <td>5 100 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Капельница Глутатион (1,2 г)</td>
+                                            <td>7 100 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Капельница Глутатион (1,8 г)</td>
+                                            <td>9 100 ₽</td>
+                                        </tr>
+                                        <tr class="gutter">
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Комплекс Лаеннек</td>
+                                            <td>4 200 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Коктейль Майера</td>
+                                            <td>4 800 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Комплекс Здоровая печень</td>
+                                            <td>7 200 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Капельница Аминовен (белок)</td>
+                                            <td>4 800 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Комплекс Anti-Аллергия</td>
+                                            <td>5 200 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Комплекс от вируса Герпеса</td>
+                                            <td>5 200 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Капельница Золушка (0,6 г)</td>
+                                            <td>7 100 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Капельница Золушка (1,2 г)</td>
+                                            <td>9 100 ₽</td>
+                                        </tr>
+                                        <tr class="gutter">
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Капельница Подагра</td>
+                                            <td>7 300 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Инъекция витамина D</td>
+                                            <td>2 000 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Маска паровая для сна</td>
+                                            <td>200 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Внутримышечная инъекция</td>
+                                            <td>200 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Внутривенная инъекция</td>
+                                            <td>1 500 ₽</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="prices__block">
+                                <table class="prices__table">
+                                    <thead>
+                                        <tr>
+                                            <th>Наименование услуги</th>
+                                            <th>Стоимость</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr class="prices__group-header color-accent">
+                                            <td colspan="2">Чек-ап программы</td>
+                                        </tr>
+                                        <tr class="prices__group-header">
+                                            <td colspan="2">Мужской чек-ап</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Базовый чек-ап (мужской)</td>
+                                            <td>8 400 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Расширенный чек-ап (мужской)</td>
+                                            <td>10 200 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Премиум чек-ап (мужской)</td>
+                                            <td>38 000 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>БУДЬ В БАЛАНСЕ (мужской)</td>
+                                            <td>15 700 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Спортивный</td>
+                                            <td>21 000 ₽</td>
+                                        </tr>
+                                        <tr class="gutter">
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="prices__group-header">
+                                            <td colspan="2">Женский чек-ап</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Базовый чек-ап (женский)</td>
+                                            <td>8 900 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Расширенный чек-ап (женский)</td>
+                                            <td>10 900 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Премиум чек-ап (женский)</td>
+                                            <td>38 000 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>БУДЬ В БАЛАНСЕ (женский)</td>
+                                            <td>15 700 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Планирование беременности</td>
+                                            <td>14 640 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>После родов</td>
+                                            <td>11 100 ₽</td>
+                                        </tr>
+                                        <tr class="gutter">
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="prices__group-header">
+                                            <td colspan="2">Общие программы</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Чек-ап «Детский»</td>
+                                            <td>10 500 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Чек-ап «Анемия»</td>
+                                            <td>8 500 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Чек-ап «Анти-Стресс»</td>
+                                            <td>13 600 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Чек-ап «Вес в балансе»</td>
+                                            <td>13 900 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Чек-ап «Печень в балансе»</td>
+                                            <td>5 700 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Чек-ап «Кожа, волосы, ногти»</td>
+                                            <td>8 100 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Чек-ап «Щитовидная железа в балансе»</td>
+                                            <td>6 500 ₽</td>
+                                        </tr>
+                                        <tr class="gutter">
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2" class="prices__group-header color-accent">Анализы</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Биохимический анализ крови</td>
+                                            <td>2 100 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ХГМС по Осипову</td>
+                                            <td>7 000 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Экспресс чек-ап</td>
+                                            <td>4 999 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>КардиоРиск</td>
+                                            <td>9 900 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Вызов на дом</td>
+                                            <td>1 500 ₽</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="prices__block">
+                                <table class="prices__table">
+                                    <thead>
+                                        <tr>
+                                            <th>Наименование услуги</th>
+                                            <th>Стоимость</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="prices__group-header color-accent">
+                                            <td colspan="2">Массаж</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Общеукрепляющий массаж тела</td>
+                                            <td>3 500 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Массаж локальной зоны</td>
+                                            <td>2 300 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Массаж шейно-воротниковой зоны (ШВЗ)</td>
+                                            <td>2 300 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Скульптурирующий массаж</td>
+                                            <td>3 700 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Антицеллюлитный массаж</td>
+                                            <td>3 500 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Лимфодренажный массаж</td>
+                                            <td>3 500 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Ручная мадеротерапия (стандарт)</td>
+                                            <td>4 000 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-subcategory">
+                                            <td>Ручная мадеротерапия (на меду)</td>
+                                            <td>4 500 ₽</td>
+                                        </tr>
+                                        <tr class="gutter">
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Буккальный массаж лица</td>
+                                            <td>2 500 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Массаж для беременных</td>
+                                            <td>3 500 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Висцеральный массаж</td>
+                                            <td>2 300 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Бандажное обёртывание V-Shock</td>
+                                            <td>4 000 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Обёртывание Arosha</td>
+                                            <td>5 500 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Обёртывание STYX</td>
+                                            <td>5 200 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Прессотерапия</td>
+                                            <td>1 200 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Скраб пилинг тела</td>
+                                            <td>1 900 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>СПА головы и лица</td>
+                                            <td>4 900 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Уход для лица Антистресс</td>
+                                            <td>1 500 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Спа для ног</td>
+                                            <td>900 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Спа для рук</td>
+                                            <td>900 ₽</td>
+                                        </tr>
+                                    </tbody>
+
+
+                                </table>
+                            </div>
+                            <div class="prices__block">
+                                <table class="prices__table">
+                                    <thead>
+                                        <tr>
+                                            <th>Наименование услуги</th>
+                                            <th>Стоимость</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="prices__group-header color-accent">
+                                            <td colspan="2">УЗИ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>УЗИ гепатобилиарной системы</td>
+                                            <td>1 300 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>УЗИ щитовидной железы</td>
+                                            <td>1 050 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>УЗИ почек</td>
+                                            <td>1 050 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>УЗИ молочных желез</td>
+                                            <td>1 700 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>УЗИ органов малого таза</td>
+                                            <td>1 900 ₽</td>
+                                        </tr>
+                                        <tr class="prices__group-header color-accent">
+                                            <td colspan="2">ЭКГ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ЭКГ</td>
+                                            <td>1 000 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ЭКГ с расшифровкой</td>
+                                            <td>1 500 ₽</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @@include('./html/_consult.html')
+                @@include('./html/_contacts.html')
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

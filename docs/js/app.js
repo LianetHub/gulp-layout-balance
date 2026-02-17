@@ -42,6 +42,39 @@ document.addEventListener("DOMContentLoaded", function () {
                 blocks[index].classList.add('active');
             }
         }
+
+        if (target.matches('.prices__current')) {
+            target.classList.toggle('active');
+            const tabsContainer = target.nextElementSibling;
+            if (tabsContainer && tabsContainer.classList.contains('prices__tabs')) {
+                tabsContainer.slideToggle();
+            }
+        }
+
+        if (target.matches('.prices__tab')) {
+            const tabs = Array.from(document.querySelectorAll('.prices__tab'));
+            const blocks = Array.from(document.querySelectorAll('.prices__block'));
+            const currentBtn = document.querySelector('.prices__current');
+            const index = tabs.indexOf(target);
+
+            tabs.forEach(tab => tab.classList.remove('active'));
+            blocks.forEach(block => block.classList.remove('active'));
+
+            target.classList.add('active');
+
+            if (currentBtn) {
+                currentBtn.textContent = target.textContent;
+                currentBtn.classList.remove('active');
+
+                if (window.innerWidth <= 768) {
+                    target.parentElement.slideUp();
+                }
+            }
+
+            if (blocks[index]) {
+                blocks[index].classList.add('active');
+            }
+        }
     })
 
     if (document.querySelector('.clients__slider')) {
