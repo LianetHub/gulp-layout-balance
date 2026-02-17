@@ -226,6 +226,24 @@
 		}
 	}
 
+	&.btn-green {
+		border-color: #6b806f;
+		background: #6b806f;
+		color: #fff;
+
+		&:hover {
+			background: #425045;
+			border-color: #425045;
+			color: #fff;
+		}
+
+		&:active {
+			background: darken($color: #425045, $amount: 10);
+			border-color: darken($color: #425045, $amount: 10);
+			color: #fff;
+		}
+	}
+
 	&.btn-secondary {
 		border-color: #fff;
 		color: #fff;

@@ -1,554 +1,498 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>БУДЬ В BALANCE | Нутрициолог</title>
 
-        <meta charset="UTF-8">
-        <meta name="format-detection" content="telephone=no">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>БУДЬ В BALANCE | Нутрициолог</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- plugins -->
+	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20260217191138">
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20260217191138">
+	<!-- plugins -->
+	<link rel="stylesheet" href="css/reset.min.css?_v=20260217191138">
+	<link rel="stylesheet" href="css/style.min.css?_v=20260217191138">
+</head>
 
-        <!-- plugins -->
-        <link rel="stylesheet" href="css/libs/fancybox.css">
-        <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
-        <!-- plugins -->
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container header__container">
+				<a href="index.html" class="header__logo">
+					<span class="header__logo-icon">
+						<img src="img/logo.svg" alt="Логотип">
+					</span>
+					<span class="header__logo-text"> БУДЬ В BALANCE </span>
+				</a>
+				<nav aria-label="Меню" class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="about.html" class="menu__link">О клинике</a>
+						</li>
+						<li class="menu__item menu__item--parent">
+							<a href="" class="menu__link">Услуги</a>
+							<button type="button" aria-label="Открыть подменю" class="menu__arrow icon-down"></button>
+							<div class="submenu">
+								<div class="submenu__column">
+									<a href="specialists.html" class="submenu__caption">Специалисты</a>
+									<ul class="submenu__list">
+										<li class="submenu__item"><a href="therapist.html" class="submenu__link">Терапевт</a></li>
+										<li class="submenu__item"><a href="endocrinologist.html" class="submenu__link active">Эндокринолог</a></li>
+										<li class="submenu__item"><a href="nutritionist.html" class="submenu__link">Нутрициолог</a></li>
+									</ul>
+								</div>
+								<div class="submenu__column">
+									<a href="" class="submenu__caption">Процедуры</a>
+									<ul class="submenu__list">
+										<li class="submenu__item"><a href="droppers.html" class="submenu__link">Капельницы</a></li>
+										<li class="submenu__item"><a href="massage.html" class="submenu__link">Массаж</a></li>
+									</ul>
+								</div>
+								<div class="submenu__column">
+									<a href="" class="submenu__caption">Обследования</a>
+									<ul class="submenu__list">
+										<li class="submenu__item"><a href="check-up.html" class="submenu__link">Чек-ап</a></li>
+										<li class="submenu__item"><a href="" class="submenu__link">Анализы</a></li>
+										<li class="submenu__item"><a href="uzi.html" class="submenu__link">УЗИ</a></li>
+										<li class="submenu__item"><a href="ekg.html" class="submenu__link">ЭКГ</a></li>
+										<li class="submenu__item"><a href="bioimpedancemetry.html" class="submenu__link">Биоимпедансометрия</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="menu__item">
+							<a href="prices.html" class="menu__link">Цены</a>
+						</li>
+						<li class="menu__item">
+							<a href="specialists.html" class="menu__link">Специалисты</a>
+						</li>
+						<li class="menu__item">
+							<a href="reviews.html" class="menu__link">Отзывы</a>
+						</li>
+						<li class="menu__item">
+							<a href="contacts.html" class="menu__link">Контакты</a>
+						</li>
+					</ul>
+					<div class="menu__actions">
+						<div class="menu__contacts">
+							<a href="tel:+78435671208" class="menu__contacts-phone">+7 (843) 567-12-08</a>
+							<address class="menu__address">г. Казань, ул. Курашова, д.20</address>
+						</div>
+						<a href="#appointment" data-fancybox class="menu__callback btn btn-primary">Записаться</a>
+					</div>
+				</nav>
+				<button type="button" aria-label="Открыть мобильное меню" class="header__toggler icon-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</header>
+		<nav aria-label="Хлебные крошки" class="breadcrumbs">
+			<div class="container">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a href="index.html" class="breadcrumbs__link">Главная</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<span class="breadcrumbs__link">Нутрициолог</span>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<main class="page">
+			<section class="service">
+				<div class="container">
+					<div class="service__header">
+						<h1 class="service__title title">Эндокринолог</h1>
+						<p class="service__subtitle">Врач, специализирующийся на диагностике, лечении и профилактике заболеваний эндокринной системы, включая железы внутренней секреции и гормональные нарушения.</p>
+					</div>
+					<div class="service__body">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="service__caption">Показания для обращения к эндокринологу</div>
+								<ul class="service__list">
+									<li>Постоянная жажда, сухость во рту, частое мочеиспускание (возможен диабет)</li>
+									<li>Резкое изменение веса (набор или похудение без&nbsp;причины)</li>
+									<li>Усталость, сонливость, раздражительность</li>
+									<li>Потливость, дрожь в теле, учащенное сердцебиение</li>
+									<li>Нарушения менструального цикла, бесплодие</li>
+									<li>Выпадение волос, сухость кожи, ломкость ногтей</li>
+									<li>Появление зоба, уплотнений на шее (проблемы с&nbsp;щитовидной железой)</li>
+									<li>Повышенный холестерин, давление (метаболический синдром)</li>
+								</ul>
+							</div>
+							<div class="col-lg-6">
+								<div class="service__info">
+									<div class="service__price">
+										<div class="service__price-title">Стоимость приёма</div>
+										<div class="service__price-value">5 000 ₽</div>
+									</div>
+									<a href="#appointment" data-fancybox class="service__btn btn btn-primary btn-lg">Записаться</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="description">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="description__image">
+								<img src="img/therapist.jpg" class="cover-image" alt="Фото услуги">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="description__main">
+								<h2 class="description__title title">ОСНОВНЫЕ ЗАДАЧИ ЭНДОКРИНОЛОГА</h2>
+								<ul class="description__list">
+									<li class="description__item">
+										<div class="description__item-caption">ДИАГНОСТИКА ГОРМОНАЛЬНЫХ НАРУШЕНИЙ</div>
+										<div class="description__item-body">(анализы на гормоны, УЗИ, МРТ, КТ)</div>
+									</li>
+									<li class="description__item">
+										<div class="description__item-caption">ЛЕЧЕНИЕ ЭНДОКРИННЫХ ЗАБОЛЕВАНИЙ</div>
+										<div class="description__item-body">(подбор гормональной терапии, инсулина, препаратов для коррекции обмена веществ)</div>
+									</li>
+									<li class="description__item">
+										<div class="description__item-caption">КОНТРОЛЬ ХРОНИЧЕСКИХ ПАТОЛОГИЙ</div>
+										<div class="description__item-body">(ведение пациентов с диабетом, гипотиреозом)</div>
+									</li>
+									<li class="description__item">
+										<div class="description__item-caption">ПРОФИЛАКТИКА ОСЛОЖНЕНИЙ</div>
+										<div class="description__item-body">(предупреждение диабетической стопы, остеопороза, сердечно-сосудистых рисков)</div>
+									</li>
+									<li class="description__item">
+										<div class="description__item-caption">КОРРЕКЦИЯ ВЕСА И ПИТАНИЯ</div>
+										<div class="description__item-body">(при ожирении, метаболическом синдроме)</div>
+									</li>
+								</ul>
+								<div class="description__footer">
+									<p>Если у терапевта есть подозрения на гормональный сбой, он направит к&nbsp;эндокринологу.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="carousel">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-header__title title">Какие органы и системы <br> лечит эндокринолог</h2>
+						<div class="section-header__controls">
+							<button type="button" class="carousel__prev swiper-button-prev"></button>
+							<button type="button" class="carousel__next swiper-button-next"></button>
+						</div>
+					</div>
+					<div class="carousel__slider swiper">
+						<ol class="swiper-wrapper ordered-list">
+							<li class="carousel__slide swiper-slide">
+								<div class="carousel__slide-caption"> Щитовидную железу </div>
+								<div class="carousel__slide-desc">(гипотиреоз, гипертиреоз, зоб, тиреоидит)</div>
+							</li>
+							<li class="carousel__slide swiper-slide">
+								<div class="carousel__slide-caption"> Поджелудочную железу </div>
+								<div class="carousel__slide-desc"> (сахарный диабет 1 и 2 типа, нарушения углеводного обмена) </div>
+							</li>
+							<li class="carousel__slide swiper-slide">
+								<div class="carousel__slide-caption"> Надпочечники </div>
+								<div class="carousel__slide-desc"> (болезнь Аддисона, синдром Кушинга, феохромоцитома) </div>
+							</li>
+							<li class="carousel__slide swiper-slide">
+								<div class="carousel__slide-caption"> Гипофиз и гипоталамус </div>
+								<div class="carousel__slide-desc"> (акромегалия, несахарный диабет, пролактинома) </div>
+							</li>
+							<li class="carousel__slide swiper-slide">
+								<div class="carousel__slide-caption"> Половые железы </div>
+								<div class="carousel__slide-desc"> (поликистоз яичников, гипогонадизм, климактерические нарушения) </div>
+							</li>
+							<li class="carousel__slide swiper-slide">
+								<div class="carousel__slide-caption"> Паращитовидные железы </div>
+								<div class="carousel__slide-desc"> (остеопороз, гиперпаратиреоз) </div>
+							</li>
+							<li class="carousel__slide swiper-slide">
+								<div class="carousel__slide-caption"> Обменные процессы </div>
+								<div class="carousel__slide-desc"> (ожирение, метаболический синдром, дислипидемия) </div>
+							</li>
+						</ol>
+						<div class="carousel__pagination swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+			<section class="doctor-appointment">
+				<div class="container">
+					<h2 class="doctor-appointment__title title">Как проходит приём эндокринолога</h2>
+					<ol class="doctor-appointment__list ordered-list">
+						<li class="doctor-appointment__item">
+							<div class="doctor-appointment__item-content">
+								<div class="doctor-appointment__item-caption">ОПРОС И СБОР АНАМНЕЗА</div>
+								<div class="doctor-appointment__item-desc">(жалобы, наследственность, образ жизни)</div>
+							</div>
+						</li>
+						<li class="doctor-appointment__item">
+							<div class="doctor-appointment__item-content">
+								<div class="doctor-appointment__item-caption">ОСМОТР</div>
+								<div class="doctor-appointment__item-desc">(пальпация щитовидки, оценка кожи, веса, давления)</div>
+							</div>
+						</li>
+						<li class="doctor-appointment__item">
+							<div class="doctor-appointment__item-content">
+								<div class="doctor-appointment__item-caption">БИОИМПЕДАНСМЕТРИЯ</div>
+								<div class="doctor-appointment__item-desc">(оценка качества состава тела)</div>
+							</div>
+						</li>
+						<li class="doctor-appointment__item">
+							<div class="doctor-appointment__item-content">
+								<div class="doctor-appointment__item-caption">НАЗНАЧЕНИЕ АНАЛИЗОВ</div>
+								<div class="doctor-appointment__item-desc">(кровь на гормоны, сахар, УЗИ и&nbsp;др.)</div>
+							</div>
+						</li>
+						<li class="doctor-appointment__item">
+							<div class="doctor-appointment__item-content">
+								<div class="doctor-appointment__item-caption">ПОСТАНОВКА ДИАГНОЗА И&nbsp;ПОДБОР ЛЕЧЕНИЯ</div>
+							</div>
+						</li>
+					</ol>
+				</div>
+			</section>
+			<section class="doctor-promo">
+				<div class="container">
+					<div class="row">
+						<div class="col-xxl-4 col-lg-6">
+							<div class="doctor-promo__main">
+								<h2 class="doctor-promo__title title"> приём ведёт врач-эндокринолог </h2>
+								<div class="doctor-promo__info">
+									<div class="doctor-promo__person">
+										<div class="doctor-promo__person-name"> Салехова <br> Лейсан Талгатовна </div>
+										<div class="doctor-promo__expirience">Стаж с 2018 года</div>
+									</div>
+									<a href="salekhova-leysan-talgatovna.html" class="doctor-promo__btn btn btn-secondary">Подробнее о враче</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xxl-4 col-lg-6">
+							<div class="doctor-promo__image">
+								<img src="img/specialists/salekhova-leysan-talgatovna.jpg" class="cover-image" alt="Фото доктора">
+							</div>
+						</div>
+						<div class="col-xxl-4">
+							<blockquote class="doctor-promo__quote"> В своей работе Лейсан Талгатовна делает акцент на комплексный подход — учитывает общее состояние пациента, образ жизни, сопутствующие патологии, тщательно подбирает лечение и помогает не только справиться с симптомами, но и улучшить общее качество жизни. </blockquote>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="faq">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="faq__image">
+								<img src="img/faq-3.jpg" class="cover-image" alt="Фото доктора">
+							</div>
+						</div>
+						<div class="col-lg-8">
+							<div class="faq__main">
+								<h2 class="faq__title title">ответы на частые вопросы</h2>
+								<ol class="faq__list accordion-list">
+									<li class="accordion-list__item">
+										<div class="accordion-list__item-caption"> Сколько длится приём у эндокринолога? </div>
+										<div class="accordion-list__item-body">
+											<p>Первичный приём (если пациент новый) обычно занимает до 40-60 минут.</p>
+										</div>
+									</li>
+									<li class="accordion-list__item">
+										<div class="accordion-list__item-caption"> Что взять с собой на приём? </div>
+										<div class="accordion-list__item-body">
+											<p>Пациенту мы обычно рекомендуем иметь при себе:</p>
+											<ul>
+												<li>Паспорт, полис ОМС (в госклинике)</li>
+												<li>Медицинскую карту (если есть).</li>
+												<li>Результаты прошлых анализов, выписки.</li>
+												<li>Список принимаемых лекарств.</li>
+											</ul>
+										</div>
+									</li>
+									<li class="accordion-list__item">
+										<div class="accordion-list__item-caption"> У меня лишний вес / ожирение. Это гормональный сбой? </div>
+										<div class="accordion-list__item-body">
+											<p>С набором веса могут быть связаны ряд патологий. Например, это гипотиреоз, болезнь Иценко-Кушинга. Но все же, избыточный вес лишь в 5% случаев связан с гормональными патологиями.</p>
+											<p>Главная причина — избыточная калорийность еды и малоподвижный образ жизни, которые приводят к развитию метаболического синдрома, то есть при нормальном уровне инсулина в крови клетки становятся к нему нечувствительны. К сожалению, даже приведя гормоны в порядок, вы должны приложить усилия, чтобы похудеть (заняться спортом, питаться сбалансированно). Однако после нормализации гормонального фона, восполнения дефицитов микроэлементов и гормонов, возможно, назначение препаратов для лечения ожирения, которые помогут достичь Ваших целей.</p>
+										</div>
+									</li>
+									<li class="accordion-list__item">
+										<div class="accordion-list__item-caption"> Кто в группе риска по сахарному диабету? </div>
+										<div class="accordion-list__item-body">
+											<p>Это пациенты с избыточным весом (ожирением), женщины с гестационным диабетом (диабет беременных), люди, принимающие кортикостероиды. Также риск диабета с возрастом увеличивается, а значит, после 40 лет следует проверять уровень сахара в крови чаще. Наследственность – люди с этим фактором тоже в группе риска.</p>
+											<p>Подытожу: если вы в группе риска по сахарному диабету, ежегодно проходите профосмотры, сдавайте анализы на определение глюкозы в крови, а также проходите другие обследования.</p>
+										</div>
+									</li>
+									<li class="accordion-list__item">
+										<div class="accordion-list__item-caption"> Можно ли забеременеть при гипертиреозе? </div>
+										<div class="accordion-list__item-body">
+											<p>Забеременеть можно, но процесс вынашивания будет сложным. Возможны пороки развития у плода, и потребуется медикаментозная терапия. Но не стоит путать с гестационным состоянием, когда щитовидная железа начинает вырабатывать очень много гормонов после прикрепления плодного яйца. Многие путают данное состояние с тиреотоксикозом, которое необходимо лечить медикаментозно.</p>
+											<p>Если пациентка более 1,5 лет наблюдается с тиреотоксикозом, перед планированием беременности необходимо заранее обсудить с врачом дополнительные методы лечения.</p>
+										</div>
+									</li>
+									<li class="accordion-list__item">
+										<div class="accordion-list__item-caption"> У меня выявили узел щитовидной железы. Это опасно? </div>
+										<div class="accordion-list__item-body">
+											<p>Риск того, что узел, который прощупывается руками врача, является злокачественной опухолью, составляет около 4%. Среди всех злокачественных опухолей рак щитовидной железы занимает скромное место и составляет в среднем 2%. Среди всех гистологических типов рака щитовидной железы чаще всего (90-95%) встречается высокодифференцированный рак, который имеет благоприятный прогноз при условии его адекватного лечения.</p>
+											<p>Микрокарцинома (выявленный при ультразвуковом обследовании узел менее 1 см, содержащий атипичные клетки) имеет чаще всего низкий злокачественный потенциал. Риск того, что узел приведет к сдавлению окружающих органов или вызовет нарушение работы щитовидной железы, составляет 0,5%. Приведенные данные касаются взрослых людей.</p>
+										</div>
+									</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="consult">
+				<div class="container">
+					<div class="consult__body">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="consult__main">
+									<h3 class="consult__title">не откладывайте лечение, запишитесь на консультацию</h3>
+									<p class="consult__subtitle">Оставьте свой номер телефона, мы перезвоним, ответим на все вопросы и подберем подходящее обследование.</p>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<form action="#" class="consult__form form">
+									<input type="text" name="username" class="form__control" placeholder="Ваше имя">
+									<input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
+									<button type="submit" class="form__submit btn btn-primary btn-lg">Записаться на консультацию</button>
+									<div class="form__policy"> Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contacts">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-header__title title">Мы находимся в&nbsp;центре города</h2>
+						<div class="section-header__hint">контакты</div>
+					</div>
+					<div class="contacts__body">
+						<div class="contacts__main">
+							<div class="contacts__caption">Контакты</div>
+							<ul class="contacts__list">
+								<li class="contacts__item">
+									<a href="tel:+78435671208" class="contacts__link icon-phone">+7 (843) 567-12-08</a>
+								</li>
+								<li class="contacts__item">
+									<a href="" class="contacts__link icon-telegram">Написать в Telegram</a>
+								</li>
+								<li class="contacts__item">
+									<a href="" class="contacts__link icon-whatsapp">Написать в WhatsApp</a>
+								</li>
+							</ul>
+							<div class="contacts__socials">
+								<div class="contacts__socials-caption">Мы в соц.сетях</div>
+								<div class="contacts__socials-items">
+									<a href="" aria-label="instagram" class="contacts__socials-item icon-instagram"></a>
+									<a href="" aria-label="telegram" class="contacts__socials-item icon-telegram"></a>
+									<a href="" aria-label="youtube" class="contacts__socials-item icon-youtube"></a>
+								</div>
+							</div>
+						</div>
+						<div class="contacts__balloon">
+							<address class="contacts__address icon-location"> г. Казань, ул. Курашова, д.20 </address>
+							<a href="" class="contacts__btn btn btn-primary">Проложить маршрут</a>
+						</div>
+						<div class="contacts__map">
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7651dd8e0bfd0da7c0bce192c3069826e7dcfb2e9b5cec25a2c0891e9cd54fa0&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__body">
+					<div class="row">
+						<div class="col-xl-4 col-lg-6">
+							<div class="footer__main">
+								<a href="/" class="footer__logo">
+									<span class="footer__logo-icon">
+										<img src="img/logo-color.svg" alt="Логотип">
+									</span>
+									<span class="footer__logo-content">
+										<span class="footer__logo-name">БУДЬ В BALANCE</span>
+										<span class="footer__logo-deskriptor">Медицинская клиника <br> по профилактике заболеваний в Казани</span>
+									</span>
+								</a>
+								<div class="footer__meta">
+									<div class="footer__worktime">Пн-Вс: с 08:00 до 21:00</div>
+									<a href="tel:+78435671208" class="footer__phone">+7 (843) 567-12-08</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-3 col-md-6">
+							<nav aria-label="Меню услуг" class="footer__menu">
+								<div class="footer__menu-caption">Услуги</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Приём врачей</a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Нутрициолог</a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Массаж</a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Капельницы</a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Чек-ап</a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Анализы</a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Исследования</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-xl-2 col-lg-3 col-md-6">
+							<nav aria-label="Меню информации" class="footer__menu">
+								<div class="footer__menu-caption">О клинике</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">О клинике </a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Правовые документы </a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Вакансии </a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Франшиза </a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-xl-4 col-lg-6">
+							<div class="footer__actions">
+								<a href="#appointment" data-fancybox class="footer__btn btn btn-primary btn-lg">Записаться на приём</a>
+								<div class="footer__socials">
+									<a href="" class="footer__social icon-whatsapp"></a>
+									<a href="" class="footer__social icon-telegram"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__bottom-container container">
+					<div class="footer__copyright">2025, © «Будь в Балансе»</div>
+					<a href="" class="footer__policy">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</footer>
+		<div id="appointment" class="popup" role="dialog" aria-modal="true" hidden>
+			<h2 class="popup__title title">Онлайн-запись в&nbsp;Balance Med</h2>
+			<p class="popup__subtitle">Наш администратор свяжется с Вами в течение 15 минут.</p>
+			<form action="#" class="popup__form form">
+				<input type="text" name="username" class="form__control" placeholder="Ваше имя">
+				<input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
+				<div class="form__bottom">
+					<button type="submit" class="form__submit btn btn-primary btn-lg">Оставить заявку</button>
+				</div>
+				<div class="form__policy"> Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
+				</div>
+			</form>
+		</div> <!-- plugins -->
+		<script src="js/libs/fancybox.umd.js?_v=20260217191138"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20260217191138"></script>
+		<!-- plugins -->
+		<script src="js/app.min.js?_v=20260217191138"></script>
+	</div>
+</body>
 
-        <link rel="stylesheet" href="css/reset.min.css">
-        <link rel="stylesheet" href="css/style.min.css">
-
-    </head>
-    <body>
-        <div class="wrapper">
-            <header class="header">
-                <div class="container header__container">
-                    <a href="index.html" class="header__logo">
-                        <span class="header__logo-icon">
-                            <img src="img/logo.svg" alt="Логотип">
-                        </span>
-                        <span class="header__logo-text">
-                            БУДЬ В BALANCE
-                        </span>
-                    </a>
-                    <nav aria-label="Меню" class="header__menu menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="about.html" class="menu__link">О клинике</a>
-                            </li>
-                            <li class="menu__item menu__item--parent">
-                                <a href="" class="menu__link">Услуги</a>
-                                <button type="button" aria-label="Открыть подменю" class="menu__arrow icon-down"></button>
-                                <div class="submenu">
-                                    <div class="submenu__column">
-                                        <a href="specialists.html" class="submenu__caption">Специалисты</a>
-                                        <ul class="submenu__list">
-                                            <li class="submenu__item"><a href="therapist.html" class="submenu__link">Терапевт</a></li>
-                                            <li class="submenu__item"><a href="endocrinologist.html" class="submenu__link active">Эндокринолог</a></li>
-                                            <li class="submenu__item"><a href="nutritionist.html" class="submenu__link">Нутрициолог</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="submenu__column">
-                                        <a href="" class="submenu__caption">Процедуры</a>
-                                        <ul class="submenu__list">
-                                            <li class="submenu__item"><a href="droppers.html" class="submenu__link">Капельницы</a></li>
-                                            <li class="submenu__item"><a href="massage.html" class="submenu__link">Массаж</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="submenu__column">
-                                        <a href="" class="submenu__caption">Обследования</a>
-                                        <ul class="submenu__list">
-                                            <li class="submenu__item"><a href="check-up.html" class="submenu__link">Чек-ап</a></li>
-                                            <li class="submenu__item"><a href="" class="submenu__link">Анализы</a></li>
-                                            <li class="submenu__item"><a href="uzi.html" class="submenu__link">УЗИ</a></li>
-                                            <li class="submenu__item"><a href="ekg.html" class="submenu__link">ЭКГ</a></li>
-                                            <li class="submenu__item"><a href="bioimpedancemetry.html" class="submenu__link">Биоимпедансометрия</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="menu__item">
-                                <a href="prices.html" class="menu__link">Цены</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="specialists.html" class="menu__link">Специалисты</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="reviews.html" class="menu__link">Отзывы</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Контакты</a>
-                            </li>
-                        </ul>
-                        <div class="menu__actions">
-                            <div class="menu__contacts">
-                                <a href="tel:+78435671208" class="menu__contacts-phone">+7 (843) 567-12-08</a>
-                                <address class="menu__address">г. Казань, ул. Курашова, д.20</address>
-                            </div>
-                            <a href="#appointment" data-fancybox class="menu__callback btn btn-primary">Записаться</a>
-                        </div>
-                    </nav>
-                    <button type="button" aria-label="Открыть мобильное меню" class="header__toggler icon-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </header>
-            <nav aria-label="Хлебные крошки" class="breadcrumbs">
-                <div class="container">
-                    <ul class="breadcrumbs__list">
-                        <li class="breadcrumbs__item">
-                            <a href="index.html" class="breadcrumbs__link">Главная</a>
-                        </li>
-                        <li class="breadcrumbs__item">
-                            <span class="breadcrumbs__link">Нутрициолог</span>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <main class="page">
-                <section class="service">
-                    <div class="container">
-                        <div class="service__header">
-                            <h1 class="service__title title">Эндокринолог</h1>
-                            <p class="service__subtitle">Врач, специализирующийся на диагностике, лечении и профилактике заболеваний эндокринной системы, включая железы внутренней секреции и гормональные нарушения.</p>
-                        </div>
-                        <div class="service__body">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="service__caption">Показания для обращения к эндокринологу</div>
-                                    <ul class="service__list">
-                                        <li>Постоянная жажда, сухость во рту, частое мочеиспускание (возможен диабет)</li>
-                                        <li>Резкое изменение веса (набор или похудение без&nbsp;причины)</li>
-                                        <li>Усталость, сонливость, раздражительность</li>
-                                        <li>Потливость, дрожь в теле, учащенное сердцебиение</li>
-                                        <li>Нарушения менструального цикла, бесплодие</li>
-                                        <li>Выпадение волос, сухость кожи, ломкость ногтей</li>
-                                        <li>Появление зоба, уплотнений на шее (проблемы с&nbsp;щитовидной железой)</li>
-                                        <li>Повышенный холестерин, давление (метаболический синдром)</li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="service__info">
-                                        <div class="service__price">
-                                            <div class="service__price-title">Стоимость приёма</div>
-                                            <div class="service__price-value">5 000 ₽</div>
-                                        </div>
-                                        <a href="#appointment" data-fancybox class="service__btn btn btn-primary btn-lg">Записаться</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="description">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="description__image">
-                                    <img src="img/therapist.jpg" class="cover-image" alt="Фото услуги">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="description__main">
-                                    <h2 class="description__title title">ОСНОВНЫЕ ЗАДАЧИ ЭНДОКРИНОЛОГА</h2>
-                                    <ul class="description__list">
-                                        <li class="description__item">
-                                            <div class="description__item-caption">ДИАГНОСТИКА ГОРМОНАЛЬНЫХ НАРУШЕНИЙ</div>
-                                            <div class="description__item-body">(анализы на гормоны, УЗИ, МРТ, КТ)</div>
-                                        </li>
-                                        <li class="description__item">
-                                            <div class="description__item-caption">ЛЕЧЕНИЕ ЭНДОКРИННЫХ ЗАБОЛЕВАНИЙ</div>
-                                            <div class="description__item-body">(подбор гормональной терапии, инсулина, препаратов для коррекции обмена веществ)</div>
-                                        </li>
-                                        <li class="description__item">
-                                            <div class="description__item-caption">КОНТРОЛЬ ХРОНИЧЕСКИХ ПАТОЛОГИЙ</div>
-                                            <div class="description__item-body">(ведение пациентов с диабетом, гипотиреозом)</div>
-                                        </li>
-                                        <li class="description__item">
-                                            <div class="description__item-caption">ПРОФИЛАКТИКА ОСЛОЖНЕНИЙ</div>
-                                            <div class="description__item-body">(предупреждение диабетической стопы, остеопороза, сердечно-сосудистых рисков)</div>
-                                        </li>
-                                        <li class="description__item">
-                                            <div class="description__item-caption">КОРРЕКЦИЯ ВЕСА И ПИТАНИЯ</div>
-                                            <div class="description__item-body">(при ожирении, метаболическом синдроме)</div>
-                                        </li>
-                                    </ul>
-                                    <div class="description__footer">
-                                        <p>Если у терапевта есть подозрения на гормональный сбой, он направит к&nbsp;эндокринологу.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="carousel">
-                    <div class="container">
-                        <div class="section-header">
-                            <h2 class="section-header__title title">Какие органы и системы <br> лечит эндокринолог</h2>
-                            <div class="section-header__controls">
-                                <button type="button" class="carousel__prev swiper-button-prev"></button>
-                                <button type="button" class="carousel__next swiper-button-next"></button>
-                            </div>
-                        </div>
-                        <div class="carousel__slider swiper">
-                            <ol class="swiper-wrapper ordered-list">
-                                <li class="carousel__slide swiper-slide">
-                                    <div class="carousel__slide-caption">
-                                        Щитовидную железу
-                                    </div>
-                                    <div class="carousel__slide-desc">(гипотиреоз, гипертиреоз, зоб, тиреоидит)</div>
-                                </li>
-                                <li class="carousel__slide swiper-slide">
-                                    <div class="carousel__slide-caption">
-                                        Поджелудочную железу
-                                    </div>
-                                    <div class="carousel__slide-desc">
-                                        (сахарный диабет 1 и 2 типа, нарушения углеводного обмена)
-                                    </div>
-                                </li>
-                                <li class="carousel__slide swiper-slide">
-                                    <div class="carousel__slide-caption">
-                                        Надпочечники
-                                    </div>
-                                    <div class="carousel__slide-desc">
-                                        (болезнь Аддисона, синдром Кушинга, феохромоцитома)
-                                    </div>
-                                </li>
-                                <li class="carousel__slide swiper-slide">
-                                    <div class="carousel__slide-caption">
-                                        Гипофиз и гипоталамус
-                                    </div>
-                                    <div class="carousel__slide-desc">
-                                        (акромегалия, несахарный диабет, пролактинома)
-                                    </div>
-                                </li>
-                                <li class="carousel__slide swiper-slide">
-                                    <div class="carousel__slide-caption">
-                                        Половые железы
-                                    </div>
-                                    <div class="carousel__slide-desc">
-                                        (поликистоз яичников, гипогонадизм, климактерические нарушения)
-                                    </div>
-                                </li>
-                                <li class="carousel__slide swiper-slide">
-                                    <div class="carousel__slide-caption">
-                                        Паращитовидные железы
-                                    </div>
-                                    <div class="carousel__slide-desc">
-                                        (остеопороз, гиперпаратиреоз)
-                                    </div>
-                                </li>
-                                <li class="carousel__slide swiper-slide">
-                                    <div class="carousel__slide-caption">
-                                        Обменные процессы
-                                    </div>
-                                    <div class="carousel__slide-desc">
-                                        (ожирение, метаболический синдром, дислипидемия)
-                                    </div>
-                                </li>
-                            </ol>
-                            <div class="carousel__pagination swiper-pagination"></div>
-                        </div>
-                    </div>
-                </section>
-                <section class="doctor-appointment">
-                    <div class="container">
-                        <h2 class="doctor-appointment__title title">Как проходит приём эндокринолога</h2>
-                        <ol class="doctor-appointment__list ordered-list">
-                            <li class="doctor-appointment__item">
-                                <div class="doctor-appointment__item-content">
-                                    <div class="doctor-appointment__item-caption">ОПРОС И СБОР АНАМНЕЗА</div>
-                                    <div class="doctor-appointment__item-desc">(жалобы, наследственность, образ жизни)</div>
-                                </div>
-                            </li>
-                            <li class="doctor-appointment__item">
-                                <div class="doctor-appointment__item-content">
-                                    <div class="doctor-appointment__item-caption">ОСМОТР</div>
-                                    <div class="doctor-appointment__item-desc">(пальпация щитовидки, оценка кожи, веса, давления)</div>
-                                </div>
-                            </li>
-                            <li class="doctor-appointment__item">
-                                <div class="doctor-appointment__item-content">
-                                    <div class="doctor-appointment__item-caption">БИОИМПЕДАНСМЕТРИЯ</div>
-                                    <div class="doctor-appointment__item-desc">(оценка качества состава тела)</div>
-                                </div>
-                            </li>
-                            <li class="doctor-appointment__item">
-                                <div class="doctor-appointment__item-content">
-                                    <div class="doctor-appointment__item-caption">НАЗНАЧЕНИЕ АНАЛИЗОВ</div>
-                                    <div class="doctor-appointment__item-desc">(кровь на гормоны, сахар, УЗИ и&nbsp;др.)</div>
-                                </div>
-                            </li>
-                            <li class="doctor-appointment__item">
-                                <div class="doctor-appointment__item-content">
-                                    <div class="doctor-appointment__item-caption">ПОСТАНОВКА ДИАГНОЗА И&nbsp;ПОДБОР ЛЕЧЕНИЯ</div>
-
-                                </div>
-                            </li>
-                        </ol>
-                    </div>
-                </section>
-                <section class="doctor-promo">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xxl-4 col-lg-6">
-                                <div class="doctor-promo__main">
-                                    <h2 class="doctor-promo__title title">
-                                        приём ведёт врач-эндокринолог
-                                    </h2>
-                                    <div class="doctor-promo__info">
-                                        <div class="doctor-promo__person">
-                                            <div class="doctor-promo__person-name">
-                                                Салехова <br>
-                                                Лейсан Талгатовна
-                                            </div>
-                                            <div class="doctor-promo__expirience">Стаж с 2018 года</div>
-                                        </div>
-                                        <a href="salekhova-leysan-talgatovna.html" class="doctor-promo__btn btn btn-secondary">Подробнее о враче</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xxl-4 col-lg-6">
-                                <div class="doctor-promo__image">
-                                    <img src="img/specialists/salekhova-leysan-talgatovna.jpg" class="cover-image" alt="Фото доктора">
-                                </div>
-                            </div>
-                            <div class="col-xxl-4">
-                                <blockquote class="doctor-promo__quote">
-                                    В своей работе Лейсан Талгатовна делает акцент на комплексный подход — учитывает общее состояние пациента, образ жизни, сопутствующие патологии, тщательно подбирает лечение и помогает не только справиться с симптомами, но и улучшить общее качество жизни.
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="faq">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="faq__image">
-                                    <img src="img/faq-3.jpg" class="cover-image" alt="Фото доктора">
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="faq__main">
-                                    <h2 class="faq__title title">ответы на частые вопросы</h2>
-                                    <ol class="faq__list accordion-list">
-                                        <li class="accordion-list__item">
-                                            <div class="accordion-list__item-caption">
-                                                Сколько длится приём у эндокринолога?
-                                            </div>
-                                            <div class="accordion-list__item-body">
-                                                <p>Первичный приём (если пациент новый) обычно занимает до 40-60 минут.</p>
-                                            </div>
-                                        </li>
-                                        <li class="accordion-list__item">
-                                            <div class="accordion-list__item-caption">
-                                                Что взять с собой на приём?
-                                            </div>
-                                            <div class="accordion-list__item-body">
-                                                <p>Пациенту мы обычно рекомендуем иметь при себе:</p>
-                                                <ul>
-                                                    <li>Паспорт, полис ОМС (в госклинике)</li>
-                                                    <li>Медицинскую карту (если есть).</li>
-                                                    <li>Результаты прошлых анализов, выписки.</li>
-                                                    <li>Список принимаемых лекарств.</li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="accordion-list__item">
-                                            <div class="accordion-list__item-caption">
-                                                У меня лишний вес / ожирение. Это гормональный сбой?
-                                            </div>
-                                            <div class="accordion-list__item-body">
-                                                <p>С набором веса могут быть связаны ряд патологий. Например, это гипотиреоз, болезнь Иценко-Кушинга. Но все же, избыточный вес лишь в 5% случаев связан с гормональными патологиями.</p>
-                                                <p>Главная причина — избыточная калорийность еды и малоподвижный образ жизни, которые приводят к развитию метаболического синдрома, то есть при нормальном уровне инсулина в крови клетки становятся к нему нечувствительны. К сожалению, даже приведя гормоны в порядок, вы должны приложить усилия, чтобы похудеть (заняться спортом, питаться сбалансированно). Однако после нормализации гормонального фона, восполнения дефицитов микроэлементов и гормонов, возможно, назначение препаратов для лечения ожирения, которые помогут достичь Ваших целей.</p>
-                                            </div>
-                                        </li>
-                                        <li class="accordion-list__item">
-                                            <div class="accordion-list__item-caption">
-                                                Кто в группе риска по сахарному диабету?
-                                            </div>
-                                            <div class="accordion-list__item-body">
-                                                <p>Это пациенты с избыточным весом (ожирением), женщины с гестационным диабетом (диабет беременных), люди, принимающие кортикостероиды. Также риск диабета с возрастом увеличивается, а значит, после 40 лет следует проверять уровень сахара в крови чаще. Наследственность – люди с этим фактором тоже в группе риска.</p>
-                                                <p>Подытожу: если вы в группе риска по сахарному диабету, ежегодно проходите профосмотры, сдавайте анализы на определение глюкозы в крови, а также проходите другие обследования.</p>
-                                            </div>
-                                        </li>
-                                        <li class="accordion-list__item">
-                                            <div class="accordion-list__item-caption">
-                                                Можно ли забеременеть при гипертиреозе?
-                                            </div>
-                                            <div class="accordion-list__item-body">
-                                                <p>Забеременеть можно, но процесс вынашивания будет сложным. Возможны пороки развития у плода, и потребуется медикаментозная терапия. Но не стоит путать с гестационным состоянием, когда щитовидная железа начинает вырабатывать очень много гормонов после прикрепления плодного яйца. Многие путают данное состояние с тиреотоксикозом, которое необходимо лечить медикаментозно.</p>
-                                                <p>Если пациентка более 1,5 лет наблюдается с тиреотоксикозом, перед планированием беременности необходимо заранее обсудить с врачом дополнительные методы лечения.</p>
-                                            </div>
-                                        </li>
-                                        <li class="accordion-list__item">
-                                            <div class="accordion-list__item-caption">
-                                                У меня выявили узел щитовидной железы. Это опасно?
-                                            </div>
-                                            <div class="accordion-list__item-body">
-                                                <p>Риск того, что узел, который прощупывается руками врача, является злокачественной опухолью, составляет около 4%. Среди всех злокачественных опухолей рак щитовидной железы занимает скромное место и составляет в среднем 2%. Среди всех гистологических типов рака щитовидной железы чаще всего (90-95%) встречается высокодифференцированный рак, который имеет благоприятный прогноз при условии его адекватного лечения.</p>
-                                                <p>Микрокарцинома (выявленный при ультразвуковом обследовании узел менее 1 см, содержащий атипичные клетки) имеет чаще всего низкий злокачественный потенциал. Риск того, что узел приведет к сдавлению окружающих органов или вызовет нарушение работы щитовидной железы, составляет 0,5%. Приведенные данные касаются взрослых людей.</p>
-                                            </div>
-                                        </li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="consult">
-                    <div class="container">
-                        <div class="consult__body">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="consult__main">
-                                        <h3 class="consult__title">не откладывайте лечение, запишитесь на консультацию</h3>
-                                        <p class="consult__subtitle">Оставьте свой номер телефона, мы перезвоним, ответим на все вопросы и подберем подходящее обследование.</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <form action="#" class="consult__form form">
-                                        <input type="text" name="username" class="form__control" placeholder="Ваше имя">
-                                        <input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
-                                        <button type="submit" class="form__submit btn btn-primary btn-lg">Записаться на консультацию</button>
-                                        <div class="form__policy">
-                                            Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="contacts">
-                    <div class="container">
-                        <div class="section-header">
-                            <h2 class="section-header__title title">Мы находимся в&nbsp;центре города</h2>
-                            <div class="section-header__hint">контакты</div>
-                        </div>
-                        <div class="contacts__body">
-                            <div class="contacts__main">
-                                <div class="contacts__caption">Контакты</div>
-                                <ul class="contacts__list">
-                                    <li class="contacts__item">
-                                        <a href="tel:+78435671208" class="contacts__link icon-phone">+7 (843) 567-12-08</a>
-                                    </li>
-                                    <li class="contacts__item">
-                                        <a href="" class="contacts__link icon-telegram">Написать в Telegram</a>
-                                    </li>
-                                    <li class="contacts__item">
-                                        <a href="" class="contacts__link icon-whatsapp">Написать в WhatsApp</a>
-                                    </li>
-                                </ul>
-                                <div class="contacts__socials">
-                                    <div class="contacts__socials-caption">Мы в соц.сетях</div>
-                                    <div class="contacts__socials-items">
-                                        <a href="" aria-label="" class="contacts__socials-item icon-instagram"></a>
-                                        <a href="" aria-label="" class="contacts__socials-item icon-telegram"></a>
-                                        <a href="" aria-label="" class="contacts__socials-item icon-youtube"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="contacts__balloon">
-                                <address class="contacts__address icon-location">
-                                    г. Казань, ул. Курашова, д.20
-                                </address>
-                                <a href="" class="contacts__btn btn btn-primary">Проложить маршрут</a>
-                            </div>
-                            <div class="contacts__map">
-                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7651dd8e0bfd0da7c0bce192c3069826e7dcfb2e9b5cec25a2c0891e9cd54fa0&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <footer class="footer">
-                <div class="container">
-                    <div class="footer__body">
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="footer__main">
-                                    <a href="/" class="footer__logo">
-                                        <span class="footer__logo-icon">
-                                            <img src="img/logo-color.svg" alt="Логотип">
-                                        </span>
-                                        <span class="footer__logo-content">
-                                            <span class="footer__logo-name">БУДЬ В BALANCE</span>
-                                            <span class="footer__logo-deskriptor">Медицинская клиника <br> по профилактике заболеваний в Казани</span>
-                                        </span>
-                                    </a>
-                                    <div class="footer__meta">
-                                        <div class="footer__worktime">Пн-Вс: с 08:00 до 21:00</div>
-                                        <a href="tel:+78435671208" class="footer__phone">+7 (843) 567-12-08</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-3 col-md-6">
-                                <nav aria-label="Меню услуг" class="footer__menu">
-                                    <div class="footer__menu-caption">Услуги</div>
-                                    <ul class="footer__menu-list">
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Приём врачей</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Нутрициолог</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Массаж</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Капельницы</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Чек-ап</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Анализы</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Исследования</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="col-xl-2 col-lg-3 col-md-6">
-                                <nav aria-label="Меню информации" class="footer__menu">
-                                    <div class="footer__menu-caption">О клинике</div>
-                                    <ul class="footer__menu-list">
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">О клинике </a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Правовые документы </a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Вакансии </a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Франшиза </a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="footer__actions">
-                                    <a href="#appointment" data-fancybox class="footer__btn btn btn-primary btn-lg">Записаться на приём</a>
-                                    <div class="footer__socials">
-                                        <a href="" class="footer__social icon-whatsapp"></a>
-                                        <a href="" class="footer__social icon-telegram"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__bottom">
-                    <div class="footer__bottom-container container">
-                        <div class="footer__copyright">2025, © «Будь в Балансе»</div>
-                        <a href="" class="footer__policy">Политика конфиденциальности</a>
-                    </div>
-                </div>
-            </footer>
-
-            <div id="appointment" class="popup" role="dialog" aria-modal="true" hidden>
-                <h2 class="popup__title title">Онлайн-запись в&nbsp;Balance Med</h2>
-                <p class="popup__subtitle">Наш администратор свяжется с Вами в течение 15 минут.</p>
-                <form action="#" class="popup__form form">
-                    <input type="text" name="username" class="form__control" placeholder="Ваше имя">
-                    <input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
-                    <div class="form__bottom">
-                        <button type="submit" class="form__submit btn btn-primary btn-lg">Оставить заявку</button>
-                    </div>
-                    <div class="form__policy">
-                        Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
-                    </div>
-                </form>
-            </div>
-            <!-- plugins -->
-            <script src="js/libs/fancybox.umd.js"></script>
-            <script src="js/libs/swiper-bundle.min.js"></script>
-            <!-- plugins -->
-
-            <script src="js/app.min.js"></script>
-        </div>
-    </body>
 </html>

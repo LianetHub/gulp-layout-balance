@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Контакты'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": 6
+            })
+            <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">Контакты</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="page">
+                <section class="service">
+                    <div class="container">
+                        <div class="service__header">
+                            <h1 class="service__title title">Контакты</h1>
+                            <p class="service__subtitle service__subtitle--extralarge color-accent text-uppercase">
+                                Мы находимся в центре города! <br> Легко найти и доехать!
+                            </p>
+                        </div>
+                        <div class="service__contacts">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="service__contacts-column">
+                                        <address class="service__contacts-location icon-location">г. Казань, ул. Курашова, д.20</address>
+                                        <a href="tel:+78435671208" class="service__contacts-phone icon-phone">+7 (843) 567-12-08</a>
+                                        <div class="service__worktime">
+                                            <div class="service__worktime-title">
+                                                График работы:
+                                            </div>
+                                            <div class="service__worktime-text">Сб-вс: 08.00 – 17.00</div>
+                                        </div>
+                                        <div class="service__contacts-bts">
+                                            <a href="" class="service__contacts-btn btn btn-green icon-telegram">Написать в Telegram</a>
+                                            <a href="" class="service__contacts-btn btn btn-green icon-whatsapp">Написать в WhatsApp</a>
+                                        </div>
+                                        <div class="service__socials">
+                                            <div class="service__socials-title">Мы в соц.сетях</div>
+                                            <div class="service__socials-items">
+                                                <a href="" aria-label="instagram" class="service__socials-item icon-instagram"></a>
+                                                <a href="" aria-label="telegram" class="service__socials-item icon-telegram"></a>
+                                                <a href="" aria-label="youtube" class="service__socials-item icon-youtube"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="service__map">
+                                        <a href="" class="service__map-btn btn btn-primary">Проложить маршрут</a>
+                                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7651dd8e0bfd0da7c0bce192c3069826e7dcfb2e9b5cec25a2c0891e9cd54fa0&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @@include('./html/_consult.html')
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

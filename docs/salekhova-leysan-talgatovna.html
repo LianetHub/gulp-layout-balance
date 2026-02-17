@@ -1,358 +1,334 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>БУДЬ В BALANCE | Салехова Лейсан Талгатовна</title>
 
-        <meta charset="UTF-8">
-        <meta name="format-detection" content="telephone=no">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>БУДЬ В BALANCE | Салехова Лейсан Талгатовна</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- plugins -->
+	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20260217191138">
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20260217191138">
+	<!-- plugins -->
+	<link rel="stylesheet" href="css/reset.min.css?_v=20260217191138">
+	<link rel="stylesheet" href="css/style.min.css?_v=20260217191138">
+</head>
 
-        <!-- plugins -->
-        <link rel="stylesheet" href="css/libs/fancybox.css">
-        <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
-        <!-- plugins -->
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container header__container">
+				<a href="index.html" class="header__logo">
+					<span class="header__logo-icon">
+						<img src="img/logo.svg" alt="Логотип">
+					</span>
+					<span class="header__logo-text"> БУДЬ В BALANCE </span>
+				</a>
+				<nav aria-label="Меню" class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="about.html" class="menu__link">О клинике</a>
+						</li>
+						<li class="menu__item menu__item--parent">
+							<a href="" class="menu__link">Услуги</a>
+							<button type="button" aria-label="Открыть подменю" class="menu__arrow icon-down"></button>
+							<div class="submenu">
+								<div class="submenu__column">
+									<a href="specialists.html" class="submenu__caption active">Специалисты</a>
+									<ul class="submenu__list">
+										<li class="submenu__item"><a href="therapist.html" class="submenu__link">Терапевт</a></li>
+										<li class="submenu__item"><a href="endocrinologist.html" class="submenu__link">Эндокринолог</a></li>
+										<li class="submenu__item"><a href="nutritionist.html" class="submenu__link">Нутрициолог</a></li>
+									</ul>
+								</div>
+								<div class="submenu__column">
+									<a href="" class="submenu__caption">Процедуры</a>
+									<ul class="submenu__list">
+										<li class="submenu__item"><a href="droppers.html" class="submenu__link">Капельницы</a></li>
+										<li class="submenu__item"><a href="massage.html" class="submenu__link">Массаж</a></li>
+									</ul>
+								</div>
+								<div class="submenu__column">
+									<a href="" class="submenu__caption">Обследования</a>
+									<ul class="submenu__list">
+										<li class="submenu__item"><a href="check-up.html" class="submenu__link">Чек-ап</a></li>
+										<li class="submenu__item"><a href="" class="submenu__link">Анализы</a></li>
+										<li class="submenu__item"><a href="uzi.html" class="submenu__link">УЗИ</a></li>
+										<li class="submenu__item"><a href="ekg.html" class="submenu__link">ЭКГ</a></li>
+										<li class="submenu__item"><a href="bioimpedancemetry.html" class="submenu__link">Биоимпедансометрия</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="menu__item">
+							<a href="prices.html" class="menu__link">Цены</a>
+						</li>
+						<li class="menu__item">
+							<a href="specialists.html" class="menu__link active">Специалисты</a>
+						</li>
+						<li class="menu__item">
+							<a href="reviews.html" class="menu__link">Отзывы</a>
+						</li>
+						<li class="menu__item">
+							<a href="contacts.html" class="menu__link">Контакты</a>
+						</li>
+					</ul>
+					<div class="menu__actions">
+						<div class="menu__contacts">
+							<a href="tel:+78435671208" class="menu__contacts-phone">+7 (843) 567-12-08</a>
+							<address class="menu__address">г. Казань, ул. Курашова, д.20</address>
+						</div>
+						<a href="#appointment" data-fancybox class="menu__callback btn btn-primary">Записаться</a>
+					</div>
+				</nav>
+				<button type="button" aria-label="Открыть мобильное меню" class="header__toggler icon-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</header>
+		<nav aria-label="Хлебные крошки" class="breadcrumbs">
+			<div class="container">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a href="index.html" class="breadcrumbs__link">Главная</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a href="specialists.html" class="breadcrumbs__link">Специалисты</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<span class="breadcrumbs__link">Салехова Лейсан Талгатовна</span>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<main class="page">
+			<section class="specialist">
+				<div class="container">
+					<div class="specialist__header">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="specialist__info">
+									<h1 class="specialist__title title">Салехова <br> Лейсан Талгатовна</h1>
+									<div class="specialist__meta">
+										<div class="specialist__position">Врач-эндокринолог, терапевт</div>
+										<div class="specialist__expirience"> Стаж с 2018 года </div>
+									</div>
+									<div class="specialist__education">
+										<div class="specialist__education-caption">Образование</div>
+										<ul class="specialist__education-list">
+											<li class="specialist__education-item">
+												<span class="specialist__education-year"> 2018 г. </span>
+												<span class="specialist__education-info"> — Федеральное государственное бюджетное образовательное учреждение высшего образования «Казанский государственный медицинский университет». Диплом специалиста, присуждена квалификация «Врач-лечебник». </span>
+											</li>
+											<li class="specialist__education-item">
+												<span class="specialist__education-year"> 2020 г. </span>
+												<span class="specialist__education-info"> — ФГБОУ ДПО «Российская медицинская академия непрерывного профессионального образования». Диплом об окончании ординатуры, присвоена квалификация «Врач-эндокринолог». </span>
+											</li>
+											<li class="specialist__education-item">
+												<span class="specialist__education-year"> 2020 г. </span>
+												<span class="specialist__education-info"> — Федеральное государственное бюджетное образовательное учреждение высшего образования «Казанский государственный медицинский университет». Первичная специализированная аккредитация по специальности «Врач-эндокринолог». </span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-5">
+								<a href="img/specialists/salekhova-leysan-talgatovna.jpg" data-fancybox class="specialist__image">
+									<img src="img/specialists/salekhova-leysan-talgatovna.jpg" class="cover-image" alt="Фото специалиста">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="specialist__bottom">
+						<div class="row">
+							<div class="col-lg-7">
+								<h2 class="specialist__caption title">О специалисте</h2>
+								<div class="specialist__desc">
+									<p>Лейсан Талгатовна Салехова — внимательный и вдумчивый специалист, посвятивший себя одной из самых сложных и тонко регулируемых сфер медицины — эндокринологии. Её профессиональный путь начался в Казанском государственном медицинском университете, где она получила базовое медицинское образование и уже тогда определилась со специализацией, выбрав работу с гормональными нарушениями и метаболическими расстройствами.</p>
+									<p>Эндокринология требует не только отличного знания анатомии и физиологии, но и аналитического мышления, терпения и особого клинического чутья. Лейсан Тальгатовна сочетает в себе все эти качества, принимая пациентов с заболеваниями щитовидной железы, нарушениями углеводного обмена, ожирением, остеопорозом и другими нарушениями гормонального фона.</p>
+									<p>В своей работе она делает акцент на комплексный подход — учитывает общее состояние пациента, образ жизни, сопутствующие патологии, тщательно подбирает лечение и помогает не только справиться с симптомами, но и улучшить общее качество жизни. Пациенты ценят её за деликатность, открытость и готовность подробно объяснить каждое назначение и его необходимость.</p>
+									<p>Современная эндокринология не стоит на месте, и Лейсан Тальгатовна продолжает развиваться вместе с ней — следит за актуальными рекомендациями, посещает профильные конференции и регулярно повышает квалификацию. Это позволяет ей применять в своей практике проверенные и эффективные методики лечения, соответствующие современным медицинским стандартам.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="certs">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-header__title title">Сертификаты</h2>
+						<div class="section-header__controls">
+							<button type="button" class="certs__prev swiper-button-prev"></button>
+							<button type="button" class="certs__next swiper-button-next"></button>
+						</div>
+					</div>
+					<div class="certs__slider swiper">
+						<div class="swiper-wrapper">
+							<a href="img/cert.jpg" data-fancybox='certs' class="certs__slide swiper-slide">
+								<img src="img/cert.jpg" class="cover-image" alt="Сертификат">
+							</a>
+							<a href="img/cert.jpg" data-fancybox='certs' class="certs__slide swiper-slide">
+								<img src="img/cert.jpg" class="cover-image" alt="Сертификат">
+							</a>
+							<a href="img/cert.jpg" data-fancybox='certs' class="certs__slide swiper-slide">
+								<img src="img/cert.jpg" class="cover-image" alt="Сертификат">
+							</a>
+							<a href="img/cert.jpg" data-fancybox='certs' class="certs__slide swiper-slide">
+								<img src="img/cert.jpg" class="cover-image" alt="Сертификат">
+							</a>
+							<a href="img/cert.jpg" data-fancybox='certs' class="certs__slide swiper-slide">
+								<img src="img/cert.jpg" class="cover-image" alt="Сертификат">
+							</a>
+							<a href="img/cert.jpg" data-fancybox='certs' class="certs__slide swiper-slide">
+								<img src="img/cert.jpg" class="cover-image" alt="Сертификат">
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="appointment">
+				<div class="container">
+					<div class="row">
+						<div class="col-xxl-7 col-xl-8 col-lg-9">
+							<h2 class="appointment__title title">Записаться на приём</h2>
+							<p class="appointment__subtitle">Оставьте свой номер телефона, мы перезвоним, ответим на все вопросы и подберём подходящее время приёма.</p>
+							<form action="#" class="appointment__form form">
+								<input type="text" name="username" class="form__control form__control--lg" placeholder="Ваше имя">
+								<input type="tel" name="phone" class="form__control form__control--lg" placeholder="+7 (999) 999-99-99">
+								<button type="submit" class="form__submit btn btn-primary btn-lg">Записаться на приём</button>
+								<div class="form__policy"> Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь с&nbsp;<a href="">Политикой конфиденциальности</a> </div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contacts">
+				<div class="container">
+					<div class="section-header">
+						<h2 class="section-header__title title">Мы находимся в&nbsp;центре города</h2>
+						<div class="section-header__hint">контакты</div>
+					</div>
+					<div class="contacts__body">
+						<div class="contacts__main">
+							<div class="contacts__caption">Контакты</div>
+							<ul class="contacts__list">
+								<li class="contacts__item">
+									<a href="tel:+78435671208" class="contacts__link icon-phone">+7 (843) 567-12-08</a>
+								</li>
+								<li class="contacts__item">
+									<a href="" class="contacts__link icon-telegram">Написать в Telegram</a>
+								</li>
+								<li class="contacts__item">
+									<a href="" class="contacts__link icon-whatsapp">Написать в WhatsApp</a>
+								</li>
+							</ul>
+							<div class="contacts__socials">
+								<div class="contacts__socials-caption">Мы в соц.сетях</div>
+								<div class="contacts__socials-items">
+									<a href="" aria-label="instagram" class="contacts__socials-item icon-instagram"></a>
+									<a href="" aria-label="telegram" class="contacts__socials-item icon-telegram"></a>
+									<a href="" aria-label="youtube" class="contacts__socials-item icon-youtube"></a>
+								</div>
+							</div>
+						</div>
+						<div class="contacts__balloon">
+							<address class="contacts__address icon-location"> г. Казань, ул. Курашова, д.20 </address>
+							<a href="" class="contacts__btn btn btn-primary">Проложить маршрут</a>
+						</div>
+						<div class="contacts__map">
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7651dd8e0bfd0da7c0bce192c3069826e7dcfb2e9b5cec25a2c0891e9cd54fa0&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__body">
+					<div class="row">
+						<div class="col-xl-4 col-lg-6">
+							<div class="footer__main">
+								<a href="/" class="footer__logo">
+									<span class="footer__logo-icon">
+										<img src="img/logo-color.svg" alt="Логотип">
+									</span>
+									<span class="footer__logo-content">
+										<span class="footer__logo-name">БУДЬ В BALANCE</span>
+										<span class="footer__logo-deskriptor">Медицинская клиника <br> по профилактике заболеваний в Казани</span>
+									</span>
+								</a>
+								<div class="footer__meta">
+									<div class="footer__worktime">Пн-Вс: с 08:00 до 21:00</div>
+									<a href="tel:+78435671208" class="footer__phone">+7 (843) 567-12-08</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-3 col-md-6">
+							<nav aria-label="Меню услуг" class="footer__menu">
+								<div class="footer__menu-caption">Услуги</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Приём врачей</a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Нутрициолог</a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Массаж</a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Капельницы</a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Чек-ап</a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Анализы</a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Исследования</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-xl-2 col-lg-3 col-md-6">
+							<nav aria-label="Меню информации" class="footer__menu">
+								<div class="footer__menu-caption">О клинике</div>
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">О клинике </a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Правовые документы </a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Вакансии </a></li>
+									<li class="footer__menu-item"><a href="" class="footer__menu-link">Франшиза </a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-xl-4 col-lg-6">
+							<div class="footer__actions">
+								<a href="#appointment" data-fancybox class="footer__btn btn btn-primary btn-lg">Записаться на приём</a>
+								<div class="footer__socials">
+									<a href="" class="footer__social icon-whatsapp"></a>
+									<a href="" class="footer__social icon-telegram"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__bottom-container container">
+					<div class="footer__copyright">2025, © «Будь в Балансе»</div>
+					<a href="" class="footer__policy">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</footer>
+		<div id="appointment" class="popup" role="dialog" aria-modal="true" hidden>
+			<h2 class="popup__title title">Онлайн-запись в&nbsp;Balance Med</h2>
+			<p class="popup__subtitle">Наш администратор свяжется с Вами в течение 15 минут.</p>
+			<form action="#" class="popup__form form">
+				<input type="text" name="username" class="form__control" placeholder="Ваше имя">
+				<input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
+				<div class="form__bottom">
+					<button type="submit" class="form__submit btn btn-primary btn-lg">Оставить заявку</button>
+				</div>
+				<div class="form__policy"> Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
+				</div>
+			</form>
+		</div> <!-- plugins -->
+		<script src="js/libs/fancybox.umd.js?_v=20260217191138"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20260217191138"></script>
+		<!-- plugins -->
+		<script src="js/app.min.js?_v=20260217191138"></script>
+	</div>
+</body>
 
-        <link rel="stylesheet" href="css/reset.min.css">
-        <link rel="stylesheet" href="css/style.min.css">
-
-    </head>
-    <body>
-        <div class="wrapper">
-            <header class="header">
-                <div class="container header__container">
-                    <a href="index.html" class="header__logo">
-                        <span class="header__logo-icon">
-                            <img src="img/logo.svg" alt="Логотип">
-                        </span>
-                        <span class="header__logo-text">
-                            БУДЬ В BALANCE
-                        </span>
-                    </a>
-                    <nav aria-label="Меню" class="header__menu menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="about.html" class="menu__link">О клинике</a>
-                            </li>
-                            <li class="menu__item menu__item--parent">
-                                <a href="" class="menu__link">Услуги</a>
-                                <button type="button" aria-label="Открыть подменю" class="menu__arrow icon-down"></button>
-                                <div class="submenu">
-                                    <div class="submenu__column">
-                                        <a href="specialists.html" class="submenu__caption active">Специалисты</a>
-                                        <ul class="submenu__list">
-                                            <li class="submenu__item"><a href="therapist.html" class="submenu__link">Терапевт</a></li>
-                                            <li class="submenu__item"><a href="endocrinologist.html" class="submenu__link">Эндокринолог</a></li>
-                                            <li class="submenu__item"><a href="nutritionist.html" class="submenu__link">Нутрициолог</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="submenu__column">
-                                        <a href="" class="submenu__caption">Процедуры</a>
-                                        <ul class="submenu__list">
-                                            <li class="submenu__item"><a href="droppers.html" class="submenu__link">Капельницы</a></li>
-                                            <li class="submenu__item"><a href="massage.html" class="submenu__link">Массаж</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="submenu__column">
-                                        <a href="" class="submenu__caption">Обследования</a>
-                                        <ul class="submenu__list">
-                                            <li class="submenu__item"><a href="check-up.html" class="submenu__link">Чек-ап</a></li>
-                                            <li class="submenu__item"><a href="" class="submenu__link">Анализы</a></li>
-                                            <li class="submenu__item"><a href="uzi.html" class="submenu__link">УЗИ</a></li>
-                                            <li class="submenu__item"><a href="ekg.html" class="submenu__link">ЭКГ</a></li>
-                                            <li class="submenu__item"><a href="bioimpedancemetry.html" class="submenu__link">Биоимпедансометрия</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="menu__item">
-                                <a href="prices.html" class="menu__link">Цены</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="specialists.html" class="menu__link active">Специалисты</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="reviews.html" class="menu__link">Отзывы</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="" class="menu__link">Контакты</a>
-                            </li>
-                        </ul>
-                        <div class="menu__actions">
-                            <div class="menu__contacts">
-                                <a href="tel:+78435671208" class="menu__contacts-phone">+7 (843) 567-12-08</a>
-                                <address class="menu__address">г. Казань, ул. Курашова, д.20</address>
-                            </div>
-                            <a href="#appointment" data-fancybox class="menu__callback btn btn-primary">Записаться</a>
-                        </div>
-                    </nav>
-                    <button type="button" aria-label="Открыть мобильное меню" class="header__toggler icon-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </header>
-            <nav aria-label="Хлебные крошки" class="breadcrumbs">
-                <div class="container">
-                    <ul class="breadcrumbs__list">
-                        <li class="breadcrumbs__item">
-                            <a href="index.html" class="breadcrumbs__link">Главная</a>
-                        </li>
-                        <li class="breadcrumbs__item">
-                            <a href="specialists.html" class="breadcrumbs__link">Специалисты</a>
-                        </li>
-                        <li class="breadcrumbs__item">
-                            <span class="breadcrumbs__link">Салехова Лейсан Талгатовна</span>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <main class="page">
-                <section class="specialist">
-                    <div class="container">
-                        
-                        <div class="specialist__header">
-                            <div class="row">
-                                <div class="col-lg-7">
-                                    <div class="specialist__info">
-                                        <h1 class="specialist__title title">Салехова <br> Лейсан Талгатовна</h1>
-                                        <div class="specialist__meta">
-                                            <div class="specialist__position">Врач-эндокринолог, терапевт</div>
-                                            <div class="specialist__expirience">
-                                                Стаж с 2018 года
-                                            </div>
-                                        </div>
-                                        <div class="specialist__education">
-                                            <div class="specialist__education-caption">Образование</div>
-                                            <ul class="specialist__education-list">
-                                                 <li class="specialist__education-item">
-                                                    <span class="specialist__education-year">
-                                                        2018 г.
-                                                    </span>
-                                                    <span class="specialist__education-info">
-                                                        — Федеральное государственное бюджетное образовательное учреждение высшего образования «Казанский государственный медицинский университет». Диплом специалиста, присуждена квалификация «Врач-лечебник».
-                                                    </span>
-                                                    </li>
-                                                     <li class="specialist__education-item">
-                                                    <span class="specialist__education-year">
-                                                        2020 г.
-                                                    </span>
-                                                    <span class="specialist__education-info">
-                                                        — ФГБОУ ДПО «Российская медицинская академия непрерывного профессионального образования». Диплом об окончании ординатуры, присвоена квалификация «Врач-эндокринолог».
-                                                    </span>
-                                                    </li>
-                                                     <li class="specialist__education-item">
-                                                    <span class="specialist__education-year">
-                                                        2020 г.
-                                                    </span>
-                                                    <span class="specialist__education-info">
-                                                        — Федеральное государственное бюджетное образовательное учреждение высшего образования «Казанский государственный медицинский университет». Первичная специализированная аккредитация по специальности «Врач-эндокринолог».
-                                                    </span>
-                                                    </li>
-                                                    
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5">
-                                    <a href="img/specialists/salekhova-leysan-talgatovna.jpg" data-fancybox class="specialist__image">
-                                        <img src="img/specialists/salekhova-leysan-talgatovna.jpg" class="cover-image" alt="Фото специалиста">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="specialist__bottom">
-                            <div class="row">
-                                <div class="col-lg-7">
-                                    <h2 class="specialist__caption title">О специалисте</h2>
-                                    <div class="specialist__desc">
-                                         <p>Лейсан Талгатовна Салехова — внимательный и вдумчивый специалист, посвятивший себя одной из самых сложных и тонко регулируемых сфер медицины — эндокринологии. Её профессиональный путь начался в Казанском государственном медицинском университете, где она получила базовое медицинское образование и уже тогда определилась со специализацией, выбрав работу с гормональными нарушениями и метаболическими расстройствами.</p>  <p>Эндокринология требует не только отличного знания анатомии и физиологии, но и аналитического мышления, терпения и особого клинического чутья. Лейсан Тальгатовна сочетает в себе все эти качества, принимая пациентов с заболеваниями щитовидной железы, нарушениями углеводного обмена, ожирением, остеопорозом и другими нарушениями гормонального фона.</p>  <p>В своей работе она делает акцент на комплексный подход — учитывает общее состояние пациента, образ жизни, сопутствующие патологии, тщательно подбирает лечение и помогает не только справиться с симптомами, но и улучшить общее качество жизни. Пациенты ценят её за деликатность, открытость и готовность подробно объяснить каждое назначение и его необходимость.</p>  <p>Современная эндокринология не стоит на месте, и Лейсан Тальгатовна продолжает развиваться вместе с ней — следит за актуальными рекомендациями, посещает профильные конференции и регулярно повышает квалификацию. Это позволяет ей применять в своей практике проверенные и эффективные методики лечения, соответствующие современным медицинским стандартам.</p>  </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </section>
-                <section class="certs">
-                    <div class="container">
-                        <div class="section-header">
-                            <h2 class="section-header__title title">Сертификаты</h2>
-                            <div class="section-header__controls">
-                                <button type="button" class="certs__prev swiper-button-prev"></button>
-                                <button type="button" class="certs__next swiper-button-next"></button>
-                            </div>
-                        </div>
-                        <div class="certs__slider swiper">
-                            <div class="swiper-wrapper">
-                                <a href="img/cert.jpg" data-fancybox='certs' class="certs__slide swiper-slide">
-                                    <img src="img/cert.jpg" class="cover-image" alt="Сертификат">
-                                </a>
-                                <a href="img/cert.jpg" data-fancybox='certs' class="certs__slide swiper-slide">
-                                    <img src="img/cert.jpg" class="cover-image" alt="Сертификат">
-                                </a>
-                                <a href="img/cert.jpg" data-fancybox='certs' class="certs__slide swiper-slide">
-                                    <img src="img/cert.jpg" class="cover-image" alt="Сертификат">
-                                </a>
-                                <a href="img/cert.jpg" data-fancybox='certs' class="certs__slide swiper-slide">
-                                    <img src="img/cert.jpg" class="cover-image" alt="Сертификат">
-                                </a>
-                                <a href="img/cert.jpg" data-fancybox='certs' class="certs__slide swiper-slide">
-                                    <img src="img/cert.jpg" class="cover-image" alt="Сертификат">
-                                </a>
-                                <a href="img/cert.jpg" data-fancybox='certs' class="certs__slide swiper-slide">
-                                    <img src="img/cert.jpg" class="cover-image" alt="Сертификат">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="appointment">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xxl-7 col-xl-8 col-lg-9">
-                                <h2 class="appointment__title title">Записаться на приём</h2>
-                                <p class="appointment__subtitle">Оставьте свой номер телефона, мы перезвоним, ответим на все вопросы и подберём подходящее время приёма.</p>
-                                <form action="#" class="appointment__form form">
-                                    <input type="text" name="username" class="form__control form__control--lg" placeholder="Ваше имя">
-                                    <input type="tel" name="phone" class="form__control form__control--lg" placeholder="+7 (999) 999-99-99">
-                                    <button type="submit" class="form__submit btn btn-primary btn-lg">Записаться на приём</button>
-                                    <div class="form__policy">
-                                        Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь с&nbsp;<a href="">Политикой конфиденциальности</a> </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="contacts">
-                    <div class="container">
-                        <div class="section-header">
-                            <h2 class="section-header__title title">Мы находимся в&nbsp;центре города</h2>
-                            <div class="section-header__hint">контакты</div>
-                        </div>
-                        <div class="contacts__body">
-                            <div class="contacts__main">
-                                <div class="contacts__caption">Контакты</div>
-                                <ul class="contacts__list">
-                                    <li class="contacts__item">
-                                        <a href="tel:+78435671208" class="contacts__link icon-phone">+7 (843) 567-12-08</a>
-                                    </li>
-                                    <li class="contacts__item">
-                                        <a href="" class="contacts__link icon-telegram">Написать в Telegram</a>
-                                    </li>
-                                    <li class="contacts__item">
-                                        <a href="" class="contacts__link icon-whatsapp">Написать в WhatsApp</a>
-                                    </li>
-                                </ul>
-                                <div class="contacts__socials">
-                                    <div class="contacts__socials-caption">Мы в соц.сетях</div>
-                                    <div class="contacts__socials-items">
-                                        <a href="" aria-label="" class="contacts__socials-item icon-instagram"></a>
-                                        <a href="" aria-label="" class="contacts__socials-item icon-telegram"></a>
-                                        <a href="" aria-label="" class="contacts__socials-item icon-youtube"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="contacts__balloon">
-                                <address class="contacts__address icon-location">
-                                    г. Казань, ул. Курашова, д.20
-                                </address>
-                                <a href="" class="contacts__btn btn btn-primary">Проложить маршрут</a>
-                            </div>
-                            <div class="contacts__map">
-                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7651dd8e0bfd0da7c0bce192c3069826e7dcfb2e9b5cec25a2c0891e9cd54fa0&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <footer class="footer">
-                <div class="container">
-                    <div class="footer__body">
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="footer__main">
-                                    <a href="/" class="footer__logo">
-                                        <span class="footer__logo-icon">
-                                            <img src="img/logo-color.svg" alt="Логотип">
-                                        </span>
-                                        <span class="footer__logo-content">
-                                            <span class="footer__logo-name">БУДЬ В BALANCE</span>
-                                            <span class="footer__logo-deskriptor">Медицинская клиника <br> по профилактике заболеваний в Казани</span>
-                                        </span>
-                                    </a>
-                                    <div class="footer__meta">
-                                        <div class="footer__worktime">Пн-Вс: с 08:00 до 21:00</div>
-                                        <a href="tel:+78435671208" class="footer__phone">+7 (843) 567-12-08</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-3 col-md-6">
-                                <nav aria-label="Меню услуг" class="footer__menu">
-                                    <div class="footer__menu-caption">Услуги</div>
-                                    <ul class="footer__menu-list">
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Приём врачей</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Нутрициолог</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Массаж</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Капельницы</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Чек-ап</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Анализы</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Исследования</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="col-xl-2 col-lg-3 col-md-6">
-                                <nav aria-label="Меню информации" class="footer__menu">
-                                    <div class="footer__menu-caption">О клинике</div>
-                                    <ul class="footer__menu-list">
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">О клинике </a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Правовые документы </a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Вакансии </a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Франшиза </a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="footer__actions">
-                                    <a href="#appointment" data-fancybox class="footer__btn btn btn-primary btn-lg">Записаться на приём</a>
-                                    <div class="footer__socials">
-                                        <a href="" class="footer__social icon-whatsapp"></a>
-                                        <a href="" class="footer__social icon-telegram"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__bottom">
-                    <div class="footer__bottom-container container">
-                        <div class="footer__copyright">2025, © «Будь в Балансе»</div>
-                        <a href="" class="footer__policy">Политика конфиденциальности</a>
-                    </div>
-                </div>
-            </footer>
-
-            <div id="appointment" class="popup" role="dialog" aria-modal="true" hidden>
-                <h2 class="popup__title title">Онлайн-запись в&nbsp;Balance Med</h2>
-                <p class="popup__subtitle">Наш администратор свяжется с Вами в течение 15 минут.</p>
-                <form action="#" class="popup__form form">
-                    <input type="text" name="username" class="form__control" placeholder="Ваше имя">
-                    <input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
-                    <div class="form__bottom">
-                        <button type="submit" class="form__submit btn btn-primary btn-lg">Оставить заявку</button>
-                    </div>
-                    <div class="form__policy">
-                        Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
-                    </div>
-                </form>
-            </div>
-            <!-- plugins -->
-            <script src="js/libs/fancybox.umd.js"></script>
-            <script src="js/libs/swiper-bundle.min.js"></script>
-            <!-- plugins -->
-
-            <script src="js/app.min.js"></script>
-        </div>
-    </body>
 </html>
