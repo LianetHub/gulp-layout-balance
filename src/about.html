@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Главная'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": 1
+            })
+            <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">О клинике</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="page">
+                <section class="service">
+                    <div class="container">
+                        <h1 class="service__title title">О клинике</h1>
+                        <div class="service__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="service__main">
+                                        <p class="service__subtitle">БУДЬ В BALANCE - медицинская клиника по профилактике заболеваний и поддержанию организма в тонусе. </p>
+                                        <div class="service__desc service__desc--small">
+                                            <p>Большинство людей негативно относятся к больницам и врачам. Но мы нашли способ избежать плохих ассоциаций: создали атмосферу уюта и заботы о клиенте. Никаких больничных кушеток и белых халатов.</p>
+                                            <p>Мы практикуем индивидуальный подход для работы с каждым клиентом, потому что каждый человек и его проблемы - уникальны.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="service__image">
+                                        <img src="@img/about.jpg" class="cover-image" alt="Фото услуги">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="carousel">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2 class="section-header__title title">Наши преимущества</h2>
+                            <div class="section-header__controls">
+                                <button type="button" class="carousel__prev swiper-button-prev"></button>
+                                <button type="button" class="carousel__next swiper-button-next"></button>
+                            </div>
+                        </div>
+                        <div class="carousel__slider swiper">
+                            <ol class="swiper-wrapper ordered-list">
+                                <li class="carousel__slide swiper-slide">
+                                    <div class="carousel__slide-caption">
+                                        Качество
+                                    </div>
+                                    <div class="carousel__slide-desc">
+                                        <p>сотрудничаем с ведущими фармакологическими компаниями</p>
+                                    </div>
+                                </li>
+                                <li class="carousel__slide swiper-slide">
+                                    <div class="carousel__slide-caption">
+                                        Безопасность
+                                    </div>
+                                    <div class="carousel__slide-desc">
+                                        <p>всегда следим за самочувствием клиента</p>
+                                    </div>
+                                </li>
+                                <li class="carousel__slide swiper-slide">
+                                    <div class="carousel__slide-caption">
+                                        Профессионализм
+                                    </div>
+                                    <div class="carousel__slide-desc">
+                                        <p>большой опыт персонала в оказании скорой и неотложной медицинской помощи</p>
+                                    </div>
+                                </li>
+                                <li class="carousel__slide swiper-slide">
+                                    <div class="carousel__slide-caption">
+                                        Знания
+                                    </div>
+                                    <div class="carousel__slide-desc">
+                                        <p>обучение персонала каждые 3 месяца</p>
+                                    </div>
+                                </li>
+                                <li class="carousel__slide swiper-slide">
+                                    <div class="carousel__slide-caption">Атмосфера</div>
+                                    <div class="carousel__slide-desc">
+                                        <p>без больничных кушеток и белых халатов</p>
+                                    </div>
+                                </li>
+                            </ol>
+                            <div class="carousel__pagination swiper-pagination"></div>
+                        </div>
+                    </div>
+                </section>
+                @@include('./html/_consult.html')
+                @@include('./html/_contacts.html')
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

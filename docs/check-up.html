@@ -1,1641 +1,1724 @@
 <!DOCTYPE html>
 <html lang="ru">
+    <head>
+        <title>БУДЬ В BALANCE | Чек-ап</title>
 
-<head>
-	<title>БУДЬ В BALANCE | Чек-ап</title>
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- plugins -->
-	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20260217112051">
-	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20260217112051">
-	<!-- plugins -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20260217112051">
-	<link rel="stylesheet" href="css/style.min.css?_v=20260217112051">
-</head>
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<body>
-	<div class="wrapper">
-		<header class="header">
-			<div class="container header__container">
-				<a href="index.html" class="header__logo">
-					<span class="header__logo-icon">
-						<img src="img/logo.svg" alt="Логотип">
-					</span>
-					<span class="header__logo-text"> БУДЬ В BALANCE </span>
-				</a>
-				<nav aria-label="Меню" class="header__menu menu">
-					<ul class="menu__list">
-						<li class="menu__item">
-							<a href="" class="menu__link">О клинике</a>
-						</li>
-						<li class="menu__item menu__item--parent">
-							<a href="" class="menu__link">Услуги</a>
-							<button type="button" aria-label="Открыть подменю" class="menu__arrow icon-down"></button>
-							<div class="submenu">
-								<div class="submenu__column">
-									<a href="specialists.html" class="submenu__caption">Специалисты</a>
-									<ul class="submenu__list">
-										<li class="submenu__item"><a href="therapist.html" class="submenu__link">Терапевт</a></li>
-										<li class="submenu__item"><a href="endocrinologist.html" class="submenu__link">Эндокринолог</a></li>
-										<li class="submenu__item"><a href="nutritionist.html" class="submenu__link">Нутрициолог</a></li>
-									</ul>
-								</div>
-								<div class="submenu__column">
-									<a href="" class="submenu__caption">Процедуры</a>
-									<ul class="submenu__list">
-										<li class="submenu__item"><a href="droppers.html" class="submenu__link">Капельницы</a></li>
-										<li class="submenu__item"><a href="massage.html" class="submenu__link">Массаж</a></li>
-									</ul>
-								</div>
-								<div class="submenu__column">
-									<a href="" class="submenu__caption">Обследования</a>
-									<ul class="submenu__list">
-										<li class="submenu__item"><a href="check-up.html" class="submenu__link active">Чек-ап</a></li>
-										<li class="submenu__item"><a href="" class="submenu__link">Анализы</a></li>
-										<li class="submenu__item"><a href="uzi.html" class="submenu__link">УЗИ</a></li>
-										<li class="submenu__item"><a href="ekg.html" class="submenu__link">ЭКГ</a></li>
-										<li class="submenu__item"><a href="bioimpedancemetry.html" class="submenu__link">Биоимпедансометрия</a></li>
-									</ul>
-								</div>
-							</div>
-						</li>
-						<li class="menu__item">
-							<a href="prices.html" class="menu__link">Цены</a>
-						</li>
-						<li class="menu__item">
-							<a href="specialists.html" class="menu__link">Специалисты</a>
-						</li>
-						<li class="menu__item">
-							<a href="" class="menu__link">Отзывы</a>
-						</li>
-						<li class="menu__item">
-							<a href="" class="menu__link">Контакты</a>
-						</li>
-					</ul>
-					<div class="menu__actions">
-						<div class="menu__contacts">
-							<a href="tel:+78435671208" class="menu__contacts-phone">+7 (843) 567-12-08</a>
-							<address class="menu__address">г. Казань, ул. Курашова, д.20</address>
-						</div>
-						<a href="#appointment" data-fancybox class="menu__callback btn btn-primary">Записаться</a>
-					</div>
-				</nav>
-				<button type="button" aria-label="Открыть мобильное меню" class="header__toggler icon-menu">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
-			</div>
-		</header>
-		<nav aria-label="Хлебные крошки" class="breadcrumbs">
-			<div class="container">
-				<ul class="breadcrumbs__list">
-					<li class="breadcrumbs__item">
-						<a href="index.html" class="breadcrumbs__link">Главная</a>
-					</li>
-					<li class="breadcrumbs__item">
-						<span class="breadcrumbs__link">Чек-ап</span>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<main class="page">
-			<section class="service">
-				<div class="container">
-					<div class="service__body service__body--blured">
-						<div class="row">
-							<div class="col-lg-6">
-								<div class="service__main">
-									<h1 class="service__title title">Чек-ап — комплексное обследование организма с выгодой до 40% </h1>
-									<p class="service__subtitle">Современный формат диагностики, включающий лабораторные анализы и инструментальные исследования в одном пакете.</p>
-									<div class="service__caption">Преимущества регулярного прохождения Чек-апа</div>
-									<ul class="service__list">
-										<li>Возможность выявить скрытые проблемы до появления симптомов</li>
-										<li>Максимально подробная картина состояния организма</li>
-										<li>Основа для точной диагностики и назначения эффективного лечения</li>
-									</ul>
-									<a href="#appointment" data-fancybox class="service__btn btn btn-primary btn-lg">Записаться на приём</a>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="service__image">
-									<img src="img/check-up.jpg" class="cover-image" alt="Фото услуги">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="video-block">
-				<div class="container">
-					<h2 class="video-block__title title-sm"> Посмотрите короткое видео о том, как проходит процедура чек-ап в нашей клинике </h2>
-					<a href="https://vkvideo.ru/video_ext.php?oid=-73354773&id=456240544&hash=1c842bdb2fd8c544&hd=3" data-fancybox data-type="iframe" class="video-block__content icon-play">
-						<img src="img/video.jpg" class="cover-image" alt="Постер">
-					</a>
-					<div class="video-block__desc">
-						<div class="row">
-							<div class="col-lg-8">
-								<p>
-									<strong>Прохождение чек-апа</strong> — это профилактика, которая работает на упреждение. Ведь чем раньше выявлено нарушение, тем проще и быстрее его устранить.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="programms">
-				<div class="container">
-					<h2 class="programms__title title">Чек-ап программы</h2>
-					<div class="programms__tabs">
-						<button class="programms__tab active">Мужской чек-ап</button>
-						<button class="programms__tab">Женский чек-ап</button>
-						<button class="programms__tab">Общие программы</button>
-					</div>
-					<div class="programms__content">
-						<div class="programms__block active">
-							<div class="programms__desc">
-								<div class="row">
-									<div class="col-lg-6">
-										<p><strong>Контроль здоровья без лишних походов по врачам</strong></p>
-										<p>Мужской чек-ап — это комплексное обследование, направленное на&nbsp;выявление распространенных мужских проблем:</p>
-										<ul>
-											<li>уровень гормонов;</li>
-											<li>работа сердца и сосудов;</li>
-											<li>состояние печени и почек;</li>
-											<li>онкомаркеры;</li>
-											<li>ПСА (простатспецифический антиген).</li>
-										</ul>
-										<p>Подойдёт мужчинам старше 25 лет, особенно при регулярных стрессах, усталости, снижении либидо или подготовке к физическим нагрузкам.</p>
-									</div>
-								</div>
-							</div>
-							<div class="programms__cards">
-								<div class="programms__cards-block">
-									<div class="row">
-										<div class="col-xl-4 col-lg-6">
-											<div class="programms__card">
-												<div class="programms__card-title">БАЗОВЫЙ ЧЕК-АП</div>
-												<ul class="programms__card-subtitle">
-													<li>22 лабораторных анализа</li>
-												</ul>
-												<div class="programms__card-desc">Включает в себя общий анализ крови для оценки состояния организма, исследования функций печени и почек, анализ липидного профиля и уровня тестостерона, а также проверку витаминов, минералов и уровня глюкозы.</div>
-												<a href="#programm-base-male" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
-												<div class="programms__card-price"> Стоимость <span class="color-accent">8 400 ₽</span>
-												</div>
-											</div>
-										</div>
-										<div class="col-xl-4 col-lg-6">
-											<div class="programms__card">
-												<div class="programms__card-title">РАСШИРЕННЫЙ ЧЕК-АП</div>
-												<ul class="programms__card-subtitle">
-													<li>25 лабораторных анализов</li>
-												</ul>
-												<div class="programms__card-desc">
-													<p> Включает в себя анализы крови для выявления воспалений, оценки функций печени и почек, а также липидный профиль для проверки уровня холестерина.</p>
-													<p>Дополнительно исследуются ПСА, гормоны (ТТГ, тестостерон), уровень витаминов и минералов, и показатели метаболизма.</p>
-												</div>
-												<a href="#programm-extended-male" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
-												<div class="programms__card-price"> Стоимость <span class="color-accent">10 200 ₽</span>
-												</div>
-											</div>
-										</div>
-										<div class="col-xl-4 col-lg-6">
-											<div class="programms__card">
-												<div class="programms__card-title">ПРЕМИУМ ЧЕК-АП</div>
-												<ul class="programms__card-subtitle">
-													<li>53 лабораторных анализа</li>
-													<li>4 диагностических обследования</li>
-													<li>3 консультации специалистов</li>
-												</ul>
-												<div class="programms__card-desc">
-													<p> Программа охватывает все аспекты здоровья, включая анализы на инфекции, функции органов, уровень витаминов и электролитов. Определяются показатели обмена железа, липидный профиль и состояние щитовидной железы. Исследования системы свёртывания и онкомаркеры помогают выявить патологии. </p>
-													<p> Ультразвуковые исследования и консультации специалистов завершают программу для улучшения здоровья. </p>
-												</div>
-												<a href="#programm-premium-male" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
-												<div class="programms__card-price"> Стоимость <span class="color-accent">38 000 ₽</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="programms__cards-block">
-									<h3 class="programms__cards-caption title-sm">СПЕЦИАЛИЗИРОВАННЫЕ ПРОГРАММЫ ДЛЯ МУЖЧИН</h3>
-									<div class="row">
-										<div class="col-xl-4 col-lg-6">
-											<div class="programms__card">
-												<div class="programms__card-title">БУДЬ В BALANCE МУЖСКОЙ</div>
-												<ul class="programms__card-subtitle">
-													<li>34 лабораторных анализа</li>
-												</ul>
-												<div class="programms__card-desc">Комплексный чек-ап включает анализы крови и мочи для оценки общего состояния здоровья. Основное внимание уделяется глюкозе, гликированному гемоглобину, ПСА, биохимическим показателям ферментов и микроэлементов. Также проверяется уровень витаминов и гормонов.</div>
-												<a href="#programm-balance-male" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
-												<div class="programms__card-price"> Стоимость <span class="color-accent">15 700 ₽</span>
-												</div>
-											</div>
-										</div>
-										<div class="col-xl-4 col-lg-6">
-											<div class="programms__card">
-												<div class="programms__card-title">СПОРТИВНЫЙ</div>
-												<ul class="programms__card-subtitle">
-													<li>39 лабораторных анализов</li>
-												</ul>
-												<div class="programms__card-desc"> Основные направления исследования: <ul>
-														<li>Оценка биомаркеров состояния мышц</li>
-														<li>Оценка белкового обмена</li>
-														<li>Оценка мужского гормонального статуса</li>
-														<li>Исключение скрытого железодефицита</li>
-													</ul>
-												</div>
-												<a href="#programm-sports-male" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
-												<div class="programms__card-price"> Стоимость <span class="color-accent">21 000 ₽</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="programms__block">
-							<div class="programms__desc">
-								<div class="row">
-									<div class="col-lg-6">
-										<p><strong>Контроль здоровья без лишних походов по врачам</strong></p>
-										<p>Женский чек-ап — это комплексные программы для заботы о женском здоровье и планирования семьи.</p>
-										<p>Наши программы специально разработаны для женщин:</p>
-										<ul>
-											<li>планирующих беременность и во время беременности/лактации;</li>
-											<li>женщин с менопаузой или риском остеопороза;</li>
-											<li>при нарушениях питания или высокой физической нагрузке;</li>
-											<li>при предиабете/диабете или семейной предрасположенности;</li>
-											<li>для тех, кто жалуется на хроническую усталость или нуждается в мониторинге терапии.</li>
-										</ul>
-									</div>
-								</div>
-								<div class="programms__cards">
-									<div class="programms__cards-block">
-										<div class="row">
-											<div class="col-xl-4 col-lg-6">
-												<div class="programms__card">
-													<div class="programms__card-title">БАЗОВЫЙ ЧЕК-АП</div>
-													<ul class="programms__card-subtitle">
-														<li>22 лабораторных анализа</li>
-													</ul>
-													<div class="programms__card-desc">Включает в себя общий анализ крови для оценки состояния организма, исследования функций печени и почек, анализ липидного профиля и уровня тестостерона, а также проверку витаминов, минералов и уровня глюкозы.</div>
-													<a href="#programm-base-female" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
-													<div class="programms__card-price"> Стоимость <span class="color-accent">8 400 ₽</span>
-													</div>
-												</div>
-											</div>
-											<div class="col-xl-4 col-lg-6">
-												<div class="programms__card">
-													<div class="programms__card-title">РАСШИРЕННЫЙ ЧЕК-АП</div>
-													<ul class="programms__card-subtitle">
-														<li>25 лабораторных анализов</li>
-													</ul>
-													<div class="programms__card-desc">
-														<p> Включает в себя анализы крови для выявления воспалений, оценки функций печени и почек, а также липидный профиль для проверки уровня холестерина.</p>
-														<p>Дополнительно исследуются ПСА, гормоны (ТТГ, тестостерон), уровень витаминов и минералов, и показатели метаболизма.</p>
-													</div>
-													<a href="#programm-extended-female" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
-													<div class="programms__card-price"> Стоимость <span class="color-accent">10 200 ₽</span>
-													</div>
-												</div>
-											</div>
-											<div class="col-xl-4 col-lg-6">
-												<div class="programms__card">
-													<div class="programms__card-title">ПРЕМИУМ ЧЕК-АП</div>
-													<ul class="programms__card-subtitle">
-														<li>53 лабораторных анализа</li>
-														<li>4 диагностических обследования</li>
-														<li>3 консультации специалистов</li>
-													</ul>
-													<div class="programms__card-desc">
-														<p> Программа охватывает все аспекты здоровья, включая анализы на инфекции, функции органов, уровень витаминов и электролитов. Определяются показатели обмена железа, липидный профиль и состояние щитовидной железы. Исследования системы свёртывания и онкомаркеры помогают выявить патологии. </p>
-														<p> Ультразвуковые исследования и консультации специалистов завершают программу для улучшения здоровья. </p>
-													</div>
-													<a href="#programm-premium-female" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
-													<div class="programms__card-price"> Стоимость <span class="color-accent">38 000 ₽</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="programms__cards-block">
-										<h3 class="programms__cards-caption title-sm">Специализированные программы для женщин</h3>
-										<div class="row">
-											<div class="col-xl-4 col-lg-6">
-												<div class="programms__card">
-													<div class="programms__card-title">БУДЬ В BALANCE <br> ЖЕНСКИЙ</div>
-													<ul class="programms__card-subtitle">
-														<li>34 лабораторных анализа</li>
-													</ul>
-													<div class="programms__card-desc">Комплексный медицинский чек-ап включает анализы крови и мочи, которые помогают оценить общее состояние здоровья и выявить возможные заболевания. Основное внимание уделяется уровню глюкозы, гликированного гемоглобина, а также биохимическим анализам на ферменты и микроэлементы. Также проверяется уровень витаминов и гормонов. Такой подход обеспечивает полное представление о здоровье и помогает предотвратить серьезные заболевания.</div>
-													<a href="#programm-balance-female" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
-													<div class="programms__card-price"> Стоимость <span class="color-accent">15 700 ₽</span>
-													</div>
-												</div>
-											</div>
-											<div class="col-xl-4 col-lg-6">
-												<div class="programms__card">
-													<div class="programms__card-title">ПЛАНИРОВАНИЕ БЕРЕМЕННОСТИ</div>
-													<ul class="programms__card-subtitle">
-														<li>28 лабораторных анализов</li>
-													</ul>
-													<div class="programms__card-desc">Чек-ап перед планированием беременности проводится для того, чтобы оценить здоровье будущей матери, выявить и устранить факторы риска, которые могут повлиять на беременность и развитие плода, а также подготовить организм к беременности.</div>
-													<a href="#programm-pregnancy" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
-													<div class="programms__card-price"> Стоимость <span class="color-accent">14 640 ₽</span>
-													</div>
-												</div>
-											</div>
-											<div class="col-xl-4 col-lg-6">
-												<div class="programms__card">
-													<div class="programms__card-title">ЧЕК-АП ПОСЛЕ РОДОВ</div>
-													<ul class="programms__card-subtitle">
-														<li>23 лабораторных анализа</li>
-													</ul>
-													<div class="programms__card-desc">Комплексное исследование для оценки общего состояния женщины, раннего восстановления после беременности, выявления и контроля возможных проблем со здоровьем, влияющих на восстановление и планирование следующей беременности.</div>
-													<a href="#programm-postpartum" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
-													<div class="programms__card-price"> Стоимость <span class="color-accent">11 100 ₽</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="programms__block">
-							<div class="programms__cards">
-								<div class="programms__cards-block">
-									<h3 class="programms__cards-caption title-xs">Специализированные программы комплексного обследования</h3>
-									<div class="row">
-										<div class="col-xl-4 col-lg-6">
-											<div class="programms__card">
-												<div class="programms__card-title">чек-ап «детский»</div>
-												<ul class="programms__card-subtitle">
-													<li>19 лабораторных анализов</li>
-												</ul>
-												<div class="programms__card-desc">
-													<p>Комплексное обследование, направленное на выявление:</p>
-													<ul>
-														<li>инфекционных и воспалительных процессов, хронических воспалений;</li>
-														<li>анемии и дефицит железа;</li>
-														<li>проблем печени и желчного пузыря;</li>
-														<li>проблем с почками и обменом азота;</li>
-														<li>нарушений липидного и углеводного обмена;</li>
-														<li>дефицита витаминов и минерального баланса;</li>
-														<li>нарушения роста и функции щитовидной железы.</li>
-													</ul>
-												</div>
-												<a href="#programm-kids" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
-												<div class="programms__card-price"> Стоимость <span class="color-accent">10 500 ₽</span>
-												</div>
-											</div>
-										</div>
-										<div class="col-xl-4 col-lg-6">
-											<div class="programms__card">
-												<div class="programms__card-title">чек-ап «анемия»</div>
-												<ul class="programms__card-subtitle">
-													<li>17 лабораторных анализов</li>
-												</ul>
-												<div class="programms__card-desc">
-													<p>Направлен на подробную оценку обмена железа и возможных дефицитов, воспалительных процессов и общего питания.</p>
-													<p>Помогает различать типы анемий:</p>
-													<ul>
-														<li>Железодефицитная анемия</li>
-														<li>Анемия воспаления (анемия при хронической болезни)</li>
-														<li>Мегалобластическая анемия (дефицит B9 или B12)</li>
-														<li>Комбинированные состояния</li>
-													</ul>
-												</div>
-												<a href="#programm-anemia" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
-												<div class="programms__card-price"> Стоимость <span class="color-accent">8 500 ₽</span>
-												</div>
-											</div>
-										</div>
-										<div class="col-xl-4 col-lg-6">
-											<div class="programms__card">
-												<div class="programms__card-title">чек-ап «анти-стресс»</div>
-												<ul class="programms__card-subtitle">
-													<li>28 лабораторных анализа</li>
-												</ul>
-												<div class="programms__card-desc">
-													<p>Предназначен для всесторонней оценки состояния организма, выявления возможных дефицитов, воспалительных процессов, обменных нарушений, функций печени, почек, щитовидной железы, а также некоторых факторов риска и аутоиммунных процессов.</p>
-												</div>
-												<a href="#programm-antistress" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
-												<div class="programms__card-price"> Стоимость <span class="color-accent">13 600 ₽</span>
-												</div>
-											</div>
-										</div>
-										<div class="col-xl-4 col-lg-6">
-											<div class="programms__card">
-												<div class="programms__card-title">чек-ап «вес в балансе»</div>
-												<ul class="programms__card-subtitle">
-													<li>30 лабораторных анализов</li>
-												</ul>
-												<div class="programms__card-desc">
-													<p>Широкий пакет обследований, который позволяет оценить обмен веществ, питание, воспаление, функцию органов и риск заболеваний.</p>
-												</div>
-												<a href="#programm-weight-balance" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
-												<div class="programms__card-price"> Стоимость <span class="color-accent">13 900 ₽</span>
-												</div>
-											</div>
-										</div>
-										<div class="col-xl-4 col-lg-6">
-											<div class="programms__card">
-												<div class="programms__card-title">чек-ап «печень в&nbsp;балансе»</div>
-												<ul class="programms__card-subtitle">
-													<li>17 лабораторных анализов</li>
-												</ul>
-												<div class="programms__card-desc">
-													<p>Комплексное обследование, предназначенное для профилактики и раннего выявления изменений печени, а также перед плановыми медицинскими процедурами или операциями.</p>
-													<p>Рекомендуется для пациентов с избыточной массой тела, нарушениями липидного обмена, гипергликемией или сахарным диабетом, злоупотребляющих алкоголем или принимающих лекарства, влияющие на печень.</p>
-												</div>
-												<a href="#programm-liver-balance" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
-												<div class="programms__card-price"> Стоимость <span class="color-accent">5 700 ₽</span>
-												</div>
-											</div>
-										</div>
-										<div class="col-xl-4 col-lg-6">
-											<div class="programms__card">
-												<div class="programms__card-title">чек-ап «кожа, волосы, ногти»</div>
-												<ul class="programms__card-subtitle">
-													<li>20 лабораторных анализов</li>
-												</ul>
-												<div class="programms__card-desc">
-													<p>Рекомендуется пройти:</p>
-													<ul>
-														<li>женщинам и мужчинам, у которых есть симптомы замедленного роста волос, ломкие ногти, кожные высыпания или непонятные изменения кожи</li>
-														<li>после перенесённых инфекций или травм кожи, где требуется контроль воспалительных маркеров и нутриентов</li>
-														<li>пациентам с нарушениями функций щитовидной железы, нутритивной недостаточностью или гормональными нарушениями</li>
-													</ul>
-												</div>
-												<a href="#programm-skin-hair-nails" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
-												<div class="programms__card-price"> Стоимость <span class="color-accent">8 100 ₽</span>
-												</div>
-											</div>
-										</div>
-										<div class="col-xl-4 col-lg-6">
-											<div class="programms__card">
-												<div class="programms__card-title">чек-ап «щитовидная железа в балансе»</div>
-												<ul class="programms__card-subtitle">
-													<li>7 лабораторных анализов</li>
-													<li>УЗИ щитовидной железы</li>
-													<li>консультация эндокринолога</li>
-												</ul>
-												<div class="programms__card-desc">
-													<p>Данный чек-ап подходит вам, если:</p>
-													<ul>
-														<li>вы ранее не обследовались или обнаружили у себя следующие симптомы: слабость, сонливость, эмоциональную лабильность, ухудшение памяти;</li>
-														<li>у вас редкий или учащенный пульс, плохая переносимость физических нагрузок;</li>
-														<li>проблемы с кожей и волосами, ощущение кома в горле, дискомфорт в области шеи.</li>
-													</ul>
-												</div>
-												<a href="#programm-thyroid-balance" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
-												<div class="programms__card-price"> Стоимость <span class="color-accent">6 500 ₽</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="subscribe">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-6 col-lg-7">
-							<h2 class="subscribe__title title">Подписывайтесь на наш telegram-канал!</h2>
-							<p class="subscribe__desc">В нашем Telegram-канале вы найдёте полезные советы по восстановлению и оздоровлению, разборы техник массажа, рекомендации специалистов и актуальные акции. Подписывайтесь, чтобы быть в курсе всего важного и полезного для вашего здоровья!</p>
-							<a href="" class="subscribe__btn btn btn-primary icon-telegram">Подписаться</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="consult">
-				<div class="container">
-					<div class="consult__body">
-						<div class="row">
-							<div class="col-lg-6">
-								<div class="consult__main">
-									<h3 class="consult__title">не откладывайте лечение, запишитесь на консультацию</h3>
-									<p class="consult__subtitle">Оставьте свой номер телефона, мы перезвоним, ответим на все вопросы и подберем подходящее обследование.</p>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<form action="#" class="consult__form form">
-									<input type="text" name="username" class="form__control" placeholder="Ваше имя">
-									<input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
-									<button type="submit" class="form__submit btn btn-primary btn-lg">Записаться на консультацию</button>
-									<div class="form__policy"> Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="contacts">
-				<div class="container">
-					<div class="section-header">
-						<h2 class="section-header__title title">Мы находимся в&nbsp;центре города</h2>
-						<div class="section-header__hint">контакты</div>
-					</div>
-					<div class="contacts__body">
-						<div class="contacts__main">
-							<div class="contacts__caption">Контакты</div>
-							<ul class="contacts__list">
-								<li class="contacts__item">
-									<a href="tel:+78435671208" class="contacts__link icon-phone">+7 (843) 567-12-08</a>
-								</li>
-								<li class="contacts__item">
-									<a href="" class="contacts__link icon-telegram">Написать в Telegram</a>
-								</li>
-								<li class="contacts__item">
-									<a href="" class="contacts__link icon-whatsapp">Написать в WhatsApp</a>
-								</li>
-							</ul>
-							<div class="contacts__socials">
-								<div class="contacts__socials-caption">Мы в соц.сетях</div>
-								<div class="contacts__socials-items">
-									<a href="" aria-label="" class="contacts__socials-item icon-instagram"></a>
-									<a href="" aria-label="" class="contacts__socials-item icon-telegram"></a>
-									<a href="" aria-label="" class="contacts__socials-item icon-youtube"></a>
-								</div>
-							</div>
-						</div>
-						<div class="contacts__balloon">
-							<address class="contacts__address icon-location"> г. Казань, ул. Курашова, д.20 </address>
-							<a href="" class="contacts__btn btn btn-primary">Проложить маршрут</a>
-						</div>
-						<div class="contacts__map">
-							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7651dd8e0bfd0da7c0bce192c3069826e7dcfb2e9b5cec25a2c0891e9cd54fa0&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-		<footer class="footer">
-			<div class="container">
-				<div class="footer__body">
-					<div class="row">
-						<div class="col-xl-4 col-lg-6">
-							<div class="footer__main">
-								<a href="/" class="footer__logo">
-									<span class="footer__logo-icon">
-										<img src="img/logo-color.svg" alt="Логотип">
-									</span>
-									<span class="footer__logo-content">
-										<span class="footer__logo-name">БУДЬ В BALANCE</span>
-										<span class="footer__logo-deskriptor">Медицинская клиника <br> по профилактике заболеваний в Казани</span>
-									</span>
-								</a>
-								<div class="footer__meta">
-									<div class="footer__worktime">Пн-Вс: с 08:00 до 21:00</div>
-									<a href="tel:+78435671208" class="footer__phone">+7 (843) 567-12-08</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-2 col-lg-3 col-md-6">
-							<nav aria-label="Меню услуг" class="footer__menu">
-								<div class="footer__menu-caption">Услуги</div>
-								<ul class="footer__menu-list">
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Приём врачей</a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Нутрициолог</a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Массаж</a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Капельницы</a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Чек-ап</a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Анализы</a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Исследования</a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="col-xl-2 col-lg-3 col-md-6">
-							<nav aria-label="Меню информации" class="footer__menu">
-								<div class="footer__menu-caption">О клинике</div>
-								<ul class="footer__menu-list">
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">О клинике </a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Правовые документы </a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Вакансии </a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Франшиза </a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="col-xl-4 col-lg-6">
-							<div class="footer__actions">
-								<a href="#appointment" data-fancybox class="footer__btn btn btn-primary btn-lg">Записаться на приём</a>
-								<div class="footer__socials">
-									<a href="" class="footer__social icon-whatsapp"></a>
-									<a href="" class="footer__social icon-telegram"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="footer__bottom">
-				<div class="footer__bottom-container container">
-					<div class="footer__copyright">2025, © «Будь в Балансе»</div>
-					<a href="" class="footer__policy">Политика конфиденциальности</a>
-				</div>
-			</div>
-		</footer>
-		<div id="appointment" class="popup" role="dialog" aria-modal="true" hidden>
-			<h2 class="popup__title title">Онлайн-запись в&nbsp;Balance Med</h2>
-			<p class="popup__subtitle">Наш администратор свяжется с Вами в течение 15 минут.</p>
-			<form action="#" class="popup__form form">
-				<input type="text" name="username" class="form__control" placeholder="Ваше имя">
-				<input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
-				<div class="form__bottom">
-					<button type="submit" class="form__submit btn btn-primary btn-lg">Оставить заявку</button>
-				</div>
-				<div class="form__policy"> Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
-				</div>
-			</form>
-		</div> <!-- male programms -->
-		<div id="programm-premium-male" class="popup popup--large" role="dialog" aria-modal="true" hidden>
-			<h2 class="popup__title title color-accent">премиум чек-ап (мужской)</h2>
-			<div class="popup__price title">38 000 ₽</div>
-			<a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
-			<div class="popup__programms">
-				<div class="popup__programms-block">
-					<div class="popup__programms-caption color-accent">Программа комплексного обследования охватывает все аспекты здоровья и включает в себя:</div>
-					<div class="popup__programms-items">
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">ОБЩИЕ ИССЛЕДОВАНИЯ:</div>
-							<ul class="popup__programms-list">
-								<li>Общий анализ крови с лейкоцитарной формулой и СОЭ</li>
-								<li>С-реактивный белок (СРБ)</li>
-								<li>Гомоцистеин</li>
-								<li>Витамин D</li>
-								<li>Ферритин</li>
-								<li>Тестостерон свободный</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">ФУНКЦИОНАЛЬНОЕ СОСТОЯНИЕ ГЕПАТОБИЛИАРНОЙ СИСТЕМЫ:</div>
-							<ul class="popup__programms-list">
-								<li>Общий белок</li>
-								<li>Общий билирубин</li>
-								<li>Прямой билирубин</li>
-								<li>АЛТ</li>
-								<li>АСТ</li>
-								<li>Щелочная фосфатаза</li>
-								<li>Мочевая кислота</li>
-								<li>Копрограмма</li>
-								<li>ХМС по Осипову</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">ИССЛЕДОВАНИЕ СИСТЕМЫ СВЕРТЫВАНИЯ КРОВИ:</div>
-							<ul class="popup__programms-list">
-								<li>Коагулограмма (скрининг):</li>
-								<li>АЧТВ</li>
-								<li>Протромбин (время, по Квику, МНО)</li>
-								<li>Тромбиновое время</li>
-								<li>Фибриноген</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">ФУНКЦИОНАЛЬНОЕ СОСТОЯНИЕ МОЧЕВЫВОДЯЩЕЙ СИСТЕМЫ:</div>
-							<ul class="popup__programms-list">
-								<li>Креатинин</li>
-								<li>Мочевина</li>
-								<li>Общий анализ мочи</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">ЭЛЕКТРОЛИТЫ И МИКРОЭЛЕМЕНТЫ:</div>
-							<ul class="popup__programms-list">
-								<li>Калий</li>
-								<li>Натрий</li>
-								<li>Хлор</li>
-								<li>Кальций</li>
-								<li>Магний</li>
-								<li>Цинк</li>
-								<li>Медь</li>
-								<li>Железо</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">УГЛЕВОДНЫЙ ОБМЕН:</div>
-							<ul class="popup__programms-list">
-								<li>Глюкоза</li>
-								<li>Гликированный гемоглобин (HbA1c)</li>
-								<li>Инсулин</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">ОНКОМАРКЕРЫ:</div>
-							<ul class="popup__programms-list">
-								<li>Профиль онкомаркеров (уточняется дополнительно)</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">ЛИПИДНЫЙ ПРОФИЛЬ (БАЗОВЫЙ):</div>
-							<ul class="popup__programms-list">
-								<li>Общий холестерин</li>
-								<li>ЛПВП</li>
-								<li>ЛПНП</li>
-								<li>ЛПОНП</li>
-								<li>Триглицериды (ТГ)</li>
-								<li>Липопротеин (а)</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">СКРИНИНГ ЗАБОЛЕВАНИЙ ЩИТОВИДНОЙ ЖЕЛЕЗЫ:</div>
-							<ul class="popup__programms-list">
-								<li>ТТГ</li>
-								<li>Свободный Т3</li>
-								<li>Свободный Т4</li>
-								<li>Анти-ТПО</li>
-								<li>Анти-ТГ</li>
-								<li>Паратгормон (оценка функции паращитовидных желез)</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">ТЕСТ НА СОЦИАЛЬНО ЗНАЧИМЫЕ ИНФЕКЦИИ:</div>
-							<ul class="popup__programms-list">
-								<li>Сифилис (RPR, RW)</li>
-								<li>Гепатит B (HBsAg)</li>
-								<li>Гепатит C (Anti-HCV)</li>
-								<li>ВИЧ</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="popup__programms-block">
-					<div class="popup__programms-items">
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">ДИАГНОСТИЧЕСКИЕ ОБСЛЕДОВАНИЯ:</div>
-							<ul class="popup__programms-list">
-								<li>ЭКГ с расшифровкой</li>
-								<li>УЗИ гепатобилиарной системы</li>
-								<li>УЗИ мочевыводящей системы</li>
-								<li>УЗИ щитовидной железы</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">КОНСУЛЬТАЦИИ СПЕЦИАЛИСТОВ:</div>
-							<ul class="popup__programms-list">
-								<li>Терапевт</li>
-								<li>Нутрициолог</li>
-								<li>Эндокринолог</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="programm-base-male" class="popup popup--large" role="dialog" aria-modal="true" hidden>
-			<h2 class="popup__title title color-accent">базовый чек-ап (мужской)</h2>
-			<div class="popup__price title">8 400 ₽</div>
-			<a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
-			<div class="popup__programms">
-				<div class="popup__programms-block">
-					<div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
-					<div class="popup__programms-items">
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>ОАК с лейкоцитарной формулой</li>
-								<li>СОЭ</li>
-								<li>АЛТ</li>
-								<li>АСТ</li>
-								<li>Щелочная фосфатаза</li>
-								<li>ГГТ</li>
-								<li>Общий белок</li>
-								<li>Креатинин</li>
-								<li>Мочевина</li>
-								<li>Мочевая кислота</li>
-								<li>Липидный профиль базовый</li>
-								<li>Ферритин</li>
-								<li>Билирубин общий</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>ТТГ</li>
-								<li>Тестостерон общий</li>
-								<li>Гомоцистеин</li>
-								<li>Липопротеин</li>
-								<li>Витамин Д</li>
-								<li>Кальций общий</li>
-								<li>Магний</li>
-								<li>Цинк</li>
-								<li>Глюкоза</li>
-								<li>Фосфор неорганический</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="programm-extended-male" class="popup popup--large" role="dialog" aria-modal="true" hidden>
-			<h2 class="popup__title title color-accent">расширенный чек-ап (мужской)</h2>
-			<div class="popup__price title">10 200 ₽</div>
-			<a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
-			<div class="popup__programms">
-				<div class="popup__programms-block">
-					<div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
-					<div class="popup__programms-items">
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>ОАК с лейкоцитарной формулой</li>
-								<li>СОЭ</li>
-								<li>АЛТ</li>
-								<li>АСТ</li>
-								<li>Щелочная фосфатаза</li>
-								<li>ГГТ</li>
-								<li>Общий белок</li>
-								<li>Креатинин</li>
-								<li>Мочевина</li>
-								<li>Мочевая кислота</li>
-								<li>Липидный профиль базовый</li>
-								<li>Билирубин общий</li>
-								<li>Простата - специфический антиген</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>ТТГ</li>
-								<li>Тестостерон общий</li>
-								<li>Витамин Д</li>
-								<li>Фосфор неорганический</li>
-								<li>Кальций общий</li>
-								<li>Магний</li>
-								<li>Цинк</li>
-								<li>Паратиреоидный гормон</li>
-								<li>Глюкоза</li>
-								<li>Гликированный гемоглобин</li>
-								<li>Гомоцистеин</li>
-								<li>Липопротеин</li>
-								<li>С реактивный белок</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="programm-balance-male" class="popup popup--large" role="dialog" aria-modal="true" hidden>
-			<h2 class="popup__title title color-accent">чек-ап будь в балансе мужской</h2>
-			<div class="popup__price title">15 700 ₽</div>
-			<a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
-			<div class="popup__programms">
-				<div class="popup__programms-block">
-					<div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
-					<div class="popup__programms-items">
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>СОЭ (венозная кровь)</li>
-								<li>Клинический анализ крови с лейкоцитарной формулой (SDIFF) (венозная кровь)</li>
-								<li>АЛТ</li>
-								<li>АСТ</li>
-								<li>Щелочная фосфатаза</li>
-								<li>ГГТ</li>
-								<li>Общий белок</li>
-								<li>Альфа-амилаза</li>
-								<li>Альбумин</li>
-								<li>Креатинин</li>
-								<li>Мочевина</li>
-								<li>Липидный профиль, базовый (Коэффициент атерогенности (включает определение общего холестерина и ЛПВП)</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>Холестерин липопротеидов низкой плотности/очень низкой плотности, включая определение триглицеридов, Холестерин не-ЛПВП)</li>
-								<li>Трансферрин</li>
-								<li>Ферритин</li>
-								<li>Общая железосвязывающая способность сыворотки (ОЖСС) (включает определение железа, ЛЖСС)</li>
-								<li>Билирубин непрямой (включает определение общего и прямого билирубина)</li>
-								<li>ТТГ</li>
-								<li>Гомоцистеин</li>
-								<li>Медь</li>
-								<li>Церулоплазмин</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>Кальций общий</li>
-								<li>25-OH витамин D (ИХЛА, суммарный (кальциферол))</li>
-								<li>Натрий, калий, хлор (NA/K/CL)</li>
-								<li>Магний</li>
-								<li>Фосфор неорганический</li>
-								<li>Глюкоза</li>
-								<li>Гликированный гемоглобин A1c</li>
-								<li>Мочевая кислота</li>
-								<li>С-реактивный белок</li>
-								<li>Общий анализ мочи</li>
-								<li>В9 (фолиевая кислота)</li>
-								<li>В12 (цианкобаламин)</li>
-								<li>Общий анализ кала (копрограмма)</li>
-								<li>В12, активный (холотранскобаламин)</li>
-								<li>Простатоспецифический антиген (ПСА) общий</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="programm-sports-male" class="popup popup--large" role="dialog" aria-modal="true" hidden>
-			<h2 class="popup__title title color-accent">чек-ап спортивный (мужской)</h2>
-			<div class="popup__price title">21 000 ₽</div>
-			<a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
-			<div class="popup__programms">
-				<div class="popup__programms-block">
-					<div class="popup__programms-items popup__programms-items--small">
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">ОСНОВНЫЕ НАПРАВЛЕНИЯ ИССЛЕДОВАНИЯ:</div>
-							<ul class="popup__programms-list">
-								<li>Оценка биомаркеров, отражающих состояние мышц</li>
-								<li>Оценка белкового обмена</li>
-								<li>Оценка мужского гормонального статуса</li>
-								<li>Исключение скрытого железодефицита</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
-							<ul class="popup__programms-list">
-								<li>Общий анализ крови (ОАК) с лейкоцитарной формулой и СОЭ</li>
-								<li>АЛТ</li>
-								<li>АСТ</li>
-								<li>ГГТ</li>
-								<li>Креатинин</li>
-								<li>Мочевина</li>
-								<li>Мочевая кислота</li>
-								<li>Ферритин</li>
-								<li>Коэффициент насыщения железом</li>
-								<li>Железо</li>
-								<li>Латентная железосвязывающая способность сыворотки (ЛЖСС)</li>
-								<li>Трансферрин</li>
-								<li>Натрий, калий, хлор</li>
-								<li>Мочевая кислота</li>
-								<li>Молочная кислота (лактат)</li>
-								<li>Тестостерон свободный (включает определение общего тестостерона, ГСПГ, расчет индекса андрогенов)</li>
-								<li>ИФР1 (инсулиноподобный фактор роста 1)</li>
-								<li>Комплексный анализ крови на аминокислоты (12 показателей)</li>
-								<li>Анализ суточной мочи на андрогены и их метаболиты (8 показателей)</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- male programms -->
-		<!-- female programms -->
-		<div id="programm-base-female" class="popup popup--large" role="dialog" aria-modal="true" hidden>
-			<h2 class="popup__title title color-accent">базовый чек-ап (женский)</h2>
-			<div class="popup__price title">8 900 ₽</div>
-			<a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
-			<div class="popup__programms">
-				<div class="popup__programms-block">
-					<div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
-					<div class="popup__programms-items">
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>Общий анализ крови (ОАК) с лейкоцитарной формулой</li>
-								<li>СОЭ</li>
-								<li>АЛТ</li>
-								<li>АСТ</li>
-								<li>Щелочная фосфатаза</li>
-								<li>Гамма-ГТ</li>
-								<li>Общий белок</li>
-								<li>Креатинин</li>
-								<li>Мочевина</li>
-								<li>Липидный профиль базовый</li>
-								<li>Ферритин</li>
-								<li>Билирубин общий</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>Тиреотропный гормон (ТТГ) ультрачувствительный</li>
-								<li>Гомоцистеин</li>
-								<li>Липопротеин</li>
-								<li>25-ОН витамин D</li>
-								<li>Кальций общий</li>
-								<li>Магний</li>
-								<li>Цинк</li>
-								<li>Глюкоза</li>
-								<li>Фосфор неорганический</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="programm-extended-female" class="popup popup--large" role="dialog" aria-modal="true" hidden>
-			<h2 class="popup__title title color-accent">расширенный чек-ап (женский)</h2>
-			<div class="popup__price title">10 900 ₽</div>
-			<a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
-			<div class="popup__programms">
-				<div class="popup__programms-block">
-					<div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
-					<div class="popup__programms-items">
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>Общий анализ крови (ОАК) с лейкоцитарной формулой</li>
-								<li>СОЭ</li>
-								<li>АЛТ</li>
-								<li>АСТ</li>
-								<li>Щелочная фосфатаза</li>
-								<li>Гамма-ГТ</li>
-								<li>Общий белок</li>
-								<li>Креатинин</li>
-								<li>Мочевина</li>
-								<li>Липидный профиль базовый</li>
-								<li>Ферритин</li>
-								<li>Билирубин общий</li>
-								<li>Онкомаркер СА-125</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>Простатоспецифический антиген (PSA)</li>
-								<li>Тиреотропный гормон (ТТГ) ультрачувствительный</li>
-								<li>Гомоцистеин</li>
-								<li>Липопротеин</li>
-								<li>С-реактивный белок</li>
-								<li>25-ОН витамин D</li>
-								<li>Кальций общий</li>
-								<li>Фосфор неорганический</li>
-								<li>Магний</li>
-								<li>Цинк</li>
-								<li>Глюкоза</li>
-								<li>Паратиреоидный гормон</li>
-								<li>Гликированный гемоглобин (A1C)</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="programm-premium-female" class="popup popup--large" role="dialog" aria-modal="true" hidden>
-			<h2 class="popup__title title color-accent">премиум чек-ап (женский)</h2>
-			<div class="popup__price title">38 000 ₽</div>
-			<a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
-			<div class="popup__programms">
-				<div class="popup__programms-block">
-					<div class="popup__programms-caption color-accent">ПРОГРАММА КОМПЛЕКСНОГО ОБСЛЕДОВАНИЯ ОХВАТЫВАЕТ ВСЕ АСПЕКТЫ ЗДОРОВЬЯ И ВКЛЮЧАЕТ В СЕБЯ:</div>
-					<div class="popup__programms-items">
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">ОБЩИЕ ИССЛЕДОВАНИЯ:</div>
-							<ul class="popup__programms-list">
-								<li>Общий анализ крови с лейкоцитарной формулой и СОЭ</li>
-								<li>С-реактивный белок (СРБ)</li>
-								<li>Гомоцистеин</li>
-								<li>Витамин D</li>
-							</ul>
-							<div class="popup__programms-caption">ФУНКЦИОНАЛЬНОЕ СОСТОЯНИЕ ГЕПАТОБИЛИАРНОЙ СИСТЕМЫ:</div>
-							<ul class="popup__programms-list">
-								<li>Общий белок</li>
-								<li>Общий билирубин</li>
-								<li>Прямой билирубин</li>
-								<li>АЛТ</li>
-								<li>АСТ</li>
-								<li>Щелочная фосфатаза</li>
-								<li>Мочевая кислота</li>
-								<li>Копрограмма</li>
-								<li>ХМС по Осипову</li>
-							</ul>
-							<div class="popup__programms-caption">ИССЛЕДОВАНИЕ СИСТЕМЫ СВЕРТЫВАНИЯ КРОВИ:</div>
-							<ul class="popup__programms-list">
-								<li>Коагулограмма (скрининг):</li>
-								<li>АЧТВ</li>
-								<li>Протромбин (время, по Квику, МНО)</li>
-								<li>Тромбиновое время</li>
-								<li>Фибриноген</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">ФУНКЦИОНАЛЬНОЕ СОСТОЯНИЕ МОЧЕВЫВОДЯЩЕЙ СИСТЕМЫ:</div>
-							<ul class="popup__programms-list">
-								<li>Креатинин</li>
-								<li>Мочевина</li>
-								<li>Общий анализ мочи</li>
-							</ul>
-							<div class="popup__programms-caption">ЭЛЕКТРОЛИТЫ И МИКРОЭЛЕМЕНТЫ:</div>
-							<ul class="popup__programms-list">
-								<li>Калий</li>
-								<li>Натрий</li>
-								<li>Хлор</li>
-								<li>Кальций</li>
-								<li>Магний</li>
-								<li>Цинк</li>
-								<li>Медь</li>
-							</ul>
-							<div class="popup__programms-caption">ОБМЕН ЖЕЛЕЗА:</div>
-							<ul class="popup__programms-list">
-								<li>Ферритин</li>
-								<li>Коэффициент насыщения трансферрина железом (сывороточное железо и ЛЖСС)</li>
-								<li>Трансферрин</li>
-							</ul>
-							<div class="popup__programms-caption">УГЛЕВОДНЫЙ ОБМЕН:</div>
-							<ul class="popup__programms-list">
-								<li>Глюкоза</li>
-								<li>Гликированный гемоглобин (HbA1c)</li>
-							</ul>
-							<div class="popup__programms-caption">ОНКОМАРКЕРЫ:</div>
-							<ul class="popup__programms-list">
-								<li>Профиль онкомаркеров (уточняется дополнительно)</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">ЛИПИДНЫЙ ПРОФИЛЬ (БАЗОВЫЙ):</div>
-							<ul class="popup__programms-list">
-								<li>Общий холестерин</li>
-								<li>ЛПВП</li>
-								<li>ЛПНП</li>
-								<li>ЛПОНП</li>
-								<li>Триглицериды (ТГ)</li>
-								<li>Липопротеин (а)</li>
-							</ul>
-							<div class="popup__programms-caption">СКРИНИНГ ЗАБОЛЕВАНИЙ ЩИТОВИДНОЙ ЖЕЛЕЗЫ:</div>
-							<ul class="popup__programms-list">
-								<li>ТТГ</li>
-								<li>Свободный Т3</li>
-								<li>Свободный Т4</li>
-								<li>Анти-ТПО</li>
-								<li>Анти-ТГ</li>
-							</ul>
-							<div class="popup__programms-caption">ТЕСТ НА СОЦИАЛЬНО ЗНАЧИМЫЕ ИНФЕКЦИИ:</div>
-							<ul class="popup__programms-list">
-								<li>Сифилис (RPR, RW)</li>
-								<li>Гепатит B (HBsAg)</li>
-								<li>Гепатит C (Anti-HCV)</li>
-								<li>ВИЧ</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="popup__programms-block">
-					<div class="popup__programms-items">
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">ДИАГНОСТИЧЕСКИЕ ОБСЛЕДОВАНИЯ:</div>
-							<ul class="popup__programms-list">
-								<li>ЭКГ с расшифровкой</li>
-								<li>УЗИ гепатобилиарной системы</li>
-								<li>УЗИ мочевыводящей системы</li>
-								<li>УЗИ щитовидной железы</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">КОНСУЛЬТАЦИИ СПЕЦИАЛИСТОВ:</div>
-							<ul class="popup__programms-list">
-								<li>Терапевт</li>
-								<li>Нутрициолог</li>
-								<li>Эндокринолог</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="programm-balance-female" class="popup popup--large" role="dialog" aria-modal="true" hidden>
-			<h2 class="popup__title title color-accent">чек-ап будь в балансе женский</h2>
-			<div class="popup__price title">15 700 ₽</div>
-			<a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
-			<div class="popup__programms">
-				<div class="popup__programms-block">
-					<div class="popup__programms-items">
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">ОСНОВНЫЕ ИССЛЕДОВАНИЯ КРОВИ:</div>
-							<ul class="popup__programms-list">
-								<li>СОЭ (венозная кровь)</li>
-								<li>Клинический анализ крови с лейкоцитарной формулой (SDIFF, венозная кровь)</li>
-								<li>АЛТ</li>
-								<li>АСТ</li>
-								<li>Щелочная фосфатаза</li>
-								<li>ГГТ</li>
-								<li>Общий белок</li>
-								<li>Альфа-амилаза</li>
-								<li>Альбумин</li>
-							</ul>
-							<div class="popup__programms-caption">ОБЩИЕ АНАЛИЗЫ:</div>
-							<ul class="popup__programms-list">
-								<li>Общий анализ мочи</li>
-								<li>Общий анализ кала (копрограмма)</li>
-								<li>Витамин B9 (фолиевая кислота)</li>
-								<li>Витамин B12 (цианкобаламин)</li>
-								<li>Витамин B12 активный (холотранскобаламин)</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">ПОЧКИ И ОБМЕН ВЕЩЕСТВ:</div>
-							<ul class="popup__programms-list">
-								<li>Креатинин</li>
-								<li>Мочевина</li>
-								<li>Мочевая кислота</li>
-							</ul>
-							<div class="popup__programms-caption">ЛИПИДНЫЙ ПРОФИЛЬ (БАЗОВЫЙ):</div>
-							<ul class="popup__programms-list">
-								<li>Коэффициент атерогенности (включает общий холестерин и ЛПВП)</li>
-								<li>Холестерин ЛПНП/ЛПОНП (включая триглицериды)</li>
-								<li>Холестерин не-ЛПВП</li>
-							</ul>
-							<div class="popup__programms-caption">ОБМЕН ЖЕЛЕЗА:</div>
-							<ul class="popup__programms-list">
-								<li>Трансферрин</li>
-								<li>Ферритин</li>
-								<li>Общая железосвязывающая способность сыворотки (ОЖСС, включает железо и ЛЖСС)</li>
-							</ul>
-							<div class="popup__programms-caption">ПЕЧЕНЬ И БИЛИРУБИН:</div>
-							<ul class="popup__programms-list">
-								<li>Билирубин непрямой (включает общий и прямой билирубин)</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">ГОРМОНЫ И ВИТАМИНЫ:</div>
-							<ul class="popup__programms-list">
-								<li>ТТГ</li>
-								<li>Т4 свободный</li>
-								<li>25-ОН витамин D (ИХЛА, суммарный кальциферол)</li>
-							</ul>
-							<div class="popup__programms-caption">МИКРОЭЛЕМЕНТЫ И ЭЛЕКТРОЛИТЫ:</div>
-							<ul class="popup__programms-list">
-								<li>Натрий, Калий, Хлор (NA/K/CL)</li>
-								<li>Кальций общий</li>
-								<li>Магний</li>
-								<li>Фосфор неорганический</li>
-								<li>Медь</li>
-								<li>Церулоплазмин</li>
-							</ul>
-							<div class="popup__programms-caption">ДОПОЛНИТЕЛЬНЫЕ АНАЛИЗЫ:</div>
-							<ul class="popup__programms-list">
-								<li>Глюкоза</li>
-								<li>Гликированный гемоглобин (HbA1c)</li>
-								<li>Гомоцистеин</li>
-								<li>С-реактивный белок</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="programm-pregnancy" class="popup popup--large" role="dialog" aria-modal="true" hidden>
-			<h2 class="popup__title title color-accent">ЧЕК-АП «ПЛАНИРОВАНИЕ БЕРЕМЕННОСТИ»</h2>
-			<div class="popup__price title">14 640 ₽</div>
-			<a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
-			<div class="popup__programms">
-				<div class="popup__programms-block">
-					<div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
-					<div class="popup__programms-items">
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>Клинический анализ крови с лейкоцитарной формулой и СОЭ</li>
-								<li>С-реактивный белок</li>
-								<li>25-ОН витамин D</li>
-								<li>Общий белок</li>
-								<li>Альбумин</li>
-								<li>Железо</li>
-								<li>Ферритин</li>
-								<li>Трансферрин</li>
-								<li>Кальций общий</li>
-								<li>Фосфор неорганический</li>
-								<li>Витамин B9 / B12</li>
-								<li>Гомоцистеин</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>АЛТ / АСТ / ГГТ</li>
-								<li>Щелочная фосфатаза</li>
-								<li>Общий билирубин</li>
-								<li>Общий холестерин</li>
-								<li>Глюкоза / Мочевина / Креатинин</li>
-								<li>ТТГ / Т4 свободный / Т3 свободный</li>
-								<li>Анти-ТПО / Анти-ТГ</li>
-								<li>Коагулограмма расширенная</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="programm-postpartum" class="popup popup--large" role="dialog" aria-modal="true" hidden>
-			<h2 class="popup__title title color-accent">ЧЕК-АП «ПОСЛЕ РОДОВ»</h2>
-			<div class="popup__price title">11 100 ₽</div>
-			<a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
-			<div class="popup__programms">
-				<div class="popup__programms-block">
-					<div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
-					<div class="popup__programms-items">
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>АЛТ / АСТ</li>
-								<li>Щелочная фосфатаза</li>
-								<li>ГГТ</li>
-								<li>Общий белок</li>
-								<li>Альбумин</li>
-								<li>Мочевина / Креатинин</li>
-								<li>С-реактивный белок</li>
-								<li>Холестерин общий</li>
-								<li>Железо / Ферритин / Трансферрин</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>25-ОН витамин D (кальциферол)</li>
-								<li>Магний</li>
-								<li>Билирубин общий</li>
-								<li>Кальций общий</li>
-								<li>Фосфор неорганический</li>
-								<li>ТТГ (тиреотропный гормон)</li>
-								<li>Т4 свободный / Т3 свободный</li>
-								<li>Антитела к тиреоглобулину (Анти-ТГ)</li>
-								<li>Антитела к тиреопероксидазе (Анти-ТПО)</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- female programms -->
-		<!-- other programms -->
-		<div id="programm-kids" class="popup popup--large" role="dialog" aria-modal="true" hidden>
-			<h2 class="popup__title title color-accent">ЧЕК-АП «ДЕТСКИЙ»</h2>
-			<div class="popup__price title">10 500 ₽</div>
-			<a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
-			<div class="popup__programms">
-				<div class="popup__programms-block">
-					<div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
-					<div class="popup__programms-items">
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>Клинический анализ крови с лейкоцитарной формулой и СОЭ</li>
-								<li>АЛТ / АСТ</li>
-								<li>Билирубин непрямой (включает общий и прямой)</li>
-								<li>Общий белок / Холестерин</li>
-								<li>Глюкоза / Мочевина</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>Креатинин / Железо / Ферритин</li>
-								<li>Витамин В9 / В12</li>
-								<li>25-ОН витамин D</li>
-								<li>ТТГ / Т4 свободный / Т3 свободный</li>
-								<li>Кальций общий / Магний</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="programm-anemia" class="popup popup--large" role="dialog" aria-modal="true" hidden>
-			<h2 class="popup__title title color-accent">ЧЕК-АП «АНЕМИЯ»</h2>
-			<div class="popup__price title">8 500 ₽</div>
-			<a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
-			<div class="popup__programms">
-				<div class="popup__programms-block">
-					<div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
-					<div class="popup__programms-items">
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>Общий анализ крови (ОАК) с лейкоцитарной формулой (SDIFF)</li>
-								<li>Скорость оседания эритроцитов (СОЭ) (венозная кровь)</li>
-								<li>Альбумин</li>
-								<li>Ферритин</li>
-								<li>Растворимый рецептор трансферрина</li>
-								<li>Общий белок</li>
-								<li>С-реактивный белок (СРБ)</li>
-								<li>Гомоцистеин</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>Медь (Cu)</li>
-								<li>Железо</li>
-								<li>Латентная железосвязывающая способность сыворотки</li>
-								<li>Трансферрин</li>
-								<li>Общая железосвязывающая способность сыворотки</li>
-								<li>Коэффициент насыщения трансферрина железом</li>
-								<li>Витамин B9 (фолиевая кислота)</li>
-								<li>Витамин B12 (цианокобаламин)</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="programm-antistress" class="popup popup--large" role="dialog" aria-modal="true" hidden>
-			<h2 class="popup__title title color-accent">ЧЕК-АП «АНТИ-СТРЕСС»</h2>
-			<div class="popup__price title">13 600 ₽</div>
-			<a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
-			<div class="popup__programms">
-				<div class="popup__programms-block">
-					<div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
-					<div class="popup__programms-items">
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>Клинический анализ крови с лейкоцитарной формулой + СОЭ</li>
-								<li>С-реактивный белок</li>
-								<li>25(OH) витамин D</li>
-								<li>Общий белок</li>
-								<li>Альбумин</li>
-								<li>Железо</li>
-								<li>Ферритин</li>
-								<li>Трансферрин</li>
-								<li>Коэффициент насыщения трансферрина</li>
-								<li>Цинк</li>
-								<li>Медь</li>
-								<li>Витамин В9 (фолиевая кислота)</li>
-								<li>Витамин В12</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>Гомоцистеин</li>
-								<li>АЛТ</li>
-								<li>АСТ</li>
-								<li>ГГТ</li>
-								<li>Щелочная фосфатаза</li>
-								<li>Билирубин и его фракции (общий, прямой, непрямой)</li>
-								<li>Глюкоза</li>
-								<li>Мочевина</li>
-								<li>ТТГ (тиреотропный гормон)</li>
-								<li>Т4 свободный</li>
-								<li>Т3 свободный</li>
-								<li>Анти-ТПО</li>
-								<li>Анти-ТГ</li>
-								<li>Антистрептолизин-О</li>
-								<li>Литий</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="programm-weight-balance" class="popup popup--large" role="dialog" aria-modal="true" hidden>
-			<h2 class="popup__title title color-accent">ЧЕК-АП «ВЕС В БАЛАНСЕ»</h2>
-			<div class="popup__price title">13 900 ₽</div>
-			<a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
-			<div class="popup__programms">
-				<div class="popup__programms-block">
-					<div class="popup__programms-caption color-accent">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
-					<div class="popup__programms-items">
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>Клинический анализ крови с лейкоцитарной формулой и СОЭ</li>
-								<li>Железо</li>
-								<li>Ферритин</li>
-								<li>Трансферрин</li>
-								<li>Коэффициент насыщения трансферрина железом</li>
-								<li>Витамин В9</li>
-								<li>Витамин В12</li>
-								<li>Гомоцистеин</li>
-								<li>Тиреотропный гормон (ТТГ)</li>
-								<li>Т4 свободный</li>
-								<li>Т3 свободный</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>Анти-ТПО</li>
-								<li>Анти-ТГ</li>
-								<li>Глюкоза</li>
-								<li>Гликированный гемоглобин A1c</li>
-								<li>Инсулин</li>
-								<li>25-OH витамин D</li>
-								<li>ИХЛА (суммарный кальциферол)</li>
-								<li>Липидный профиль базовый</li>
-								<li>АЛТ</li>
-								<li>АСТ</li>
-								<li>Щелочная фосфатаза</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>ГГТ</li>
-								<li>Общий белок</li>
-								<li>Альбумин</li>
-								<li>Мочевина</li>
-								<li>Креатинин</li>
-								<li>Мочевая кислота</li>
-								<li>Билирубин (общий, прямой, непрямой)</li>
-								<li>С-реактивный белок</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="programm-liver-balance" class="popup popup--large" role="dialog" aria-modal="true" hidden>
-			<h2 class="popup__title title color-accent">ЧЕК-АП «ПЕЧЕНЬ В БАЛАНСЕ»</h2>
-			<div class="popup__price title">5 700 ₽</div>
-			<a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
-			<div class="popup__programms">
-				<div class="popup__programms-block">
-					<div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
-					<div class="popup__programms-items">
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>Клинический анализ крови с лейкоцитарной формулой и СОЭ</li>
-								<li>Общий белок</li>
-								<li>Альбумин</li>
-								<li>Гомоцистеин</li>
-								<li>Железо</li>
-								<li>Ферритин</li>
-								<li>АЛТ</li>
-								<li>АСТ</li>
-								<li>ГГТ</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>Щелочная фосфатаза</li>
-								<li>Билирубин и его фракции (общий, прямой, непрямой)</li>
-								<li>Холестерин общий</li>
-								<li>Глюкоза</li>
-								<li>Мочевая кислота</li>
-								<li>Креатинин</li>
-								<li>Мочевина</li>
-								<li>Фибриноген</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="programm-skin-hair-nails" class="popup popup--large" role="dialog" aria-modal="true" hidden>
-			<h2 class="popup__title title color-accent">ЧЕК-АП «КОЖА, ВОЛОСЫ, НОГТИ»</h2>
-			<div class="popup__price title">8 100 ₽</div>
-			<a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
-			<div class="popup__programms">
-				<div class="popup__programms-block">
-					<div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
-					<div class="popup__programms-items">
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>Клинический анализ крови с лейкоцитарной формулой и СОЭ</li>
-								<li>С-реактивный белок</li>
-								<li>Цинк</li>
-								<li>Медь</li>
-								<li>Железо</li>
-								<li>Ферритин</li>
-								<li>Витамин В12 (цианокобаламин)</li>
-								<li>Витамин В9 (фолиевая кислота)</li>
-								<li>25-OH витамин D (кальциферол)</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>Магний</li>
-								<li>Кальций общий</li>
-								<li>Фосфор неорганический</li>
-								<li>Тиреотропный гормон (ТТГ)</li>
-								<li>Т4 свободный</li>
-								<li>Т3 свободный</li>
-								<li>Антитела к тиреоглобулину (Анти-ТГ)</li>
-								<li>Антитела к тиреопероксидазе (Анти-ТПО)</li>
-								<li>Андростендиол глюкуронид</li>
-								<li>Общий белок</li>
-								<li>Альбумин</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="programm-thyroid-balance" class="popup popup--large" role="dialog" aria-modal="true" hidden>
-			<h2 class="popup__title title color-accent">ЧЕК-АП «ЩИТОВИДНАЯ ЖЕЛЕЗА В БАЛАНСЕ»</h2>
-			<div class="popup__price title">6 500 ₽</div>
-			<a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
-			<div class="popup__programms">
-				<div class="popup__programms-block">
-					<div class="popup__programms-caption color-accent">В СОСТАВ ЧЕК-АПА ВХОДЯТ:</div>
-					<div class="popup__programms-items">
-						<div class="popup__programms-item">
-							<div class="popup__programms-caption">КОМПЛЕКС ЛАБОРАТОРНЫХ АНАЛИЗОВ:</div>
-							<ul class="popup__programms-list">
-								<li>Тиреотропный гормон (ТТГ)</li>
-								<li>Т4 свободный</li>
-								<li>Т3 свободный</li>
-								<li>Антитела к тиреопероксидазе (Анти-ТПО)</li>
-								<li>Антитела к тиреоглобулину (Анти-ТГ)</li>
-								<li>Тиреоглобулин (онкомаркер)</li>
-								<li>Кальцитонин (онкомаркер)</li>
-							</ul>
-						</div>
-						<div class="popup__programms-item">
-							<ul class="popup__programms-list">
-								<li>УЗИ щитовидной железы</li>
-								<li>Консультация эндокринолога</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- other programms --> <!-- plugins -->
-		<script src="js/libs/fancybox.umd.js?_v=20260217112051"></script>
-		<script src="js/libs/swiper-bundle.min.js?_v=20260217112051"></script>
-		<!-- plugins -->
-		<script src="js/app.min.js?_v=20260217112051"></script>
-	</div>
-</body>
+        <!-- plugins -->
+        <link rel="stylesheet" href="css/libs/fancybox.css">
+        <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
+        <!-- plugins -->
 
+        <link rel="stylesheet" href="css/reset.min.css">
+        <link rel="stylesheet" href="css/style.min.css">
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="container header__container">
+                    <a href="index.html" class="header__logo">
+                        <span class="header__logo-icon">
+                            <img src="img/logo.svg" alt="Логотип">
+                        </span>
+                        <span class="header__logo-text">
+                            БУДЬ В BALANCE
+                        </span>
+                    </a>
+                    <nav aria-label="Меню" class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="about.html" class="menu__link">О клинике</a>
+                            </li>
+                            <li class="menu__item menu__item--parent">
+                                <a href="" class="menu__link">Услуги</a>
+                                <button type="button" aria-label="Открыть подменю" class="menu__arrow icon-down"></button>
+                                <div class="submenu">
+                                    <div class="submenu__column">
+                                        <a href="specialists.html" class="submenu__caption">Специалисты</a>
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item"><a href="therapist.html" class="submenu__link">Терапевт</a></li>
+                                            <li class="submenu__item"><a href="endocrinologist.html" class="submenu__link">Эндокринолог</a></li>
+                                            <li class="submenu__item"><a href="nutritionist.html" class="submenu__link">Нутрициолог</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="submenu__column">
+                                        <a href="" class="submenu__caption">Процедуры</a>
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item"><a href="droppers.html" class="submenu__link">Капельницы</a></li>
+                                            <li class="submenu__item"><a href="massage.html" class="submenu__link">Массаж</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="submenu__column">
+                                        <a href="" class="submenu__caption">Обследования</a>
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item"><a href="check-up.html" class="submenu__link active">Чек-ап</a></li>
+                                            <li class="submenu__item"><a href="" class="submenu__link">Анализы</a></li>
+                                            <li class="submenu__item"><a href="uzi.html" class="submenu__link">УЗИ</a></li>
+                                            <li class="submenu__item"><a href="ekg.html" class="submenu__link">ЭКГ</a></li>
+                                            <li class="submenu__item"><a href="bioimpedancemetry.html" class="submenu__link">Биоимпедансометрия</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <a href="prices.html" class="menu__link">Цены</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="specialists.html" class="menu__link">Специалисты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="reviews.html" class="menu__link">Отзывы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                        <div class="menu__actions">
+                            <div class="menu__contacts">
+                                <a href="tel:+78435671208" class="menu__contacts-phone">+7 (843) 567-12-08</a>
+                                <address class="menu__address">г. Казань, ул. Курашова, д.20</address>
+                            </div>
+                            <a href="#appointment" data-fancybox class="menu__callback btn btn-primary">Записаться</a>
+                        </div>
+                    </nav>
+                    <button type="button" aria-label="Открыть мобильное меню" class="header__toggler icon-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+            <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">Чек-ап</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="page">
+                <section class="service">
+                    <div class="container">
+                        <div class="service__body service__body--blured">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="service__main">
+                                        <h1 class="service__title title">Чек-ап — комплексное обследование организма с выгодой до 40% </h1>
+                                        <p class="service__subtitle">Современный формат диагностики, включающий лабораторные анализы и инструментальные исследования в одном пакете.</p>
+                                        <div class="service__caption">Преимущества регулярного прохождения Чек-апа</div>
+                                        <ul class="service__list">
+                                            <li>Возможность выявить скрытые проблемы до появления симптомов</li>
+                                            <li>Максимально подробная картина состояния организма</li>
+                                            <li>Основа для точной диагностики и назначения эффективного лечения</li>
+                                        </ul>
+                                        <a href="#appointment" data-fancybox class="service__btn btn btn-primary btn-lg">Записаться на приём</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="service__image">
+                                        <img src="img/check-up.jpg" class="cover-image" alt="Фото услуги">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="video-block">
+                    <div class="container">
+                        <h2 class="video-block__title title-sm">
+                            Посмотрите короткое видео о том, как проходит процедура чек-ап в нашей клинике
+                        </h2>
+                        <a href="https://vkvideo.ru/video_ext.php?oid=-73354773&id=456240544&hash=1c842bdb2fd8c544&hd=3" data-fancybox data-type="iframe" class="video-block__content icon-play">
+                            <img src="img/video.jpg" class="cover-image" alt="Постер">
+                        </a>
+                        <div class="video-block__desc">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <p>
+                                        <strong>Прохождение чек-апа</strong> — это профилактика, которая работает на упреждение. Ведь чем раньше выявлено нарушение, тем проще и быстрее его устранить.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="programms">
+                    <div class="container">
+                        <h2 class="programms__title title">Чек-ап программы</h2>
+                        <div class="programms__tabs">
+                            <button class="programms__tab active">Мужской чек-ап</button>
+                            <button class="programms__tab">Женский чек-ап</button>
+                            <button class="programms__tab">Общие программы</button>
+                        </div>
+                        <div class="programms__content">
+                            <div class="programms__block active">
+                                <div class="programms__desc">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <p><strong>Контроль здоровья без лишних походов по врачам</strong></p>
+                                            <p>Мужской чек-ап — это комплексное обследование, направленное на&nbsp;выявление распространенных мужских проблем:</p>
+                                            <ul>
+                                                <li>уровень гормонов;</li>
+                                                <li>работа сердца и сосудов;</li>
+                                                <li>состояние печени и почек;</li>
+                                                <li>онкомаркеры;</li>
+                                                <li>ПСА (простатспецифический антиген).</li>
+                                            </ul>
+                                            <p>Подойдёт мужчинам старше 25 лет, особенно при регулярных стрессах, усталости, снижении либидо или подготовке к физическим нагрузкам.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="programms__cards">
+                                    <div class="programms__cards-block">
+                                        <div class="row">
+                                            <div class="col-xl-4 col-lg-6">
+                                                <div class="programms__card">
+                                                    <div class="programms__card-title">БАЗОВЫЙ ЧЕК-АП</div>
+                                                    <ul class="programms__card-subtitle">
+                                                        <li>22 лабораторных анализа</li>
+                                                    </ul>
+                                                    <div class="programms__card-desc">Включает в себя общий анализ крови для оценки состояния организма, исследования функций печени и почек, анализ липидного профиля и уровня тестостерона, а также проверку витаминов, минералов и уровня глюкозы.</div>
+                                                    <a href="#programm-base-male" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+                                                    <div class="programms__card-price">
+                                                        Стоимость <span class="color-accent">8 400 ₽</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-6">
+                                                <div class="programms__card">
+                                                    <div class="programms__card-title">РАСШИРЕННЫЙ ЧЕК-АП</div>
+                                                    <ul class="programms__card-subtitle">
+                                                        <li>25 лабораторных анализов</li>
+                                                    </ul>
+                                                    <div class="programms__card-desc">
+                                                        <p>
+                                                            Включает в себя анализы крови для выявления воспалений, оценки функций печени и почек, а также липидный профиль для проверки уровня холестерина.</p>
+                                                        <p>Дополнительно исследуются ПСА, гормоны (ТТГ, тестостерон), уровень витаминов и минералов, и показатели метаболизма.</p>
+                                                    </div>
+                                                    <a href="#programm-extended-male" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+                                                    <div class="programms__card-price">
+                                                        Стоимость <span class="color-accent">10 200 ₽</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-6">
+                                                <div class="programms__card">
+                                                    <div class="programms__card-title">ПРЕМИУМ ЧЕК-АП</div>
+                                                    <ul class="programms__card-subtitle">
+                                                        <li>53 лабораторных анализа</li>
+                                                        <li>4 диагностических обследования</li>
+                                                        <li>3 консультации специалистов</li>
+                                                    </ul>
+                                                    <div class="programms__card-desc">
+                                                        <p>
+                                                            Программа охватывает все аспекты здоровья, включая анализы на инфекции, функции органов, уровень витаминов и электролитов. Определяются показатели обмена железа, липидный профиль и состояние щитовидной железы. Исследования системы свёртывания и онкомаркеры помогают выявить патологии.
+                                                        </p>
+                                                        <p>
+                                                            Ультразвуковые исследования и консультации специалистов завершают программу для улучшения здоровья.
+                                                        </p>
+                                                    </div>
+                                                    <a href="#programm-premium-male" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+                                                    <div class="programms__card-price">
+                                                        Стоимость <span class="color-accent">38 000 ₽</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="programms__cards-block">
+                                        <h3 class="programms__cards-caption title-sm">СПЕЦИАЛИЗИРОВАННЫЕ ПРОГРАММЫ ДЛЯ МУЖЧИН</h3>
+                                        <div class="row">
+                                            <div class="col-xl-4 col-lg-6">
+                                                <div class="programms__card">
+                                                    <div class="programms__card-title">БУДЬ В BALANCE МУЖСКОЙ</div>
+                                                    <ul class="programms__card-subtitle">
+                                                        <li>34 лабораторных анализа</li>
+                                                    </ul>
+                                                    <div class="programms__card-desc">Комплексный чек-ап включает анализы крови и мочи для оценки общего состояния здоровья. Основное внимание уделяется глюкозе, гликированному гемоглобину, ПСА, биохимическим показателям ферментов и микроэлементов. Также проверяется уровень витаминов и гормонов.</div>
+                                                    <a href="#programm-balance-male" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+                                                    <div class="programms__card-price">
+                                                        Стоимость <span class="color-accent">15 700 ₽</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-6">
+                                                <div class="programms__card">
+                                                    <div class="programms__card-title">СПОРТИВНЫЙ</div>
+                                                    <ul class="programms__card-subtitle">
+                                                        <li>39 лабораторных анализов</li>
+                                                    </ul>
+                                                    <div class="programms__card-desc">
+                                                        Основные направления исследования:
+                                                        <ul>
+                                                            <li>Оценка биомаркеров состояния мышц</li>
+                                                            <li>Оценка белкового обмена</li>
+                                                            <li>Оценка мужского гормонального статуса</li>
+                                                            <li>Исключение скрытого железодефицита</li>
+                                                        </ul>
+                                                    </div>
+                                                    <a href="#programm-sports-male" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+                                                    <div class="programms__card-price">
+                                                        Стоимость <span class="color-accent">21 000 ₽</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="programms__block">
+                                <div class="programms__desc">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <p><strong>Контроль здоровья без лишних походов по врачам</strong></p>
+                                            <p>Женский чек-ап — это комплексные программы для заботы о женском здоровье и планирования семьи.</p>
+                                            <p>Наши программы специально разработаны для женщин:</p>
+                                            <ul>
+                                                <li>планирующих беременность и во время беременности/лактации;</li>
+                                                <li>женщин с менопаузой или риском остеопороза;</li>
+                                                <li>при нарушениях питания или высокой физической нагрузке;</li>
+                                                <li>при предиабете/диабете или семейной предрасположенности;</li>
+                                                <li>для тех, кто жалуется на хроническую усталость или нуждается в мониторинге терапии.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="programms__cards">
+                                        <div class="programms__cards-block">
+                                            <div class="row">
+                                                <div class="col-xl-4 col-lg-6">
+                                                    <div class="programms__card">
+                                                        <div class="programms__card-title">БАЗОВЫЙ ЧЕК-АП</div>
+                                                        <ul class="programms__card-subtitle">
+                                                            <li>22 лабораторных анализа</li>
+                                                        </ul>
+                                                        <div class="programms__card-desc">Включает в себя общий анализ крови для оценки состояния организма, исследования функций печени и почек, анализ липидного профиля и уровня тестостерона, а также проверку витаминов, минералов и уровня глюкозы.</div>
+                                                        <a href="#programm-base-female" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+                                                        <div class="programms__card-price">
+                                                            Стоимость <span class="color-accent">8 400 ₽</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-6">
+                                                    <div class="programms__card">
+                                                        <div class="programms__card-title">РАСШИРЕННЫЙ ЧЕК-АП</div>
+                                                        <ul class="programms__card-subtitle">
+                                                            <li>25 лабораторных анализов</li>
+                                                        </ul>
+                                                        <div class="programms__card-desc">
+                                                            <p>
+                                                                Включает в себя анализы крови для выявления воспалений, оценки функций печени и почек, а также липидный профиль для проверки уровня холестерина.</p>
+                                                            <p>Дополнительно исследуются ПСА, гормоны (ТТГ, тестостерон), уровень витаминов и минералов, и показатели метаболизма.</p>
+                                                        </div>
+                                                        <a href="#programm-extended-female" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+                                                        <div class="programms__card-price">
+                                                            Стоимость <span class="color-accent">10 200 ₽</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-6">
+                                                    <div class="programms__card">
+                                                        <div class="programms__card-title">ПРЕМИУМ ЧЕК-АП</div>
+                                                        <ul class="programms__card-subtitle">
+                                                            <li>53 лабораторных анализа</li>
+                                                            <li>4 диагностических обследования</li>
+                                                            <li>3 консультации специалистов</li>
+                                                        </ul>
+                                                        <div class="programms__card-desc">
+                                                            <p>
+                                                                Программа охватывает все аспекты здоровья, включая анализы на инфекции, функции органов, уровень витаминов и электролитов. Определяются показатели обмена железа, липидный профиль и состояние щитовидной железы. Исследования системы свёртывания и онкомаркеры помогают выявить патологии.
+                                                            </p>
+                                                            <p>
+                                                                Ультразвуковые исследования и консультации специалистов завершают программу для улучшения здоровья.
+                                                            </p>
+                                                        </div>
+                                                        <a href="#programm-premium-female" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+                                                        <div class="programms__card-price">
+                                                            Стоимость <span class="color-accent">38 000 ₽</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="programms__cards-block">
+                                            <h3 class="programms__cards-caption title-sm">Специализированные программы для женщин</h3>
+                                            <div class="row">
+                                                <div class="col-xl-4 col-lg-6">
+                                                    <div class="programms__card">
+                                                        <div class="programms__card-title">БУДЬ В BALANCE <br> ЖЕНСКИЙ</div>
+                                                        <ul class="programms__card-subtitle">
+                                                            <li>34 лабораторных анализа</li>
+                                                        </ul>
+                                                        <div class="programms__card-desc">Комплексный медицинский чек-ап включает анализы крови и мочи, которые помогают оценить общее состояние здоровья и выявить возможные заболевания. Основное внимание уделяется уровню глюкозы, гликированного гемоглобина, а также биохимическим анализам на ферменты и микроэлементы. Также проверяется уровень витаминов и гормонов. Такой подход обеспечивает полное представление о здоровье и помогает предотвратить серьезные заболевания.</div>
+                                                        <a href="#programm-balance-female" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+                                                        <div class="programms__card-price">
+                                                            Стоимость <span class="color-accent">15 700 ₽</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-6">
+                                                    <div class="programms__card">
+                                                        <div class="programms__card-title">ПЛАНИРОВАНИЕ БЕРЕМЕННОСТИ</div>
+                                                        <ul class="programms__card-subtitle">
+                                                            <li>28 лабораторных анализов</li>
+                                                        </ul>
+                                                        <div class="programms__card-desc">Чек-ап перед планированием беременности проводится для того, чтобы оценить здоровье будущей матери, выявить и устранить факторы риска, которые могут повлиять на беременность и развитие плода, а также подготовить организм к беременности.</div>
+                                                        <a href="#programm-pregnancy" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+                                                        <div class="programms__card-price">
+                                                            Стоимость <span class="color-accent">14 640 ₽</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-6">
+                                                    <div class="programms__card">
+                                                        <div class="programms__card-title">ЧЕК-АП ПОСЛЕ РОДОВ</div>
+                                                        <ul class="programms__card-subtitle">
+                                                            <li>23 лабораторных анализа</li>
+                                                        </ul>
+                                                        <div class="programms__card-desc">Комплексное исследование для оценки общего состояния женщины, раннего восстановления после беременности, выявления и контроля возможных проблем со здоровьем, влияющих на восстановление и планирование следующей беременности.</div>
+                                                        <a href="#programm-postpartum" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+                                                        <div class="programms__card-price">
+                                                            Стоимость <span class="color-accent">11 100 ₽</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="programms__block">
+                                <div class="programms__cards">
+                                    <div class="programms__cards-block">
+                                        <h3 class="programms__cards-caption title-xs">Специализированные программы комплексного обследования</h3>
+                                        <div class="row">
+                                            <div class="col-xl-4 col-lg-6">
+                                                <div class="programms__card">
+                                                    <div class="programms__card-title">чек-ап «детский»</div>
+                                                    <ul class="programms__card-subtitle">
+                                                        <li>19 лабораторных анализов</li>
+                                                    </ul>
+                                                    <div class="programms__card-desc">
+                                                        <p>Комплексное обследование, направленное на выявление:</p>
+                                                        <ul>
+                                                            <li>инфекционных и воспалительных процессов, хронических воспалений;</li>
+                                                            <li>анемии и дефицит железа;</li>
+                                                            <li>проблем печени и желчного пузыря;</li>
+                                                            <li>проблем с почками и обменом азота;</li>
+                                                            <li>нарушений липидного и углеводного обмена;</li>
+                                                            <li>дефицита витаминов и минерального баланса;</li>
+                                                            <li>нарушения роста и функции щитовидной железы.</li>
+                                                        </ul>
+                                                    </div>
+                                                    <a href="#programm-kids" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+                                                    <div class="programms__card-price">
+                                                        Стоимость <span class="color-accent">10 500 ₽</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-4 col-lg-6">
+                                                <div class="programms__card">
+                                                    <div class="programms__card-title">чек-ап «анемия»</div>
+                                                    <ul class="programms__card-subtitle">
+                                                        <li>17 лабораторных анализов</li>
+                                                    </ul>
+                                                    <div class="programms__card-desc">
+                                                        <p>Направлен на подробную оценку обмена железа и возможных дефицитов, воспалительных процессов и общего питания.</p>
+                                                        <p>Помогает различать типы анемий:</p>
+                                                        <ul>
+                                                            <li>Железодефицитная анемия</li>
+                                                            <li>Анемия воспаления (анемия при хронической болезни)</li>
+                                                            <li>Мегалобластическая анемия (дефицит B9 или B12)</li>
+                                                            <li>Комбинированные состояния</li>
+                                                        </ul>
+                                                    </div>
+                                                    <a href="#programm-anemia" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+                                                    <div class="programms__card-price">
+                                                        Стоимость <span class="color-accent">8 500 ₽</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-4 col-lg-6">
+                                                <div class="programms__card">
+                                                    <div class="programms__card-title">чек-ап «анти-стресс»</div>
+                                                    <ul class="programms__card-subtitle">
+                                                        <li>28 лабораторных анализа</li>
+                                                    </ul>
+                                                    <div class="programms__card-desc">
+                                                        <p>Предназначен для всесторонней оценки состояния организма, выявления возможных дефицитов, воспалительных процессов, обменных нарушений, функций печени, почек, щитовидной железы, а также некоторых факторов риска и аутоиммунных процессов.</p>
+                                                    </div>
+                                                    <a href="#programm-antistress" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+                                                    <div class="programms__card-price">
+                                                        Стоимость <span class="color-accent">13 600 ₽</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-4 col-lg-6">
+                                                <div class="programms__card">
+                                                    <div class="programms__card-title">чек-ап «вес в балансе»</div>
+                                                    <ul class="programms__card-subtitle">
+                                                        <li>30 лабораторных анализов</li>
+                                                    </ul>
+                                                    <div class="programms__card-desc">
+                                                        <p>Широкий пакет обследований, который позволяет оценить обмен веществ, питание, воспаление, функцию органов и риск заболеваний.</p>
+                                                    </div>
+                                                    <a href="#programm-weight-balance" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+                                                    <div class="programms__card-price">
+                                                        Стоимость <span class="color-accent">13 900 ₽</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-4 col-lg-6">
+                                                <div class="programms__card">
+                                                    <div class="programms__card-title">чек-ап «печень в&nbsp;балансе»</div>
+                                                    <ul class="programms__card-subtitle">
+                                                        <li>17 лабораторных анализов</li>
+                                                    </ul>
+                                                    <div class="programms__card-desc">
+                                                        <p>Комплексное обследование, предназначенное для профилактики и раннего выявления изменений печени, а также перед плановыми медицинскими процедурами или операциями.</p>
+                                                        <p>Рекомендуется для пациентов с избыточной массой тела, нарушениями липидного обмена, гипергликемией или сахарным диабетом, злоупотребляющих алкоголем или принимающих лекарства, влияющие на печень.</p>
+                                                    </div>
+                                                    <a href="#programm-liver-balance" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+                                                    <div class="programms__card-price">
+                                                        Стоимость <span class="color-accent">5 700 ₽</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-4 col-lg-6">
+                                                <div class="programms__card">
+                                                    <div class="programms__card-title">чек-ап «кожа, волосы, ногти»</div>
+                                                    <ul class="programms__card-subtitle">
+                                                        <li>20 лабораторных анализов</li>
+                                                    </ul>
+                                                    <div class="programms__card-desc">
+                                                        <p>Рекомендуется пройти:</p>
+                                                        <ul>
+                                                            <li>женщинам и мужчинам, у которых есть симптомы замедленного роста волос, ломкие ногти, кожные высыпания или непонятные изменения кожи</li>
+                                                            <li>после перенесённых инфекций или травм кожи, где требуется контроль воспалительных маркеров и нутриентов</li>
+                                                            <li>пациентам с нарушениями функций щитовидной железы, нутритивной недостаточностью или гормональными нарушениями</li>
+                                                        </ul>
+                                                    </div>
+                                                    <a href="#programm-skin-hair-nails" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+                                                    <div class="programms__card-price">
+                                                        Стоимость <span class="color-accent">8 100 ₽</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-4 col-lg-6">
+                                                <div class="programms__card">
+                                                    <div class="programms__card-title">чек-ап «щитовидная железа в балансе»</div>
+                                                    <ul class="programms__card-subtitle">
+                                                        <li>7 лабораторных анализов</li>
+                                                        <li>УЗИ щитовидной железы</li>
+                                                        <li>консультация эндокринолога</li>
+                                                    </ul>
+                                                    <div class="programms__card-desc">
+                                                        <p>Данный чек-ап подходит вам, если:</p>
+                                                        <ul>
+                                                            <li>вы ранее не обследовались или обнаружили у себя следующие симптомы: слабость, сонливость, эмоциональную лабильность, ухудшение памяти;</li>
+                                                            <li>у вас редкий или учащенный пульс, плохая переносимость физических нагрузок;</li>
+                                                            <li>проблемы с кожей и волосами, ощущение кома в горле, дискомфорт в области шеи.</li>
+                                                        </ul>
+                                                    </div>
+                                                    <a href="#programm-thyroid-balance" data-fancybox class="programms__card-btn btn btn-secondary btn-sm">Подробнее</a>
+                                                    <div class="programms__card-price">
+                                                        Стоимость <span class="color-accent">6 500 ₽</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="subscribe">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-7">
+                                <h2 class="subscribe__title title">Подписывайтесь на наш telegram-канал!</h2>
+                                <p class="subscribe__desc">В нашем Telegram-канале вы найдёте полезные советы по восстановлению и оздоровлению, разборы техник массажа, рекомендации специалистов и актуальные акции. Подписывайтесь, чтобы быть в курсе всего важного и полезного для вашего здоровья!</p>
+                                <a href="" class="subscribe__btn btn btn-primary icon-telegram">Подписаться</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="consult">
+                    <div class="container">
+                        <div class="consult__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="consult__main">
+                                        <h3 class="consult__title">не откладывайте лечение, запишитесь на консультацию</h3>
+                                        <p class="consult__subtitle">Оставьте свой номер телефона, мы перезвоним, ответим на все вопросы и подберем подходящее обследование.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <form action="#" class="consult__form form">
+                                        <input type="text" name="username" class="form__control" placeholder="Ваше имя">
+                                        <input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
+                                        <button type="submit" class="form__submit btn btn-primary btn-lg">Записаться на консультацию</button>
+                                        <div class="form__policy">
+                                            Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="contacts">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2 class="section-header__title title">Мы находимся в&nbsp;центре города</h2>
+                            <div class="section-header__hint">контакты</div>
+                        </div>
+                        <div class="contacts__body">
+                            <div class="contacts__main">
+                                <div class="contacts__caption">Контакты</div>
+                                <ul class="contacts__list">
+                                    <li class="contacts__item">
+                                        <a href="tel:+78435671208" class="contacts__link icon-phone">+7 (843) 567-12-08</a>
+                                    </li>
+                                    <li class="contacts__item">
+                                        <a href="" class="contacts__link icon-telegram">Написать в Telegram</a>
+                                    </li>
+                                    <li class="contacts__item">
+                                        <a href="" class="contacts__link icon-whatsapp">Написать в WhatsApp</a>
+                                    </li>
+                                </ul>
+                                <div class="contacts__socials">
+                                    <div class="contacts__socials-caption">Мы в соц.сетях</div>
+                                    <div class="contacts__socials-items">
+                                        <a href="" aria-label="" class="contacts__socials-item icon-instagram"></a>
+                                        <a href="" aria-label="" class="contacts__socials-item icon-telegram"></a>
+                                        <a href="" aria-label="" class="contacts__socials-item icon-youtube"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__balloon">
+                                <address class="contacts__address icon-location">
+                                    г. Казань, ул. Курашова, д.20
+                                </address>
+                                <a href="" class="contacts__btn btn btn-primary">Проложить маршрут</a>
+                            </div>
+                            <div class="contacts__map">
+                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7651dd8e0bfd0da7c0bce192c3069826e7dcfb2e9b5cec25a2c0891e9cd54fa0&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__body">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-6">
+                                <div class="footer__main">
+                                    <a href="/" class="footer__logo">
+                                        <span class="footer__logo-icon">
+                                            <img src="img/logo-color.svg" alt="Логотип">
+                                        </span>
+                                        <span class="footer__logo-content">
+                                            <span class="footer__logo-name">БУДЬ В BALANCE</span>
+                                            <span class="footer__logo-deskriptor">Медицинская клиника <br> по профилактике заболеваний в Казани</span>
+                                        </span>
+                                    </a>
+                                    <div class="footer__meta">
+                                        <div class="footer__worktime">Пн-Вс: с 08:00 до 21:00</div>
+                                        <a href="tel:+78435671208" class="footer__phone">+7 (843) 567-12-08</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-6">
+                                <nav aria-label="Меню услуг" class="footer__menu">
+                                    <div class="footer__menu-caption">Услуги</div>
+                                    <ul class="footer__menu-list">
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Приём врачей</a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Нутрициолог</a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Массаж</a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Капельницы</a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Чек-ап</a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Анализы</a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Исследования</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-6">
+                                <nav aria-label="Меню информации" class="footer__menu">
+                                    <div class="footer__menu-caption">О клинике</div>
+                                    <ul class="footer__menu-list">
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">О клинике </a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Правовые документы </a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Вакансии </a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Франшиза </a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-xl-4 col-lg-6">
+                                <div class="footer__actions">
+                                    <a href="#appointment" data-fancybox class="footer__btn btn btn-primary btn-lg">Записаться на приём</a>
+                                    <div class="footer__socials">
+                                        <a href="" class="footer__social icon-whatsapp"></a>
+                                        <a href="" class="footer__social icon-telegram"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__bottom-container container">
+                        <div class="footer__copyright">2025, © «Будь в Балансе»</div>
+                        <a href="" class="footer__policy">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </footer>
+
+            <div id="appointment" class="popup" role="dialog" aria-modal="true" hidden>
+                <h2 class="popup__title title">Онлайн-запись в&nbsp;Balance Med</h2>
+                <p class="popup__subtitle">Наш администратор свяжется с Вами в течение 15 минут.</p>
+                <form action="#" class="popup__form form">
+                    <input type="text" name="username" class="form__control" placeholder="Ваше имя">
+                    <input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
+                    <div class="form__bottom">
+                        <button type="submit" class="form__submit btn btn-primary btn-lg">Оставить заявку</button>
+                    </div>
+                    <div class="form__policy">
+                        Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
+                    </div>
+                </form>
+            </div>
+            <!-- male programms -->
+            <div id="programm-premium-male" class="popup popup--large" role="dialog" aria-modal="true" hidden>
+                <h2 class="popup__title title color-accent">премиум чек-ап (мужской)</h2>
+                <div class="popup__price title">38 000 ₽</div>
+                <a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
+                <div class="popup__programms">
+                    <div class="popup__programms-block">
+                        <div class="popup__programms-caption color-accent">Программа комплексного обследования охватывает все аспекты здоровья и включает в себя:</div>
+                        <div class="popup__programms-items">
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">ОБЩИЕ ИССЛЕДОВАНИЯ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Общий анализ крови с лейкоцитарной формулой и СОЭ</li>
+                                    <li>С-реактивный белок (СРБ)</li>
+                                    <li>Гомоцистеин</li>
+                                    <li>Витамин D</li>
+                                    <li>Ферритин</li>
+                                    <li>Тестостерон свободный</li>
+                                </ul>
+                            </div>
+
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">ФУНКЦИОНАЛЬНОЕ СОСТОЯНИЕ ГЕПАТОБИЛИАРНОЙ СИСТЕМЫ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Общий белок</li>
+                                    <li>Общий билирубин</li>
+                                    <li>Прямой билирубин</li>
+                                    <li>АЛТ</li>
+                                    <li>АСТ</li>
+                                    <li>Щелочная фосфатаза</li>
+                                    <li>Мочевая кислота</li>
+                                    <li>Копрограмма</li>
+                                    <li>ХМС по Осипову</li>
+                                </ul>
+                            </div>
+
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">ИССЛЕДОВАНИЕ СИСТЕМЫ СВЕРТЫВАНИЯ КРОВИ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Коагулограмма (скрининг):</li>
+                                    <li>АЧТВ</li>
+                                    <li>Протромбин (время, по Квику, МНО)</li>
+                                    <li>Тромбиновое время</li>
+                                    <li>Фибриноген</li>
+                                </ul>
+                            </div>
+
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">ФУНКЦИОНАЛЬНОЕ СОСТОЯНИЕ МОЧЕВЫВОДЯЩЕЙ СИСТЕМЫ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Креатинин</li>
+                                    <li>Мочевина</li>
+                                    <li>Общий анализ мочи</li>
+                                </ul>
+                            </div>
+
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">ЭЛЕКТРОЛИТЫ И МИКРОЭЛЕМЕНТЫ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Калий</li>
+                                    <li>Натрий</li>
+                                    <li>Хлор</li>
+                                    <li>Кальций</li>
+                                    <li>Магний</li>
+                                    <li>Цинк</li>
+                                    <li>Медь</li>
+                                    <li>Железо</li>
+                                </ul>
+                            </div>
+
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">УГЛЕВОДНЫЙ ОБМЕН:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Глюкоза</li>
+                                    <li>Гликированный гемоглобин (HbA1c)</li>
+                                    <li>Инсулин</li>
+                                </ul>
+                            </div>
+
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">ОНКОМАРКЕРЫ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Профиль онкомаркеров (уточняется дополнительно)</li>
+                                </ul>
+                            </div>
+
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">ЛИПИДНЫЙ ПРОФИЛЬ (БАЗОВЫЙ):</div>
+                                <ul class="popup__programms-list">
+                                    <li>Общий холестерин</li>
+                                    <li>ЛПВП</li>
+                                    <li>ЛПНП</li>
+                                    <li>ЛПОНП</li>
+                                    <li>Триглицериды (ТГ)</li>
+                                    <li>Липопротеин (а)</li>
+                                </ul>
+                            </div>
+
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">СКРИНИНГ ЗАБОЛЕВАНИЙ ЩИТОВИДНОЙ ЖЕЛЕЗЫ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>ТТГ</li>
+                                    <li>Свободный Т3</li>
+                                    <li>Свободный Т4</li>
+                                    <li>Анти-ТПО</li>
+                                    <li>Анти-ТГ</li>
+                                    <li>Паратгормон (оценка функции паращитовидных желез)</li>
+                                </ul>
+                            </div>
+
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">ТЕСТ НА СОЦИАЛЬНО ЗНАЧИМЫЕ ИНФЕКЦИИ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Сифилис (RPR, RW)</li>
+                                    <li>Гепатит B (HBsAg)</li>
+                                    <li>Гепатит C (Anti-HCV)</li>
+                                    <li>ВИЧ</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup__programms-block">
+                        <div class="popup__programms-items">
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">ДИАГНОСТИЧЕСКИЕ ОБСЛЕДОВАНИЯ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>ЭКГ с расшифровкой</li>
+                                    <li>УЗИ гепатобилиарной системы</li>
+                                    <li>УЗИ мочевыводящей системы</li>
+                                    <li>УЗИ щитовидной железы</li>
+                                </ul>
+                            </div>
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">КОНСУЛЬТАЦИИ СПЕЦИАЛИСТОВ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Терапевт</li>
+                                    <li>Нутрициолог</li>
+                                    <li>Эндокринолог</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="programm-base-male" class="popup popup--large" role="dialog" aria-modal="true" hidden>
+                <h2 class="popup__title title color-accent">базовый чек-ап (мужской)</h2>
+                <div class="popup__price title">8 400 ₽</div>
+                <a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
+                <div class="popup__programms">
+                    <div class="popup__programms-block">
+                        <div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
+                        <div class="popup__programms-items">
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>ОАК с лейкоцитарной формулой</li>
+                                    <li>СОЭ</li>
+                                    <li>АЛТ</li>
+                                    <li>АСТ</li>
+                                    <li>Щелочная фосфатаза</li>
+                                    <li>ГГТ</li>
+                                    <li>Общий белок</li>
+                                    <li>Креатинин</li>
+                                    <li>Мочевина</li>
+                                    <li>Мочевая кислота</li>
+                                    <li>Липидный профиль базовый</li>
+                                    <li>Ферритин</li>
+                                    <li>Билирубин общий</li>
+                                </ul>
+                            </div>
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>ТТГ</li>
+                                    <li>Тестостерон общий</li>
+                                    <li>Гомоцистеин</li>
+                                    <li>Липопротеин</li>
+                                    <li>Витамин Д</li>
+                                    <li>Кальций общий</li>
+                                    <li>Магний</li>
+                                    <li>Цинк</li>
+                                    <li>Глюкоза</li>
+                                    <li>Фосфор неорганический</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="programm-extended-male" class="popup popup--large" role="dialog" aria-modal="true" hidden>
+                <h2 class="popup__title title color-accent">расширенный чек-ап (мужской)</h2>
+                <div class="popup__price title">10 200 ₽</div>
+                <a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
+                <div class="popup__programms">
+                    <div class="popup__programms-block">
+                        <div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
+                        <div class="popup__programms-items">
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>ОАК с лейкоцитарной формулой</li>
+                                    <li>СОЭ</li>
+                                    <li>АЛТ</li>
+                                    <li>АСТ</li>
+                                    <li>Щелочная фосфатаза</li>
+                                    <li>ГГТ</li>
+                                    <li>Общий белок</li>
+                                    <li>Креатинин</li>
+                                    <li>Мочевина</li>
+                                    <li>Мочевая кислота</li>
+                                    <li>Липидный профиль базовый</li>
+                                    <li>Билирубин общий</li>
+                                    <li>Простата - специфический антиген</li>
+                                </ul>
+                            </div>
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>ТТГ</li>
+                                    <li>Тестостерон общий</li>
+                                    <li>Витамин Д</li>
+                                    <li>Фосфор неорганический</li>
+                                    <li>Кальций общий</li>
+                                    <li>Магний</li>
+                                    <li>Цинк</li>
+                                    <li>Паратиреоидный гормон</li>
+                                    <li>Глюкоза</li>
+                                    <li>Гликированный гемоглобин</li>
+                                    <li>Гомоцистеин</li>
+                                    <li>Липопротеин</li>
+                                    <li>С реактивный белок</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="programm-balance-male" class="popup popup--large" role="dialog" aria-modal="true" hidden>
+                <h2 class="popup__title title color-accent">чек-ап будь в балансе мужской</h2>
+                <div class="popup__price title">15 700 ₽</div>
+                <a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
+                <div class="popup__programms">
+                    <div class="popup__programms-block">
+                        <div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
+                        <div class="popup__programms-items">
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>СОЭ (венозная кровь)</li>
+                                    <li>Клинический анализ крови с лейкоцитарной формулой (SDIFF) (венозная кровь)</li>
+                                    <li>АЛТ</li>
+                                    <li>АСТ</li>
+                                    <li>Щелочная фосфатаза</li>
+                                    <li>ГГТ</li>
+                                    <li>Общий белок</li>
+                                    <li>Альфа-амилаза</li>
+                                    <li>Альбумин</li>
+                                    <li>Креатинин</li>
+                                    <li>Мочевина</li>
+                                    <li>Липидный профиль, базовый (Коэффициент атерогенности (включает определение общего холестерина и ЛПВП)</li>
+                                </ul>
+                            </div>
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>Холестерин липопротеидов низкой плотности/очень низкой плотности, включая определение триглицеридов, Холестерин не-ЛПВП)</li>
+                                    <li>Трансферрин</li>
+                                    <li>Ферритин</li>
+                                    <li>Общая железосвязывающая способность сыворотки (ОЖСС) (включает определение железа, ЛЖСС)</li>
+                                    <li>Билирубин непрямой (включает определение общего и прямого билирубина)</li>
+                                    <li>ТТГ</li>
+                                    <li>Гомоцистеин</li>
+                                    <li>Медь</li>
+                                    <li>Церулоплазмин</li>
+                                </ul>
+                            </div>
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>Кальций общий</li>
+                                    <li>25-OH витамин D (ИХЛА, суммарный (кальциферол))</li>
+                                    <li>Натрий, калий, хлор (NA/K/CL)</li>
+                                    <li>Магний</li>
+                                    <li>Фосфор неорганический</li>
+                                    <li>Глюкоза</li>
+                                    <li>Гликированный гемоглобин A1c</li>
+                                    <li>Мочевая кислота</li>
+                                    <li>С-реактивный белок</li>
+                                    <li>Общий анализ мочи</li>
+                                    <li>В9 (фолиевая кислота)</li>
+                                    <li>В12 (цианкобаламин)</li>
+                                    <li>Общий анализ кала (копрограмма)</li>
+                                    <li>В12, активный (холотранскобаламин)</li>
+                                    <li>Простатоспецифический антиген (ПСА) общий</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="programm-sports-male" class="popup popup--large" role="dialog" aria-modal="true" hidden>
+                <h2 class="popup__title title color-accent">чек-ап спортивный (мужской)</h2>
+                <div class="popup__price title">21 000 ₽</div>
+                <a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
+                <div class="popup__programms">
+                    <div class="popup__programms-block">
+                        <div class="popup__programms-items popup__programms-items--small">
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">ОСНОВНЫЕ НАПРАВЛЕНИЯ ИССЛЕДОВАНИЯ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Оценка биомаркеров, отражающих состояние мышц</li>
+                                    <li>Оценка белкового обмена</li>
+                                    <li>Оценка мужского гормонального статуса</li>
+                                    <li>Исключение скрытого железодефицита</li>
+                                </ul>
+                            </div>
+
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Общий анализ крови (ОАК) с лейкоцитарной формулой и СОЭ</li>
+                                    <li>АЛТ</li>
+                                    <li>АСТ</li>
+                                    <li>ГГТ</li>
+                                    <li>Креатинин</li>
+                                    <li>Мочевина</li>
+                                    <li>Мочевая кислота</li>
+                                    <li>Ферритин</li>
+                                    <li>Коэффициент насыщения железом</li>
+                                    <li>Железо</li>
+                                    <li>Латентная железосвязывающая способность сыворотки (ЛЖСС)</li>
+                                    <li>Трансферрин</li>
+                                    <li>Натрий, калий, хлор</li>
+                                    <li>Мочевая кислота</li>
+                                    <li>Молочная кислота (лактат)</li>
+                                    <li>Тестостерон свободный (включает определение общего тестостерона, ГСПГ, расчет индекса андрогенов)</li>
+                                    <li>ИФР1 (инсулиноподобный фактор роста 1)</li>
+                                    <li>Комплексный анализ крови на аминокислоты (12 показателей)</li>
+                                    <li>Анализ суточной мочи на андрогены и их метаболиты (8 показателей)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- male programms -->
+
+            <!-- female programms -->
+            <div id="programm-base-female" class="popup popup--large" role="dialog" aria-modal="true" hidden>
+                <h2 class="popup__title title color-accent">базовый чек-ап (женский)</h2>
+                <div class="popup__price title">8 900 ₽</div>
+                <a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
+                <div class="popup__programms">
+                    <div class="popup__programms-block">
+                        <div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
+                        <div class="popup__programms-items">
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>Общий анализ крови (ОАК) с лейкоцитарной формулой</li>
+                                    <li>СОЭ</li>
+                                    <li>АЛТ</li>
+                                    <li>АСТ</li>
+                                    <li>Щелочная фосфатаза</li>
+                                    <li>Гамма-ГТ</li>
+                                    <li>Общий белок</li>
+                                    <li>Креатинин</li>
+                                    <li>Мочевина</li>
+                                    <li>Липидный профиль базовый</li>
+                                    <li>Ферритин</li>
+                                    <li>Билирубин общий</li>
+                                </ul>
+                            </div>
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>Тиреотропный гормон (ТТГ) ультрачувствительный</li>
+                                    <li>Гомоцистеин</li>
+                                    <li>Липопротеин</li>
+                                    <li>25-ОН витамин D</li>
+                                    <li>Кальций общий</li>
+                                    <li>Магний</li>
+                                    <li>Цинк</li>
+                                    <li>Глюкоза</li>
+                                    <li>Фосфор неорганический</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="programm-extended-female" class="popup popup--large" role="dialog" aria-modal="true" hidden>
+                <h2 class="popup__title title color-accent">расширенный чек-ап (женский)</h2>
+                <div class="popup__price title">10 900 ₽</div>
+                <a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
+                <div class="popup__programms">
+                    <div class="popup__programms-block">
+                        <div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
+                        <div class="popup__programms-items">
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>Общий анализ крови (ОАК) с лейкоцитарной формулой</li>
+                                    <li>СОЭ</li>
+                                    <li>АЛТ</li>
+                                    <li>АСТ</li>
+                                    <li>Щелочная фосфатаза</li>
+                                    <li>Гамма-ГТ</li>
+                                    <li>Общий белок</li>
+                                    <li>Креатинин</li>
+                                    <li>Мочевина</li>
+                                    <li>Липидный профиль базовый</li>
+                                    <li>Ферритин</li>
+                                    <li>Билирубин общий</li>
+                                    <li>Онкомаркер СА-125</li>
+                                </ul>
+                            </div>
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>Простатоспецифический антиген (PSA)</li>
+                                    <li>Тиреотропный гормон (ТТГ) ультрачувствительный</li>
+                                    <li>Гомоцистеин</li>
+                                    <li>Липопротеин</li>
+                                    <li>С-реактивный белок</li>
+                                    <li>25-ОН витамин D</li>
+                                    <li>Кальций общий</li>
+                                    <li>Фосфор неорганический</li>
+                                    <li>Магний</li>
+                                    <li>Цинк</li>
+                                    <li>Глюкоза</li>
+                                    <li>Паратиреоидный гормон</li>
+                                    <li>Гликированный гемоглобин (A1C)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="programm-premium-female" class="popup popup--large" role="dialog" aria-modal="true" hidden>
+                <h2 class="popup__title title color-accent">премиум чек-ап (женский)</h2>
+                <div class="popup__price title">38 000 ₽</div>
+                <a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
+                <div class="popup__programms">
+                    <div class="popup__programms-block">
+                        <div class="popup__programms-caption color-accent">ПРОГРАММА КОМПЛЕКСНОГО ОБСЛЕДОВАНИЯ ОХВАТЫВАЕТ ВСЕ АСПЕКТЫ ЗДОРОВЬЯ И ВКЛЮЧАЕТ В СЕБЯ:</div>
+
+                        <div class="popup__programms-items">
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">ОБЩИЕ ИССЛЕДОВАНИЯ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Общий анализ крови с лейкоцитарной формулой и СОЭ</li>
+                                    <li>С-реактивный белок (СРБ)</li>
+                                    <li>Гомоцистеин</li>
+                                    <li>Витамин D</li>
+                                </ul>
+
+                                <div class="popup__programms-caption">ФУНКЦИОНАЛЬНОЕ СОСТОЯНИЕ ГЕПАТОБИЛИАРНОЙ СИСТЕМЫ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Общий белок</li>
+                                    <li>Общий билирубин</li>
+                                    <li>Прямой билирубин</li>
+                                    <li>АЛТ</li>
+                                    <li>АСТ</li>
+                                    <li>Щелочная фосфатаза</li>
+                                    <li>Мочевая кислота</li>
+                                    <li>Копрограмма</li>
+                                    <li>ХМС по Осипову</li>
+                                </ul>
+
+                                <div class="popup__programms-caption">ИССЛЕДОВАНИЕ СИСТЕМЫ СВЕРТЫВАНИЯ КРОВИ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Коагулограмма (скрининг):</li>
+                                    <li>АЧТВ</li>
+                                    <li>Протромбин (время, по Квику, МНО)</li>
+                                    <li>Тромбиновое время</li>
+                                    <li>Фибриноген</li>
+                                </ul>
+                            </div>
+
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">ФУНКЦИОНАЛЬНОЕ СОСТОЯНИЕ МОЧЕВЫВОДЯЩЕЙ СИСТЕМЫ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Креатинин</li>
+                                    <li>Мочевина</li>
+                                    <li>Общий анализ мочи</li>
+                                </ul>
+
+                                <div class="popup__programms-caption">ЭЛЕКТРОЛИТЫ И МИКРОЭЛЕМЕНТЫ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Калий</li>
+                                    <li>Натрий</li>
+                                    <li>Хлор</li>
+                                    <li>Кальций</li>
+                                    <li>Магний</li>
+                                    <li>Цинк</li>
+                                    <li>Медь</li>
+                                </ul>
+
+                                <div class="popup__programms-caption">ОБМЕН ЖЕЛЕЗА:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Ферритин</li>
+                                    <li>Коэффициент насыщения трансферрина железом (сывороточное железо и ЛЖСС)</li>
+                                    <li>Трансферрин</li>
+                                </ul>
+
+                                <div class="popup__programms-caption">УГЛЕВОДНЫЙ ОБМЕН:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Глюкоза</li>
+                                    <li>Гликированный гемоглобин (HbA1c)</li>
+                                </ul>
+
+                                <div class="popup__programms-caption">ОНКОМАРКЕРЫ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Профиль онкомаркеров (уточняется дополнительно)</li>
+                                </ul>
+                            </div>
+
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">ЛИПИДНЫЙ ПРОФИЛЬ (БАЗОВЫЙ):</div>
+                                <ul class="popup__programms-list">
+                                    <li>Общий холестерин</li>
+                                    <li>ЛПВП</li>
+                                    <li>ЛПНП</li>
+                                    <li>ЛПОНП</li>
+                                    <li>Триглицериды (ТГ)</li>
+                                    <li>Липопротеин (а)</li>
+                                </ul>
+
+                                <div class="popup__programms-caption">СКРИНИНГ ЗАБОЛЕВАНИЙ ЩИТОВИДНОЙ ЖЕЛЕЗЫ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>ТТГ</li>
+                                    <li>Свободный Т3</li>
+                                    <li>Свободный Т4</li>
+                                    <li>Анти-ТПО</li>
+                                    <li>Анти-ТГ</li>
+                                </ul>
+
+                                <div class="popup__programms-caption">ТЕСТ НА СОЦИАЛЬНО ЗНАЧИМЫЕ ИНФЕКЦИИ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Сифилис (RPR, RW)</li>
+                                    <li>Гепатит B (HBsAg)</li>
+                                    <li>Гепатит C (Anti-HCV)</li>
+                                    <li>ВИЧ</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup__programms-block">
+                        <div class="popup__programms-items">
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">ДИАГНОСТИЧЕСКИЕ ОБСЛЕДОВАНИЯ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>ЭКГ с расшифровкой</li>
+                                    <li>УЗИ гепатобилиарной системы</li>
+                                    <li>УЗИ мочевыводящей системы</li>
+                                    <li>УЗИ щитовидной железы</li>
+                                </ul>
+                            </div>
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">КОНСУЛЬТАЦИИ СПЕЦИАЛИСТОВ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Терапевт</li>
+                                    <li>Нутрициолог</li>
+                                    <li>Эндокринолог</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="programm-balance-female" class="popup popup--large" role="dialog" aria-modal="true" hidden>
+                <h2 class="popup__title title color-accent">чек-ап будь в балансе женский</h2>
+                <div class="popup__price title">15 700 ₽</div>
+                <a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
+                <div class="popup__programms">
+                    <div class="popup__programms-block">
+                        <div class="popup__programms-items">
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">ОСНОВНЫЕ ИССЛЕДОВАНИЯ КРОВИ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>СОЭ (венозная кровь)</li>
+                                    <li>Клинический анализ крови с лейкоцитарной формулой (SDIFF, венозная кровь)</li>
+                                    <li>АЛТ</li>
+                                    <li>АСТ</li>
+                                    <li>Щелочная фосфатаза</li>
+                                    <li>ГГТ</li>
+                                    <li>Общий белок</li>
+                                    <li>Альфа-амилаза</li>
+                                    <li>Альбумин</li>
+                                </ul>
+                                <div class="popup__programms-caption">ОБЩИЕ АНАЛИЗЫ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Общий анализ мочи</li>
+                                    <li>Общий анализ кала (копрограмма)</li>
+                                    <li>Витамин B9 (фолиевая кислота)</li>
+                                    <li>Витамин B12 (цианкобаламин)</li>
+                                    <li>Витамин B12 активный (холотранскобаламин)</li>
+                                </ul>
+                            </div>
+
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">ПОЧКИ И ОБМЕН ВЕЩЕСТВ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Креатинин</li>
+                                    <li>Мочевина</li>
+                                    <li>Мочевая кислота</li>
+                                </ul>
+                                <div class="popup__programms-caption">ЛИПИДНЫЙ ПРОФИЛЬ (БАЗОВЫЙ):</div>
+                                <ul class="popup__programms-list">
+                                    <li>Коэффициент атерогенности (включает общий холестерин и ЛПВП)</li>
+                                    <li>Холестерин ЛПНП/ЛПОНП (включая триглицериды)</li>
+                                    <li>Холестерин не-ЛПВП</li>
+                                </ul>
+                                <div class="popup__programms-caption">ОБМЕН ЖЕЛЕЗА:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Трансферрин</li>
+                                    <li>Ферритин</li>
+                                    <li>Общая железосвязывающая способность сыворотки (ОЖСС, включает железо и ЛЖСС)</li>
+                                </ul>
+                                <div class="popup__programms-caption">ПЕЧЕНЬ И БИЛИРУБИН:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Билирубин непрямой (включает общий и прямой билирубин)</li>
+                                </ul>
+                            </div>
+
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">ГОРМОНЫ И ВИТАМИНЫ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>ТТГ</li>
+                                    <li>Т4 свободный</li>
+                                    <li>25-ОН витамин D (ИХЛА, суммарный кальциферол)</li>
+                                </ul>
+                                <div class="popup__programms-caption">МИКРОЭЛЕМЕНТЫ И ЭЛЕКТРОЛИТЫ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Натрий, Калий, Хлор (NA/K/CL)</li>
+                                    <li>Кальций общий</li>
+                                    <li>Магний</li>
+                                    <li>Фосфор неорганический</li>
+                                    <li>Медь</li>
+                                    <li>Церулоплазмин</li>
+                                </ul>
+                                <div class="popup__programms-caption">ДОПОЛНИТЕЛЬНЫЕ АНАЛИЗЫ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Глюкоза</li>
+                                    <li>Гликированный гемоглобин (HbA1c)</li>
+                                    <li>Гомоцистеин</li>
+                                    <li>С-реактивный белок</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="programm-pregnancy" class="popup popup--large" role="dialog" aria-modal="true" hidden>
+                <h2 class="popup__title title color-accent">ЧЕК-АП «ПЛАНИРОВАНИЕ БЕРЕМЕННОСТИ»</h2>
+                <div class="popup__price title">14 640 ₽</div>
+                <a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
+                <div class="popup__programms">
+                    <div class="popup__programms-block">
+                        <div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
+                        <div class="popup__programms-items">
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>Клинический анализ крови с лейкоцитарной формулой и СОЭ</li>
+                                    <li>С-реактивный белок</li>
+                                    <li>25-ОН витамин D</li>
+                                    <li>Общий белок</li>
+                                    <li>Альбумин</li>
+                                    <li>Железо</li>
+                                    <li>Ферритин</li>
+                                    <li>Трансферрин</li>
+                                    <li>Кальций общий</li>
+                                    <li>Фосфор неорганический</li>
+                                    <li>Витамин B9 / B12</li>
+                                    <li>Гомоцистеин</li>
+                                </ul>
+                            </div>
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>АЛТ / АСТ / ГГТ</li>
+                                    <li>Щелочная фосфатаза</li>
+                                    <li>Общий билирубин</li>
+                                    <li>Общий холестерин</li>
+                                    <li>Глюкоза / Мочевина / Креатинин</li>
+                                    <li>ТТГ / Т4 свободный / Т3 свободный</li>
+                                    <li>Анти-ТПО / Анти-ТГ</li>
+                                    <li>Коагулограмма расширенная</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="programm-postpartum" class="popup popup--large" role="dialog" aria-modal="true" hidden>
+                <h2 class="popup__title title color-accent">ЧЕК-АП «ПОСЛЕ РОДОВ»</h2>
+                <div class="popup__price title">11 100 ₽</div>
+                <a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
+                <div class="popup__programms">
+                    <div class="popup__programms-block">
+                        <div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
+                        <div class="popup__programms-items">
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>АЛТ / АСТ</li>
+                                    <li>Щелочная фосфатаза</li>
+                                    <li>ГГТ</li>
+                                    <li>Общий белок</li>
+                                    <li>Альбумин</li>
+                                    <li>Мочевина / Креатинин</li>
+                                    <li>С-реактивный белок</li>
+                                    <li>Холестерин общий</li>
+                                    <li>Железо / Ферритин / Трансферрин</li>
+                                </ul>
+                            </div>
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>25-ОН витамин D (кальциферол)</li>
+                                    <li>Магний</li>
+                                    <li>Билирубин общий</li>
+                                    <li>Кальций общий</li>
+                                    <li>Фосфор неорганический</li>
+                                    <li>ТТГ (тиреотропный гормон)</li>
+                                    <li>Т4 свободный / Т3 свободный</li>
+                                    <li>Антитела к тиреоглобулину (Анти-ТГ)</li>
+                                    <li>Антитела к тиреопероксидазе (Анти-ТПО)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- female programms -->
+
+            <!-- other programms -->
+            <div id="programm-kids" class="popup popup--large" role="dialog" aria-modal="true" hidden>
+                <h2 class="popup__title title color-accent">ЧЕК-АП «ДЕТСКИЙ»</h2>
+                <div class="popup__price title">10 500 ₽</div>
+                <a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
+                <div class="popup__programms">
+                    <div class="popup__programms-block">
+                        <div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
+                        <div class="popup__programms-items">
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>Клинический анализ крови с лейкоцитарной формулой и СОЭ</li>
+                                    <li>АЛТ / АСТ</li>
+                                    <li>Билирубин непрямой (включает общий и прямой)</li>
+                                    <li>Общий белок / Холестерин</li>
+                                    <li>Глюкоза / Мочевина</li>
+                                </ul>
+                            </div>
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>Креатинин / Железо / Ферритин</li>
+                                    <li>Витамин В9 / В12</li>
+                                    <li>25-ОН витамин D</li>
+                                    <li>ТТГ / Т4 свободный / Т3 свободный</li>
+                                    <li>Кальций общий / Магний</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="programm-anemia" class="popup popup--large" role="dialog" aria-modal="true" hidden>
+                <h2 class="popup__title title color-accent">ЧЕК-АП «АНЕМИЯ»</h2>
+                <div class="popup__price title">8 500 ₽</div>
+                <a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
+                <div class="popup__programms">
+                    <div class="popup__programms-block">
+                        <div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
+                        <div class="popup__programms-items">
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>Общий анализ крови (ОАК) с лейкоцитарной формулой (SDIFF)</li>
+                                    <li>Скорость оседания эритроцитов (СОЭ) (венозная кровь)</li>
+                                    <li>Альбумин</li>
+                                    <li>Ферритин</li>
+                                    <li>Растворимый рецептор трансферрина</li>
+                                    <li>Общий белок</li>
+                                    <li>С-реактивный белок (СРБ)</li>
+                                    <li>Гомоцистеин</li>
+                                </ul>
+                            </div>
+
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>Медь (Cu)</li>
+                                    <li>Железо</li>
+                                    <li>Латентная железосвязывающая способность сыворотки</li>
+                                    <li>Трансферрин</li>
+                                    <li>Общая железосвязывающая способность сыворотки</li>
+                                    <li>Коэффициент насыщения трансферрина железом</li>
+                                    <li>Витамин B9 (фолиевая кислота)</li>
+                                    <li>Витамин B12 (цианокобаламин)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="programm-antistress" class="popup popup--large" role="dialog" aria-modal="true" hidden>
+                <h2 class="popup__title title color-accent">ЧЕК-АП «АНТИ-СТРЕСС»</h2>
+                <div class="popup__price title">13 600 ₽</div>
+                <a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
+                <div class="popup__programms">
+                    <div class="popup__programms-block">
+                        <div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
+                        <div class="popup__programms-items">
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>Клинический анализ крови с лейкоцитарной формулой + СОЭ</li>
+                                    <li>С-реактивный белок</li>
+                                    <li>25(OH) витамин D</li>
+                                    <li>Общий белок</li>
+                                    <li>Альбумин</li>
+                                    <li>Железо</li>
+                                    <li>Ферритин</li>
+                                    <li>Трансферрин</li>
+                                    <li>Коэффициент насыщения трансферрина</li>
+                                    <li>Цинк</li>
+                                    <li>Медь</li>
+                                    <li>Витамин В9 (фолиевая кислота)</li>
+                                    <li>Витамин В12</li>
+                                </ul>
+                            </div>
+
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>Гомоцистеин</li>
+                                    <li>АЛТ</li>
+                                    <li>АСТ</li>
+                                    <li>ГГТ</li>
+                                    <li>Щелочная фосфатаза</li>
+                                    <li>Билирубин и его фракции (общий, прямой, непрямой)</li>
+                                    <li>Глюкоза</li>
+                                    <li>Мочевина</li>
+                                    <li>ТТГ (тиреотропный гормон)</li>
+                                    <li>Т4 свободный</li>
+                                    <li>Т3 свободный</li>
+                                    <li>Анти-ТПО</li>
+                                    <li>Анти-ТГ</li>
+                                    <li>Антистрептолизин-О</li>
+                                    <li>Литий</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="programm-weight-balance" class="popup popup--large" role="dialog" aria-modal="true" hidden>
+                <h2 class="popup__title title color-accent">ЧЕК-АП «ВЕС В БАЛАНСЕ»</h2>
+                <div class="popup__price title">13 900 ₽</div>
+                <a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
+                <div class="popup__programms">
+                    <div class="popup__programms-block">
+                        <div class="popup__programms-caption color-accent">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
+                        <div class="popup__programms-items">
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>Клинический анализ крови с лейкоцитарной формулой и СОЭ</li>
+                                    <li>Железо</li>
+                                    <li>Ферритин</li>
+                                    <li>Трансферрин</li>
+                                    <li>Коэффициент насыщения трансферрина железом</li>
+                                    <li>Витамин В9</li>
+                                    <li>Витамин В12</li>
+                                    <li>Гомоцистеин</li>
+                                    <li>Тиреотропный гормон (ТТГ)</li>
+                                    <li>Т4 свободный</li>
+                                    <li>Т3 свободный</li>
+                                </ul>
+                            </div>
+
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>Анти-ТПО</li>
+                                    <li>Анти-ТГ</li>
+                                    <li>Глюкоза</li>
+                                    <li>Гликированный гемоглобин A1c</li>
+                                    <li>Инсулин</li>
+                                    <li>25-OH витамин D</li>
+                                    <li>ИХЛА (суммарный кальциферол)</li>
+                                    <li>Липидный профиль базовый</li>
+                                    <li>АЛТ</li>
+                                    <li>АСТ</li>
+                                    <li>Щелочная фосфатаза</li>
+                                </ul>
+                            </div>
+
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>ГГТ</li>
+                                    <li>Общий белок</li>
+                                    <li>Альбумин</li>
+                                    <li>Мочевина</li>
+                                    <li>Креатинин</li>
+                                    <li>Мочевая кислота</li>
+                                    <li>Билирубин (общий, прямой, непрямой)</li>
+                                    <li>С-реактивный белок</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="programm-liver-balance" class="popup popup--large" role="dialog" aria-modal="true" hidden>
+                <h2 class="popup__title title color-accent">ЧЕК-АП «ПЕЧЕНЬ В БАЛАНСЕ»</h2>
+                <div class="popup__price title">5 700 ₽</div>
+                <a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
+                <div class="popup__programms">
+                    <div class="popup__programms-block">
+                        <div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
+                        <div class="popup__programms-items">
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>Клинический анализ крови с лейкоцитарной формулой и СОЭ</li>
+                                    <li>Общий белок</li>
+                                    <li>Альбумин</li>
+                                    <li>Гомоцистеин</li>
+                                    <li>Железо</li>
+                                    <li>Ферритин</li>
+                                    <li>АЛТ</li>
+                                    <li>АСТ</li>
+                                    <li>ГГТ</li>
+                                </ul>
+                            </div>
+
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>Щелочная фосфатаза</li>
+                                    <li>Билирубин и его фракции (общий, прямой, непрямой)</li>
+                                    <li>Холестерин общий</li>
+                                    <li>Глюкоза</li>
+                                    <li>Мочевая кислота</li>
+                                    <li>Креатинин</li>
+                                    <li>Мочевина</li>
+                                    <li>Фибриноген</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="programm-skin-hair-nails" class="popup popup--large" role="dialog" aria-modal="true" hidden>
+                <h2 class="popup__title title color-accent">ЧЕК-АП «КОЖА, ВОЛОСЫ, НОГТИ»</h2>
+                <div class="popup__price title">8 100 ₽</div>
+                <a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
+                <div class="popup__programms">
+                    <div class="popup__programms-block">
+                        <div class="popup__programms-caption">ВКЛЮЧАЕТ СЛЕДУЮЩИЕ АНАЛИЗЫ:</div>
+                        <div class="popup__programms-items">
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>Клинический анализ крови с лейкоцитарной формулой и СОЭ</li>
+                                    <li>С-реактивный белок</li>
+                                    <li>Цинк</li>
+                                    <li>Медь</li>
+                                    <li>Железо</li>
+                                    <li>Ферритин</li>
+                                    <li>Витамин В12 (цианокобаламин)</li>
+                                    <li>Витамин В9 (фолиевая кислота)</li>
+                                    <li>25-OH витамин D (кальциферол)</li>
+                                </ul>
+                            </div>
+
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>Магний</li>
+                                    <li>Кальций общий</li>
+                                    <li>Фосфор неорганический</li>
+                                    <li>Тиреотропный гормон (ТТГ)</li>
+                                    <li>Т4 свободный</li>
+                                    <li>Т3 свободный</li>
+                                    <li>Антитела к тиреоглобулину (Анти-ТГ)</li>
+                                    <li>Антитела к тиреопероксидазе (Анти-ТПО)</li>
+                                    <li>Андростендиол глюкуронид</li>
+                                    <li>Общий белок</li>
+                                    <li>Альбумин</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="programm-thyroid-balance" class="popup popup--large" role="dialog" aria-modal="true" hidden>
+                <h2 class="popup__title title color-accent">ЧЕК-АП «ЩИТОВИДНАЯ ЖЕЛЕЗА В БАЛАНСЕ»</h2>
+                <div class="popup__price title">6 500 ₽</div>
+                <a href="" class="popup__order btn btn-primary btn-lg">Записаться</a>
+                <div class="popup__programms">
+                    <div class="popup__programms-block">
+                        <div class="popup__programms-caption color-accent">В СОСТАВ ЧЕК-АПА ВХОДЯТ:</div>
+                        <div class="popup__programms-items">
+                            <div class="popup__programms-item">
+                                <div class="popup__programms-caption">КОМПЛЕКС ЛАБОРАТОРНЫХ АНАЛИЗОВ:</div>
+                                <ul class="popup__programms-list">
+                                    <li>Тиреотропный гормон (ТТГ)</li>
+                                    <li>Т4 свободный</li>
+                                    <li>Т3 свободный</li>
+                                    <li>Антитела к тиреопероксидазе (Анти-ТПО)</li>
+                                    <li>Антитела к тиреоглобулину (Анти-ТГ)</li>
+                                    <li>Тиреоглобулин (онкомаркер)</li>
+                                    <li>Кальцитонин (онкомаркер)</li>
+                                </ul>
+                            </div>
+
+                            <div class="popup__programms-item">
+                                <ul class="popup__programms-list">
+                                    <li>УЗИ щитовидной железы</li>
+                                    <li>Консультация эндокринолога</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- other programms -->
+            <!-- plugins -->
+            <script src="js/libs/fancybox.umd.js"></script>
+            <script src="js/libs/swiper-bundle.min.js"></script>
+            <!-- plugins -->
+
+            <script src="js/app.min.js"></script>
+        </div>
+    </body>
 </html>

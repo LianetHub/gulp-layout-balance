@@ -3,6 +3,24 @@
 	@media (min-width: $md4) {
 		padding: rem(60) 0 0;
 	}
+	&.service--decor-start {
+		.container {
+			&::before {
+				right: auto;
+				left: 5.5rem;
+				top: 66.66%;
+				width: 19.625rem;
+				height: 19.875rem;
+			}
+			&::after {
+				right: auto;
+				top: 66.66%;
+				width: 32.8125rem;
+				height: 32.8125rem;
+				left: 6.44rem;
+			}
+		}
+	}
 	.container {
 		position: relative;
 		&::before {
@@ -110,6 +128,10 @@
 			max-width: 100%;
 			margin-top: 0;
 			margin-bottom: auto;
+		}
+		&.service__main--small {
+			gap: 2rem;
+			max-width: 33.75rem;
 		}
 	}
 	// .service__caption
@@ -266,6 +288,9 @@
 			font-size: 1rem;
 			font-weight: 400;
 		}
+		&.service__desc--medium {
+			font-size: 1.125rem;
+		}
 		@media (min-width: $md4) {
 			font-size: 1.25rem;
 		}
@@ -274,6 +299,18 @@
 	&__image {
 		height: 100%;
 		& img {
+			border-radius: 1rem;
+		}
+	}
+	// .service__widget
+	&__widget {
+		height: 100%;
+		border-radius: 1rem;
+		overflow: hidden;
+		// opacity: 0;
+		& img,
+		& iframe {
+			width: 100%;
 			border-radius: 1rem;
 		}
 	}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Отзывы'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": 5
+            })
+            <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">Отзывы</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="page">
+                <section class="service service--decor-start">
+                    <div class="container">
+
+                        <div class="service__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="service__main service__main--small">
+                                        <h1 class="service__title title-sm">наши пациенты Говорят о нас</h1>
+                                        <div class="service__desc service__desc--medium">
+                                            <p>
+                                                Мы дорожим каждым клиентом! <br>
+                                                Учитываем ваши пожеления и совершенствуемся вместе.
+                                            </p>
+                                            <p>
+                                                Если вы уже были в клинике Будь в Балансе, то можете оставить свой отзыв.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="service__widget">
+                                        <img src="@img/widget.jpg" class="cover-image" alt="Фото услуги">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @@include('./html/_consult.html')
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>
