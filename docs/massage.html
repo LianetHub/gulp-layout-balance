@@ -1,596 +1,696 @@
 <!DOCTYPE html>
 <html lang="ru">
+    <head>
+        <title>БУДЬ В BALANCE | Массаж</title>
 
-<head>
-	<title>БУДЬ В BALANCE | Массаж</title>
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- plugins -->
-	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20260217191138">
-	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20260217191138">
-	<!-- plugins -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20260217191138">
-	<link rel="stylesheet" href="css/style.min.css?_v=20260217191138">
-</head>
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<body>
-	<div class="wrapper">
-		<header class="header">
-			<div class="container header__container">
-				<a href="index.html" class="header__logo">
-					<span class="header__logo-icon">
-						<img src="img/logo.svg" alt="Логотип">
-					</span>
-					<span class="header__logo-text"> БУДЬ В BALANCE </span>
-				</a>
-				<nav aria-label="Меню" class="header__menu menu">
-					<ul class="menu__list">
-						<li class="menu__item">
-							<a href="about.html" class="menu__link">О клинике</a>
-						</li>
-						<li class="menu__item menu__item--parent">
-							<a href="" class="menu__link">Услуги</a>
-							<button type="button" aria-label="Открыть подменю" class="menu__arrow icon-down"></button>
-							<div class="submenu">
-								<div class="submenu__column">
-									<a href="specialists.html" class="submenu__caption">Специалисты</a>
-									<ul class="submenu__list">
-										<li class="submenu__item"><a href="therapist.html" class="submenu__link">Терапевт</a></li>
-										<li class="submenu__item"><a href="endocrinologist.html" class="submenu__link">Эндокринолог</a></li>
-										<li class="submenu__item"><a href="nutritionist.html" class="submenu__link">Нутрициолог</a></li>
-									</ul>
-								</div>
-								<div class="submenu__column">
-									<a href="" class="submenu__caption">Процедуры</a>
-									<ul class="submenu__list">
-										<li class="submenu__item"><a href="droppers.html" class="submenu__link">Капельницы</a></li>
-										<li class="submenu__item"><a href="massage.html" class="submenu__link active">Массаж</a></li>
-									</ul>
-								</div>
-								<div class="submenu__column">
-									<a href="" class="submenu__caption">Обследования</a>
-									<ul class="submenu__list">
-										<li class="submenu__item"><a href="check-up.html" class="submenu__link">Чек-ап</a></li>
-										<li class="submenu__item"><a href="" class="submenu__link">Анализы</a></li>
-										<li class="submenu__item"><a href="uzi.html" class="submenu__link">УЗИ</a></li>
-										<li class="submenu__item"><a href="ekg.html" class="submenu__link">ЭКГ</a></li>
-										<li class="submenu__item"><a href="bioimpedancemetry.html" class="submenu__link">Биоимпедансометрия</a></li>
-									</ul>
-								</div>
-							</div>
-						</li>
-						<li class="menu__item">
-							<a href="prices.html" class="menu__link">Цены</a>
-						</li>
-						<li class="menu__item">
-							<a href="specialists.html" class="menu__link">Специалисты</a>
-						</li>
-						<li class="menu__item">
-							<a href="reviews.html" class="menu__link">Отзывы</a>
-						</li>
-						<li class="menu__item">
-							<a href="contacts.html" class="menu__link">Контакты</a>
-						</li>
-					</ul>
-					<div class="menu__actions">
-						<div class="menu__contacts">
-							<a href="tel:+78435671208" class="menu__contacts-phone">+7 (843) 567-12-08</a>
-							<address class="menu__address">г. Казань, ул. Курашова, д.20</address>
-						</div>
-						<a href="#appointment" data-fancybox class="menu__callback btn btn-primary">Записаться</a>
-					</div>
-				</nav>
-				<button type="button" aria-label="Открыть мобильное меню" class="header__toggler icon-menu">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
-			</div>
-		</header>
-		<nav aria-label="Хлебные крошки" class="breadcrumbs">
-			<div class="container">
-				<ul class="breadcrumbs__list">
-					<li class="breadcrumbs__item">
-						<a href="index.html" class="breadcrumbs__link">Главная</a>
-					</li>
-					<li class="breadcrumbs__item">
-						<span class="breadcrumbs__link">Массаж</span>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<main class="page">
-			<section class="service">
-				<div class="container">
-					<div class="service__body service__body--blured">
-						<div class="row">
-							<div class="col-lg-6">
-								<div class="service__main">
-									<h1 class="service__title title">лечебный массаж</h1>
-									<div class="service__desc service__desc--small">
-										<p>Лечебный массаж — это не просто приятная процедура, а важный элемент комплексного оздоровления. Он помогает снять напряжение, улучшить кровообращение, устранить мышечные зажимы и ускорить восстановление организма. Мы подходим к массажу как к терапии: подбираем подходящую технику, учитываем жалобы и состояние пациента, работаем бережно, но результативно.</p>
-										<p>Наши специалисты владеют разными техниками массажа, внимательно относятся к каждому пациенту и обеспечивают полное сопровождение на всем пути восстановления. Вам не нужно ни о чём беспокоиться: всё необходимое для комфортного сеанса — от полотенец до простыней и тапочек — мы предоставляем.</p>
-									</div>
-									<div class="service__info">
-										<div class="service__price">
-											<div class="service__price-title">Стоимость услуги</div>
-											<div class="service__price-value">2 300 ₽</div>
-										</div>
-										<a href="#massages" class="service__btn btn btn-primary btn-lg">Выбрать массаж</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="service__image">
-									<img src="img/massage.jpg" class="cover-image" alt="Фото услуги">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="video-block">
-				<div class="container">
-					<h2 class="video-block__title title-sm"> Посмотрите короткое видео о том, как проходит сеанс массажа в нашей клинике </h2>
-					<a href="https://vkvideo.ru/video_ext.php?oid=-73354773&id=456240544&hash=1c842bdb2fd8c544&hd=3" data-fancybox data-type="iframe" class="video-block__content icon-play">
-						<img src="img/video.jpg" class="cover-image" alt="Постер">
-					</a>
-				</div>
-			</section>
-			<section id="massages" class="services">
-				<div class="container">
-					<h2 class="services__title title">Виды массажа</h2>
-					<div class="services__blocks">
-						<div class="services__block">
-							<div class="section-header">
-								<h2 class="section-header__title title-sm">Классические массажи</h2>
-								<div class="section-header__controls">
-									<button type="button" class="services__prev swiper-button-prev"></button>
-									<button type="button" class="services__next swiper-button-next"></button>
-								</div>
-							</div>
-							<div class="services__slider swiper">
-								<div class="swiper-wrapper"> <a href="massage-general.html" class="service-card swiper-slide">
-										<span class="service-card__header">
-											<img src="img/massages/01.jpg" class="cover-image" alt="Фото капельницы">
-											<span class="service-card__header-hover-text">Подробнее</span>
-										</span>
-										<span class="service-card__body">
-											<span class="service-card__meta">
-												<span class="service-card__name">Общеукрепляющий массаж тела</span>
-												<span class="service-card__price">3 500 ₽</span>
-											</span>
-											<span class="service-card__description"> Комплексная методика, направленная на улучшение общего состояния организма, повышение тонуса, снятие усталости и укрепление иммунитета. </span>
-											<span class="service-card__more btn btn-secondary">Записаться</span>
-										</span>
-									</a><a href="massage-local-area.html" class="service-card swiper-slide">
-										<span class="service-card__header">
-											<img src="img/massages/02.jpg" class="cover-image" alt="Фото капельницы">
-											<span class="service-card__header-hover-text">Подробнее</span>
-										</span>
-										<span class="service-card__body">
-											<span class="service-card__meta">
-												<span class="service-card__name">Массаж локальной <br> зоны</span>
-												<span class="service-card__price">2 300 ₽</span>
-											</span>
-											<span class="service-card__description"> Точечное воздействие на конкретную область тела для снятия напряжения, улучшения кровообращения и устранения дискомфорта. </span>
-											<span class="service-card__more btn btn-secondary">Записаться</span>
-										</span>
-									</a><a href="massage-neck.html" class="service-card swiper-slide">
-										<span class="service-card__header">
-											<img src="img/massages/03.jpg" class="cover-image" alt="Фото капельницы">
-											<span class="service-card__header-hover-text">Подробнее</span>
-										</span>
-										<span class="service-card__body">
-											<span class="service-card__meta">
-												<span class="service-card__name">Массаж шейно-воротниковой зоны</span>
-												<span class="service-card__price">2 300 ₽</span>
-											</span>
-											<span class="service-card__description"> Целенаправленное воздействие на область шеи, плеч и верхней части спины для снятия напряжения, улучшения кровообращения и устранения болевых ощущений. </span>
-											<span class="service-card__more btn btn-secondary">Записаться</span>
-										</span>
-									</a><a href="massage-lymphatic-drainage.html" class="service-card swiper-slide">
-										<span class="service-card__header">
-											<img src="img/massages/01.jpg" class="cover-image" alt="Фото капельницы">
-											<span class="service-card__header-hover-text">Подробнее</span>
-										</span>
-										<span class="service-card__body">
-											<span class="service-card__meta">
-												<span class="service-card__name">Лимфодренажный массаж</span>
-												<span class="service-card__price">3 500 ₽</span>
-											</span>
-											<span class="service-card__description"> Щадящая техника, направленная на активацию лимфатической системы, ускорение выведения избыточной жидкости и токсинов из тканей организма. Проводится вручную или с использованием аппаратных методик. </span>
-											<span class="service-card__more btn btn-secondary">Записаться</span>
-										</span>
-									</a> </div>
-								<div class="services__pagination swiper-pagination"></div>
-							</div>
-						</div>
-						<div class="services__block">
-							<div class="section-header">
-								<h2 class="section-header__title title-sm">Специализированные массажи</h2>
-								<div class="section-header__controls">
-									<button type="button" class="services__prev swiper-button-prev"></button>
-									<button type="button" class="services__next swiper-button-next"></button>
-								</div>
-							</div>
-							<div class="services__slider swiper">
-								<div class="swiper-wrapper"> <a href="massage-pregnant.html" class="service-card swiper-slide">
-										<span class="service-card__header">
-											<img src="img/massages/04.jpg" class="cover-image" alt="Фото капельницы">
-											<span class="service-card__header-hover-text">Подробнее</span>
-										</span>
-										<span class="service-card__body">
-											<span class="service-card__meta">
-												<span class="service-card__name">Массаж <br> для&nbsp;беременных</span>
-												<span class="service-card__price">3 500 ₽</span>
-											</span>
-											<span class="service-card__description"> Специально адаптированная техника, направленная на снятие напряжения и улучшение общего самочувствия женщины во время беременности. </span>
-											<span class="service-card__more btn btn-secondary">Записаться</span>
-										</span>
-									</a><a href="massage-anti-cellulite.html" class="service-card swiper-slide">
-										<span class="service-card__header">
-											<img src="img/massages/05.jpg" class="cover-image" alt="Фото капельницы">
-											<span class="service-card__header-hover-text">Подробнее</span>
-										</span>
-										<span class="service-card__body">
-											<span class="service-card__meta">
-												<span class="service-card__name">Антицеллюлитный массаж</span>
-												<span class="service-card__price">2 300 ₽</span>
-											</span>
-											<span class="service-card__description"> Интенсивная методика коррекции фигуры, направленная на разрушение подкожных жировых отложений и устранение проявлений целлюлита. </span>
-											<span class="service-card__more btn btn-secondary">Записаться</span>
-										</span>
-									</a><a href="massage-buccal-facial.html" class="service-card swiper-slide">
-										<span class="service-card__header">
-											<img src="img/massages/06.jpg" class="cover-image" alt="Фото капельницы">
-											<span class="service-card__header-hover-text">Подробнее</span>
-										</span>
-										<span class="service-card__body">
-											<span class="service-card__meta">
-												<span class="service-card__name">Буккальный <br> массаж лица</span>
-												<span class="service-card__price">2 500 ₽</span>
-											</span>
-											<span class="service-card__description"> Глубокая внутриротовая техника массажа, направленная на проработку мышц, фасций и связок лица через воздействие на внутреннюю поверхность щёк. </span>
-											<span class="service-card__more btn btn-secondary">Записаться</span>
-										</span>
-									</a><a href="massage-sculpting.html" class="service-card swiper-slide">
-										<span class="service-card__header">
-											<img src="img/massages/01.jpg" class="cover-image" alt="Фото капельницы">
-											<span class="service-card__header-hover-text">Подробнее</span>
-										</span>
-										<span class="service-card__body">
-											<span class="service-card__meta">
-												<span class="service-card__name">Скульптурирующий массаж</span>
-												<span class="service-card__price">3 700 ₽</span>
-											</span>
-											<span class="service-card__description"> Интенсивная техника коррекции фигуры, направленная на улучшение контуров тела, уменьшение объёмов, борьбу с целлюлитом и повышение тонуса кожи. </span>
-											<span class="service-card__more btn btn-secondary">Записаться</span>
-										</span>
-									</a><a href="massage-visceral.html" class="service-card swiper-slide">
-										<span class="service-card__header">
-											<img src="img/massages/02.jpg" class="cover-image" alt="Фото капельницы">
-											<span class="service-card__header-hover-text">Подробнее</span>
-										</span>
-										<span class="service-card__body">
-											<span class="service-card__meta">
-												<span class="service-card__name">Висцеральный <br> массаж</span>
-												<span class="service-card__price">2 300 ₽</span>
-											</span>
-											<span class="service-card__description"> Висцеральный массаж — это мануальная техника воздействия на органы брюшной полости через переднюю стенку живота. </span>
-											<span class="service-card__more btn btn-secondary">Записаться</span>
-										</span>
-									</a><a href="massage-manual-maderotherapy.html" class="service-card swiper-slide">
-										<span class="service-card__header">
-											<img src="img/massages/03.jpg" class="cover-image" alt="Фото капельницы">
-											<span class="service-card__header-hover-text">Подробнее</span>
-										</span>
-										<span class="service-card__body">
-											<span class="service-card__meta">
-												<span class="service-card__name">Ручная <br> мадеротерапия</span>
-												<span class="service-card__price">2 300 ₽</span>
-											</span>
-											<span class="service-card__description"> Массажная техника, повторяющая принципы аппаратной мадеротерапии, но выполняемая вручную. </span>
-											<span class="service-card__more btn btn-secondary">Записаться</span>
-										</span>
-									</a> </div>
-								<div class="services__pagination swiper-pagination"></div>
-							</div>
-						</div>
-						<div class="services__block">
-							<div class="section-header">
-								<h2 class="section-header__title title-sm">Обёртывания</h2>
-								<div class="section-header__controls">
-									<button type="button" class="services__prev swiper-button-prev"></button>
-									<button type="button" class="services__next swiper-button-next"></button>
-								</div>
-							</div>
-							<div class="services__slider swiper">
-								<div class="swiper-wrapper"> <a href="massage-v-shock-bandage-wrap.html" class="service-card swiper-slide">
-										<span class="service-card__header">
-											<img src="img/massages/07.jpg" class="cover-image" alt="Фото капельницы">
-											<span class="service-card__header-hover-text">Подробнее</span>
-										</span>
-										<span class="service-card__body">
-											<span class="service-card__meta">
-												<span class="service-card__name">Бандажное <br> обёртывание V-Shock</span>
-												<span class="service-card__price">4 000 ₽</span>
-											</span>
-											<span class="service-card__description"> Cалонная процедура по уходу за телом с использованием гелей с экстрактами лекарственных растений. </span>
-											<span class="service-card__more btn btn-secondary">Записаться</span>
-										</span>
-									</a><a href="massage-arosha-wrap.html" class="service-card swiper-slide">
-										<span class="service-card__header">
-											<img src="img/massages/08.jpg" class="cover-image" alt="Фото капельницы">
-											<span class="service-card__header-hover-text">Подробнее</span>
-										</span>
-										<span class="service-card__body">
-											<span class="service-card__meta">
-												<span class="service-card__name">Обёртывание Arosha</span>
-												<span class="service-card__price">5 500 ₽</span>
-											</span>
-											<span class="service-card__description"> Бандажное обёртывание тела с помощью эластичных бинтов, пропитанных активными веществами. </span>
-											<span class="service-card__more btn btn-secondary">Записаться</span>
-										</span>
-									</a><a href="massage-styx-wrap.html" class="service-card swiper-slide">
-										<span class="service-card__header">
-											<img src="img/massages/09.jpg" class="cover-image" alt="Фото капельницы">
-											<span class="service-card__header-hover-text">Подробнее</span>
-										</span>
-										<span class="service-card__body">
-											<span class="service-card__meta">
-												<span class="service-card__name">Обёртывание <br> styx</span>
-												<span class="service-card__price">5 200 ₽</span>
-											</span>
-											<span class="service-card__description"> SPA-процедура, во время которой на тело наносят термоцеллюлярные гели из натуральных растительных экстрактов и эфирных масел альпийских трав. </span>
-											<span class="service-card__more btn btn-secondary">Записаться</span>
-										</span>
-									</a> </div>
-								<div class="services__pagination swiper-pagination"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="doctor-promo">
-				<div class="container">
-					<div class="row">
-						<div class="col-xxl-4 col-lg-6">
-							<div class="doctor-promo__main">
-								<h2 class="doctor-promo__title title"> Процедуры проводит Массажист </h2>
-								<div class="doctor-promo__info">
-									<div class="doctor-promo__person">
-										<div class="doctor-promo__person-name"> Сунгатуллина <br> Венера Фаридовна </div>
-										<div class="doctor-promo__expirience">Стаж с 1997 года</div>
-									</div>
-									<a href="sungatullina-venera-faridovna.html" class="doctor-promo__btn btn btn-secondary">Подробнее о специалисте</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xxl-4 col-lg-6">
-							<div class="doctor-promo__image">
-								<img src="img/specialists/sungatullina-venera-faridovna.jpg" class="cover-image" alt="Фото доктора">
-							</div>
-						</div>
-						<div class="col-xxl-4">
-							<blockquote class="doctor-promo__quote"> Массаж Венеры Фаридовны — это не просто прикосновения, а форма заботы, глубокого понимания тела и его реакции на стресс, усталость и боль. </blockquote>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="faq">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-4">
-							<div class="faq__image">
-								<img src="img/faq-4.jpg" class="cover-image" alt="Фото доктора">
-							</div>
-						</div>
-						<div class="col-lg-8">
-							<div class="faq__main">
-								<h2 class="faq__title title">ответы на частые вопросы</h2>
-								<ol class="faq__list accordion-list">
-									<li class="accordion-list__item">
-										<div class="accordion-list__item-caption"> Зачем нужен массаж и чем он полезен? </div>
-										<div class="accordion-list__item-body">
-											<p>Массаж — это терапевтическая практика, которая помогает справиться с болями, снять напряжение, улучшить циркуляцию крови и лимфы, восстановиться после нагрузок и повысить общее самочувствие. Он активизирует внутренние ресурсы организма, способствует регенерации тканей и нормализации работы нервной системы.</p>
-										</div>
-									</li>
-									<li class="accordion-list__item">
-										<div class="accordion-list__item-caption"> Как влияет массаж на организм человека? </div>
-										<div class="accordion-list__item-body">
-											<p>Во время массажа активизируются процессы кровообращения, усиливается приток кислорода к тканям, улучшается лимфоотток. Это помогает снять воспаления, вывести токсины и восстановить мышечный тонус. Кроме того, процедура способствует выработке гормонов радости — эндорфинов, благодаря чему улучшается настроение и общее состояние.</p>
-										</div>
-									</li>
-									<li class="accordion-list__item">
-										<div class="accordion-list__item-caption"> Как часто нужно ходить на массаж? </div>
-										<div class="accordion-list__item-body">
-											<p>Периодичность зависит от цели:</p>
-											<ul>
-												<li>Для профилактики достаточно 1–2 сеанса в неделю.</li>
-												<li>Лечебный курс, как правило, включает 8–10 процедур через день.</li>
-												<li>Расслабляющий массаж можно делать по самочувствию — от одного раза в неделю.</li>
-											</ul>
-											<p>Оптимальный график подбирается специалистом на первичной консультации.</p>
-										</div>
-									</li>
-									<li class="accordion-list__item">
-										<div class="accordion-list__item-caption"> Есть ли противопоказания к массажу? </div>
-										<div class="accordion-list__item-body">
-											<p>Да, у массажа есть ряд противопоказаний: острые воспаления, кожные заболевания, онкология, заболевания крови, тромбофлебит и другие состояния. Поэтому перед началом курса обязательна консультация врача — мы всегда учитываем ваш анамнез и состояние здоровья.</p>
-										</div>
-									</li>
-									<li class="accordion-list__item">
-										<div class="accordion-list__item-caption"> Можно ли делать массаж при беременности? </div>
-										<div class="accordion-list__item-body">
-											<p>Да, но только по показаниям и с учетом срока беременности. Некоторые виды массажа — например, массаж спины или стоп — разрешены и полезны во время беременности, особенно при отеках или болях. Обязательно проконсультируйтесь с врачом перед записью.</p>
-										</div>
-									</li>
-								</ol>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="subscribe">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-6 col-lg-7">
-							<h2 class="subscribe__title title">Подписывайтесь на наш telegram-канал!</h2>
-							<p class="subscribe__desc">В нашем Telegram-канале вы найдёте полезные советы по восстановлению и оздоровлению, разборы техник массажа, рекомендации специалистов и актуальные акции. Подписывайтесь, чтобы быть в курсе всего важного и полезного для вашего здоровья!</p>
-							<a href="" class="subscribe__btn btn btn-primary icon-telegram">Подписаться</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="consult">
-				<div class="container">
-					<div class="consult__body">
-						<div class="row">
-							<div class="col-lg-6">
-								<div class="consult__main">
-									<h3 class="consult__title">не откладывайте лечение, запишитесь на консультацию</h3>
-									<p class="consult__subtitle">Оставьте свой номер телефона, мы перезвоним, ответим на все вопросы и подберем подходящее обследование.</p>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<form action="#" class="consult__form form">
-									<input type="text" name="username" class="form__control" placeholder="Ваше имя">
-									<input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
-									<button type="submit" class="form__submit btn btn-primary btn-lg">Записаться на консультацию</button>
-									<div class="form__policy"> Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="contacts">
-				<div class="container">
-					<div class="section-header">
-						<h2 class="section-header__title title">Мы находимся в&nbsp;центре города</h2>
-						<div class="section-header__hint">контакты</div>
-					</div>
-					<div class="contacts__body">
-						<div class="contacts__main">
-							<div class="contacts__caption">Контакты</div>
-							<ul class="contacts__list">
-								<li class="contacts__item">
-									<a href="tel:+78435671208" class="contacts__link icon-phone">+7 (843) 567-12-08</a>
-								</li>
-								<li class="contacts__item">
-									<a href="" class="contacts__link icon-telegram">Написать в Telegram</a>
-								</li>
-								<li class="contacts__item">
-									<a href="" class="contacts__link icon-whatsapp">Написать в WhatsApp</a>
-								</li>
-							</ul>
-							<div class="contacts__socials">
-								<div class="contacts__socials-caption">Мы в соц.сетях</div>
-								<div class="contacts__socials-items">
-									<a href="" aria-label="instagram" class="contacts__socials-item icon-instagram"></a>
-									<a href="" aria-label="telegram" class="contacts__socials-item icon-telegram"></a>
-									<a href="" aria-label="youtube" class="contacts__socials-item icon-youtube"></a>
-								</div>
-							</div>
-						</div>
-						<div class="contacts__balloon">
-							<address class="contacts__address icon-location"> г. Казань, ул. Курашова, д.20 </address>
-							<a href="" class="contacts__btn btn btn-primary">Проложить маршрут</a>
-						</div>
-						<div class="contacts__map">
-							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7651dd8e0bfd0da7c0bce192c3069826e7dcfb2e9b5cec25a2c0891e9cd54fa0&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-		<footer class="footer">
-			<div class="container">
-				<div class="footer__body">
-					<div class="row">
-						<div class="col-xl-4 col-lg-6">
-							<div class="footer__main">
-								<a href="/" class="footer__logo">
-									<span class="footer__logo-icon">
-										<img src="img/logo-color.svg" alt="Логотип">
-									</span>
-									<span class="footer__logo-content">
-										<span class="footer__logo-name">БУДЬ В BALANCE</span>
-										<span class="footer__logo-deskriptor">Медицинская клиника <br> по профилактике заболеваний в Казани</span>
-									</span>
-								</a>
-								<div class="footer__meta">
-									<div class="footer__worktime">Пн-Вс: с 08:00 до 21:00</div>
-									<a href="tel:+78435671208" class="footer__phone">+7 (843) 567-12-08</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-2 col-lg-3 col-md-6">
-							<nav aria-label="Меню услуг" class="footer__menu">
-								<div class="footer__menu-caption">Услуги</div>
-								<ul class="footer__menu-list">
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Приём врачей</a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Нутрициолог</a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Массаж</a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Капельницы</a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Чек-ап</a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Анализы</a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Исследования</a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="col-xl-2 col-lg-3 col-md-6">
-							<nav aria-label="Меню информации" class="footer__menu">
-								<div class="footer__menu-caption">О клинике</div>
-								<ul class="footer__menu-list">
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">О клинике </a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Правовые документы </a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Вакансии </a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Франшиза </a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="col-xl-4 col-lg-6">
-							<div class="footer__actions">
-								<a href="#appointment" data-fancybox class="footer__btn btn btn-primary btn-lg">Записаться на приём</a>
-								<div class="footer__socials">
-									<a href="" class="footer__social icon-whatsapp"></a>
-									<a href="" class="footer__social icon-telegram"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="footer__bottom">
-				<div class="footer__bottom-container container">
-					<div class="footer__copyright">2025, © «Будь в Балансе»</div>
-					<a href="" class="footer__policy">Политика конфиденциальности</a>
-				</div>
-			</div>
-		</footer>
-		<div id="appointment" class="popup" role="dialog" aria-modal="true" hidden>
-			<h2 class="popup__title title">Онлайн-запись в&nbsp;Balance Med</h2>
-			<p class="popup__subtitle">Наш администратор свяжется с Вами в течение 15 минут.</p>
-			<form action="#" class="popup__form form">
-				<input type="text" name="username" class="form__control" placeholder="Ваше имя">
-				<input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
-				<div class="form__bottom">
-					<button type="submit" class="form__submit btn btn-primary btn-lg">Оставить заявку</button>
-				</div>
-				<div class="form__policy"> Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
-				</div>
-			</form>
-		</div> <!-- plugins -->
-		<script src="js/libs/fancybox.umd.js?_v=20260217191138"></script>
-		<script src="js/libs/swiper-bundle.min.js?_v=20260217191138"></script>
-		<!-- plugins -->
-		<script src="js/app.min.js?_v=20260217191138"></script>
-	</div>
-</body>
+        <!-- plugins -->
+        <link rel="stylesheet" href="css/libs/fancybox.css">
+        <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
+        <!-- plugins -->
 
+        <link rel="stylesheet" href="css/reset.min.css">
+        <link rel="stylesheet" href="css/style.min.css">
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="container header__container">
+                    <a href="index.html" class="header__logo">
+                        <span class="header__logo-icon">
+                            <img src="img/logo.svg" alt="Логотип">
+                        </span>
+                        <span class="header__logo-text">
+                            БУДЬ В BALANCE
+                        </span>
+                    </a>
+                    <nav aria-label="Меню" class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="about.html" class="menu__link">О клинике</a>
+                            </li>
+                            <li class="menu__item menu__item--parent">
+                                <a href="" class="menu__link">Услуги</a>
+                                <button type="button" aria-label="Открыть подменю" class="menu__arrow icon-down"></button>
+                                <div class="submenu">
+                                    <div class="submenu__column">
+                                        <a href="specialists.html" class="submenu__caption">Специалисты</a>
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item"><a href="therapist.html" class="submenu__link">Терапевт</a></li>
+                                            <li class="submenu__item"><a href="endocrinologist.html" class="submenu__link">Эндокринолог</a></li>
+                                            <li class="submenu__item"><a href="nutritionist.html" class="submenu__link">Нутрициолог</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="submenu__column">
+                                        <a href="" class="submenu__caption">Процедуры</a>
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item"><a href="droppers.html" class="submenu__link">Капельницы</a></li>
+                                            <li class="submenu__item"><a href="massage.html" class="submenu__link active">Массаж</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="submenu__column">
+                                        <a href="" class="submenu__caption">Обследования</a>
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item"><a href="check-up.html" class="submenu__link">Чек-ап</a></li>
+                                            <li class="submenu__item"><a href="" class="submenu__link">Анализы</a></li>
+                                            <li class="submenu__item"><a href="uzi.html" class="submenu__link">УЗИ</a></li>
+                                            <li class="submenu__item"><a href="ekg.html" class="submenu__link">ЭКГ</a></li>
+                                            <li class="submenu__item"><a href="bioimpedancemetry.html" class="submenu__link">Биоимпедансометрия</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <a href="prices.html" class="menu__link">Цены</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="specialists.html" class="menu__link">Специалисты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="reviews.html" class="menu__link">Отзывы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="contacts.html" class="menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                        <div class="menu__actions">
+                            <div class="menu__contacts">
+                                <a href="tel:+78435671208" class="menu__contacts-phone">+7 (843) 567-12-08</a>
+                                <address class="menu__address">г. Казань, ул. Курашова, д.20</address>
+                            </div>
+                            <a href="#appointment" data-fancybox class="menu__callback btn btn-primary">Записаться</a>
+                        </div>
+                    </nav>
+                    <button type="button" aria-label="Открыть мобильное меню" class="header__toggler icon-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+            <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">Массаж</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="page">
+                <section class="service">
+                    <div class="container">
+                        <div class="service__body service__body--blured">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="service__main">
+                                        <h1 class="service__title title">лечебный массаж</h1>
+                                        <div class="service__desc service__desc--small">
+                                            <p>Лечебный массаж — это не просто приятная процедура, а важный элемент комплексного оздоровления. Он помогает снять напряжение, улучшить кровообращение, устранить мышечные зажимы и ускорить восстановление организма. Мы подходим к массажу как к терапии: подбираем подходящую технику, учитываем жалобы и состояние пациента, работаем бережно, но результативно.</p>
+                                            <p>Наши специалисты владеют разными техниками массажа, внимательно относятся к каждому пациенту и обеспечивают полное сопровождение на всем пути восстановления. Вам не нужно ни о чём беспокоиться: всё необходимое для комфортного сеанса — от полотенец до простыней и тапочек — мы предоставляем.</p>
+                                        </div>
+                                        <div class="service__info">
+                                            <div class="service__price">
+                                                <div class="service__price-title">Стоимость услуги</div>
+                                                <div class="service__price-value">2 300 ₽</div>
+                                            </div>
+                                            <a href="#massages" class="service__btn btn btn-primary btn-lg">Выбрать массаж</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="service__image">
+                                        <img src="img/massage.jpg" class="cover-image" alt="Фото услуги">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="video-block">
+                    <div class="container">
+                        <h2 class="video-block__title title-sm">
+                            Посмотрите короткое видео о том, как проходит сеанс массажа в нашей клинике
+                        </h2>
+                        <a href="https://vkvideo.ru/video_ext.php?oid=-73354773&id=456240544&hash=1c842bdb2fd8c544&hd=3" data-fancybox data-type="iframe" class="video-block__content icon-play">
+                            <img src="img/video.jpg" class="cover-image" alt="Постер">
+                        </a>
+                    </div>
+                </section>
+                <section id="massages" class="services">
+                    <div class="container">
+                        <h2 class="services__title title">Виды массажа</h2>
+                        <div class="services__blocks">
+                            <div class="services__block">
+                                <div class="section-header">
+                                    <h2 class="section-header__title title-sm">Классические массажи</h2>
+                                    <div class="section-header__controls">
+                                        <button type="button" class="services__prev swiper-button-prev"></button>
+                                        <button type="button" class="services__next swiper-button-next"></button>
+                                    </div>
+                                </div>
+                                <div class="services__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <a href="massage-general.html" class="service-card swiper-slide">
+                                            <span class="service-card__header">
+                                                <img src="img/massages/01.jpg" class="cover-image" alt="Фото капельницы">
+                                                <span class="service-card__header-hover-text">Подробнее</span>
+                                            </span>
+                                            <span class="service-card__body">
+                                                <span class="service-card__meta">
+                                                    <span class="service-card__name">Общеукрепляющий массаж тела</span>
+                                                    <span class="service-card__price">3 500 ₽</span>
+                                                </span>
+                                                
+                                            
+                                            <span class="service-card__description">
+                                                Комплексная методика, направленная на улучшение общего состояния организма, повышение тонуса, снятие усталости и укрепление иммунитета.
+                                            </span>
+                                            
+                                            <span class="service-card__more btn btn-secondary">Записаться</span>
+                                            </span>
+                                        </a><a href="massage-local-area.html" class="service-card swiper-slide">
+                                            <span class="service-card__header">
+                                                <img src="img/massages/02.jpg" class="cover-image" alt="Фото капельницы">
+                                                <span class="service-card__header-hover-text">Подробнее</span>
+                                            </span>
+                                            <span class="service-card__body">
+                                                <span class="service-card__meta">
+                                                    <span class="service-card__name">Массаж локальной <br> зоны</span>
+                                                    <span class="service-card__price">2 300 ₽</span>
+                                                </span>
+                                                
+                                            
+                                            <span class="service-card__description">
+                                                Точечное воздействие на конкретную область тела для снятия напряжения, улучшения кровообращения и устранения дискомфорта.
+                                            </span>
+                                            
+                                            <span class="service-card__more btn btn-secondary">Записаться</span>
+                                            </span>
+                                        </a><a href="massage-neck.html" class="service-card swiper-slide">
+                                            <span class="service-card__header">
+                                                <img src="img/massages/03.jpg" class="cover-image" alt="Фото капельницы">
+                                                <span class="service-card__header-hover-text">Подробнее</span>
+                                            </span>
+                                            <span class="service-card__body">
+                                                <span class="service-card__meta">
+                                                    <span class="service-card__name">Массаж шейно-воротниковой зоны</span>
+                                                    <span class="service-card__price">2 300 ₽</span>
+                                                </span>
+                                                
+                                            
+                                            <span class="service-card__description">
+                                                Целенаправленное воздействие на область шеи, плеч и верхней части спины для снятия напряжения, улучшения кровообращения и устранения болевых ощущений.
+                                            </span>
+                                            
+                                            <span class="service-card__more btn btn-secondary">Записаться</span>
+                                            </span>
+                                        </a><a href="massage-lymphatic-drainage.html" class="service-card swiper-slide">
+                                            <span class="service-card__header">
+                                                <img src="img/massages/01.jpg" class="cover-image" alt="Фото капельницы">
+                                                <span class="service-card__header-hover-text">Подробнее</span>
+                                            </span>
+                                            <span class="service-card__body">
+                                                <span class="service-card__meta">
+                                                    <span class="service-card__name">Лимфодренажный массаж</span>
+                                                    <span class="service-card__price">3 500 ₽</span>
+                                                </span>
+                                                
+                                            
+                                            <span class="service-card__description">
+                                                Щадящая техника, направленная на активацию лимфатической системы, ускорение выведения избыточной жидкости и токсинов из тканей организма. Проводится вручную или с использованием аппаратных методик.
+                                            </span>
+                                            
+                                            <span class="service-card__more btn btn-secondary">Записаться</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="services__pagination swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <div class="services__block">
+                                <div class="section-header">
+                                    <h2 class="section-header__title title-sm">Специализированные массажи</h2>
+                                    <div class="section-header__controls">
+                                        <button type="button" class="services__prev swiper-button-prev"></button>
+                                        <button type="button" class="services__next swiper-button-next"></button>
+                                    </div>
+                                </div>
+                                <div class="services__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <a href="massage-pregnant.html" class="service-card swiper-slide">
+                                            <span class="service-card__header">
+                                                <img src="img/massages/04.jpg" class="cover-image" alt="Фото капельницы">
+                                                <span class="service-card__header-hover-text">Подробнее</span>
+                                            </span>
+                                            <span class="service-card__body">
+                                                <span class="service-card__meta">
+                                                    <span class="service-card__name">Массаж <br> для&nbsp;беременных</span>
+                                                    <span class="service-card__price">3 500 ₽</span>
+                                                </span>
+                                                
+                                            
+                                            <span class="service-card__description">
+                                                Специально адаптированная техника, направленная на снятие напряжения и улучшение общего самочувствия женщины во время беременности.
+                                            </span>
+                                            
+                                            <span class="service-card__more btn btn-secondary">Записаться</span>
+                                            </span>
+                                        </a><a href="massage-anti-cellulite.html" class="service-card swiper-slide">
+                                            <span class="service-card__header">
+                                                <img src="img/massages/05.jpg" class="cover-image" alt="Фото капельницы">
+                                                <span class="service-card__header-hover-text">Подробнее</span>
+                                            </span>
+                                            <span class="service-card__body">
+                                                <span class="service-card__meta">
+                                                    <span class="service-card__name">Антицеллюлитный массаж</span>
+                                                    <span class="service-card__price">2 300 ₽</span>
+                                                </span>
+                                                
+                                            
+                                            <span class="service-card__description">
+                                                Интенсивная методика коррекции фигуры, направленная на разрушение подкожных жировых отложений и устранение проявлений целлюлита.
+                                            </span>
+                                            
+                                            <span class="service-card__more btn btn-secondary">Записаться</span>
+                                            </span>
+                                        </a><a href="massage-buccal-facial.html" class="service-card swiper-slide">
+                                            <span class="service-card__header">
+                                                <img src="img/massages/06.jpg" class="cover-image" alt="Фото капельницы">
+                                                <span class="service-card__header-hover-text">Подробнее</span>
+                                            </span>
+                                            <span class="service-card__body">
+                                                <span class="service-card__meta">
+                                                    <span class="service-card__name">Буккальный <br> массаж лица</span>
+                                                    <span class="service-card__price">2 500 ₽</span>
+                                                </span>
+                                                
+                                            
+                                            <span class="service-card__description">
+                                                Глубокая внутриротовая техника массажа, направленная на проработку мышц, фасций и связок лица через воздействие на внутреннюю поверхность щёк.
+                                            </span>
+                                            
+                                            <span class="service-card__more btn btn-secondary">Записаться</span>
+                                            </span>
+                                        </a><a href="massage-sculpting.html" class="service-card swiper-slide">
+                                            <span class="service-card__header">
+                                                <img src="img/massages/01.jpg" class="cover-image" alt="Фото капельницы">
+                                                <span class="service-card__header-hover-text">Подробнее</span>
+                                            </span>
+                                            <span class="service-card__body">
+                                                <span class="service-card__meta">
+                                                    <span class="service-card__name">Скульптурирующий массаж</span>
+                                                    <span class="service-card__price">3 700 ₽</span>
+                                                </span>
+                                                
+                                            
+                                            <span class="service-card__description">
+                                                Интенсивная техника коррекции фигуры, направленная на улучшение контуров тела, уменьшение объёмов, борьбу с целлюлитом и повышение тонуса кожи.
+                                            </span>
+                                            
+                                            <span class="service-card__more btn btn-secondary">Записаться</span>
+                                            </span>
+                                        </a><a href="massage-visceral.html" class="service-card swiper-slide">
+                                            <span class="service-card__header">
+                                                <img src="img/massages/02.jpg" class="cover-image" alt="Фото капельницы">
+                                                <span class="service-card__header-hover-text">Подробнее</span>
+                                            </span>
+                                            <span class="service-card__body">
+                                                <span class="service-card__meta">
+                                                    <span class="service-card__name">Висцеральный <br> массаж</span>
+                                                    <span class="service-card__price">2 300 ₽</span>
+                                                </span>
+                                                
+                                            
+                                            <span class="service-card__description">
+                                                Висцеральный массаж — это мануальная техника воздействия на органы брюшной полости через переднюю стенку живота.
+                                            </span>
+                                            
+                                            <span class="service-card__more btn btn-secondary">Записаться</span>
+                                            </span>
+                                        </a><a href="massage-manual-maderotherapy.html" class="service-card swiper-slide">
+                                            <span class="service-card__header">
+                                                <img src="img/massages/03.jpg" class="cover-image" alt="Фото капельницы">
+                                                <span class="service-card__header-hover-text">Подробнее</span>
+                                            </span>
+                                            <span class="service-card__body">
+                                                <span class="service-card__meta">
+                                                    <span class="service-card__name">Ручная <br> мадеротерапия</span>
+                                                    <span class="service-card__price">2 300 ₽</span>
+                                                </span>
+                                                
+                                            
+                                            <span class="service-card__description">
+                                                Массажная техника, повторяющая принципы аппаратной мадеротерапии, но выполняемая вручную.
+                                            </span>
+                                            
+                                            <span class="service-card__more btn btn-secondary">Записаться</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="services__pagination swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <div class="services__block">
+                                <div class="section-header">
+                                    <h2 class="section-header__title title-sm">Обёртывания</h2>
+                                    <div class="section-header__controls">
+                                        <button type="button" class="services__prev swiper-button-prev"></button>
+                                        <button type="button" class="services__next swiper-button-next"></button>
+                                    </div>
+                                </div>
+                                <div class="services__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <a href="massage-v-shock-bandage-wrap.html" class="service-card swiper-slide">
+                                            <span class="service-card__header">
+                                                <img src="img/massages/07.jpg" class="cover-image" alt="Фото капельницы">
+                                                <span class="service-card__header-hover-text">Подробнее</span>
+                                            </span>
+                                            <span class="service-card__body">
+                                                <span class="service-card__meta">
+                                                    <span class="service-card__name">Бандажное <br> обёртывание V-Shock</span>
+                                                    <span class="service-card__price">4 000 ₽</span>
+                                                </span>
+                                                
+                                            
+                                            <span class="service-card__description">
+                                                Cалонная процедура по уходу за телом с использованием гелей с экстрактами лекарственных растений.
+                                            </span>
+                                            
+                                            <span class="service-card__more btn btn-secondary">Записаться</span>
+                                            </span>
+                                        </a><a href="massage-arosha-wrap.html" class="service-card swiper-slide">
+                                            <span class="service-card__header">
+                                                <img src="img/massages/08.jpg" class="cover-image" alt="Фото капельницы">
+                                                <span class="service-card__header-hover-text">Подробнее</span>
+                                            </span>
+                                            <span class="service-card__body">
+                                                <span class="service-card__meta">
+                                                    <span class="service-card__name">Обёртывание Arosha</span>
+                                                    <span class="service-card__price">5 500 ₽</span>
+                                                </span>
+                                                
+                                            
+                                            <span class="service-card__description">
+                                                Бандажное обёртывание тела с помощью эластичных бинтов, пропитанных активными веществами.
+                                            </span>
+                                            
+                                            <span class="service-card__more btn btn-secondary">Записаться</span>
+                                            </span>
+                                        </a><a href="massage-styx-wrap.html" class="service-card swiper-slide">
+                                            <span class="service-card__header">
+                                                <img src="img/massages/09.jpg" class="cover-image" alt="Фото капельницы">
+                                                <span class="service-card__header-hover-text">Подробнее</span>
+                                            </span>
+                                            <span class="service-card__body">
+                                                <span class="service-card__meta">
+                                                    <span class="service-card__name">Обёртывание <br> styx</span>
+                                                    <span class="service-card__price">5 200 ₽</span>
+                                                </span>
+                                                
+                                            
+                                            <span class="service-card__description">
+                                                SPA-процедура, во время которой на тело наносят термоцеллюлярные гели из натуральных растительных экстрактов и эфирных масел альпийских трав.
+                                            </span>
+                                            
+                                            <span class="service-card__more btn btn-secondary">Записаться</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="services__pagination swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="doctor-promo">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xxl-4 col-lg-6">
+                                <div class="doctor-promo__main">
+                                    <h2 class="doctor-promo__title title">
+                                        Процедуры проводит Массажист
+                                    </h2>
+                                    <div class="doctor-promo__info">
+                                        <div class="doctor-promo__person">
+                                            <div class="doctor-promo__person-name">
+                                                Сунгатуллина <br>
+                                                Венера Фаридовна
+                                            </div>
+                                            <div class="doctor-promo__expirience">Стаж с 1997 года</div>
+                                        </div>
+                                        <a href="sungatullina-venera-faridovna.html" class="doctor-promo__btn btn btn-secondary">Подробнее о специалисте</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-lg-6">
+                                <div class="doctor-promo__image">
+                                    <img src="img/specialists/sungatullina-venera-faridovna.jpg" class="cover-image" alt="Фото доктора">
+                                </div>
+                            </div>
+                            <div class="col-xxl-4">
+                                <blockquote class="doctor-promo__quote">
+                                    Массаж Венеры Фаридовны — это не просто прикосновения, а форма заботы, глубокого понимания тела и его реакции на стресс, усталость и боль.
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="faq">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="faq__image">
+                                    <img src="img/faq-4.jpg" class="cover-image" alt="Фото доктора">
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="faq__main">
+                                    <h2 class="faq__title title">ответы на частые вопросы</h2>
+                                    <ol class="faq__list accordion-list">
+                                        <li class="accordion-list__item">
+                                            <div class="accordion-list__item-caption">
+                                                Зачем нужен массаж и чем он полезен?
+                                            </div>
+                                            <div class="accordion-list__item-body">
+                                                <p>Массаж — это терапевтическая практика, которая помогает справиться с болями, снять напряжение, улучшить циркуляцию крови и лимфы, восстановиться после нагрузок и повысить общее самочувствие. Он активизирует внутренние ресурсы организма, способствует регенерации тканей и нормализации работы нервной системы.</p>
+                                            </div>
+                                        </li>
+                                        <li class="accordion-list__item">
+                                            <div class="accordion-list__item-caption">
+                                                Как влияет массаж на организм человека?
+                                            </div>
+                                            <div class="accordion-list__item-body">
+                                                <p>Во время массажа активизируются процессы кровообращения, усиливается приток кислорода к тканям, улучшается лимфоотток. Это помогает снять воспаления, вывести токсины и восстановить мышечный тонус. Кроме того, процедура способствует выработке гормонов радости — эндорфинов, благодаря чему улучшается настроение и общее состояние.</p>
+                                            </div>
+                                        </li>
+                                        <li class="accordion-list__item">
+                                            <div class="accordion-list__item-caption">
+                                                Как часто нужно ходить на массаж?
+                                            </div>
+                                            <div class="accordion-list__item-body">
+                                                <p>Периодичность зависит от цели:</p>
+                                                <ul>
+                                                    <li>Для профилактики достаточно 1–2 сеанса в неделю.</li>
+                                                    <li>Лечебный курс, как правило, включает 8–10 процедур через день.</li>
+                                                    <li>Расслабляющий массаж можно делать по самочувствию — от одного раза в неделю.</li>
+                                                </ul>
+                                                <p>Оптимальный график подбирается специалистом на первичной консультации.</p>
+                                            </div>
+                                        </li>
+                                        <li class="accordion-list__item">
+                                            <div class="accordion-list__item-caption">
+                                                Есть ли противопоказания к массажу?
+                                            </div>
+                                            <div class="accordion-list__item-body">
+                                                <p>Да, у массажа есть ряд противопоказаний: острые воспаления, кожные заболевания, онкология, заболевания крови, тромбофлебит и другие состояния. Поэтому перед началом курса обязательна консультация врача — мы всегда учитываем ваш анамнез и состояние здоровья.</p>
+                                            </div>
+                                        </li>
+                                        <li class="accordion-list__item">
+                                            <div class="accordion-list__item-caption">
+                                                Можно ли делать массаж при беременности?
+                                            </div>
+                                            <div class="accordion-list__item-body">
+                                                <p>Да, но только по показаниям и с учетом срока беременности. Некоторые виды массажа — например, массаж спины или стоп — разрешены и полезны во время беременности, особенно при отеках или болях. Обязательно проконсультируйтесь с врачом перед записью.</p>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="subscribe">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-7">
+                                <h2 class="subscribe__title title">Подписывайтесь на наш telegram-канал!</h2>
+                                <p class="subscribe__desc">В нашем Telegram-канале вы найдёте полезные советы по восстановлению и оздоровлению, разборы техник массажа, рекомендации специалистов и актуальные акции. Подписывайтесь, чтобы быть в курсе всего важного и полезного для вашего здоровья!</p>
+                                <a href="" class="subscribe__btn btn btn-primary icon-telegram">Подписаться</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="consult">
+                    <div class="container">
+                        <div class="consult__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="consult__main">
+                                        <h3 class="consult__title">не откладывайте лечение, запишитесь на консультацию</h3>
+                                        <p class="consult__subtitle">Оставьте свой номер телефона, мы перезвоним, ответим на все вопросы и подберем подходящее обследование.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <form action="#" class="consult__form form">
+                                        <input type="text" name="username" class="form__control" placeholder="Ваше имя">
+                                        <input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
+                                        <button type="submit" class="form__submit btn btn-primary btn-lg">Записаться на консультацию</button>
+                                        <div class="form__policy">
+                                            Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="contacts">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2 class="section-header__title title">Мы находимся в&nbsp;центре города</h2>
+                            <div class="section-header__hint">контакты</div>
+                        </div>
+                        <div class="contacts__body">
+                            <div class="contacts__main">
+                                <div class="contacts__caption">Контакты</div>
+                                <ul class="contacts__list">
+                                    <li class="contacts__item">
+                                        <a href="tel:+78435671208" class="contacts__link icon-phone">+7 (843) 567-12-08</a>
+                                    </li>
+                                    <li class="contacts__item">
+                                        <a href="" class="contacts__link icon-telegram">Написать в Telegram</a>
+                                    </li>
+                                    <li class="contacts__item">
+                                        <a href="" class="contacts__link icon-whatsapp">Написать в WhatsApp</a>
+                                    </li>
+                                </ul>
+                                <div class="contacts__socials">
+                                    <div class="contacts__socials-caption">Мы в соц.сетях</div>
+                                    <div class="contacts__socials-items">
+                                        <a href="" aria-label="instagram" class="contacts__socials-item icon-instagram"></a>
+                                        <a href="" aria-label="telegram" class="contacts__socials-item icon-telegram"></a>
+                                        <a href="" aria-label="youtube" class="contacts__socials-item icon-youtube"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__balloon">
+                                <address class="contacts__address icon-location">
+                                    г. Казань, ул. Курашова, д.20
+                                </address>
+                                <a href="" class="contacts__btn btn btn-primary">Проложить маршрут</a>
+                            </div>
+                            <div class="contacts__map">
+                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7651dd8e0bfd0da7c0bce192c3069826e7dcfb2e9b5cec25a2c0891e9cd54fa0&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__body">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-6">
+                                <div class="footer__main">
+                                    <a href="/" class="footer__logo">
+                                        <span class="footer__logo-icon">
+                                            <img src="img/logo-color.svg" alt="Логотип">
+                                        </span>
+                                        <span class="footer__logo-content">
+                                            <span class="footer__logo-name">БУДЬ В BALANCE</span>
+                                            <span class="footer__logo-deskriptor">Медицинская клиника <br> по профилактике заболеваний в Казани</span>
+                                        </span>
+                                    </a>
+                                    <div class="footer__meta">
+                                        <div class="footer__worktime">Пн-Вс: с 08:00 до 21:00</div>
+                                        <a href="tel:+78435671208" class="footer__phone">+7 (843) 567-12-08</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-6">
+                                <nav aria-label="Меню услуг" class="footer__menu">
+                                    <div class="footer__menu-caption">Услуги</div>
+                                    <ul class="footer__menu-list">
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Приём врачей</a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Нутрициолог</a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Массаж</a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Капельницы</a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Чек-ап</a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Анализы</a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Исследования</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-6">
+                                <nav aria-label="Меню информации" class="footer__menu">
+                                    <div class="footer__menu-caption">О клинике</div>
+                                    <ul class="footer__menu-list">
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">О клинике </a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Правовые документы </a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Вакансии </a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Франшиза </a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-xl-4 col-lg-6">
+                                <div class="footer__actions">
+                                    <a href="#appointment" data-fancybox class="footer__btn btn btn-primary btn-lg">Записаться на приём</a>
+                                    <div class="footer__socials">
+                                        <a href="" class="footer__social icon-whatsapp"></a>
+                                        <a href="" class="footer__social icon-telegram"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__bottom-container container">
+                        <div class="footer__copyright">2025, © «Будь в Балансе»</div>
+                        <a href="" class="footer__policy">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </footer>
+
+            <div id="appointment" class="popup" role="dialog" aria-modal="true" hidden>
+                <h2 class="popup__title title">Онлайн-запись в&nbsp;Balance Med</h2>
+                <p class="popup__subtitle">Наш администратор свяжется с Вами в течение 15 минут.</p>
+                <form action="#" class="popup__form form">
+                    <input type="text" name="username" class="form__control" placeholder="Ваше имя">
+                    <input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
+                    <div class="form__bottom">
+                        <button type="submit" class="form__submit btn btn-primary btn-lg">Оставить заявку</button>
+                    </div>
+                    <div class="form__policy">
+                        Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
+                    </div>
+                </form>
+            </div>
+            <!-- plugins -->
+            <script src="js/libs/fancybox.umd.js"></script>
+            <script src="js/libs/swiper-bundle.min.js"></script>
+            <!-- plugins -->
+
+            <script src="js/app.min.js"></script>
+        </div>
+    </body>
 </html>

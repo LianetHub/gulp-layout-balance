@@ -1,236 +1,250 @@
 <!DOCTYPE html>
 <html lang="ru">
+    <head>
+        <title>БУДЬ В BALANCE | Отзывы</title>
 
-<head>
-	<title>БУДЬ В BALANCE | Отзывы</title>
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- plugins -->
-	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20260217191138">
-	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20260217191138">
-	<!-- plugins -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20260217191138">
-	<link rel="stylesheet" href="css/style.min.css?_v=20260217191138">
-</head>
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<body>
-	<div class="wrapper">
-		<header class="header">
-			<div class="container header__container">
-				<a href="index.html" class="header__logo">
-					<span class="header__logo-icon">
-						<img src="img/logo.svg" alt="Логотип">
-					</span>
-					<span class="header__logo-text"> БУДЬ В BALANCE </span>
-				</a>
-				<nav aria-label="Меню" class="header__menu menu">
-					<ul class="menu__list">
-						<li class="menu__item">
-							<a href="about.html" class="menu__link">О клинике</a>
-						</li>
-						<li class="menu__item menu__item--parent">
-							<a href="" class="menu__link">Услуги</a>
-							<button type="button" aria-label="Открыть подменю" class="menu__arrow icon-down"></button>
-							<div class="submenu">
-								<div class="submenu__column">
-									<a href="specialists.html" class="submenu__caption">Специалисты</a>
-									<ul class="submenu__list">
-										<li class="submenu__item"><a href="therapist.html" class="submenu__link">Терапевт</a></li>
-										<li class="submenu__item"><a href="endocrinologist.html" class="submenu__link">Эндокринолог</a></li>
-										<li class="submenu__item"><a href="nutritionist.html" class="submenu__link">Нутрициолог</a></li>
-									</ul>
-								</div>
-								<div class="submenu__column">
-									<a href="" class="submenu__caption">Процедуры</a>
-									<ul class="submenu__list">
-										<li class="submenu__item"><a href="droppers.html" class="submenu__link">Капельницы</a></li>
-										<li class="submenu__item"><a href="massage.html" class="submenu__link">Массаж</a></li>
-									</ul>
-								</div>
-								<div class="submenu__column">
-									<a href="" class="submenu__caption">Обследования</a>
-									<ul class="submenu__list">
-										<li class="submenu__item"><a href="check-up.html" class="submenu__link">Чек-ап</a></li>
-										<li class="submenu__item"><a href="" class="submenu__link">Анализы</a></li>
-										<li class="submenu__item"><a href="uzi.html" class="submenu__link">УЗИ</a></li>
-										<li class="submenu__item"><a href="ekg.html" class="submenu__link">ЭКГ</a></li>
-										<li class="submenu__item"><a href="bioimpedancemetry.html" class="submenu__link">Биоимпедансометрия</a></li>
-									</ul>
-								</div>
-							</div>
-						</li>
-						<li class="menu__item">
-							<a href="prices.html" class="menu__link">Цены</a>
-						</li>
-						<li class="menu__item">
-							<a href="specialists.html" class="menu__link">Специалисты</a>
-						</li>
-						<li class="menu__item">
-							<a href="reviews.html" class="menu__link active">Отзывы</a>
-						</li>
-						<li class="menu__item">
-							<a href="contacts.html" class="menu__link">Контакты</a>
-						</li>
-					</ul>
-					<div class="menu__actions">
-						<div class="menu__contacts">
-							<a href="tel:+78435671208" class="menu__contacts-phone">+7 (843) 567-12-08</a>
-							<address class="menu__address">г. Казань, ул. Курашова, д.20</address>
-						</div>
-						<a href="#appointment" data-fancybox class="menu__callback btn btn-primary">Записаться</a>
-					</div>
-				</nav>
-				<button type="button" aria-label="Открыть мобильное меню" class="header__toggler icon-menu">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
-			</div>
-		</header>
-		<nav aria-label="Хлебные крошки" class="breadcrumbs">
-			<div class="container">
-				<ul class="breadcrumbs__list">
-					<li class="breadcrumbs__item">
-						<a href="index.html" class="breadcrumbs__link">Главная</a>
-					</li>
-					<li class="breadcrumbs__item">
-						<span class="breadcrumbs__link">Отзывы</span>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<main class="page">
-			<section class="service service--decor-start">
-				<div class="container">
-					<div class="service__body">
-						<div class="row">
-							<div class="col-lg-6">
-								<div class="service__main service__main--small">
-									<h1 class="service__title title-sm">наши пациенты Говорят о нас</h1>
-									<div class="service__desc service__desc--medium">
-										<p> Мы дорожим каждым клиентом! <br> Учитываем ваши пожеления и совершенствуемся вместе. </p>
-										<p> Если вы уже были в клинике Будь в Балансе, то можете оставить свой отзыв. </p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="service__widget">
-									<img src="img/widget.jpg" class="cover-image" alt="Фото услуги">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="consult">
-				<div class="container">
-					<div class="consult__body">
-						<div class="row">
-							<div class="col-lg-6">
-								<div class="consult__main">
-									<h3 class="consult__title">не откладывайте лечение, запишитесь на консультацию</h3>
-									<p class="consult__subtitle">Оставьте свой номер телефона, мы перезвоним, ответим на все вопросы и подберем подходящее обследование.</p>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<form action="#" class="consult__form form">
-									<input type="text" name="username" class="form__control" placeholder="Ваше имя">
-									<input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
-									<button type="submit" class="form__submit btn btn-primary btn-lg">Записаться на консультацию</button>
-									<div class="form__policy"> Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-		<footer class="footer">
-			<div class="container">
-				<div class="footer__body">
-					<div class="row">
-						<div class="col-xl-4 col-lg-6">
-							<div class="footer__main">
-								<a href="/" class="footer__logo">
-									<span class="footer__logo-icon">
-										<img src="img/logo-color.svg" alt="Логотип">
-									</span>
-									<span class="footer__logo-content">
-										<span class="footer__logo-name">БУДЬ В BALANCE</span>
-										<span class="footer__logo-deskriptor">Медицинская клиника <br> по профилактике заболеваний в Казани</span>
-									</span>
-								</a>
-								<div class="footer__meta">
-									<div class="footer__worktime">Пн-Вс: с 08:00 до 21:00</div>
-									<a href="tel:+78435671208" class="footer__phone">+7 (843) 567-12-08</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-2 col-lg-3 col-md-6">
-							<nav aria-label="Меню услуг" class="footer__menu">
-								<div class="footer__menu-caption">Услуги</div>
-								<ul class="footer__menu-list">
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Приём врачей</a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Нутрициолог</a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Массаж</a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Капельницы</a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Чек-ап</a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Анализы</a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Исследования</a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="col-xl-2 col-lg-3 col-md-6">
-							<nav aria-label="Меню информации" class="footer__menu">
-								<div class="footer__menu-caption">О клинике</div>
-								<ul class="footer__menu-list">
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">О клинике </a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Правовые документы </a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Вакансии </a></li>
-									<li class="footer__menu-item"><a href="" class="footer__menu-link">Франшиза </a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="col-xl-4 col-lg-6">
-							<div class="footer__actions">
-								<a href="#appointment" data-fancybox class="footer__btn btn btn-primary btn-lg">Записаться на приём</a>
-								<div class="footer__socials">
-									<a href="" class="footer__social icon-whatsapp"></a>
-									<a href="" class="footer__social icon-telegram"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="footer__bottom">
-				<div class="footer__bottom-container container">
-					<div class="footer__copyright">2025, © «Будь в Балансе»</div>
-					<a href="" class="footer__policy">Политика конфиденциальности</a>
-				</div>
-			</div>
-		</footer>
-		<div id="appointment" class="popup" role="dialog" aria-modal="true" hidden>
-			<h2 class="popup__title title">Онлайн-запись в&nbsp;Balance Med</h2>
-			<p class="popup__subtitle">Наш администратор свяжется с Вами в течение 15 минут.</p>
-			<form action="#" class="popup__form form">
-				<input type="text" name="username" class="form__control" placeholder="Ваше имя">
-				<input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
-				<div class="form__bottom">
-					<button type="submit" class="form__submit btn btn-primary btn-lg">Оставить заявку</button>
-				</div>
-				<div class="form__policy"> Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
-				</div>
-			</form>
-		</div> <!-- plugins -->
-		<script src="js/libs/fancybox.umd.js?_v=20260217191138"></script>
-		<script src="js/libs/swiper-bundle.min.js?_v=20260217191138"></script>
-		<!-- plugins -->
-		<script src="js/app.min.js?_v=20260217191138"></script>
-	</div>
-</body>
+        <!-- plugins -->
+        <link rel="stylesheet" href="css/libs/fancybox.css">
+        <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
+        <!-- plugins -->
 
+        <link rel="stylesheet" href="css/reset.min.css">
+        <link rel="stylesheet" href="css/style.min.css">
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="container header__container">
+                    <a href="index.html" class="header__logo">
+                        <span class="header__logo-icon">
+                            <img src="img/logo.svg" alt="Логотип">
+                        </span>
+                        <span class="header__logo-text">
+                            БУДЬ В BALANCE
+                        </span>
+                    </a>
+                    <nav aria-label="Меню" class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="about.html" class="menu__link">О клинике</a>
+                            </li>
+                            <li class="menu__item menu__item--parent">
+                                <a href="" class="menu__link">Услуги</a>
+                                <button type="button" aria-label="Открыть подменю" class="menu__arrow icon-down"></button>
+                                <div class="submenu">
+                                    <div class="submenu__column">
+                                        <a href="specialists.html" class="submenu__caption">Специалисты</a>
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item"><a href="therapist.html" class="submenu__link">Терапевт</a></li>
+                                            <li class="submenu__item"><a href="endocrinologist.html" class="submenu__link">Эндокринолог</a></li>
+                                            <li class="submenu__item"><a href="nutritionist.html" class="submenu__link">Нутрициолог</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="submenu__column">
+                                        <a href="" class="submenu__caption">Процедуры</a>
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item"><a href="droppers.html" class="submenu__link">Капельницы</a></li>
+                                            <li class="submenu__item"><a href="massage.html" class="submenu__link">Массаж</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="submenu__column">
+                                        <a href="" class="submenu__caption">Обследования</a>
+                                        <ul class="submenu__list">
+                                            <li class="submenu__item"><a href="check-up.html" class="submenu__link">Чек-ап</a></li>
+                                            <li class="submenu__item"><a href="" class="submenu__link">Анализы</a></li>
+                                            <li class="submenu__item"><a href="uzi.html" class="submenu__link">УЗИ</a></li>
+                                            <li class="submenu__item"><a href="ekg.html" class="submenu__link">ЭКГ</a></li>
+                                            <li class="submenu__item"><a href="bioimpedancemetry.html" class="submenu__link">Биоимпедансометрия</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <a href="prices.html" class="menu__link">Цены</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="specialists.html" class="menu__link">Специалисты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="reviews.html" class="menu__link active">Отзывы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="contacts.html" class="menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                        <div class="menu__actions">
+                            <div class="menu__contacts">
+                                <a href="tel:+78435671208" class="menu__contacts-phone">+7 (843) 567-12-08</a>
+                                <address class="menu__address">г. Казань, ул. Курашова, д.20</address>
+                            </div>
+                            <a href="#appointment" data-fancybox class="menu__callback btn btn-primary">Записаться</a>
+                        </div>
+                    </nav>
+                    <button type="button" aria-label="Открыть мобильное меню" class="header__toggler icon-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+            <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">Отзывы</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="page">
+                <section class="service service--decor-start">
+                    <div class="container">
+
+                        <div class="service__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="service__main service__main--small">
+                                        <h1 class="service__title title-sm">наши пациенты Говорят о нас</h1>
+                                        <div class="service__desc service__desc--medium">
+                                            <p>
+                                                Мы дорожим каждым клиентом! <br>
+                                                Учитываем ваши пожеления и совершенствуемся вместе.
+                                            </p>
+                                            <p>
+                                                Если вы уже были в клинике Будь в Балансе, то можете оставить свой отзыв.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="service__widget">
+                                        <img src="img/widget.jpg" class="cover-image" alt="Фото услуги">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="consult">
+                    <div class="container">
+                        <div class="consult__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="consult__main">
+                                        <h3 class="consult__title">не откладывайте лечение, запишитесь на консультацию</h3>
+                                        <p class="consult__subtitle">Оставьте свой номер телефона, мы перезвоним, ответим на все вопросы и подберем подходящее обследование.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <form action="#" class="consult__form form">
+                                        <input type="text" name="username" class="form__control" placeholder="Ваше имя">
+                                        <input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
+                                        <button type="submit" class="form__submit btn btn-primary btn-lg">Записаться на консультацию</button>
+                                        <div class="form__policy">
+                                            Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__body">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-6">
+                                <div class="footer__main">
+                                    <a href="/" class="footer__logo">
+                                        <span class="footer__logo-icon">
+                                            <img src="img/logo-color.svg" alt="Логотип">
+                                        </span>
+                                        <span class="footer__logo-content">
+                                            <span class="footer__logo-name">БУДЬ В BALANCE</span>
+                                            <span class="footer__logo-deskriptor">Медицинская клиника <br> по профилактике заболеваний в Казани</span>
+                                        </span>
+                                    </a>
+                                    <div class="footer__meta">
+                                        <div class="footer__worktime">Пн-Вс: с 08:00 до 21:00</div>
+                                        <a href="tel:+78435671208" class="footer__phone">+7 (843) 567-12-08</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-6">
+                                <nav aria-label="Меню услуг" class="footer__menu">
+                                    <div class="footer__menu-caption">Услуги</div>
+                                    <ul class="footer__menu-list">
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Приём врачей</a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Нутрициолог</a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Массаж</a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Капельницы</a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Чек-ап</a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Анализы</a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Исследования</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-xl-2 col-lg-3 col-md-6">
+                                <nav aria-label="Меню информации" class="footer__menu">
+                                    <div class="footer__menu-caption">О клинике</div>
+                                    <ul class="footer__menu-list">
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">О клинике </a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Правовые документы </a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Вакансии </a></li>
+                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Франшиза </a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-xl-4 col-lg-6">
+                                <div class="footer__actions">
+                                    <a href="#appointment" data-fancybox class="footer__btn btn btn-primary btn-lg">Записаться на приём</a>
+                                    <div class="footer__socials">
+                                        <a href="" class="footer__social icon-whatsapp"></a>
+                                        <a href="" class="footer__social icon-telegram"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__bottom-container container">
+                        <div class="footer__copyright">2025, © «Будь в Балансе»</div>
+                        <a href="" class="footer__policy">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </footer>
+
+            <div id="appointment" class="popup" role="dialog" aria-modal="true" hidden>
+                <h2 class="popup__title title">Онлайн-запись в&nbsp;Balance Med</h2>
+                <p class="popup__subtitle">Наш администратор свяжется с Вами в течение 15 минут.</p>
+                <form action="#" class="popup__form form">
+                    <input type="text" name="username" class="form__control" placeholder="Ваше имя">
+                    <input type="tel" name="phone" class="form__control" placeholder="+7 (999) 999-99-99">
+                    <div class="form__bottom">
+                        <button type="submit" class="form__submit btn btn-primary btn-lg">Оставить заявку</button>
+                    </div>
+                    <div class="form__policy">
+                        Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
+                    </div>
+                </form>
+            </div>
+            <!-- plugins -->
+            <script src="js/libs/fancybox.umd.js"></script>
+            <script src="js/libs/swiper-bundle.min.js"></script>
+            <!-- plugins -->
+
+            <script src="js/app.min.js"></script>
+        </div>
+    </body>
 </html>

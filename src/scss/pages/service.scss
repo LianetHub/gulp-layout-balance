@@ -3,6 +3,14 @@
 	@media (min-width: $md4) {
 		padding: rem(60) 0 0;
 	}
+	&.service--no-decor {
+		.container {
+			&::before,
+			&::after {
+				display: none;
+			}
+		}
+	}
 	&.service--decor-start {
 		.container {
 			&::before {

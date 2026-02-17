@@ -1,0 +1,61 @@
+.franchise {
+	// .franchise__title
+	&__title {
+	}
+	// .franchise__body
+	&__body {
+		margin-top: 2rem;
+	}
+	// .franchise__desc
+	&__desc {
+		color: #dbdbdb;
+		font-size: 1.125rem;
+		font-weight: 500;
+		line-height: 140%;
+	}
+	// .franchise__btn
+	&__btn {
+		margin-top: 2rem;
+		width: 100%;
+		min-height: rem(64);
+		font-size: 1.25rem;
+	}
+	// .franchise__list
+	&__list {
+		margin-top: 2rem;
+		display: flex;
+		flex-direction: column;
+	}
+	// .franchise__column
+	&__column {
+		border-radius: 1rem;
+		border: rem(1) solid #6b806f;
+		padding: 1.5rem rem(30);
+		&:not(:last-child) {
+			margin-bottom: 0.875rem;
+		}
+	}
+	// .franchise__column-caption
+	&__column-caption {
+		font-size: 1.125rem;
+		font-weight: 500;
+		line-height: 140%;
+		text-transform: uppercase;
+	}
+	// .franchise__column-desc
+	&__column-desc {
+		color: #dbdbdb;
+		font-size: 1rem;
+		line-height: 140%;
+	}
+	// .franchise__image
+	&__image {
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+		& img {
+			flex: 1 1 auto;
+			border-radius: 1rem;
+		}
+	}
+}
