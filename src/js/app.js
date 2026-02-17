@@ -12,6 +12,49 @@ if (typeof Fancybox !== "undefined" && Fancybox !== null) {
 
 document.addEventListener("DOMContentLoaded", function () {
 
+    const isMobile = {
+        Android: function () {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function () {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function () {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function () {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function () {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function () {
+            return (
+                isMobile.Android() ||
+                isMobile.BlackBerry() ||
+                isMobile.iOS() ||
+                isMobile.Opera() ||
+                isMobile.Windows());
+        },
+    };
+
+
+    function getNavigator() {
+        if (isMobile.any() || window.innerWidth < 992) {
+            document.body.classList.remove("_pc");
+            document.body.classList.add("_touch");
+        } else {
+            document.body.classList.remove("_touch");
+            document.body.classList.add("_pc");
+        }
+    }
+
+    getNavigator();
+
+    window.addEventListener('resize', () => {
+        getNavigator()
+    })
+
     document.addEventListener("click", function (e) {
         const target = e.target;
 
@@ -27,6 +70,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (target.matches('.menu__arrow')) {
             target.parentNode.classList.toggle('active');
+        }
+
+        if (target.closest('.menu__link') && document.body.classList.contains('_touch')) {
+            const parentItem = target.closest('.menu__item--parent');
+            if (parentItem) {
+                e.preventDefault();
+                parentItem.classList.toggle('active');
+                return;
+            }
         }
 
         if (target.matches('.programms__tab')) {

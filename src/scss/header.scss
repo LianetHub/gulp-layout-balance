@@ -48,6 +48,10 @@
 	}
 	// .header__logo-icon
 	&__logo-icon {
+		width: 2rem;
+		& img {
+			width: 100%;
+		}
 	}
 	// .header__logo-text
 	&__logo-text {
@@ -139,7 +143,7 @@
 	// .menu__item
 	&__item {
 		display: flex;
-		justify-content: space-between;
+		// justify-content: space-between;
 		align-items: center;
 		flex-wrap: wrap;
 		gap: 0.25rem;
@@ -259,6 +263,7 @@
 			flex: 0 1 auto;
 		}
 	}
+
 	// .menu__contacts-phone
 	&__contacts-phone {
 		white-space: nowrap;
@@ -268,6 +273,27 @@
 		@media (any-hover: hover) {
 			&:hover {
 				color: #ceb388;
+			}
+		}
+	}
+	// .menu__socials
+	&__socials {
+		display: flex;
+		gap: 1.5rem;
+		flex-wrap: wrap;
+		align-items: center;
+		@media (min-width: $md3) {
+			display: none;
+		}
+	}
+	// .menu__socials-item
+	&__socials-item {
+		font-size: 3rem;
+		color: #ceb388;
+		transition: color 0.3s ease;
+		@media (any-hover: hover) {
+			&:hover {
+				color: darken($color: #ceb388, $amount: 10);
 			}
 		}
 	}
@@ -333,12 +359,7 @@
 		letter-spacing: -0.02rem;
 		padding-bottom: 0.19rem;
 		border-bottom: rem(1) solid;
-		transition: color 0.3s ease;
-		@media (any-hover: hover) {
-			&:hover {
-				color: darken($color: #ceb388, $amount: 10);
-			}
-		}
+		display: inline-block;
 	}
 	// .submenu__list
 	&__list {

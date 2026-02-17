@@ -18,7 +18,7 @@
                     <button type="button" aria-label="Открыть подменю" class="menu__arrow icon-down"></button>
                     <div class="submenu">
                         <div class="submenu__column">
-                            <a href="specialists.html" class="submenu__caption@@if(typeof active !== 'undefined' && active == 4) { active}">Специалисты</a>
+                            <div class="submenu__caption@@if(typeof active !== 'undefined' && active == 4) { active}">Специалисты</div>
                             <ul class="submenu__list">
                                 <li class="submenu__item"><a href="therapist.html" class="submenu__link@@if(typeof active !== 'undefined' && active == 7) { active}">Терапевт</a></li>
                                 <li class="submenu__item"><a href="endocrinologist.html" class="submenu__link@@if(typeof active !== 'undefined' && active == 8) { active}">Эндокринолог</a></li>
@@ -26,14 +26,14 @@
                             </ul>
                         </div>
                         <div class="submenu__column">
-                            <a href="" class="submenu__caption">Процедуры</a>
+                            <div class="submenu__caption">Процедуры</div>
                             <ul class="submenu__list">
                                 <li class="submenu__item"><a href="droppers.html" class="submenu__link@@if(typeof active !== 'undefined' && active == 10) { active}">Капельницы</a></li>
                                 <li class="submenu__item"><a href="massage.html" class="submenu__link@@if(typeof active !== 'undefined' && active == 11) { active}">Массаж</a></li>
                             </ul>
                         </div>
                         <div class="submenu__column">
-                            <a href="" class="submenu__caption">Обследования</a>
+                            <div class="submenu__caption">Обследования</div>
                             <ul class="submenu__list">
                                 <li class="submenu__item"><a href="check-up.html" class="submenu__link@@if(typeof active !== 'undefined' && active == 12) { active}">Чек-ап</a></li>
                                 <li class="submenu__item"><a href="" class="submenu__link@@if(typeof active !== 'undefined' && active == 13) { active}">Анализы</a></li>
@@ -63,6 +63,11 @@
                     <address class="menu__address">г. Казань, ул. Курашова, д.20</address>
                 </div>
                 <a href="#appointment" data-fancybox class="menu__callback btn btn-primary">Записаться</a>
+            </div>
+            <div class="menu__socials">
+                <a href="" aria-label="instagram" class="menu__socials-item icon-instagram"></a>
+                <a href="" aria-label="telegram" class="menu__socials-item icon-telegram"></a>
+                <a href="" aria-label="youtube" class="menu__socials-item icon-youtube"></a>
             </div>
         </nav>
         <button type="button" aria-label="Открыть мобильное меню" class="header__toggler icon-menu">

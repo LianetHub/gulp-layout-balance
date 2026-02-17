@@ -54,6 +54,10 @@
 		display: flex;
 		align-items: flex-start;
 		gap: 1rem;
+		width: rem(40);
+		& img {
+			width: 100%;
+		}
 	}
 	// .footer__logo-icon
 	&__logo-icon {

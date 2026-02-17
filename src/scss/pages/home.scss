@@ -154,6 +154,12 @@
 }
 
 .services {
+	.section-header__hint {
+		order: -1;
+		@media (min-width: $md5) {
+			order: 0;
+		}
+	}
 	// .services__body
 	&__body {
 		margin-top: 2rem;
@@ -188,8 +194,12 @@
 	}
 	// .services__logo
 	&__logo {
-		margin-top: 3.12rem;
-		max-width: 18.44238rem;
+		display: none;
+		@media (min-width: $md4) {
+			display: block;
+			margin-top: 3.12rem;
+			max-width: 18.44238rem;
+		}
 	}
 }
 

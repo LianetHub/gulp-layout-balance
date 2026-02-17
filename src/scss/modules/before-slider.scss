@@ -95,9 +95,9 @@
 			content: "";
 			width: 0;
 			height: 0;
-			border-left: 7px solid transparent;
-			border-right: 7px solid transparent;
-			border-bottom: 10.5px solid white;
+			border-left: rem(7) solid transparent;
+			border-right: rem(7) solid transparent;
+			border-bottom: rem(10.5) solid white;
 			pointer-events: none;
 		}
 		&:after {
