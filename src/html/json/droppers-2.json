@@ -1,0 +1,65 @@
+[
+    {
+        "image": "@img/droppers/dropper-anti-virus-complex-card.png",
+        "slug": "dropper-anti-virus-complex.html",
+        "indications": [
+            "Першение в горле",
+            "Слабость",
+            "Озноб",
+            "Ломота в теле",
+            "Проявления простудных заболеваний"
+        ],
+        "name": "Комплекс anti-virus",
+        "price": "5 200 ₽",
+        "btnText": "Подробнее"
+    },
+    {
+        "image": "@img/droppers/dropper-healthy-liver-complex-card.png",
+        "slug": "dropper-healthy-liver-complex.html",
+        "indications": [
+            "Систематическое злоупотребление алкоголем",
+            "Хронические заболевания (цирроз, гепатоз, гепатит)",
+            "Интоксикации любого вида",
+            "Длительное применение лекарственных препаратов"
+        ],
+        "name": "Здоровая печень",
+        "price": "7 200 ₽",
+        "btnText": "Подробнее"
+    },
+    {
+        "image": "@img/droppers/dropper-anti-allergy-complex-card.png",
+        "slug": "dropper-anti-allergy-complex.html",
+        "indications": [
+            "Аллергические реакции на любой из видов раздражителей (пищевой, растительный, животный, химический)",
+            "Период цветения растений",
+            "Комплексная терапия аллергии"
+        ],
+        "name": "Комплекс Anti-Аллергия",
+        "price": "5 200 ₽",
+        "btnText": "Подробнее"
+    },
+    {
+        "image": "@img/droppers/dropper-herpes-complex-card.png",
+        "slug": "dropper-herpes-complex.html",
+        "indications": [
+            "Острая фаза вируса герпеса",
+            "Необходимость уменьшения действия вируса на организм",
+            "Увеличение периода ремиссии"
+        ],
+        "name": "От вируса герпеса",
+        "price": "5 200 ₽",
+        "btnText": "Подробнее"
+    },
+    {
+        "image": "@img/droppers/dropper-gout-complex-card.png",
+        "slug": "dropper-gout-complex.html",
+        "indications": [
+            "Повышенный уровень мочевой кислоты",
+            "Воспаление в суставах",
+            "Необходимость ускоренного выведения избытков мочевой кислоты"
+        ],
+        "name": "Подагра комплекс",
+        "price": "7 300 ₽",
+        "btnText": "Подробнее"
+    }
+]

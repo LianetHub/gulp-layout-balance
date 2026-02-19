@@ -122,10 +122,11 @@
                 </div>
                 <section class="services">
                     <div class="container">
+                        <h2 class="section-header__title title">Виды капельниц</h2>
                         <div class="services__blocks">
                             <div class="services__block">
                                 <div class="section-header">
-                                    <h2 class="section-header__title title">Виды капельниц</h2>
+                                    <h2 class="section-header__title title-sm color-accent">для восстановления и омоложения</h2>
                                     <div class="section-header__controls">
                                         <button type="button" class="services__prev swiper-button-prev"></button>
                                         <button type="button" class="services__next swiper-button-next"></button>
@@ -134,6 +135,36 @@
                                 <div class="services__slider swiper">
                                     <div class="swiper-wrapper">
                                         @@loop('./html/templates/_service-card.html', './html/json/droppers.json')
+                                    </div>
+                                    <div class="services__pagination swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <div class="services__block">
+                                <div class="section-header">
+                                    <h2 class="section-header__title title-sm color-accent">Лечебные капельницы</h2>
+                                    <div class="section-header__controls">
+                                        <button type="button" class="services__prev swiper-button-prev"></button>
+                                        <button type="button" class="services__next swiper-button-next"></button>
+                                    </div>
+                                </div>
+                                <div class="services__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        @@loop('./html/templates/_service-card.html', './html/json/droppers-2.json')
+                                    </div>
+                                    <div class="services__pagination swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <div class="services__block">
+                                <div class="section-header">
+                                    <h2 class="section-header__title title-sm color-accent">Восполнение дефицитов</h2>
+                                    <div class="section-header__controls">
+                                        <button type="button" class="services__prev swiper-button-prev"></button>
+                                        <button type="button" class="services__next swiper-button-next"></button>
+                                    </div>
+                                </div>
+                                <div class="services__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        @@loop('./html/templates/_service-card.html', './html/json/droppers-3.json')
                                     </div>
                                     <div class="services__pagination swiper-pagination"></div>
                                 </div>

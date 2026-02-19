@@ -608,8 +608,17 @@
 		position: relative;
 		padding-top: 1.25rem;
 		padding-left: 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@media (min-width: $md3) {
+			position: sticky;
+			top: rem(70);
+		}
 		& img {
-			max-width: 93%;
+			@media (min-width: $md3) {
+				max-width: 50%;
+			}
 		}
 		&::before {
 			content: "";

@@ -14,30 +14,29 @@
         "btnText": "Подробнее"
     },
     {
-        "image": "@img/droppers/dropper-iron-deficiency-complex-card.png",
-        "slug": "dropper-iron-deficiency-complex.html",
+        "image": "@img/droppers/dropper-cinderella-complex-card.png",
+        "slug": "dropper-cinderella-complex.html",
         "indications": [
-            "Железодефицитная анемия",
-            "Нарушение всасывания железа в ЖКТ",
-            "Непереносимость пероральных препаратов железа",
-            "Срочное восполнение дефицита перед операцией"
+            "Синдром хронической усталости",
+            "Повышенная утомляемость",
+            "Гиповитаминоз",
+            "Лишний вес, отёки"
         ],
-        "name": "Комплекс <br> железодефицит",
-        "price": "5 100 ₽",
+        "name": "Золушка (Cinderella)",
+        "price": "от 7 100 ₽",
         "btnText": "Подробнее"
     },
     {
-        "image": "@img/droppers/dropper-anti-virus-complex-card.png",
-        "slug": "dropper-anti-virus-complex.html",
+        "image": "@img/droppers/dropper-after-party-card.png",
+        "slug": "dropper-after-party.html",
         "indications": [
-            "Першение в горле",
-            "Слабость",
-            "Озноб",
-            "Ломота в теле",
-            "Проявления простудных заболеваний"
+            "Головные боли",
+            "Сердцебиение (тахикардия)",
+            "Сухость во рту, обезвоживание",
+            "Слабость, упадок сил"
         ],
-        "name": "Антивирусный комплекс",
-        "price": "5 200 ₽",
+        "name": "After-party",
+        "price": "от 7 500 ₽",
         "btnText": "Подробнее"
     },
     {
@@ -62,106 +61,6 @@
         ],
         "name": "Лаеннек",
         "price": "от 4 200 ₽",
-        "btnText": "Подробнее"
-    },
-    {
-        "image": "@img/droppers/dropper-meyer-cocktail-complex-card.png",
-        "slug": "dropper-meyer-cocktail-complex.html",
-        "indications": [
-            "Хроническая усталость и недостаток энергии",
-            "Симптомы стресса и нервного истощения",
-            "Ослабленная иммунная система и частые простуды",
-            "Дефицит витаминов и микроэлементов"
-        ],
-        "name": "Коктейль Майера",
-        "price": "4 800 ₽",
-        "btnText": "Подробнее"
-    },
-    {
-        "image": "@img/droppers/dropper-healthy-liver-complex-card.png",
-        "slug": "dropper-healthy-liver-complex.html",
-        "indications": [
-            "Систематическое злоупотребление алкоголем",
-            "Хронические заболевания (цирроз, гепатоз, гепатит)",
-            "Интоксикации любого вида",
-            "Длительное применение лекарственных препаратов"
-        ],
-        "name": "Здоровая печень",
-        "price": "7 200 ₽",
-        "btnText": "Подробнее"
-    },
-    {
-        "image": "@img/droppers/dropper-aminoven-card.png",
-        "slug": "dropper-aminoven.html",
-        "indications": [
-            "Дефицит белка в организме",
-            "Необходимость увеличения белка",
-            "Состояния, требующие восполнения комплекса аминокислот"
-        ],
-        "name": "Аминовен",
-        "price": "4 800 ₽",
-        "btnText": "Подробнее"
-    },
-    {
-        "image": "@img/droppers/dropper-anti-allergy-complex-card.png",
-        "slug": "dropper-anti-allergy-complex.html",
-        "indications": [
-            "Аллергические реакции на любой из видов раздражителей (пищевой, растительный, животный, химический)",
-            "Период цветения растений",
-            "Комплексная терапия аллергии"
-        ],
-        "name": "Антиаллергический комплекс",
-        "price": "5 200 ₽",
-        "btnText": "Подробнее"
-    },
-    {
-        "image": "@img/droppers/dropper-herpes-complex-card.png",
-        "slug": "dropper-herpes-complex.html",
-        "indications": [
-            "Острая фаза вируса герпеса",
-            "Необходимость уменьшения действия вируса на организм",
-            "Увеличение периода ремиссии"
-        ],
-        "name": "Герпес комплекс",
-        "price": "5 200 ₽",
-        "btnText": "Подробнее"
-    },
-    {
-        "image": "@img/droppers/dropper-cinderella-complex-card.png",
-        "slug": "dropper-cinderella-complex.html",
-        "indications": [
-            "Синдром хронической усталости",
-            "Повышенная утомляемость",
-            "Гиповитаминоз",
-            "Лишний вес, отёки"
-        ],
-        "name": "Золушка (Cinderella)",
-        "price": "от 7 100 ₽",
-        "btnText": "Подробнее"
-    },
-    {
-        "image": "@img/droppers/dropper-gout-complex-card.png",
-        "slug": "dropper-gout-complex.html",
-        "indications": [
-            "Повышенный уровень мочевой кислоты",
-            "Воспаление в суставах",
-            "Необходимость ускоренного выведения избытков мочевой кислоты"
-        ],
-        "name": "Подагра комплекс",
-        "price": "7 300 ₽",
-        "btnText": "Подробнее"
-    },
-    {
-        "image": "@img/droppers/dropper-after-party-card.png",
-        "slug": "dropper-after-party.html",
-        "indications": [
-            "Головные боли",
-            "Сердцебиение (тахикардия)",
-            "Сухость во рту, обезвоживание",
-            "Слабость, упадок сил"
-        ],
-        "name": "After-party",
-        "price": "от 7 500 ₽",
         "btnText": "Подробнее"
     }
 ]

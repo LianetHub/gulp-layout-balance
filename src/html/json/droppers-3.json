@@ -1,0 +1,52 @@
+[
+    {
+        "image": "@img/droppers/dropper-iron-deficiency-complex-card.png",
+        "slug": "dropper-iron-deficiency-complex.html",
+        "indications": [
+            "Железодефицитная анемия",
+            "Нарушение всасывания железа в ЖКТ",
+            "Непереносимость пероральных препаратов железа",
+            "Срочное восполнение дефицита перед операцией"
+        ],
+        "name": "Комплекс <br> железодефицит",
+        "price": "5 100 ₽",
+        "btnText": "Подробнее"
+    },
+    {
+        "image": "@img/droppers/dropper-meyer-cocktail-complex-card.png",
+        "slug": "dropper-meyer-cocktail-complex.html",
+        "indications": [
+            "Хроническая усталость и недостаток энергии",
+            "Симптомы стресса и нервного истощения",
+            "Ослабленная иммунная система и частые простуды",
+            "Дефицит витаминов и микроэлементов"
+        ],
+        "name": "Коктейль Майера",
+        "price": "4 800 ₽",
+        "btnText": "Подробнее"
+    },
+    {
+        "image": "@img/droppers/dropper-aminoven-card.png",
+        "slug": "dropper-aminoven.html",
+        "indications": [
+            "Дефицит белка в организме",
+            "Необходимость увеличения белка",
+            "Состояния, требующие восполнения комплекса аминокислот"
+        ],
+        "name": "Аминовен",
+        "price": "4 800 ₽",
+        "btnText": "Подробнее"
+    },
+    {
+        "image": "@img/droppers/vitamin-D.png",
+        "slug": "dropper-anti-allergy-complex.html",
+        "indications": [
+            "Восполнение дефицита витамина D перед операциями, при переломах",
+            "Непереносимость пероральной формы витамина D",
+            "Малабсорбционные расстройства кишечника"
+        ],
+        "name": "Инъекция Витамина D",
+        "price": "2 000 ₽",
+        "btnText": "Подробнее"
+    }
+]
