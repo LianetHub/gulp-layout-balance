@@ -201,6 +201,51 @@
 			max-width: 18.44238rem;
 		}
 	}
+	&__grid {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+	// .services__card
+	&__card {
+		border-radius: 1rem;
+		border: rem(1) solid #fff;
+		transition: background-color 0.3s ease;
+		padding: 1rem 1.5rem;
+		@media (min-width: $md5) {
+			padding: 1.5rem 2rem;
+		}
+		@media (min-width: $md3) {
+			width: rem(337);
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				background: #425045;
+			}
+		}
+	}
+	// .services__card-title
+	&__card-title {
+		font-weight: 500;
+		line-height: 140%;
+		text-transform: uppercase;
+		font-size: 1rem;
+		@media (min-width: $md5) {
+			font-size: 1.125rem;
+		}
+	}
+	// .services__card-text
+	&__card-text {
+		margin-top: 0.5rem;
+		line-height: 140%;
+		font-size: 0.875rem;
+		@media (min-width: $md5) {
+			font-size: 1rem;
+		}
+	}
+	// .services__card-btn
+	&__card-btn {
+	}
 }
 
 .reasons {

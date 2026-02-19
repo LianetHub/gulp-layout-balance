@@ -1,18 +1,18 @@
 @font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Inter-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Inter-VariableFont_wght.woff") format("woff");
   font-weight: 100 900;
   font-stretch: 75% 125%;
   font-style: normal;
   font-display: swap;
-}
-
-@font-face {
-  font-family: "icons";
-  font-display: swap;
-  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
 }
 
 @font-face {
@@ -1274,9 +1274,9 @@
 }
 
 .btn.btn-secondary:hover {
-  background: #425045;
-  border-color: #425045;
-  color: #fff;
+  background: #ceb388;
+  border-color: #ceb388;
+  color: #252f28;
 }
 
 .btn.btn-secondary:active {
@@ -1711,6 +1711,8 @@ body {
   padding-bottom: 0.9rem;
   display: none;
   font-size: 0.875rem;
+  line-height: 140%;
+  padding: 0.625rem 0.5rem 0.625rem 0rem;
 }
 
 .accordion-list__item-body p:not(:last-child) {
@@ -2728,6 +2730,36 @@ body {
 
 .services__logo {
   display: none;
+}
+
+.services__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.services__card {
+  border-radius: 1rem;
+  border: 0.0625rem solid #fff;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  padding: 1rem 1.5rem;
+}
+
+.services__card-title {
+  font-weight: 500;
+  line-height: 140%;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.services__card-text {
+  margin-top: 0.5rem;
+  line-height: 140%;
+  font-size: 0.875rem;
 }
 
 .reasons__body {
@@ -4360,7 +4392,7 @@ body {
   color: #919191;
 }
 
-.services .section-header {
+.services:not(.services-main) .section-header {
   padding-left: 0;
 }
 
@@ -5485,6 +5517,7 @@ body {
   }
 
   .accordion-list__item-body {
+    padding: 0.625rem 4.5rem 2rem 4.125rem;
     font-size: 1rem;
   }
 
@@ -5525,6 +5558,18 @@ body {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
+  }
+
+  .services__card {
+    padding: 1.5rem 2rem;
+  }
+
+  .services__card-title {
+    font-size: 1.125rem;
+  }
+
+  .services__card-text {
+    font-size: 1rem;
   }
 
   .carousel__pagination {
@@ -6657,6 +6702,10 @@ body {
     width: 100%;
   }
 
+  .services__card {
+    width: 21.0625rem;
+  }
+
   .faq__body {
     padding: 2.5rem 2rem 2.5rem 2.5rem;
     gap: 2.94rem;
@@ -7668,6 +7717,10 @@ body {
 
   .footer__policy:hover {
     text-decoration: none;
+  }
+
+  .services__card:hover {
+    background: #425045;
   }
 
   .clients__slide:hover::before {

@@ -1,7 +1,10 @@
 .services {
-	.section-header {
-		padding-left: 0;
+	&:not(.services-main) {
+		.section-header {
+			padding-left: 0;
+		}
 	}
+
 	// .services__prev
 	&__prev {
 		@media (max-width: $md5) {
