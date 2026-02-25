@@ -2,6 +2,7 @@
 	font-weight: 500;
 	text-transform: uppercase;
 	font-size: 2rem;
+
 	@media (min-width: $md3) {
 		font-size: 2.5rem;
 	}
@@ -11,6 +12,7 @@
 	font-weight: 500;
 	text-transform: uppercase;
 	font-size: 1.5rem;
+
 	@media (min-width: $md4) {
 		font-size: 2rem;
 	}
@@ -28,8 +30,13 @@
 }
 
 .ordered-list {
-	& > li {
-		counter-increment: num;
+	counter-reset: num;
+
+	&>li {
+		&:not(.no-counting) {
+			counter-increment: num;
+		}
+
 		@for $i from 1 through 10 {
 			&:nth-child(#{$i}) {
 				&::before {
@@ -37,9 +44,16 @@
 				}
 			}
 		}
+
 		&::before {
 			content: counter(num) "/";
 			text-transform: uppercase;
+		}
+
+		&.no-counting {
+			&::before {
+				display: none;
+			}
 		}
 	}
 }
@@ -65,11 +79,13 @@
 	background: #6b806f;
 	color: #fff;
 	transition: all 0.3s ease;
+
 	@media (min-width: $md3) {
 		font-size: 1.25rem;
 		width: 3.25rem;
 		height: 3.25rem;
 	}
+
 	@media (any-hover: hover) {
 		&:hover {
 			background: #425045;
@@ -86,6 +102,7 @@
 	&.swiper-pagination-lock {
 		display: none !important;
 	}
+
 	&.swiper-pagination-bullets {
 		margin-top: 1rem;
 		position: static;
@@ -98,15 +115,18 @@
 		--swiper-pagination-bullet-horizontal-gap: #{rem(10)};
 		--swiper-pagination-bullet-size: #{rem(10)};
 		--swiper-pagination-bullet-inactive-opacity: 0.4;
+
 		&.swiper-pagination-bullets-dynamic {
 			transform: none;
 			margin-inline: auto;
 			display: block;
 			width: 100%;
 		}
+
 		.swiper-pagination-bullet {
 			background: currentColor;
 			position: relative;
+
 			&::before {
 				content: "";
 				position: absolute;
@@ -116,11 +136,13 @@
 				left: 50%;
 				transform: translate(-50%, -50%);
 			}
+
 			&.swiper-pagination-bullet-active {
 				opacity: 1;
 			}
 		}
 	}
+
 	&.swiper-pagination-fraction {
 		position: static;
 		width: auto;
@@ -134,9 +156,11 @@
 		&:not(:first-child) {
 			margin-top: 0.75rem;
 		}
+
 		&:not(:last-child) {
 			margin-bottom: 0.75rem;
 		}
+
 		line-height: 150%;
 		font-size: 1rem;
 
@@ -147,9 +171,11 @@
 
 	& img {
 		width: fit-content;
+
 		&:not(:first-child) {
 			margin-top: 1rem;
 		}
+
 		&:not(:last-child) {
 			margin-bottom: 0.5rem;
 		}
@@ -159,15 +185,19 @@
 		line-height: 150%;
 		padding-left: 1em;
 		font-size: 0.875rem;
+
 		@media (min-width: $md4) {
 			font-size: 1rem;
 		}
+
 		@media (min-width: $md2) {
 			font-size: 1.125rem;
 		}
+
 		& li {
 			padding-left: 1.5em;
 			position: relative;
+
 			&::before {
 				content: "";
 				position: absolute;
@@ -178,6 +208,7 @@
 				background: $accent;
 				border-radius: 50%;
 			}
+
 			&:not(:last-child) {
 				margin-bottom: 0.75rem;
 			}
@@ -189,6 +220,7 @@
 			color: $accent;
 			text-decoration: underline;
 			transition: color 0.2s ease;
+
 			&:hover {
 				color: darken($accent, 10%);
 				text-decoration: none;
@@ -220,17 +252,21 @@
 		border-left: rem(4) solid $accent;
 		font-style: italic;
 		color: #555;
+
 		& p {
 			margin: 0;
 			font-size: 0.875rem;
+
 			@media (min-width: $md4) {
 				font-size: 1rem;
 			}
+
 			@media (min-width: $md2) {
 				font-size: 1.125rem;
 			}
 		}
 	}
+
 	& h1,
 	& h2,
 	& h3,
@@ -243,14 +279,17 @@
 			display: inline-flex;
 			gap: 1rem;
 			align-items: center;
+
 			&::before {
 				order: 1;
 				color: $accent;
 				transition: transform 0.3s ease;
 			}
+
 			@media (any-hover: hover) {
 				&:hover {
 					color: $accent;
+
 					&::before {
 						transform: translateX(0.5rem);
 					}
@@ -262,13 +301,16 @@
 	& h1 {
 		&:not(:last-child) {
 			margin-bottom: 0.75rem;
+
 			@media (min-width: $md4) {
 				margin-bottom: 1rem;
 			}
 		}
+
 		font-weight: 700;
 		line-height: 120%;
 		font-size: 1.5rem;
+
 		@media (min-width: $md4) {
 			font-size: 1.75rem;
 		}
@@ -277,19 +319,24 @@
 	& h2 {
 		&:not(:first-child) {
 			margin-top: 0.75rem;
+
 			@media (min-width: $md4) {
 				margin-top: 1.5rem;
 			}
 		}
+
 		&:not(:last-child) {
 			margin-bottom: 1rem;
+
 			@media (min-width: $md4) {
 				margin-bottom: 1.25rem;
 			}
 		}
+
 		font-weight: 500;
 		line-height: 120%;
 		font-size: 1.25rem;
+
 		@media (min-width: $md4) {
 			font-size: 1.5rem;
 		}
@@ -299,11 +346,14 @@
 		&:not(:first-child) {
 			margin-top: 1rem;
 		}
+
 		&:not(:last-child) {
 			margin-bottom: 1rem;
 		}
+
 		font-weight: 500;
 		line-height: 120%;
+
 		@media (min-width: $md4) {
 			font-size: 1.25rem;
 		}
@@ -313,11 +363,14 @@
 		&:not(:first-child) {
 			margin-top: 1rem;
 		}
+
 		&:not(:last-child) {
 			margin-bottom: 1rem;
 		}
+
 		font-weight: 600;
 		line-height: 130%;
+
 		@media (min-width: $md4) {
 			font-size: 1.125rem;
 		}
@@ -328,9 +381,11 @@
 		&:not(:first-child) {
 			margin-top: 1rem;
 		}
+
 		&:not(:last-child) {
 			margin-bottom: 0.5rem;
 		}
+
 		font-size: 1rem;
 		font-weight: 600;
 		line-height: 140%;
@@ -341,30 +396,36 @@
 		line-height: 150%;
 		padding-left: 1.5rem;
 		list-style: decimal;
+
 		& li {
 			& h4 {
-				& ~ * {
+				&~* {
 					margin-left: -1.25rem;
 				}
+
 				&:not(:last-child) {
 					margin-bottom: rem(8);
 				}
 			}
+
 			&:has(h4) {
 				& p {
 					&:not(:first-child) {
 						margin-top: rem(8);
 					}
 				}
+
 				& p,
 				& ul {
 					font-size: 1rem;
 				}
 			}
+
 			&::marker {
 				color: $accent;
 				font-weight: 500;
 			}
+
 			&:not(:last-child) {
 				margin-bottom: 0.75rem;
 			}
@@ -402,12 +463,15 @@ $scrollbarColor: #ceb388;
 ::-webkit-scrollbar {
 	width: rem(8);
 }
+
 ::-webkit-scrollbar-track {
 	background: #fff;
 }
+
 ::-webkit-scrollbar-thumb {
 	background: $scrollbarColor;
 	border-radius: rem(8);
+
 	@media (any-hover: hover) {
 		&:hover {
 			background: darken($color: $scrollbarColor, $amount: 10);
