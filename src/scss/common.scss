@@ -1,8 +1,10 @@
 * {
 	scroll-margin-top: rem(56);
+
 	@media (min-width: $md5) {
 		scroll-margin-top: rem(74);
 	}
+
 	@media (min-width: $md3) {
 		scroll-margin-top: rem(82);
 	}
@@ -23,6 +25,7 @@ body {
 	margin-right: 0 !important;
 	color: #fff;
 	background: #252f28;
+
 	&.open-mobile-menu {
 		@media (max-width: $md3) {
 			overflow: hidden;
@@ -48,6 +51,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: rem(60);
+
 	@media (min-width: $md4) {
 		gap: rem(120);
 	}
@@ -61,19 +65,24 @@ body {
 	margin: 0 auto;
 	padding: 0 1rem;
 	max-width: 100%;
+
 	@media (min-width: $md5) {
 		box-sizing: content-box;
 		max-width: rem(540);
 	}
+
 	@media (min-width: $md4) {
 		max-width: rem(624);
 	}
+
 	@media (min-width: $md3) {
 		max-width: rem(960);
 	}
+
 	@media (min-width: $md2) {
 		max-width: rem(1140);
 	}
+
 	@media (min-width: $md1) {
 		max-width: $maxWidthContainer;
 	}
@@ -90,16 +99,19 @@ body {
 	justify-content: space-between;
 	flex-direction: column;
 	gap: 0.25rem;
+
 	@media (min-width: $md5) {
 		align-items: flex-end;
 		flex-direction: row;
 	}
+
 	@media (min-width: $md1) {
 		padding-left: 3.5rem;
 	}
+
 	// .section-header__title
-	&__title {
-	}
+	&__title {}
+
 	// .section-header__subtitle
 	&__subtitle {
 		margin-top: 2rem;
@@ -107,23 +119,28 @@ body {
 		line-height: 140%;
 		max-width: 51.125rem;
 	}
+
 	// .section-header__hint
 	&__hint {
 		color: #dbdbdb;
 		font-size: 1rem;
 		flex-shrink: 0;
+
 		@media (min-width: $md5) {
 			max-width: 50%;
 		}
+
 		&::before {
 			content: "/";
 			margin-right: 0.25rem;
 		}
+
 		&::after {
 			content: "/";
 			margin-left: 0.25rem;
 		}
 	}
+
 	// .section-header__controls
 	&__controls {
 		display: flex;
@@ -133,25 +150,30 @@ body {
 }
 
 .consult {
+
 	// .consult__body
 	&__body {
 		border-radius: 1rem;
 		background: #6b806f;
 		padding: 2.5rem 1.75rem;
+
 		@media (min-width: $md3) {
 			padding: 2.5rem 2rem 2.5rem 3.875rem;
 		}
 	}
+
 	// .consult__main
 	&__main {
 		max-width: 34.1875rem;
 	}
+
 	// .consult__title
 	&__title {
 		font-size: 1.5rem;
 		font-weight: 600;
 		text-transform: uppercase;
 	}
+
 	// .consult__subtitle
 	&__subtitle {
 		margin-top: 1.5rem;
@@ -159,6 +181,7 @@ body {
 		line-height: 140%;
 		max-width: 28.125rem;
 	}
+
 	// .consult__form
 	&__form {
 		display: flex;
@@ -170,11 +193,13 @@ body {
 .accordion-list {
 	flex: 1 1 auto;
 	border-top: rem(1) solid #fff;
+
 	// .accordion-list__item
 	&__item {
 		border-bottom: rem(1) solid #fff;
 		counter-increment: num;
 		overflow: hidden;
+
 		@for $i from 1 through 10 {
 			&:nth-child(#{$i}) {
 				.accordion-list__item-caption {
@@ -184,6 +209,7 @@ body {
 				}
 			}
 		}
+
 		&::before {
 			.accordion-list__item-caption {
 				content: counter(num) "/";
@@ -191,6 +217,7 @@ body {
 			}
 		}
 	}
+
 	// .accordion-list__item-caption
 	&__item-caption {
 		font-size: 1rem;
@@ -206,6 +233,7 @@ body {
 			color: #dbdbdb;
 			font-size: 1em;
 		}
+
 		&::after {
 			content: "\e907";
 			@extend %ic;
@@ -219,21 +247,25 @@ body {
 			align-items: center;
 			transition: transform 0.3s ease;
 		}
+
 		&.active {
 			&::after {
 				content: "\e904";
 				transform: rotate(360deg);
 			}
 		}
+
 		@media (min-width: $md5) {
 			font-size: 1.25rem;
 		}
+
 		@media (any-hover: hover) {
 			&:hover {
 				opacity: 0.75;
 			}
 		}
 	}
+
 	// .accordion-list__item-body
 	&__item-body {
 		padding-bottom: 0.9rem;
@@ -241,21 +273,26 @@ body {
 		font-size: 0.875rem;
 		line-height: 140%;
 		padding: rem(10) 0.5rem rem(10) rem(0);
+
 		@media (min-width: $md5) {
 			padding: rem(10) 4.5rem rem(32) rem(66);
 			font-size: 1rem;
 		}
+
 		& p {
 			&:not(:last-child) {
 				margin-bottom: 1em;
 			}
 		}
+
 		& ul {
 			&:not(:last-child) {
 				margin-bottom: 1em;
 			}
+
 			list-style: disc;
 			padding-left: 1.25em;
+
 			& li {
 				&::marker {
 					font-size: 0.75rem;
@@ -268,11 +305,13 @@ body {
 .how-list {
 	flex: 1 1 auto;
 	border-top: rem(1) solid #fff;
+
 	// .how-list__item
 	&__item {
 		border-bottom: rem(1) solid #fff;
 		counter-increment: num;
 		overflow: hidden;
+
 		@for $i from 1 through 10 {
 			&:nth-child(#{$i}) {
 				.how-list__item-caption {
@@ -282,6 +321,7 @@ body {
 				}
 			}
 		}
+
 		&::before {
 			.how-list__item-caption {
 				content: counter(num) "/";
@@ -289,6 +329,7 @@ body {
 			}
 		}
 	}
+
 	// .how-list__item-caption
 	&__item-caption {
 		font-size: 1rem;
@@ -302,6 +343,7 @@ body {
 		@media (min-width: $md5) {
 			font-size: 1.25rem;
 		}
+
 		@media (any-hover: hover) {
 			&:hover {
 				opacity: 0.75;
@@ -314,6 +356,7 @@ body {
 	.section-header {
 		padding-left: 0;
 	}
+
 	// .contacts__body
 	&__body {
 		margin-top: 2.06rem;
@@ -321,6 +364,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		gap: 1.5rem;
+
 		@media (min-width: $md3) {
 			gap: 0;
 			flex-direction: row;
@@ -329,6 +373,7 @@ body {
 			padding: 2.5rem 1.875rem 2.5rem 2.5rem;
 		}
 	}
+
 	// .contacts__main
 	&__main {
 		position: relative;
@@ -337,16 +382,19 @@ body {
 		background: #6b806f;
 		padding: 1.875rem 2rem 1.25rem 2rem;
 		width: 100%;
+
 		@media (min-width: $md3) {
 			max-width: 20.75rem;
 		}
 	}
+
 	// .contacts__caption
 	&__caption {
 		font-size: 1.25rem;
 		font-weight: 600;
 		text-transform: uppercase;
 	}
+
 	// .contacts__list
 	&__list {
 		margin-top: 1.25rem;
@@ -354,9 +402,10 @@ body {
 		flex-direction: column;
 		gap: 0.5rem;
 	}
+
 	// .contacts__item
-	&__item {
-	}
+	&__item {}
+
 	// .contacts__link
 	&__link {
 		border-radius: 0.5rem;
@@ -377,23 +426,28 @@ body {
 			justify-content: center;
 			align-items: center;
 		}
+
 		transition: background-color 0.3s ease;
+
 		@media (any-hover: hover) {
 			&:hover {
 				background-color: darken($color: #fff, $amount: 10);
 			}
 		}
 	}
+
 	// .contacts__socials
 	&__socials {
 		margin-top: 2rem;
 	}
+
 	// .contacts__socials-caption
 	&__socials-caption {
 		font-size: 1rem;
 		font-weight: 600;
 		text-transform: uppercase;
 	}
+
 	// .contacts__socials-items
 	&__socials-items {
 		margin-top: 0.5rem;
@@ -401,20 +455,24 @@ body {
 		align-items: center;
 		gap: 0.75rem;
 	}
+
 	// .contacts__socials-item
 	&__socials-item {
 		font-size: 2rem;
 		color: #ceb388;
 		transition: color 0.3s ease;
+
 		&.icon-youtube {
 			font-size: 2.25rem;
 		}
+
 		@media (any-hover: hover) {
 			&:hover {
 				color: darken($color: #ceb388, $amount: 10);
 			}
 		}
 	}
+
 	// .contacts__balloon
 	&__balloon {
 		border-radius: 0.75rem;
@@ -425,12 +483,14 @@ body {
 		flex-direction: column;
 		padding: 1.5rem 2rem;
 		gap: 1rem;
+
 		@media (min-width: $md3) {
 			gap: 0;
 			padding: 1.06rem 1.5rem 1rem 0.37rem;
 			align-items: flex-end;
 		}
 	}
+
 	// .contacts__address
 	&__address {
 		display: flex;
@@ -439,6 +499,7 @@ body {
 		color: #fffdfd;
 		font-size: 1.125rem;
 		font-weight: 600;
+
 		&::before {
 			width: 1.25rem;
 			height: 1.25rem;
@@ -447,12 +508,14 @@ body {
 			align-items: center;
 		}
 	}
+
 	// .contacts__btn
 	&__btn {
 		margin-top: 0.625rem;
 		padding: 0.5rem 1rem;
 		border-radius: 0.5rem;
 	}
+
 	// .contacts__map
 	&__map {
 		width: 100%;
@@ -461,6 +524,7 @@ body {
 		height: rem(460);
 		position: relative;
 		grid-column: span 2;
+
 		@media (min-width: $md3) {
 			height: 100%;
 			position: absolute;
@@ -468,6 +532,7 @@ body {
 			top: 0;
 			left: 0;
 		}
+
 		& iframe {
 			width: 100%;
 			height: 100%;
@@ -478,6 +543,7 @@ body {
 .subscribe {
 	.container {
 		position: relative;
+
 		&::before {
 			content: "";
 			position: absolute;
@@ -490,6 +556,7 @@ body {
 			pointer-events: none;
 			background: url("@img/decor/hero-decor.svg") center / contain no-repeat;
 		}
+
 		&::after {
 			content: "";
 			position: absolute;
@@ -506,18 +573,21 @@ body {
 			filter: blur(rem(100));
 		}
 	}
+
 	// .subscribe__title
-	&__title {
-	}
+	&__title {}
+
 	// .subscribe__desc
 	&__desc {
 		margin-top: 2rem;
 		font-size: 1rem;
 		line-height: 140%;
 	}
+
 	// .subscribe__btn
 	&__btn {
 		margin-top: 2rem;
+
 		&.btn {
 			padding: 1rem 2rem;
 			font-size: 1.25rem;
@@ -525,6 +595,7 @@ body {
 			gap: 1rem;
 			max-width: 20rem;
 			width: 1000%;
+
 			&::before {
 				font-size: 2rem;
 			}
