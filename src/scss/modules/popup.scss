@@ -5,6 +5,7 @@
 
 .fancybox__slide {
 	padding: 0;
+
 	@media (min-width: $md4) {
 		padding: 1.25rem;
 	}
@@ -36,6 +37,7 @@
 	--f-close-button-svg-height: #{rem(24)};
 	top: rem(4);
 	right: rem(4);
+
 	@media (min-width: $md4) {
 		top: rem(18);
 		right: rem(26);
@@ -58,6 +60,7 @@
 	color: #fff;
 	padding: 2.5rem 1rem;
 	max-width: 100%;
+
 	&.popup--large {
 		max-width: rem(1328);
 		width: 100%;
@@ -69,48 +72,93 @@
 		background:
 			url("@img/programms-modal-decor.svg") 100% 0 / auto no-repeat,
 			#252f28;
+
 		.popup__title {
 			text-align: left;
 		}
 	}
+
+	&.popup--small {
+		max-width: rem(432);
+
+		padding: rem(40) 2rem;
+
+		@media (min-width:$md4) {
+			padding: rem(46) 2rem;
+			min-height: rem(254);
+
+		}
+	}
+
 	@media (min-width: $md4) {
 		padding: 4rem;
 		max-width: rem(624);
+
+		.f-button.is-close-button {
+			top: 0;
+			right: 0;
+		}
 	}
 
 	// .popup__btn
 	&__btn {
 		margin-top: 1.5rem;
+
 		@media (min-width: $md5) {
 			margin-top: 2.62rem;
 		}
+
 		&[data-fancybox-close] {
 			align-self: center;
 		}
 	}
+
 	// .popup__order
 	&__order {
 		margin-top: 1.5rem;
 		max-width: rem(208);
 		width: 100%;
+
 		@media (min-width: $md5) {
 			margin-top: 2.5rem;
 		}
+
 		&[data-fancybox-close] {
 			align-self: center;
 		}
 	}
+
 	// .popup__title
 	&__title {
 		text-align: center;
+
+		&.title-sm {
+			font-size: 1.25rem;
+
+			@media (min-width:$md4) {
+				font-size: 1.5rem;
+			}
+		}
 	}
+
 	// .popup__subtitle
 	&__subtitle {
 		margin-top: 1.5rem;
 		font-size: 1rem;
 		line-height: 140%;
 		text-align: center;
+
+		&.popup__subtitle--small {
+			font-size: rem(14);
+			margin-top: 1rem;
+
+			@media (min-width:$md4) {
+				font-size: 1rem;
+			}
+		}
 	}
+
+	// .popup__form
 	&__form {
 		margin-top: 1.5rem;
 		display: flex;
@@ -119,21 +167,23 @@
 	}
 
 	// .popup__price
-	&__price {
-	}
+	&__price {}
+
 	// .popup__btn
-	&__btn {
-	}
+	&__btn {}
+
 	// .popup__programms
 	&__programms {
 		margin-top: 3.75rem;
 	}
+
 	// .popup__programms-block
 	&__programms-block {
 		&:not(:last-child) {
 			margin-bottom: rem(50);
 		}
 	}
+
 	// .popup__programms-caption
 	&__programms-caption {
 		font-size: 1.125rem;
@@ -142,6 +192,7 @@
 		text-transform: uppercase;
 		max-width: 48.25rem;
 	}
+
 	// .popup__programms-items
 	&__programms-items {
 		margin-top: 2rem;
@@ -150,16 +201,20 @@
 		@media (min-width: $md5) {
 			columns: 2;
 		}
+
 		@media (min-width: $md3) {
 			columns: 3;
+
 			&--small {
 				columns: 2;
 			}
 		}
 	}
+
 	// .popup__programms-item
 	&__programms-item {
 		break-inside: avoid;
+
 		@media (max-width: $md5) {
 			&:not(:last-child) {
 				.popup__programms-caption {
@@ -167,23 +222,28 @@
 				}
 			}
 		}
+
 		@media (min-width: $md5) {
 			margin-bottom: 2rem;
 		}
 	}
+
 	// .popup__programms-list
 	&__programms-list {
 		list-style: disc;
 		padding-left: 1.125em;
 		color: #dbdbdb;
+
 		&:not(:first-child) {
 			margin-top: 1rem;
 		}
+
 		& li {
 			&::marker {
 				font-size: 0.75em;
 			}
 		}
+
 		&:not(:last-child) {
 			margin-bottom: 1em;
 		}
