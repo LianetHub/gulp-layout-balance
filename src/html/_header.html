@@ -4,11 +4,15 @@
             <span class="header__logo-icon">
                 <img src="@img/logo.svg" alt="Логотип">
             </span>
-            <span class="header__logo-text">
-                БУДЬ В BALANCE
-            </span>
+            <span class="header__logo-text">БУДЬ <br> В BALANCE</span>
         </a>
         <nav aria-label="Меню" class="header__menu menu">
+            <div class="menu__logo">
+                <div class="menu__logo-icon">
+                    <img src="@img/logo-orange.svg" alt="Логотип">
+                </div>
+                <div class="menu__logo-text">БУДЬ В BALANCE</div>
+            </div>
             <ul class="menu__list">
                 <li class="menu__item">
                     <a href="about.html" class="menu__link@@if(typeof active !== 'undefined' && active == 1) { active}">О клинике</a>
@@ -61,15 +65,18 @@
                 <div class="menu__contacts">
                     <a href="tel:+78435671208" class="menu__contacts-phone">+7 (843) 567-12-08</a>
                     <address class="menu__address">г. Казань, ул. Курашова, д.20</address>
+                    <div class="menu__worktime">Ежедневно 08:00 - 21:00</div>
                 </div>
-                <a href="#appointment" data-fancybox class="menu__callback btn btn-primary">Записаться</a>
+                <div class="menu__socials">
+                    <a href="" aria-label="instagram" class="menu__socials-item icon-instagram"></a>
+                    <a href="" aria-label="telegram" class="menu__socials-item icon-telegram"></a>
+                    <a href="" aria-label="youtube" class="menu__socials-item icon-youtube"></a>
+                </div>
+                <a href="#appointment" data-fancybox class="menu__callback btn btn-primary">Записаться <span class="mobile-only">на приём</span></a>
             </div>
-            <div class="menu__socials">
-                <a href="" aria-label="instagram" class="menu__socials-item icon-instagram"></a>
-                <a href="" aria-label="telegram" class="menu__socials-item icon-telegram"></a>
-                <a href="" aria-label="youtube" class="menu__socials-item icon-youtube"></a>
-            </div>
+
         </nav>
+        <a href="tel:+78435671208" class="header__phone-mobile">+7 (843) 567-12-08</a>
         <button type="button" aria-label="Открыть мобильное меню" class="header__toggler icon-menu">
             <span></span>
             <span></span>

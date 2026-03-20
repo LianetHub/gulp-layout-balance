@@ -63,6 +63,11 @@ document.addEventListener("DOMContentLoaded", function () {
             target.nextElementSibling.slideToggle();
         }
 
+        if (!target.closest('.menu') && !target.closest('.icon-menu') && document.querySelector('.header').classList.contains('open-menu')) {
+            document.querySelector('.header').classList.remove('open-menu');
+            document.body.classList.remove('open-mobile-menu');
+        }
+
         if (target.closest('.icon-menu')) {
             document.querySelector('.header').classList.toggle('open-menu');
             document.body.classList.toggle('open-mobile-menu');
